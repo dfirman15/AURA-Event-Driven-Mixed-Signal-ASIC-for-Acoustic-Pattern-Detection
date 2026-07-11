@@ -29,7 +29,6 @@ N 660 -420 1520 -420 {lab=#net1}
 N 660 -420 660 -230 {lab=#net1}
 N 780 -350 780 -290 {lab=#net2}
 N 200 30 200 160 {lab=#net2}
-N 200 20 200 30 {lab=#net2}
 N 200 160 200 180 {lab=#net2}
 N 200 180 1260 180 {lab=#net2}
 N 760 60 760 180 {lab=#net2}
@@ -63,7 +62,40 @@ N 1930 180 2990 180 {lab=#net7}
 N 2490 60 2490 180 {lab=#net7}
 N 2990 30 2990 180 {lab=#net7}
 N 1520 -270 1910 -270 {lab=#net1}
-C {AURA/folded_cascode_OTA.sym} 310 -230 0 0 {name=x2}
+N 330 30 330 240 {lab=0}
+N 330 240 890 240 {lab=0}
+N 890 70 890 240 {lab=0}
+N 890 240 1390 240 {lab=0}
+N 1390 40 1390 240 {lab=0}
+N 120 -120 220 -120 {lab=0}
+N 120 -210 120 -120 {lab=0}
+N 100 -210 120 -210 {lab=0}
+N -150 -30 -100 -30 {lab=0}
+N -150 -30 -150 240 {lab=0}
+N -150 240 330 240 {lab=0}
+N 670 -100 720 -100 {lab=0}
+N 720 -100 720 -80 {lab=0}
+N 720 -80 770 -80 {lab=0}
+N 1270 -110 1270 -80 {lab=0}
+N 1160 -80 1270 -80 {lab=0}
+N 1160 -130 1160 -80 {lab=0}
+N 1110 -130 1160 -130 {lab=0}
+N 1590 -30 1630 -30 {lab=0}
+N 1590 -30 1590 250 {lab=0}
+N 1590 250 2060 250 {lab=0}
+N 2060 30 2060 250 {lab=0}
+N 2060 250 2620 250 {lab=0}
+N 2620 70 2620 250 {lab=0}
+N 2620 250 3120 250 {lab=0}
+N 3120 40 3120 250 {lab=0}
+N 2440 -80 2500 -80 {lab=0}
+N 2440 -100 2440 -80 {lab=0}
+N 2400 -100 2440 -100 {lab=0}
+N 1630 -30 1940 -30 {lab=0}
+N 1940 -120 1940 -30 {lab=0}
+N 2870 -110 3000 -110 {lab=0}
+N 2870 -130 2870 -110 {lab=0}
+N 2840 -130 2870 -130 {lab=0}
 C {capa.sym} 550 -200 0 0 {name=C1
 m=1
 value=10p
@@ -72,14 +104,12 @@ device="ceramic capacitor"}
 C {vsource.sym} -100 -60 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} -100 -30 0 0 {name=l1 lab=0}
 C {gnd.sym} 550 -170 0 0 {name=l2 lab=0}
-C {AURA/folded_cascode_OTA.sym} 870 -190 0 0 {name=x4}
 C {capa.sym} 1110 -160 0 0 {name=C2
 m=1
 value=10p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 1110 -130 0 0 {name=l3 lab=0}
-C {AURA/folded_cascode_OTA.sym} 1370 -220 0 0 {name=x6}
 C {vsource.sym} 100 -240 0 0 {name=Vin value="dc 1.65 ac 1" savecurrent=false}
 C {gnd.sym} 100 -210 0 0 {name=Vin1 lab=0
 value=1.65}
@@ -110,10 +140,6 @@ let atten_right = mag_peak - mag_right
 print fc_peak mag_peak atten_left atten_right
 .endc
 "}
-C {AURA/OTA_bias_bpf_fc.sym} 830 80 3 0 {name=x3}
-C {AURA/OTA_bias_bpf_fc.sym} 270 40 3 0 {name=x1}
-C {AURA/OTA_bias_bpf_q.sym} 1330 50 3 0 {name=x5}
-C {AURA/folded_cascode_OTA.sym} 2040 -230 0 0 {name=x7}
 C {capa.sym} 2280 -200 0 0 {name=C3
 m=1
 value=10p
@@ -122,14 +148,12 @@ device="ceramic capacitor"}
 C {vsource.sym} 1630 -60 0 0 {name=V2 value=3.3 savecurrent=false}
 C {gnd.sym} 1630 -30 0 0 {name=l4 lab=0}
 C {gnd.sym} 2280 -170 0 0 {name=l5 lab=0}
-C {AURA/folded_cascode_OTA.sym} 2600 -190 0 0 {name=x8}
 C {capa.sym} 2840 -160 0 0 {name=C4
 m=1
 value=10p
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 2840 -130 0 0 {name=l6 lab=0}
-C {AURA/folded_cascode_OTA.sym} 3100 -220 0 0 {name=x9}
 C {vsource.sym} 2400 -130 0 0 {name=Vcm2 value=1.65 savecurrent=false}
 C {gnd.sym} 2400 -100 0 0 {name=Vin6 lab=0
 value=1.65}
@@ -138,6 +162,15 @@ C {gnd.sym} 2880 -220 0 0 {name=Vin7 lab=0
 value=1.65}
 C {lab_pin.sym} 2330 -230 1 0 {name=p3 sig_type=std_logic lab=v_bp}
 C {lab_pin.sym} 2810 -190 1 0 {name=p4 sig_type=std_logic lab=v_lp}
-C {AURA/OTA_bias_bpf_fc.sym} 2560 80 3 0 {name=x10}
-C {AURA/OTA_bias_bpf_fc.sym} 2000 40 3 0 {name=x11}
-C {AURA/OTA_bias_bpf_q.sym} 3060 50 3 0 {name=x12}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 270 40 3 0 {name=x1 cur_factor=2}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 830 80 3 0 {name=x3 cur_factor=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 1330 50 3 0 {name=x5 cur_factor=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 2000 40 3 0 {name=x10 cur_factor=2}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 2560 80 3 0 {name=x11 cur_factor=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} 3060 50 3 0 {name=x12 cur_factor=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 310 -230 0 0 {name=x2}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 870 -190 0 0 {name=x4}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 1370 -220 0 0 {name=x6}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 2040 -230 0 0 {name=x7}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 2600 -190 0 0 {name=x8}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/folded_cascode_OTA.sym} 3100 -220 0 0 {name=x9}
