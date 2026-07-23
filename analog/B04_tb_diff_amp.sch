@@ -22,7 +22,7 @@ N 610 -400 610 -390 {lab=#net1}
 N 370 -370 510 -370 {lab=#net2}
 N 510 -370 510 -340 {lab=#net2}
 N 510 -340 530 -340 {lab=#net2}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/diff_amp.sym} 630 -340 0 0 {name=x1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym} 600 -340 0 0 {name=x1}
 C {gnd.sym} 610 -290 0 0 {name=l1 lab=0}
 C {vsource.sym} 370 -340 0 0 {name=V1 value=0.65 savecurrent=false}
 C {vsource.sym} 310 -340 0 0 {name=V_IN value=0.8 savecurrent=false}
@@ -30,15 +30,10 @@ C {vsource.sym} 780 -340 0 0 {name=V3 value=3.3 savecurrent=false}
 C {code_shown.sym} -40 -620 0 0 {name=include only_toplevel=false value=".include /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical"}
 C {code_shown.sym} 830 -330 0 0 {name=s1 only_toplevel=false value="
-* Diff amp DC buffer test
 .control
-* Jalankan analisis DC statis pada tegangan yang ada
 op
-
-* Simpan semua parameter internal transistor
 save all
 
-* Cetak tegangan semua node ke terminal
 print allv
 .endc
 "}

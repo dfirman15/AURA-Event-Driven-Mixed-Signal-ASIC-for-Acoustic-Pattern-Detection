@@ -3,7 +3,7 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @symname cur_factor=@cur_factor"
 spectre_format="@name ( @pinlist ) @symname"
-template="name=x1 cur_factor=1"
+template="name=x1 length=410u"
 }
 V {}
 S {}

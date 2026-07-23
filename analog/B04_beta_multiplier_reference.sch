@@ -119,7 +119,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {AURA/diff_amp.sym} 900 -270 1 1 {name=x1}
 C {iopin.sym} 860 -420 3 0 {name=p1 lab=VDD}
 C {iopin.sym} 880 120 1 0 {name=p2 lab=GND}
 C {opin.sym} 1230 -350 0 0 {name=p3 lab=VbiasP}
@@ -200,3 +199,4 @@ L=\{length\}
 model=ppolyf_u_2k
 spiceprefix=X
 m=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym} 900 -240 1 1 {name=x1}

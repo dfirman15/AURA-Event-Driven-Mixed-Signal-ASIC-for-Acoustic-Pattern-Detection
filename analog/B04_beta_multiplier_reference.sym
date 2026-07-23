@@ -1,7 +1,7 @@
 v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {type=subcircuit
-format="@name @pinlist @symname cur_factor=@cur_factor"
+format="@name @pinlist @symname length=@length"
 spectre_format="@name ( @pinlist ) @symname"
 template="name=x1 length=410u"
 }

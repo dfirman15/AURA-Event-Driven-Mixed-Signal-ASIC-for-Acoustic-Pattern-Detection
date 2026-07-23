@@ -11,7 +11,7 @@ N 0 -90 0 -80 {lab=#net1}
 N -240 20 -240 60 {lab=0}
 N -240 60 -0 60 {lab=0}
 N -0 50 -0 60 {lab=0}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/OTA_bias.sym} -10 -10 0 0 {name=x1 cur_factor=1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias.sym} -10 -10 0 0 {name=x1 cur_factor=1}
 C {vsource.sym} -240 -10 0 0 {name=Vdd value=3.3 savecurrent=false}
 C {gnd.sym} -110 60 0 0 {name=l1 lab=0}
 C {lab_pin.sym} 140 -50 2 0 {name=p1 sig_type=std_logic lab=vbias0}

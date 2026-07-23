@@ -28,24 +28,16 @@ N 250 -140 260 -140 {lab=Vbias1}
 N 210 -460 410 -460 {lab=VDD}
 N 410 -460 410 -430 {lab=VDD}
 N 200 -110 200 -90 {lab=GND}
-N 10 -300 40 -300 {lab=#net3}
-N 40 -430 40 -300 {lab=#net3}
-N 40 -430 170 -430 {lab=#net3}
+N 40 -430 170 -430 {lab=VbiasP}
 N 200 -110 210 -110 {lab=GND}
 N 110 -110 110 -90 {lab=GND}
 N 110 -90 200 -90 {lab=GND}
-N 10 -260 40 -260 {lab=#net4}
-N 40 -260 40 -40 {lab=#net4}
-N 40 -40 420 -40 {lab=#net4}
-N 420 -120 420 -40 {lab=#net4}
-N 420 -120 480 -120 {lab=#net4}
+N 40 -40 420 -40 {lab=VbiasN}
+N 420 -120 420 -40 {lab=VbiasN}
+N 420 -120 480 -120 {lab=VbiasN}
 N 200 -90 520 -90 {lab=GND}
 N 520 -120 520 -90 {lab=GND}
 N 270 -90 270 -10 {lab=GND}
-N -140 -10 270 -10 {lab=GND}
-N -140 -220 -140 -10 {lab=GND}
-N -140 -460 -140 -340 {lab=VDD}
-N -140 -460 210 -460 {lab=VDD}
 N 520 -460 520 -430 {lab=VDD}
 N 410 -460 520 -460 {lab=VDD}
 N 210 -140 210 -110 {lab=GND}
@@ -147,10 +139,9 @@ C {opin.sym} 290 -310 0 0 {name=p12 lab=Vbias2}
 C {opin.sym} 260 -190 0 0 {name=p17 lab=Vbias1}
 C {opin.sym} 580 -350 0 0 {name=p14 lab=Vbias0}
 C {opin.sym} 610 -230 0 0 {name=p15 lab=Vbias3}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/beta_multiplier_reference.sym} -140 -280 0 0 {name=x1 cur_factor=\{cur_factor\}}
 C {symbols/pfet_03v3.sym} 190 -430 0 0 {name=M2
 L=4u
-W=10u
+W=\{ratio*6u\}
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -164,7 +155,7 @@ spiceprefix=X
 }
 C {symbols/nfet_03v3.sym} 500 -120 2 1 {name=M3
 L=4u
-W=10u
+W=\{ratio*10u\}
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
@@ -176,4 +167,6 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {iopin.sym} 220 -10 1 0 {name=p1 lab=GND}
+C {iopin.sym} 270 -10 1 0 {name=p1 lab=GND}
+C {ipin.sym} 40 -430 0 0 {name=p2 lab=VbiasP}
+C {ipin.sym} 40 -40 0 0 {name=p3 lab=VbiasN}

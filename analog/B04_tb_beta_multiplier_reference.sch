@@ -9,7 +9,7 @@ N 230 -290 230 -260 {lab=0}
 N 230 -260 440 -260 {lab=0}
 N 230 -380 440 -380 {lab=#net1}
 N 230 -380 230 -350 {lab=#net1}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/beta_multiplier_reference.sym} 440 -320 0 0 {name=x1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sym} 440 -320 0 0 {name=x1}
 C {vsource.sym} 230 -320 0 0 {name=V_DD value=3 savecurrent=false}
 C {gnd.sym} 440 -260 0 0 {name=l1 lab=0}
 C {code_shown.sym} 310 -170 0 0 {name=s1 only_toplevel=false value="
