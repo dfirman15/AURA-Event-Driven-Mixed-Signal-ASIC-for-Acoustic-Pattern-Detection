@@ -51,21 +51,6 @@ N 750 -620 750 -330 {lab=#net7}
 N 770 -620 770 -330 {lab=#net8}
 N 890 -610 950 -610 {lab=Vout}
 N 690 -610 830 -610 {lab=GND}
-C {capa.sym} 860 -560 1 0 {name=C2
-m=1
-value=0.2p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 300 -710 1 0 {name=C3
-m=1
-value=2p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 530 -850 2 0 {name=C5
-m=1
-value=0.2p
-footprint=1206
-device="ceramic capacitor"}
 C {symbols/pfet_03v3.sym} 830 -390 3 0 {name=M1
 L=4u
 W=1u
@@ -122,11 +107,6 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {capa.sym} 300 -780 1 0 {name=C6
-m=1
-value=2p
-footprint=1206
-device="ceramic capacitor"}
 C {iopin.sym} 560 -980 0 0 {name=p1 lab=VDD}
 C {iopin.sym} 530 -980 0 1 {name=p2 lab=VDD/2}
 C {iopin.sym} 450 -400 2 0 {name=p3 lab=GND}
@@ -137,8 +117,33 @@ C {opin.sym} 950 -740 0 0 {name=p8 lab=Vout}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNA_OTA.sym} 760 -730 0 0 {name=x1}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 650 -240 0 0 {name=x2 ratio=8}
 C {ipin.sym} 510 -240 0 0 {name=p7 lab=VbiasN}
-C {capa.sym} 860 -610 1 0 {name=C1
-m=1
-value=5p
-footprint=1206
-device="ceramic capacitor"}
+C {symbols/cap_mim_2f0fF.sym} 300 -710 1 0 {name=C3
+W=10u
+L=10u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=10}
+C {symbols/cap_mim_2f0fF.sym} 300 -780 1 0 {name=C4
+W=10u
+L=10u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=10}
+C {symbols/cap_mim_2f0fF.sym} 530 -850 2 0 {name=C2
+W=10u
+L=10u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 860 -560 1 0 {name=C5
+W=10u
+L=10u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2f0fF.sym} 860 -610 3 0 {name=C1
+W=10u
+L=10u
+model=cap_mim_2f0fF
+spiceprefix=X
+m=25}

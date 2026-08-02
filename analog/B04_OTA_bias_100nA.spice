@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_100nA.sch
+.subckt B04_OTA_bias_100nA VDD Vbias2 Vbias1 Vbias0 Vbias3 GND VbiasP VbiasN
+*.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
+M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
+M4 Vbias1 Vbias2 net1 GND nfet_03v3 L=4u W=1u nf=1
+M5 net1 Vbias1 GND GND nfet_03v3 L=4u W=1u nf=1
+M9 net2 Vbias3 Vbias0 VDD pfet_03v3 L=4u W=5u nf=1
+M10 VDD Vbias0 net2 VDD pfet_03v3 L=4u W=5u nf=1
+M6 Vbias3 VDD Vbias0 GND nfet_03v3 L=4u W=10u nf=1
+M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W=5u nf=1
+M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W=10u nf=1
+.ends

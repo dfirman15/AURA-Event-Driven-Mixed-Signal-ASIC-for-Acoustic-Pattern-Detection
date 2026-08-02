@@ -23,11 +23,9 @@ N 400 -610 400 -260 {lab=VDD}
 N 400 -610 410 -610 {lab=VDD}
 N 610 -360 610 -130 {lab=GND}
 N 590 -360 610 -360 {lab=GND}
-N 630 -390 630 -170 {lab=#net1}
 N 630 -170 650 -170 {lab=#net1}
 N 590 -390 590 -360 {lab=GND}
 N 590 -420 630 -420 {lab=#net1}
-N 630 -420 630 -380 {lab=#net1}
 N 480 -610 480 -580 {lab=VDD}
 N 520 -580 520 -550 {lab=#net2}
 N 480 -550 520 -550 {lab=#net2}
@@ -42,6 +40,8 @@ N 480 -370 520 -370 {lab=#net1}
 N 520 -400 520 -370 {lab=#net1}
 N 520 -420 520 -400 {lab=#net1}
 N 520 -420 590 -420 {lab=#net1}
+N 630 -420 630 -390 {lab=#net1}
+N 630 -390 630 -170 {lab=#net1}
 C {symbols/nfet_03v3.sym} 380 -230 0 0 {name=M1
 L=1u
 W=2u
@@ -70,8 +70,8 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/cap_mim_2f0fF.sym} 930 -170 0 0 {name=C2
-W=20u
+C {symbols/cap_mim_2f0fF.sym} 930 -170 2 0 {name=C2
+W=10u
 L=10u
 model=cap_mim_2f0fF
 spiceprefix=X
@@ -80,10 +80,9 @@ C {iopin.sym} 500 -620 2 0 {name=p1 lab=VDD}
 C {iopin.sym} 610 -130 1 0 {name=p3 lab=GND}
 C {ipin.sym} 360 -230 0 0 {name=p2 lab=Vin}
 C {opin.sym} 930 -200 3 0 {name=p4 lab=Vout}
-C {ipin.sym} 390 -60 0 0 {name=p5 lab=VbiasN}
 C {symbols/nfet_03v3.sym} 610 -390 0 1 {name=M3
 L=4u
-W=0.5u
+W=1u
 nf=5
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

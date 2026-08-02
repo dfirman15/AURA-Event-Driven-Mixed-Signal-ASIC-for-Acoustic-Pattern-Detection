@@ -1,0 +1,547 @@
+magic
+tech gf180mcuD
+timestamp 1785644683
+<< metal4 >>
+rect 230 271 528 291
+rect 230 22 248 271
+rect 510 21 528 271
+rect 790 271 1088 291
+rect 790 22 808 271
+rect 1070 21 1088 271
+rect 1350 271 1648 291
+rect 1350 22 1368 271
+rect 1630 21 1648 271
+rect 1910 271 2208 291
+rect 1910 22 1928 271
+rect 2190 21 2208 271
+rect -50 -2350 -32 -2101
+rect 230 -2350 248 -2101
+rect -50 -2370 248 -2350
+rect 510 -2350 528 -2101
+rect 790 -2350 808 -2101
+rect 510 -2370 808 -2350
+rect 1070 -2350 1088 -2101
+rect 1350 -2350 1368 -2101
+rect 1070 -2370 1368 -2350
+rect 1630 -2350 1648 -2101
+rect 1910 -2350 1928 -2101
+rect 1630 -2370 1928 -2350
+rect 2190 -2350 2208 -2101
+rect 2470 -2350 2488 -2101
+rect 2190 -2370 2488 -2350
+<< metal5 >>
+rect 98 270 408 292
+rect -182 -2349 -152 221
+rect -50 -48 -32 22
+rect -50 -304 -32 -234
+rect -50 -560 -32 -490
+rect -50 -816 -32 -746
+rect -50 -1072 -32 -1002
+rect -50 -1328 -32 -1258
+rect -50 -1584 -32 -1514
+rect -50 -1840 -32 -1770
+rect -50 -2096 -32 -2026
+rect 98 -2349 128 270
+rect 230 -48 248 22
+rect 230 -304 248 -234
+rect 230 -560 248 -490
+rect 230 -816 248 -746
+rect 230 -1072 248 -1002
+rect 230 -1328 248 -1258
+rect 230 -1584 248 -1514
+rect 230 -1840 248 -1770
+rect 230 -2096 248 -2026
+rect -182 -2371 128 -2349
+rect 378 -2349 408 270
+rect 658 270 968 292
+rect 510 -48 528 22
+rect 510 -304 528 -234
+rect 510 -560 528 -490
+rect 510 -816 528 -746
+rect 510 -1072 528 -1002
+rect 510 -1328 528 -1258
+rect 510 -1584 528 -1514
+rect 510 -1840 528 -1770
+rect 510 -2096 528 -2026
+rect 658 -2349 688 270
+rect 790 -48 808 22
+rect 790 -304 808 -234
+rect 790 -560 808 -490
+rect 790 -816 808 -746
+rect 790 -1072 808 -1002
+rect 790 -1328 808 -1258
+rect 790 -1584 808 -1514
+rect 790 -1840 808 -1770
+rect 790 -2096 808 -2026
+rect 378 -2371 688 -2349
+rect 938 -2349 968 270
+rect 1218 270 1528 292
+rect 1070 -48 1088 22
+rect 1070 -304 1088 -234
+rect 1070 -560 1088 -490
+rect 1070 -816 1088 -746
+rect 1070 -1072 1088 -1002
+rect 1070 -1328 1088 -1258
+rect 1070 -1584 1088 -1514
+rect 1070 -1840 1088 -1770
+rect 1070 -2096 1088 -2026
+rect 1218 -2349 1248 270
+rect 1350 -48 1368 22
+rect 1350 -304 1368 -234
+rect 1350 -560 1368 -490
+rect 1350 -816 1368 -746
+rect 1350 -1072 1368 -1002
+rect 1350 -1328 1368 -1258
+rect 1350 -1584 1368 -1514
+rect 1350 -1840 1368 -1770
+rect 1350 -2096 1368 -2026
+rect 938 -2371 1248 -2349
+rect 1498 -2349 1528 270
+rect 1778 270 2088 292
+rect 1630 -48 1648 22
+rect 1630 -304 1648 -234
+rect 1630 -560 1648 -490
+rect 1630 -816 1648 -746
+rect 1630 -1072 1648 -1002
+rect 1630 -1328 1648 -1258
+rect 1630 -1584 1648 -1514
+rect 1630 -1840 1648 -1770
+rect 1630 -2096 1648 -2026
+rect 1778 -2349 1808 270
+rect 1910 -48 1928 22
+rect 1910 -304 1928 -234
+rect 1910 -560 1928 -490
+rect 1910 -816 1928 -746
+rect 1910 -1072 1928 -1002
+rect 1910 -1328 1928 -1258
+rect 1910 -1584 1928 -1514
+rect 1910 -1840 1928 -1770
+rect 1910 -2096 1928 -2026
+rect 1498 -2371 1808 -2349
+rect 2058 -2349 2088 270
+rect 2190 -48 2208 22
+rect 2190 -304 2208 -234
+rect 2190 -560 2208 -490
+rect 2190 -816 2208 -746
+rect 2190 -1072 2208 -1002
+rect 2190 -1328 2208 -1258
+rect 2190 -1584 2208 -1514
+rect 2190 -1840 2208 -1770
+rect 2190 -2096 2208 -2026
+rect 2338 -2349 2368 221
+rect 2470 -48 2488 22
+rect 2470 -304 2488 -234
+rect 2470 -560 2488 -490
+rect 2470 -816 2488 -746
+rect 2470 -1072 2488 -1002
+rect 2470 -1328 2488 -1258
+rect 2470 -1584 2488 -1514
+rect 2470 -1840 2488 -1770
+rect 2470 -2096 2488 -2026
+rect 2058 -2371 2368 -2349
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_0
+timestamp 1785640239
+transform 1 0 124 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_1
+timestamp 1785640239
+transform 1 0 404 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_2
+timestamp 1785640239
+transform 1 0 404 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_3
+timestamp 1785640239
+transform 1 0 124 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_4
+timestamp 1785640239
+transform 1 0 684 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_5
+timestamp 1785640239
+transform 1 0 684 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_6
+timestamp 1785640239
+transform 1 0 964 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_7
+timestamp 1785640239
+transform 1 0 964 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_8
+timestamp 1785640239
+transform 1 0 1244 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_9
+timestamp 1785640239
+transform 1 0 1244 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_10
+timestamp 1785640239
+transform 1 0 1524 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_11
+timestamp 1785640239
+transform 1 0 1524 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_12
+timestamp 1785640239
+transform 1 0 1804 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_13
+timestamp 1785640239
+transform 1 0 1804 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_14
+timestamp 1785640239
+transform 1 0 2084 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_15
+timestamp 1785640239
+transform 1 0 2084 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_16
+timestamp 1785640239
+transform 1 0 2364 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_17
+timestamp 1785640239
+transform 1 0 2364 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_18
+timestamp 1785640239
+transform 1 0 2364 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_19
+timestamp 1785640239
+transform 1 0 2084 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_20
+timestamp 1785640239
+transform 1 0 -156 0 1 112
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_21
+timestamp 1785640239
+transform 1 0 -156 0 1 -144
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_22
+timestamp 1785640239
+transform 1 0 1804 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_23
+timestamp 1785640239
+transform 1 0 1524 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_24
+timestamp 1785640239
+transform 1 0 1244 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_25
+timestamp 1785640239
+transform 1 0 964 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_26
+timestamp 1785640239
+transform 1 0 684 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_27
+timestamp 1785640239
+transform 1 0 404 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_28
+timestamp 1785640239
+transform 1 0 124 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_29
+timestamp 1785640239
+transform 1 0 -156 0 1 -400
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_30
+timestamp 1785640239
+transform 1 0 2364 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_31
+timestamp 1785640239
+transform 1 0 1804 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_32
+timestamp 1785640239
+transform 1 0 2084 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_33
+timestamp 1785640239
+transform 1 0 1244 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_34
+timestamp 1785640239
+transform 1 0 1524 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_35
+timestamp 1785640239
+transform 1 0 684 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_36
+timestamp 1785640239
+transform 1 0 964 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_37
+timestamp 1785640239
+transform 1 0 124 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_38
+timestamp 1785640239
+transform 1 0 404 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_39
+timestamp 1785640239
+transform 1 0 -156 0 1 -656
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_40
+timestamp 1785640239
+transform 1 0 2364 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_41
+timestamp 1785640239
+transform 1 0 1804 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_42
+timestamp 1785640239
+transform 1 0 2084 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_43
+timestamp 1785640239
+transform 1 0 1244 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_44
+timestamp 1785640239
+transform 1 0 1524 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_45
+timestamp 1785640239
+transform 1 0 684 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_46
+timestamp 1785640239
+transform 1 0 964 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_47
+timestamp 1785640239
+transform 1 0 124 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_48
+timestamp 1785640239
+transform 1 0 404 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_49
+timestamp 1785640239
+transform 1 0 -156 0 1 -912
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_50
+timestamp 1785640239
+transform 1 0 2364 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_51
+timestamp 1785640239
+transform 1 0 1804 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_52
+timestamp 1785640239
+transform 1 0 2084 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_53
+timestamp 1785640239
+transform 1 0 1244 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_54
+timestamp 1785640239
+transform 1 0 1524 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_55
+timestamp 1785640239
+transform 1 0 684 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_56
+timestamp 1785640239
+transform 1 0 964 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_57
+timestamp 1785640239
+transform 1 0 124 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_58
+timestamp 1785640239
+transform 1 0 404 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_59
+timestamp 1785640239
+transform 1 0 -156 0 1 -1168
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_60
+timestamp 1785640239
+transform 1 0 2364 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_61
+timestamp 1785640239
+transform 1 0 1804 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_62
+timestamp 1785640239
+transform 1 0 2084 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_63
+timestamp 1785640239
+transform 1 0 1244 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_64
+timestamp 1785640239
+transform 1 0 1524 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_65
+timestamp 1785640239
+transform 1 0 684 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_66
+timestamp 1785640239
+transform 1 0 964 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_67
+timestamp 1785640239
+transform 1 0 124 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_68
+timestamp 1785640239
+transform 1 0 404 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_69
+timestamp 1785640239
+transform 1 0 -156 0 1 -1424
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_70
+timestamp 1785640239
+transform 1 0 2364 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_71
+timestamp 1785640239
+transform 1 0 1804 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_72
+timestamp 1785640239
+transform 1 0 2084 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_73
+timestamp 1785640239
+transform 1 0 1244 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_74
+timestamp 1785640239
+transform 1 0 1524 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_75
+timestamp 1785640239
+transform 1 0 684 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_76
+timestamp 1785640239
+transform 1 0 964 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_77
+timestamp 1785640239
+transform 1 0 124 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_78
+timestamp 1785640239
+transform 1 0 404 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_79
+timestamp 1785640239
+transform 1 0 -156 0 1 -1680
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_80
+timestamp 1785640239
+transform 1 0 2364 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_81
+timestamp 1785640239
+transform 1 0 1804 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_82
+timestamp 1785640239
+transform 1 0 2084 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_83
+timestamp 1785640239
+transform 1 0 1244 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_84
+timestamp 1785640239
+transform 1 0 1524 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_85
+timestamp 1785640239
+transform 1 0 684 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_86
+timestamp 1785640239
+transform 1 0 964 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_87
+timestamp 1785640239
+transform 1 0 124 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_88
+timestamp 1785640239
+transform 1 0 404 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_89
+timestamp 1785640239
+transform 1 0 -156 0 1 -1936
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_90
+timestamp 1785640239
+transform 1 0 2364 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_91
+timestamp 1785640239
+transform 1 0 1804 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_92
+timestamp 1785640239
+transform 1 0 2084 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_93
+timestamp 1785640239
+transform 1 0 1244 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_94
+timestamp 1785640239
+transform 1 0 1524 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_95
+timestamp 1785640239
+transform 1 0 684 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_96
+timestamp 1785640239
+transform 1 0 964 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_97
+timestamp 1785640239
+transform 1 0 124 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_98
+timestamp 1785640239
+transform 1 0 404 0 1 -2192
+box -124 -112 124 112
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_99
+timestamp 1785640239
+transform 1 0 -156 0 1 -2192
+box -124 -112 124 112
+<< labels >>
+rlabel metal5 -173 215 -162 218 1 Vo
+port 1 n
+rlabel space -45 210 -41 215 1 GND
+port 2 n
+<< end >>

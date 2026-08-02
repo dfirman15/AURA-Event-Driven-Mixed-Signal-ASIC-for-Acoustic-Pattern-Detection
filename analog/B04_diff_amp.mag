@@ -1,0 +1,142 @@
+magic
+tech gf180mcuD
+timestamp 1785575163
+<< metal1 >>
+rect -141 434 141 461
+rect -141 163 -124 420
+rect -96 418 -65 428
+rect -96 408 -34 418
+rect -96 172 -89 408
+rect -68 172 -34 408
+rect -96 165 -34 172
+rect -96 153 -65 165
+rect 19 163 37 420
+rect 67 352 98 428
+rect 67 254 70 352
+rect 92 254 98 352
+rect 67 153 98 254
+rect 114 415 127 418
+rect 114 166 116 415
+rect 125 166 127 415
+rect 114 164 127 166
+rect -84 118 -64 120
+rect -84 112 -82 118
+rect -66 112 -64 118
+rect 64 118 84 120
+rect 64 112 66 118
+rect 82 112 84 118
+rect -92 78 -56 81
+rect -92 53 -89 78
+rect -59 53 -56 78
+rect -92 50 -56 53
+rect 57 78 91 81
+rect 57 53 59 78
+rect 89 53 91 78
+rect 57 50 91 53
+rect -85 18 -83 23
+rect -65 18 -63 23
+rect -85 17 -63 18
+rect 63 18 65 23
+rect 83 18 85 23
+rect 63 17 85 18
+rect -92 -8 92 11
+rect -19 -34 19 -33
+rect -19 -40 -17 -34
+rect 17 -40 19 -34
+rect -19 -41 19 -40
+rect -30 -74 30 -68
+rect -30 -96 -25 -74
+rect 25 -96 30 -74
+rect -30 -100 30 -96
+rect -24 -170 23 -126
+<< via1 >>
+rect -89 172 -68 408
+rect 70 254 92 352
+rect 116 166 125 415
+rect -82 112 -66 118
+rect 66 112 82 118
+rect -89 53 -59 78
+rect 59 53 89 78
+rect -83 18 -65 24
+rect 65 18 83 24
+rect -17 -40 17 -34
+rect -25 -96 25 -74
+<< metal2 >>
+rect 113 415 128 419
+rect -97 408 -62 413
+rect -97 172 -89 408
+rect -68 359 -62 408
+rect -68 352 97 359
+rect -68 254 70 352
+rect 92 254 97 352
+rect -68 246 97 254
+rect -68 172 -62 246
+rect -97 142 -62 172
+rect 113 166 116 415
+rect 125 166 128 415
+rect -97 128 -57 142
+rect 113 137 128 166
+rect 56 129 149 137
+rect -84 118 -57 128
+rect -84 112 -82 118
+rect -66 112 -57 118
+rect -84 111 -57 112
+rect 64 118 149 129
+rect 64 112 66 118
+rect 82 112 84 118
+rect 64 111 84 112
+rect -149 78 -57 80
+rect -149 53 -89 78
+rect -59 53 -57 78
+rect -149 51 -57 53
+rect 57 78 149 80
+rect 57 53 59 78
+rect 89 53 149 78
+rect 57 51 149 53
+rect -85 24 85 25
+rect -85 18 -83 24
+rect -65 18 65 24
+rect 83 18 85 24
+rect -85 13 85 18
+rect -19 -34 19 13
+rect -19 -40 -17 -34
+rect 17 -40 19 -34
+rect -19 -41 19 -40
+rect -149 -74 27 -70
+rect -149 -96 -25 -74
+rect 25 -96 27 -74
+rect -149 -99 27 -96
+use nfet_03v3_6AMVAX  XM1
+timestamp 1785134978
+transform 0 1 -74 -1 0 68
+box -65 -32 65 32
+use nfet_03v3_TTHT8G  XM2
+timestamp 1785134978
+transform 0 1 0 -1 0 -80
+box -65 -43 65 43
+use nfet_03v3_6AMVAX  XM3
+timestamp 1785134978
+transform 0 1 74 -1 0 68
+box -65 -32 65 32
+use pfet_03v3_SAK7G2  XM4
+timestamp 1785134978
+transform 1 0 80 0 1 291
+box -65 -151 65 151
+use pfet_03v3_SAK7G2  XM5
+timestamp 1785134978
+transform 1 0 -80 0 1 291
+box -65 -151 65 151
+<< labels >>
+rlabel metal1 -10 448 19 456 1 VDD
+port 1 n
+rlabel metal2 -136 61 -107 69 1 V+
+port 3 n
+rlabel metal2 115 62 144 70 1 V-
+port 4 n
+rlabel metal2 109 123 138 131 1 Vo
+port 5 n
+rlabel metal2 -136 -91 -107 -83 1 Vbias
+port 6 n
+rlabel metal1 -16 -164 13 -156 1 VSS
+port 2 n
+<< end >>
