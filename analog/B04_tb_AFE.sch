@@ -66,6 +66,10 @@ N 940 60 940 340 {lab=#net3}
 N 920 60 940 60 {lab=#net3}
 N 710 -20 710 280 {lab=#net1}
 N 710 280 710 310 {lab=#net1}
+N 320 80 470 80 {lab=0}
+N 470 50 470 80 {lab=0}
+N 170 50 400 50 {lab=#net2}
+N 470 -20 470 10 {lab=#net1}
 C {code_shown.sym} -560 -270 0 0 {name=include1 only_toplevel=false value=".include /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
@@ -96,7 +100,7 @@ C {lab_pin.sym} 110 10 1 0 {name=p1 sig_type=std_logic lab=Vbpf}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope_detector.sym} 320 30 0 0 {name=x2}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sym} -220 280 0 0 {name=x3 length=410u}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sym} 720 50 0 0 {name=x4}
-C {vsource.sym} 530 70 0 0 {name=V2 value=1.02 savecurrent=false}
+C {vsource.sym} 530 70 0 0 {name=V2 value=1.03 savecurrent=false}
 C {lab_pin.sym} 510 10 1 0 {name=p2 sig_type=std_logic lab=Venv}
 C {lab_pin.sym} 910 40 1 0 {name=p3 sig_type=std_logic lab=Vout}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNA.sym} -380 80 0 0 {name=x5}

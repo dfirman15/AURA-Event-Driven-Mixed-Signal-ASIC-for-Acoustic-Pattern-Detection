@@ -1,0 +1,18 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 04/08/2026 18:40
+
+.SUBCKT B04_OTA_bias_ratio_8 Vbias3 VbiasN VDD Vbias0 Vbias1 Vbias2 VbiasP GND
+M$1 \$10 Vbias1 GND GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$2 Vbias1 Vbias2 \$10 GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U
++ PD=2.88U
+M$3 Vbias3 VDD Vbias0 GND nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U
++ PD=20.88U
+M$4 Vbias0 Vbias3 \$15 VDD pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U
++ PD=10.88U
+M$5 \$15 Vbias0 VDD VDD pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U PD=10.88U
+M$6 Vbias1 GND Vbias2 VDD pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U
++ PD=10.88U
+M$7 Vbias2 VbiasP VDD VDD pfet_03v3 L=4U W=40U AS=17.6P AD=17.6P PS=80.88U
++ PD=80.88U
+M$8 Vbias3 VbiasN GND GND nfet_03v3 L=4U W=80U AS=35.2P AD=35.2P PS=160.88U
++ PD=160.88U
+.ENDS B04_OTA_bias_ratio_8

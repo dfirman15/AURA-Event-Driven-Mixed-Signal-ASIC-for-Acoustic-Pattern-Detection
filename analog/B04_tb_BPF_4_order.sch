@@ -49,7 +49,7 @@ print @m.x1.x10.xm2.m0[id] @m.x1.x10.xm3.m0[id]
 echo Bias Core x11:
 print @m.x1.x11.xm2.m0[id] @m.x1.x11.xm3.m0[id]
 
-ac dec 100 10 100k
+ac dec 100 10 100Meg
 plot db(vout)
 plot phase(vout)
 

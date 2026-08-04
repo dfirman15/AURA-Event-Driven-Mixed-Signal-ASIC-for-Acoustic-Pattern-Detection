@@ -246,7 +246,7 @@ L=10u
 model=cap_mim_2f0fF
 spiceprefix=X
 m=\{m_cap\}}
-C {code_shown.sym} 1150 -1050 0 0 {name=s1 only_toplevel=false value=".param m_cap=48"}
+C {code_shown.sym} 1150 -1050 0 0 {name=s1 only_toplevel=false value=".param m_cap=64"}
 C {symbols/cap_mim_2f0fF.sym} 1680 -960 0 0 {name=C1
 W=10u
 L=10u
@@ -294,10 +294,10 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} -230 90 0 0 {name=x16 ratio=5}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 190 90 0 0 {name=x2 ratio=0.15}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 760 90 0 0 {name=x8 ratio=0.15}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 1330 90 0 0 {name=x9 ratio=0.29}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 1830 90 0 0 {name=x10 ratio=0.3}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 190 90 0 0 {name=x2 ratio=0.25}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 760 90 0 0 {name=x8 ratio=0.25}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 1330 90 0 0 {name=x9 ratio=0.4}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 1830 90 0 0 {name=x10 ratio=0.4}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 4420 100 0 0 {name=x11 ratio=5}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_folded_cascode_OTA.sym} -100 -560 0 0 {name=x7}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_folded_cascode_OTA.sym} 320 -980 0 0 {name=x3}

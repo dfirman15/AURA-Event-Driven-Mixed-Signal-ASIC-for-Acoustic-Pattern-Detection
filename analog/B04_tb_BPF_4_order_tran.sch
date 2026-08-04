@@ -13,7 +13,7 @@ N -200 -0 -100 0 {lab=Vin}
 N -270 -50 -270 -0 {lab=#net1}
 N -270 -50 -0 -50 {lab=#net1}
 N 100 -0 120 -0 {lab=Vout}
-C {vsource.sym} -200 30 0 0 {name=Vin value="SINE(1.65 0.05 18k 0 0)" savecurrent=false}
+C {vsource.sym} -200 30 0 0 {name=Vin value="SINE(1.65 0.01 5k 0 0)" savecurrent=false}
 C {vsource.sym} -270 30 0 0 {name=VDD value=3.3 savecurrent=false}
 C {gnd.sym} -70 90 0 0 {name=l1 lab=0}
 C {lab_pin.sym} 120 0 2 0 {name=p1 sig_type=std_logic lab=Vout}
@@ -27,6 +27,7 @@ C {code_shown.sym} 850 -100 0 0 {name=s1 only_toplevel=false value="
 .control
 tran 1u 5m
 plot v(vin) v(vout)
+meas tran I_avg AVG I(Vdd) FROM=0m TO=5m
 four 5k V(vout)
 .endc
 "}
