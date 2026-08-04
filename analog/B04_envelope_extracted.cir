@@ -1,31 +1,18 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 03/08/2026 04:12
+* Extracted by KLayout with GF180MCU LVS runset on : 03/08/2026 05:15
 
-* cell B04_envelope
-* pin Vout
-* pin Vin
-* pin VDD
-* pin GND
 .SUBCKT B04_envelope Vout Vin VDD GND
-* device instance $1 r0 *1 123.6,-7.05 cap_mim_2f0fF
 C$1 Vout GND 2e-11 cap_mim_2f0fF A=10000P P=4000U
-* device instance $101 r270 *1 -0.7,3.75 pfet_03v3
 M$101 \$384 \$384 VDD VDD pfet_03v3 L=5U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-* device instance $102 r90 *1 3.9,3.75 pfet_03v3
 M$102 \$396 \$396 \$384 \$384 pfet_03v3 L=5U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-* device instance $103 r270 *1 8.5,3.75 pfet_03v3
 M$103 \$385 \$385 \$396 \$396 pfet_03v3 L=5U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-* device instance $104 r90 *1 13.1,3.75 pfet_03v3
 M$104 \$392 \$392 \$385 \$385 pfet_03v3 L=5U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-* device instance $105 r180 *1 36.73,5.45 nfet_03v3
 M$105 \$392 \$392 GND GND nfet_03v3 L=4U W=5U AS=1.48P AD=1.48P PS=8.96U
 + PD=8.96U
-* device instance $110 r270 *1 9.55,-4.4 nfet_03v3
 M$110 GND \$392 Vout GND nfet_03v3 L=4U W=7U AS=3.08P AD=3.08P PS=14.88U
 + PD=14.88U
-* device instance $111 r270 *1 2.1,-4.2 nfet_03v3
 M$111 Vout Vin VDD GND nfet_03v3 L=1U W=2U AS=0.88P AD=0.88P PS=4.88U PD=4.88U
 .ENDS B04_envelope

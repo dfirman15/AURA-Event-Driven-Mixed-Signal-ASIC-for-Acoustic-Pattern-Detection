@@ -18,5 +18,9 @@ C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04
 C {vsource.sym} 730 -430 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} 800 -380 0 0 {name=l1 lab=0}
 C {lab_pin.sym} 980 -430 2 0 {name=p1 sig_type=std_logic lab=vout}
-C {code_shown.sym} 1130 -460 0 0 {name=s1 only_toplevel=false value=".tran 10n 0.5m
-.plot V(Vout)"}
+C {code_shown.sym} 1130 -460 0 0 {name=s1 only_toplevel=false value="
+.control
+tran 10n 0.5m
+plot v(vout)
+meas tran I_avg AVG I(V1) FROM=0.1m TO=0.5m
+.endc"}
