@@ -26,5 +26,5 @@ rect 1090 -1063 1178 -1053
 string FIXED_BBOX -1240 -1120 1000 1120
 string gencell cap_mim_2p0fF
 string library gf180mcu
-string parameters w 10.0 l 10.0 val 3.3k carea 25.00 cperi 20.00 class capacitor nx 1 ny 1 dummy 0 square 0 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
+string parameters w 10.0 l 10.0 val 3.3k carea 25.00 cperi 20.00 class capacitor nx 1 ny 1 dummy 0 square 1 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
 << end >>

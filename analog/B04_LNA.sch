@@ -115,7 +115,6 @@ C {ipin.sym} 270 -710 0 0 {name=p5 lab=Vin-}
 C {ipin.sym} 510 -260 0 0 {name=p6 lab=VbiasP}
 C {opin.sym} 950 -740 0 0 {name=p8 lab=Vout}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNA_OTA.sym} 760 -730 0 0 {name=x1}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 650 -240 0 0 {name=x2 ratio=8}
 C {ipin.sym} 510 -240 0 0 {name=p7 lab=VbiasN}
 C {symbols/cap_mim_2f0fF.sym} 300 -710 1 0 {name=C3
 W=10u
@@ -141,9 +140,4 @@ L=10u
 model=cap_mim_2f0fF
 spiceprefix=X
 m=1}
-C {symbols/cap_mim_2f0fF.sym} 860 -610 3 0 {name=C1
-W=10u
-L=10u
-model=cap_mim_2f0fF
-spiceprefix=X
-m=25}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_8.sym} 650 -250 0 0 {name=x2}

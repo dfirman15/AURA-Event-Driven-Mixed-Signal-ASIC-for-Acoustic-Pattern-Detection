@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1785827192
+timestamp 1786036191
 << metal1 >>
 rect -1630 4220 1700 4295
 rect -1630 4210 -535 4220
@@ -340,22 +340,22 @@ timestamp 1785477113
 transform 0 1 -1570 -1 0 2125
 box -2125 -130 2125 130
 use pfet_03v3_M5A2ND  XM2
-timestamp 1785480406
+timestamp 1785858360
 transform 0 1 870 -1 0 3890
 box -325 -205 325 205
 use pfet_03v3_M5A2ND  XM3
-timestamp 1785480406
+timestamp 1785858360
 transform 0 1 1515 -1 0 3890
 box -325 -205 325 205
 use nfet_03v3_LH5LWX  XM4
-timestamp 1785479351
+timestamp 1785968708
 transform 0 1 375 -1 0 1205
 box -175 -155 175 155
 use nfet_03v3_DUBMLQ  XM5
 timestamp 1785479351
 transform 0 1 -250 -1 0 635
 box -625 -155 625 155
-use nfet_03v3_GPTQ69  XM6
+use nfet_03v3_GPTQ69  XM6 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
 timestamp 1785581361
 transform 0 1 1420 -1 0 645
 box -325 -605 325 605

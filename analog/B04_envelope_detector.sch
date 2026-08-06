@@ -83,8 +83,8 @@ C {opin.sym} 930 -200 3 0 {name=p4 lab=Vout}
 C {symbols/nfet_03v3.sym} 610 -390 0 1 {name=M3
 L=4u
 W=1u
-nf=5
-m=1
+nf=1
+m=5
 ad="'int((nf+1)/2) * W/nf * 0.18u'"
 pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
 as="'int((nf+2)/2) * W/nf * 0.18u'"
