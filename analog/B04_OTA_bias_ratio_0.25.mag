@@ -1,6 +1,6 @@
 magic
 tech gf180mcuD
-timestamp 1785601295
+timestamp 1786199140
 << pwell >>
 rect 96 -78 100 -75
 << metal1 >>
@@ -219,24 +219,24 @@ rect 15 -222 18 -214
 rect 200 -222 329 -214
 rect 511 -222 600 -214
 rect 15 -224 600 -222
-use pfet_03v3_AERJ7T  XM1 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
-timestamp 1785581361
+use pfet_03v3_AERJ7T  XM1
+timestamp 1785774695
 transform 1 0 215 0 1 65
 box -65 -71 65 71
 use pfet_03v3_AERJ7T  XM2
-timestamp 1785581361
+timestamp 1785774695
 transform 1 0 55 0 1 65
 box -65 -71 65 71
-use nfet_03v3_GPTQ69  XM3 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
+use nfet_03v3_GPTQ69  XM3
 timestamp 1785581361
 transform 0 1 420 -1 0 -177
 box -65 -121 65 121
-use nfet_03v3_REC73X  XM4 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
-timestamp 1785581361
+use nfet_03v3_REC73X  XM4
+timestamp 1785774695
 transform 1 0 215 0 1 -70
 box -65 -31 65 31
 use nfet_03v3_REC73X  XM5
-timestamp 1785581361
+timestamp 1785774695
 transform 1 0 55 0 1 -70
 box -65 -31 65 31
 use nfet_03v3_GPTQ69  XM6
@@ -244,11 +244,11 @@ timestamp 1785581361
 transform 0 1 108 -1 0 -177
 box -65 -121 65 121
 use pfet_03v3_AERJ7T  XM9
-timestamp 1785581361
+timestamp 1785774695
 transform 1 0 535 0 1 65
 box -65 -71 65 71
 use pfet_03v3_AERJ7T  XM10
-timestamp 1785581361
+timestamp 1785774695
 transform 1 0 375 0 1 65
 box -65 -71 65 71
 << labels >>

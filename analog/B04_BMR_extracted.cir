@@ -1,60 +1,32 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 02/08/2026 15:45
+* Extracted by KLayout with GF180MCU LVS runset on : 09/08/2026 11:04
 
-* cell B04_BMR
-* pin VbiasN
-* pin VbiasP
-* pin VDD
-* pin GND
 .SUBCKT B04_BMR VbiasN VbiasP VDD GND
-* cell instance $6 r90 *1 18.75,25.35
-X$6 VbiasN \$15 VbiasN VbiasP VDD GND B04_diff_amp
-* device instance $15 r0 *1 53.13,6.04 ppolyf_u_1k
-R$15 \$3 GND GND 410000 ppolyf_u_1k L=820U W=2U
-* device instance $21 r270 *1 24.18,-9.6 nfet_03v3
-M$21 \$3 VbiasN \$15 GND nfet_03v3 L=4U W=40U AS=17.6P AD=17.6P PS=83.52U
-+ PD=83.52U
-* device instance $25 r270 *1 14.2,6.45 nfet_03v3
-M$25 GND VbiasN VbiasN GND nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U
-+ PD=20.88U
-* device instance $26 r270 *1 8.7,38.9 pfet_03v3
-M$26 VbiasN VbiasP VDD VDD pfet_03v3 L=4U W=2U AS=0.88P AD=0.88P PS=4.88U
-+ PD=4.88U
-* device instance $27 r270 *1 15.15,38.9 pfet_03v3
-M$27 \$15 VbiasP VDD VDD pfet_03v3 L=4U W=2U AS=0.88P AD=0.88P PS=4.88U PD=4.88U
-* device instance $28 r270 *1 3.75,12.05 nfet_03v3
-M$28 VbiasN \$17 VbiasP GND nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U
+X$4 \$15 VbiasN \$15 VbiasP VDD GND B04_diff_amp
+R$1 GND \$3 GND 410000 ppolyf_u_1k L=820U W=2U
+M$21 VbiasN VbiasP VDD VDD pfet_03v3 L=4U W=2U AS=0.7P AD=0.7P PS=4.4U PD=4.4U
+M$23 VDD VbiasP \$15 VDD pfet_03v3 L=4U W=2U AS=0.88P AD=0.88P PS=5.76U PD=5.76U
+M$25 VDD VDD VDD VDD pfet_03v3 L=4U W=2U AS=0.88P AD=0.88P PS=5.76U PD=5.76U
+M$27 VbiasP \$20 \$15 GND nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-* device instance $29 r270 *1 -2.5,6.35 nfet_03v3
-M$29 \$17 VbiasN GND GND nfet_03v3 L=10U W=1U AS=0.44P AD=0.44P PS=2.88U
-+ PD=2.88U
-* device instance $30 r270 *1 -11.1,21.25 pfet_03v3
-M$30 \$16 \$18 \$18 VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$28 \$29 \$29 \$20 VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-* device instance $31 r270 *1 -15.7,21.25 pfet_03v3
-M$31 \$16 \$16 VDD VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$29 VDD \$28 \$28 VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-* device instance $32 r270 *1 -6.5,21.25 pfet_03v3
-M$32 \$17 \$18 \$18 VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$30 \$29 \$29 \$28 VDD pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
+M$31 \$20 \$15 GND GND nfet_03v3 L=10U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$32 GND \$15 \$15 GND nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U PD=20.88U
+M$33 GND GND GND GND nfet_03v3 L=4U W=20U AS=8.8P AD=8.8P PS=41.76U PD=41.76U
+M$35 VbiasN \$15 \$3 GND nfet_03v3 L=4U W=40U AS=14P AD=14P PS=62.8U PD=62.8U
 .ENDS B04_BMR
 
-* cell B04_diff_amp
-* pin Vbias
-* pin V+
-* pin V-
-* pin Vo
-* pin VDD
-* pin VSS
-.SUBCKT B04_diff_amp Vbias V+ V\x2d Vo VDD VSS
-* device instance $1 r270 *1 0,-4 nfet_03v3
-M$1 VSS Vbias \$3 VSS nfet_03v3 L=4U W=2.2U AS=0.968P AD=0.968P PS=5.28U
+.SUBCKT B04_diff_amp Vbias V+ V\x2d Vo VDD GND
+M$1 Vo \$7 VDD VDD pfet_03v3 L=4U W=13U AS=4.55P AD=4.55P PS=20.9U PD=20.9U
+M$3 VDD \$7 \$7 VDD pfet_03v3 L=4U W=13U AS=5.72P AD=5.72P PS=27.76U PD=27.76U
+M$5 VDD VDD VDD VDD pfet_03v3 L=4U W=13U AS=5.72P AD=5.72P PS=27.76U PD=27.76U
+M$7 Vo V\x2d \$4 GND nfet_03v3 L=4U W=1.1U AS=0.385P AD=0.385P PS=3.05U PD=3.05U
+M$9 GND Vbias \$4 GND nfet_03v3 L=4U W=2.2U AS=0.968P AD=0.968P PS=5.28U
 + PD=5.28U
-* device instance $2 r270 *1 3.7,3.4 nfet_03v3
-M$2 \$3 V\x2d Vo VSS nfet_03v3 L=4U W=1.1U AS=0.484P AD=0.484P PS=3.08U PD=3.08U
-* device instance $3 r270 *1 -3.7,3.4 nfet_03v3
-M$3 \$3 V+ \$7 VSS nfet_03v3 L=4U W=1.1U AS=0.484P AD=0.484P PS=3.08U PD=3.08U
-* device instance $4 r0 *1 -4,14.55 pfet_03v3
-M$4 \$7 \$7 VDD VDD pfet_03v3 L=4U W=13U AS=5.72P AD=5.72P PS=26.88U PD=26.88U
-* device instance $5 r0 *1 4,14.55 pfet_03v3
-M$5 Vo \$7 VDD VDD pfet_03v3 L=4U W=13U AS=5.72P AD=5.72P PS=26.88U PD=26.88U
+M$10 \$7 V+ \$4 GND nfet_03v3 L=4U W=1.1U AS=0.484P AD=0.484P PS=3.96U PD=3.96U
+M$12 GND GND GND GND nfet_03v3 L=4U W=1.1U AS=0.484P AD=0.484P PS=3.96U PD=3.96U
 .ENDS B04_diff_amp

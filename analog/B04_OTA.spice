@@ -20,4 +20,24 @@ M16 Vout Vbias2 net7 GND nfet_03v3 L=4u W=1u nf=1
 M17 net10 Vbias2 net6 GND nfet_03v3 L=4u W=1u nf=1
 M18 net6 Vbias1 GND GND nfet_03v3 L=4u W=1u nf=1 m=10
 M19 net7 Vbias1 GND GND nfet_03v3 L=4u W=1u nf=1 m=10
+Mdummy VDD VDD VDD VDD pfet_03v3 L=1u W=2u nf=1
+Mdummy1 VDD VDD VDD VDD pfet_03v3 L=1u W=2u nf=1
+Mdummy2 VDD VDD VDD VDD pfet_03v3 L=1u W=2u nf=1
+Mdummy3 VDD VDD VDD VDD pfet_03v3 L=1u W=2u nf=1
+Mdummy4 VDD VDD VDD VDD pfet_03v3 L=4u W=2.5u nf=1
+Mdummy5 VDD VDD VDD VDD pfet_03v3 L=4u W=2.5u nf=1
+Mdummy6 VDD VDD VDD VDD pfet_03v3 L=4u W=2.5u nf=1
+Mdummy7 VDD VDD VDD VDD pfet_03v3 L=4u W=2.5u nf=1
+Mdummy8 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
+Mdummy9 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
+Mdummy10 GND GND GND GND nfet_03v3 L=4u W=1u nf=1
+Mdummy11 GND GND GND GND nfet_03v3 L=4u W=1u nf=1
+Mdummy12 GND GND GND GND nfet_03v3 L=4u W=1u nf=1
+Mdummy13 GND GND GND GND nfet_03v3 L=4u W=1u nf=1
+Mdummy14 GND GND GND GND nfet_03v3 L=1u W=1u nf=1
+Mdummy15 GND GND GND GND nfet_03v3 L=1u W=1u nf=1
+Mdummy16 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
+Mdummy17 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
+Mdummy18 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
+Mdummy19 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
 .ends

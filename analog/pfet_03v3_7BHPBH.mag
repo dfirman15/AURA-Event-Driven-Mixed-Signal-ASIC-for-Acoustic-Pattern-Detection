@@ -1,0 +1,88 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1786180371
+<< nwell >>
+rect -730 -354 730 354
+<< pmos >>
+rect -556 -176 -356 224
+rect -252 -176 -52 224
+rect 52 -176 252 224
+rect 356 -176 556 224
+<< pdiff >>
+rect -644 211 -556 224
+rect -644 -163 -631 211
+rect -585 -163 -556 211
+rect -644 -176 -556 -163
+rect -356 211 -252 224
+rect -356 -163 -327 211
+rect -281 -163 -252 211
+rect -356 -176 -252 -163
+rect -52 211 52 224
+rect -52 -163 -23 211
+rect 23 -163 52 211
+rect -52 -176 52 -163
+rect 252 211 356 224
+rect 252 -163 281 211
+rect 327 -163 356 211
+rect 252 -176 356 -163
+rect 556 211 644 224
+rect 556 -163 585 211
+rect 631 -163 644 211
+rect 556 -176 644 -163
+<< pdiffc >>
+rect -631 -163 -585 211
+rect -327 -163 -281 211
+rect -23 -163 23 211
+rect 281 -163 327 211
+rect 585 -163 631 211
+<< polysilicon >>
+rect -556 224 -356 268
+rect -252 224 -52 268
+rect 52 224 252 268
+rect 356 224 556 268
+rect -556 -209 -356 -176
+rect -556 -255 -543 -209
+rect -369 -255 -356 -209
+rect -556 -268 -356 -255
+rect -252 -209 -52 -176
+rect -252 -255 -239 -209
+rect -65 -255 -52 -209
+rect -252 -268 -52 -255
+rect 52 -209 252 -176
+rect 52 -255 65 -209
+rect 239 -255 252 -209
+rect 52 -268 252 -255
+rect 356 -209 556 -176
+rect 356 -255 369 -209
+rect 543 -255 556 -209
+rect 356 -268 556 -255
+<< polycontact >>
+rect -543 -255 -369 -209
+rect -239 -255 -65 -209
+rect 65 -255 239 -209
+rect 369 -255 543 -209
+<< metal1 >>
+rect -631 211 -585 222
+rect -631 -174 -585 -163
+rect -327 211 -281 222
+rect -327 -174 -281 -163
+rect -23 211 23 222
+rect -23 -174 23 -163
+rect 281 211 327 222
+rect 281 -174 327 -163
+rect 585 211 631 222
+rect 585 -174 631 -163
+rect -554 -255 -543 -209
+rect -369 -255 -358 -209
+rect -250 -255 -239 -209
+rect -65 -255 -54 -209
+rect 54 -255 65 -209
+rect 239 -255 250 -209
+rect 358 -255 369 -209
+rect 543 -255 554 -209
+<< properties >>
+string gencell pfet_03v3
+string library gf180mcu
+string parameters w 2 l 1 m 1 nf 4 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 0 compatible {pfet_03v3 pfet_05v0 pfet_06v0}
+<< end >>

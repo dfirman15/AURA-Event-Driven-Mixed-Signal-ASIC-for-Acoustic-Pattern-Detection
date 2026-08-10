@@ -63,6 +63,15 @@ N 500 -240 500 -220 {lab=#net5}
 N 380 -190 500 -190 {lab=VDD}
 N 380 -270 380 -190 {lab=VDD}
 N 980 60 980 120 {lab=GND}
+N 1120 -390 1120 -360 {lab=VDD}
+N 1080 -390 1120 -390 {lab=VDD}
+N 1120 -420 1120 -390 {lab=VDD}
+N 1000 -420 1120 -420 {lab=VDD}
+N 650 -390 650 -360 {lab=VDD}
+N 650 -390 690 -390 {lab=VDD}
+N 650 -420 650 -390 {lab=VDD}
+N 780 60 820 60 {lab=GND}
+N 1120 60 1160 60 {lab=GND}
 C {symbols/pfet_03v3.sym} 800 -390 0 1 {name=M2
 L=4u
 W=2u
@@ -200,3 +209,59 @@ L=820u
 model=ppolyf_u_1k
 spiceprefix=X
 m=1}
+C {symbols/pfet_03v3.sym} 1100 -390 0 0 {name=Mdummy
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 670 -390 0 1 {name=Mdummy1
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 800 60 0 1 {name=Mdummy2
+L=4u
+W=10u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1140 60 0 1 {name=Mdummy3
+L=4u
+W=10u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}

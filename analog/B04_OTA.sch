@@ -121,6 +121,89 @@ N 1160 -560 1190 -560 {lab=GND}
 N 1190 -560 1190 -470 {lab=GND}
 N 830 -470 1190 -470 {lab=GND}
 N 830 -480 830 -470 {lab=GND}
+N 100 -970 140 -970 {lab=VDD}
+N 550 -960 590 -960 {lab=VDD}
+N 690 -960 690 -930 {lab=VDD}
+N 690 -990 690 -960 {lab=VDD}
+N 690 -1020 690 -990 {lab=VDD}
+N 650 -960 690 -960 {lab=VDD}
+N 40 -1010 40 -980 {lab=VDD}
+N 40 -980 40 -950 {lab=VDD}
+N 40 -1010 140 -1010 {lab=VDD}
+N -0 -980 40 -980 {lab=VDD}
+N 1220 -990 1220 -960 {lab=VDD}
+N 1220 -1020 1220 -990 {lab=VDD}
+N 1180 -990 1220 -990 {lab=VDD}
+N 1140 -990 1140 -960 {lab=VDD}
+N 1140 -1020 1140 -990 {lab=VDD}
+N 1100 -1020 1100 -990 {lab=VDD}
+N 1030 -990 1030 -960 {lab=VDD}
+N 1030 -1020 1030 -990 {lab=VDD}
+N 990 -1020 990 -990 {lab=VDD}
+N 930 -1020 930 -990 {lab=VDD}
+N 930 -990 930 -960 {lab=VDD}
+N 890 -990 930 -990 {lab=VDD}
+N 1190 -480 1240 -480 {lab=GND}
+N 1280 -510 1280 -480 {lab=GND}
+N 1280 -480 1280 -450 {lab=GND}
+N 1280 -450 1380 -450 {lab=GND}
+N 1380 -480 1380 -450 {lab=GND}
+N 1380 -510 1380 -480 {lab=GND}
+N 1280 -480 1340 -480 {lab=GND}
+N 1340 -480 1380 -480 {lab=GND}
+N 330 -380 330 -350 {lab=GND}
+N 330 -410 330 -380 {lab=GND}
+N 290 -380 330 -380 {lab=GND}
+N 330 -380 400 -380 {lab=GND}
+N 440 -410 440 -380 {lab=GND}
+N 440 -380 440 -350 {lab=GND}
+N 400 -380 440 -380 {lab=GND}
+N 250 -380 250 -360 {lab=GND}
+N 250 -410 250 -380 {lab=GND}
+N 210 -380 250 -380 {lab=GND}
+N 250 -380 290 -380 {lab=GND}
+N 440 -380 500 -380 {lab=GND}
+N 500 -380 540 -380 {lab=GND}
+N 540 -410 540 -380 {lab=GND}
+N 540 -380 540 -350 {lab=GND}
+N 440 -490 440 -410 {lab=GND}
+N 290 -300 330 -300 {lab=GND}
+N 330 -330 330 -300 {lab=GND}
+N 330 -350 330 -330 {lab=GND}
+N 330 -300 330 -270 {lab=GND}
+N 330 -300 400 -300 {lab=GND}
+N 400 -300 440 -300 {lab=GND}
+N 440 -330 440 -300 {lab=GND}
+N 440 -350 440 -330 {lab=GND}
+N 440 -300 440 -270 {lab=GND}
+N 210 -230 250 -230 {lab=GND}
+N 250 -260 250 -230 {lab=GND}
+N 250 -230 250 -200 {lab=GND}
+N 250 -200 330 -200 {lab=GND}
+N 330 -230 330 -200 {lab=GND}
+N 290 -230 330 -230 {lab=GND}
+N 330 -260 330 -230 {lab=GND}
+N 330 -270 330 -260 {lab=GND}
+N 440 -270 440 -260 {lab=GND}
+N 440 -260 440 -230 {lab=GND}
+N 440 -230 440 -200 {lab=GND}
+N 400 -230 440 -230 {lab=GND}
+N 440 -230 500 -230 {lab=GND}
+N 500 -230 540 -230 {lab=GND}
+N 540 -260 540 -230 {lab=GND}
+N 540 -230 540 -200 {lab=GND}
+N 1240 -480 1280 -480 {lab=GND}
+N 250 -410 330 -410 {lab=GND}
+N 330 -410 440 -410 {lab=GND}
+N 440 -410 540 -410 {lab=GND}
+N 250 -350 250 -300 {lab=GND}
+N 250 -300 290 -300 {lab=GND}
+N 440 -300 540 -300 {lab=GND}
+N 540 -350 540 -300 {lab=GND}
+N 330 -230 400 -230 {lab=GND}
+N 540 -300 540 -260 {lab=GND}
+N 210 -300 210 -230 {lab=GND}
+N 210 -300 250 -300 {lab=GND}
 C {symbols/pfet_03v3.sym} 360 -990 0 0 {name=M1
 L=4u
 W=5u
@@ -396,3 +479,283 @@ model=nfet_03v3
 spiceprefix=X
 }
 C {ipin.sym} 380 -580 3 0 {name=p6 lab=Vbias1}
+C {symbols/pfet_03v3.sym} 120 -970 0 0 {name=Mdummy
+L=1u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 570 -960 0 0 {name=Mdummy1
+L=1u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 670 -960 0 0 {name=Mdummy2
+L=1u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 20 -980 0 0 {name=Mdummy3
+L=1u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 1200 -990 0 0 {name=Mdummy4
+L=4u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 1120 -990 0 0 {name=Mdummy5
+L=4u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 1010 -990 0 0 {name=Mdummy6
+L=4u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/pfet_03v3.sym} 910 -990 0 0 {name=Mdummy7
+L=4u
+W=2.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1260 -480 0 0 {name=Mdummy8
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 1360 -480 0 0 {name=Mdummy9
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 310 -380 0 0 {name=Mdummy10
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 420 -380 0 0 {name=Mdummy11
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 520 -380 0 0 {name=Mdummy12
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 230 -380 0 0 {name=Mdummy13
+L=4u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 310 -300 0 0 {name=Mdummy14
+L=1u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 420 -300 0 0 {name=Mdummy15
+L=1u
+W=1u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 230 -230 0 0 {name=Mdummy16
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 310 -230 0 0 {name=Mdummy17
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 420 -230 0 0 {name=Mdummy18
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
+C {symbols/nfet_03v3.sym} 520 -230 0 0 {name=Mdummy19
+L=4u
+W=0.5u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=nfet_03v3
+spiceprefix=X
+}
