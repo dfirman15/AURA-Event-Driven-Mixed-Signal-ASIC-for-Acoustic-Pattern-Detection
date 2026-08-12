@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1786029642
+timestamp 1786426737
 << mimcap >>
 rect -1120 920 880 1000
 rect -1120 -920 -1040 920
@@ -26,5 +26,5 @@ rect 1090 -1063 1178 -1053
 string FIXED_BBOX -1240 -1120 1000 1120
 string gencell cap_mim_2p0fF
 string library gf180mcu
-string parameters w 10.0 l 10.0 val 3.3k carea 25.00 cperi 20.00 class capacitor nx 1 ny 1 dummy 0 square 0 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
+string parameters w 10.00 l 10.00 val 3.3k carea 25.00 cperi 20.00 class capacitor nx 1 ny 1 dummy 0 square 0 lmin 5.00 wmin 5.00 lmax 100.0 wmax 100.0 dc 0 bconnect 1 tconnect 1
 << end >>

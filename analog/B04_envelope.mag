@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 5
-timestamp 1786029976
+timestamp 1786547367
 << metal1 >>
 rect -235 710 70 750
 rect 250 710 535 750
@@ -357,7 +357,7 @@ rect 2505 235 2625 305
 rect 2490 305 2640 320
 rect 2490 235 2505 305
 rect 2625 235 2640 305
-rect 2490 -11585 2640 235
+rect 2490 -13010 2640 235
 rect 3890 85 5440 195
 rect 3140 -1545 3240 -1135
 rect 3140 -2825 3240 -2415
@@ -368,7 +368,6 @@ rect 3140 -7945 3240 -7535
 rect 3140 -9225 3240 -8815
 rect 3140 -10505 3240 -10095
 rect 3140 -11785 3240 -11375
-rect 2490 -13010 2640 -12825
 rect 3890 -13010 4040 85
 rect 4540 -1545 4640 -1135
 rect 4540 -2825 4640 -2415
@@ -468,403 +467,403 @@ rect 15740 -10505 15840 -10095
 rect 15740 -11785 15840 -11375
 rect 13690 -13120 15240 -13010
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_0
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_1
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_2
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_3
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_4
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_5
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_6
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_7
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_8
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_9
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 2620 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_10
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_11
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_12
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_13
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_14
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_15
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_16
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_17
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_18
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_19
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 4020 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_20
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_21
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_22
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_23
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_24
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_25
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_26
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_27
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_28
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_29
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 5420 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_30
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_31
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_32
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_33
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_34
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_35
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_36
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_37
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_38
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_39
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 6820 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_40
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_41
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_42
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_43
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_44
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_45
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_46
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_47
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_48
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_49
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 8220 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_50
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_51
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_52
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_53
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_54
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_55
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_56
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_57
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_58
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_59
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 9620 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_60
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_61
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_62
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_63
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_64
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_65
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_66
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_67
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_68
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_69
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 11020 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_70
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_71
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_72
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_73
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_74
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_75
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_76
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_77
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_78
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_79
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 12420 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_80
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_81
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_82
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_83
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_84
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_85
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_86
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_87
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_88
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_89
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 13820 0 1 -12225
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_90
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -705
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_91
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -3265
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_92
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -1985
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_93
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -5825
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_94
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -4545
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_95
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -8385
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_96
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -7105
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_97
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -10945
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_98
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -9665
 box -620 -560 620 560
 use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_99
-timestamp 1786029642
+timestamp 1786426737
 transform 1 0 15220 0 1 -12225
 box -620 -560 620 560
 use nfet_03v3_5636DV  XM1

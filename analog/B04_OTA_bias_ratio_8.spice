@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_8.sch
-.subckt B04_OTA_bias_ratio_8 VDD Vbias2 Vbias1 Vbias0 Vbias3 GND VbiasP VbiasN
+.subckt B04_OTA_bias_ratio_8 VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND
 *.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
 M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
 M4 Vbias1 Vbias2 net1 GND nfet_03v3 L=4u W=1u nf=1

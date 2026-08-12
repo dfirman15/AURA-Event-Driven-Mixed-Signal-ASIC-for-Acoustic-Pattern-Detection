@@ -6,11 +6,12 @@ M2 net2 net2 Vout Vout pfet_03v3 L=4u W=1u nf=1
 M3 net4 net4 VDD/2 VDD/2 pfet_03v3 L=4u W=1u nf=1
 M4 net4 net4 net3 net3 pfet_03v3 L=4u W=1u nf=1
 x1 VDD net5 net3 net1 net8 net6 Vout net7 GND B04_LNA_OTA
-x2 VDD VbiasP net5 net7 net8 net6 VbiasN GND B04_OTA_bias_core ratio=8
 XC3 net1 Vin- cap_mim_2f0fF c_width=10u c_length=10u m=10
 XC4 net3 Vin+ cap_mim_2f0fF c_width=10u c_length=10u m=10
 XC2 net3 VDD/2 cap_mim_2f0fF c_width=10u c_length=10u
 XC5 Vout net1 cap_mim_2f0fF c_width=10u c_length=10u
+x2 VDD VbiasP net5 net7 net8 net6 VbiasN GND B04_OTA_bias_ratio_8
+XC1 GND Vout cap_mim_2f0fF c_width=10u c_length=10u m=25
 .ends
 
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNA_OTA.sym # of pins=9
@@ -42,10 +43,11 @@ MDUMMY2 VDD VDD VDD VDD pfet_03v3 L=8u W=16u nf=1
 .ends
 
 
-* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym # of pins=8
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sch
-.subckt B04_OTA_bias_core VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND  ratio=1
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_8.sym # of
+*+ pins=8
+** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_8.sym
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_8.sch
+.subckt B04_OTA_bias_ratio_8 VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND
 *.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
 M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
 M4 Vbias1 Vbias2 net1 GND nfet_03v3 L=4u W=1u nf=1
@@ -53,7 +55,7 @@ M5 net1 Vbias1 GND GND nfet_03v3 L=4u W=1u nf=1
 M9 net2 Vbias3 Vbias0 VDD pfet_03v3 L=4u W=5u nf=1
 M10 VDD Vbias0 net2 VDD pfet_03v3 L=4u W=5u nf=1
 M6 Vbias3 VDD Vbias0 GND nfet_03v3 L=4u W=10u nf=1
-M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W={ratio*5u} nf=1
-M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W={ratio*10u} nf=1
+M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W=40u nf=1
+M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W=80u nf=1
 .ends
 

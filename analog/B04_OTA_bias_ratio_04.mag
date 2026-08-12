@@ -223,7 +223,7 @@ rect 95 -214 600 -212
 rect 95 -222 329 -214
 rect 511 -222 600 -214
 rect 23 -224 600 -222
-use pfet_03v3_AERJ7T  XM1
+use pfet_03v3_AERJ7T  XM1 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
 timestamp 1785774695
 transform 1 0 215 0 1 65
 box -65 -71 65 71
@@ -235,7 +235,7 @@ use nfet_03v3_CNWPYG  XM3
 timestamp 1785858796
 transform 0 1 60 -1 0 -177
 box -65 -61 65 61
-use nfet_03v3_REC73X  XM4
+use nfet_03v3_REC73X  XM4 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
 timestamp 1785774695
 transform 1 0 215 0 1 -70
 box -65 -31 65 31
@@ -243,7 +243,7 @@ use nfet_03v3_REC73X  XM5
 timestamp 1785774695
 transform 1 0 55 0 1 -70
 box -65 -31 65 31
-use nfet_03v3_GPTQ69  XM6
+use nfet_03v3_GPTQ69  XM6 /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog
 timestamp 1785581361
 transform 0 1 420 -1 0 -177
 box -65 -121 65 121
