@@ -1,0 +1,36 @@
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_tb_beta_multiplier_reference.sch
+**.subckt B04_tb_beta_multiplier_reference
+
+* --- CATATAN PERUBAHAN ---
+* Lama : x1 net1 net2 net3 0 B04_beta_multiplier_reference length=410u
+*        pin order lama: VDD VbiasP VbiasN GND
+* Baru : pin order hasil ext2spice (B04_BMR): VbiasN VbiasP VDD GND
+*        jadi net di-reorder, bukan cuma ganti nama subckt
+
+x1 net3 net2 net1 0 B04_BMR
+V_DD net1 0 3.3
+**** begin user architecture code
+.control
+save @m.x1.xxm3.x0.m0[id]
+dc V_DD 0 4 0.01
+plot @m.x1.xxm3.x0.m0[id] ylabel "nA" xlabel "VDD Sweep (V)" title "Reference Current vs VDD"
+save -i(v_dd) @m.x1.xxm3.x0.m0[id]
+dc V_DD 0 4 0.01
+plot -i(v_dd) ylabel "nA" xlabel "VDD Sweep (V)" title "Current Usage vs VDD"
+save @m.x1.xxm3.x0.m0[id]
+dc temp -40 125 1
+plot @m.x1.xxm3.x0.m0[id] ylabel "nA" xlabel "Temperature Sweep (C)" title "Reference Current vs Temperature"
+
+
+.endc
+.include /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+
+**** end user architecture code
+**.ends
+
+* ganti bagian expanding symbol di bawah ini dengan .include ke file hasil ext2spice kamu
+.include B04_BMR.spice
+
+.end

@@ -1,0 +1,31 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+spectre_format="@name ( @pinlist ) @symname"
+template="name=x1 R_length=410u"
+}
+V {}
+S {}
+F {}
+E {}
+L 4 -100 -30 -80 -30 {}
+L 4 70 0 90 0 {}
+L 4 -100 30 -80 30 {}
+L 4 -80 -60 -80 60 {}
+L 4 -80 60 70 0 {}
+L 4 -80 -60 70 0 {}
+L 7 -30 -60 -30 -40 {}
+L 7 -30 40 -30 60 {}
+B 5 -32.5 -62.5 -27.5 -57.5 {name=VDD dir=inout}
+B 5 -102.5 -32.5 -97.5 -27.5 {name=Vin+ dir=in}
+B 5 87.5 -2.5 92.5 2.5 {name=Vout dir=out}
+B 5 -102.5 27.5 -97.5 32.5 {name=Vin- dir=in}
+B 5 -32.5 57.5 -27.5 62.5 {name=GND dir=inout}
+T {@symname} -73 -6 0 0 0.3 0.3 {}
+T {@name} 35 -32 0 0 0.2 0.2 {}
+T {VDD} -24 -65 3 1 0.2 0.2 {}
+T {Vin+} -75 -34 0 0 0.2 0.2 {}
+T {Vout} 85 6 0 1 0.2 0.2 {}
+T {Vin-} -75 26 0 0 0.2 0.2 {}
+T {GND} -24 65 3 0 0.2 0.2 {}

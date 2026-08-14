@@ -1,0 +1,28 @@
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sch
+.subckt B04_beta_multiplier_reference VDD VbiasP VbiasN GND
+*.PININFO VDD:B GND:B VbiasP:O VbiasN:O
+M2 VbiasN VbiasP VDD VDD pfet_03v3 L=4u W=2u nf=1
+M3 net2 VbiasP VDD VDD pfet_03v3 L=4u W=2u nf=1
+M6 VbiasN VbiasN GND GND nfet_03v3 L=4u W=10u nf=1
+M7 net2 VbiasN net1 GND nfet_03v3 L=4u W=10u nf=1 m=4
+M1 net4 net4 VDD VDD pfet_03v3 L=40u W=0.5u nf=1
+M4 VbiasP net3 VbiasN GND nfet_03v3 L=1u W=1u nf=1
+M5 net3 VbiasN GND GND nfet_03v3 L=10u W=1u nf=1
+M8 net5 net5 net4 VDD pfet_03v3 L=40u W=0.5u nf=1
+M9 net3 net5 net5 VDD pfet_03v3 L=40u W=0.5u nf=1
+x1 VDD VbiasP net2 VbiasN VbiasN GND B04_diff_amp
+XR1 GND net1 GND ppolyf_u_1k r_width=2u r_length=820u
+.ends
+
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym # of pins=6
+** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sch
+.subckt B04_diff_amp VDD Vo V+ V- Vbias VSS
+*.PININFO VDD:B VSS:B V+:I V-:I Vo:O Vbias:I
+M1 net1 V+ net2 VSS nfet_03v3 L=4u W=1.1u nf=1
+M2 net2 Vbias VSS VSS nfet_03v3 L=4u W=2.2u nf=1
+M3 Vo V- net2 VSS nfet_03v3 L=4u W=1.1u nf=1
+M4 Vo net1 VDD VDD pfet_03v3 L=4u W=13u nf=1
+M5 net1 net1 VDD VDD pfet_03v3 L=4u W=13u nf=1
+.ends
+

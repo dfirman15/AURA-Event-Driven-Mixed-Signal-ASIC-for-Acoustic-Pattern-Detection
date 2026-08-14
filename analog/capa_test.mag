@@ -1,0 +1,9 @@
+magic
+tech gf180mcuD
+magscale 1 5
+timestamp 1785580256
+use cap_mim_2p0fF_5GVGCQ  cap_mim_2p0fF_5GVGCQ_0
+timestamp 1785580256
+transform 1 0 -25556 0 1 -22705
+box -620 -560 620 560
+<< end >>

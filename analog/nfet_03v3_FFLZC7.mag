@@ -1,0 +1,67 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1785860068
+<< pwell >>
+rect -650 -5210 650 5210
+<< nmos >>
+rect -400 -5000 400 5000
+<< ndiff >>
+rect -488 4987 -400 5000
+rect -488 -4987 -475 4987
+rect -429 -4987 -400 4987
+rect -488 -5000 -400 -4987
+rect 400 4987 488 5000
+rect 400 -4987 429 4987
+rect 475 -4987 488 4987
+rect 400 -5000 488 -4987
+<< ndiffc >>
+rect -475 -4987 -429 4987
+rect 429 -4987 475 4987
+<< psubdiff >>
+rect -626 5114 626 5186
+rect -626 5070 -554 5114
+rect -626 -5070 -613 5070
+rect -567 -5070 -554 5070
+rect 554 5070 626 5114
+rect -626 -5114 -554 -5070
+rect 554 -5070 567 5070
+rect 613 -5070 626 5070
+rect 554 -5114 626 -5070
+rect -626 -5186 626 -5114
+<< psubdiffcont >>
+rect -613 -5070 -567 5070
+rect 567 -5070 613 5070
+<< polysilicon >>
+rect -400 5079 400 5092
+rect -400 5033 -387 5079
+rect 387 5033 400 5079
+rect -400 5000 400 5033
+rect -400 -5033 400 -5000
+rect -400 -5079 -387 -5033
+rect 387 -5079 400 -5033
+rect -400 -5092 400 -5079
+<< polycontact >>
+rect -387 5033 387 5079
+rect -387 -5079 387 -5033
+<< metal1 >>
+rect -613 5127 613 5173
+rect -613 5070 -567 5127
+rect -398 5033 -387 5079
+rect 387 5033 398 5079
+rect 567 5070 613 5127
+rect -475 4987 -429 4998
+rect -475 -4998 -429 -4987
+rect 429 4987 475 4998
+rect 429 -4998 475 -4987
+rect -613 -5127 -567 -5070
+rect -398 -5079 -387 -5033
+rect 387 -5079 398 -5033
+rect 567 -5127 613 -5070
+rect -613 -5173 613 -5127
+<< properties >>
+string FIXED_BBOX -590 -5150 590 5150
+string gencell nfet_03v3
+string library gf180mcu
+string parameters w 50 l 4 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.28 wmin 0.22 class mosfet full_metal 1 compatible {nfet_03v3 nfet_05v0 nfet_06v0 nfet_06v0_nvt}
+<< end >>
