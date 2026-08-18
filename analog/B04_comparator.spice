@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/B04_comparator.sch
+.subckt B04_comparator VDD Q_BAR INN INP IB GND
+*.PININFO VDD:B GND:B INN:I INP:I IB:B Q_BAR:O
+M1 net2 IB GND GND nfet_03v3 L=0.56u W=1u nf=1
+M2 IB IB GND GND nfet_03v3 L=0.56u W=1u nf=1
+M3 net1 net1 GND GND nfet_03v3 L=0.56u W=1u nf=1
+Mqqq net3 INN net2 GND nfet_03v3 L=0.28u W=2u nf=1
+Mqqq1 net4 INP net2 GND nfet_03v3 L=0.28u W=2u nf=1
+M6 Q_BAR net1 GND GND nfet_03v3 L=0.56u W=1u nf=1
+Mq0 net3 net3 VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1
+Mq1 net1 net3 VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1
+Mq4 net3 net4 VDD VDD pfet_03v3 L=0.28u W=3.5u nf=1
+Mq5 net4 net3 VDD VDD pfet_03v3 L=0.28u W=3.5u nf=1
+Mq2 net4 net4 VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1
+Mq3 Q_BAR net4 VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1
+.ends

@@ -45,7 +45,7 @@ N 200 -350 270 -350 {lab=#net3}
 N 270 -380 270 -350 {lab=#net3}
 N 270 -350 400 -350 {lab=#net3}
 N 400 -350 400 -300 {lab=#net3}
-N 930 -380 930 -180 {lab=Q_bar}
+N 930 -380 930 -180 {lab=Q_BAR}
 N 650 -350 650 -300 {lab=#net4}
 N 590 -350 650 -350 {lab=#net4}
 N 590 -380 590 -350 {lab=#net4}
@@ -74,11 +74,11 @@ N 450 -440 450 -410 {lab=VDD}
 N 270 -410 300 -410 {lab=VDD}
 N 300 -440 300 -410 {lab=VDD}
 N 530 -480 530 -440 {lab=VDD}
-N 320 -270 360 -270 {lab=inn}
-N 690 -270 720 -270 {lab=inp}
+N 320 -270 360 -270 {lab=INN}
+N 690 -270 720 -270 {lab=INP}
 N 400 -270 650 -270 {lab=GND}
 N 540 -270 540 -60 {lab=GND}
-N 930 -300 1010 -300 {lab=Q_bar}
+N 930 -300 1010 -300 {lab=Q_BAR}
 C {symbols/nfet_03v3.sym} 470 -60 0 0 {name=M1
 L=0.56u
 W=1u
@@ -121,7 +121,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 380 -270 0 0 {name=qqq
+C {symbols/nfet_03v3.sym} 380 -270 0 0 {name=Mqqq
 L=0.28u
 W=2u
 nf=1
@@ -135,7 +135,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/nfet_03v3.sym} 670 -270 0 1 {name=qqq1
+C {symbols/nfet_03v3.sym} 670 -270 0 1 {name=Mqqq1
 L=0.28u
 W=2u
 nf=1
@@ -163,7 +163,7 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 250 -410 0 0 {name=q
+C {symbols/pfet_03v3.sym} 250 -410 0 0 {name=Mq0
 L=0.28u
 W=1.5u
 nf=1
@@ -177,7 +177,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 160 -410 0 1 {name=q1
+C {symbols/pfet_03v3.sym} 160 -410 0 1 {name=Mq1
 L=0.28u
 W=1.5u
 nf=1
@@ -191,7 +191,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 490 -410 0 1 {name=q4
+C {symbols/pfet_03v3.sym} 490 -410 0 1 {name=Mq4
 L=0.28u
 W=3.5u
 nf=1
@@ -205,7 +205,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 570 -410 0 0 {name=q5
+C {symbols/pfet_03v3.sym} 570 -410 0 0 {name=Mq5
 L=0.28u
 W=3.5u
 nf=1
@@ -219,7 +219,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 810 -410 0 1 {name=q2
+C {symbols/pfet_03v3.sym} 810 -410 0 1 {name=Mq2
 L=0.28u
 W=1.5u
 nf=1
@@ -233,7 +233,7 @@ sa=0 sb=0 sd=0
 model=pfet_03v3
 spiceprefix=X
 }
-C {symbols/pfet_03v3.sym} 910 -410 0 0 {name=q3
+C {symbols/pfet_03v3.sym} 910 -410 0 0 {name=Mq3
 L=0.28u
 W=1.5u
 nf=1
@@ -250,7 +250,7 @@ spiceprefix=X
 C {iopin.sym} 530 -480 0 0 {name=p1 lab=VDD
 }
 C {iopin.sym} 440 40 0 0 {name=p2 lab=GND}
-C {ipin.sym} 320 -270 0 0 {name=p3 lab=inn}
-C {ipin.sym} 720 -270 2 0 {name=p4 lab=inp}
+C {ipin.sym} 320 -270 0 0 {name=p3 lab=INN}
+C {ipin.sym} 720 -270 2 0 {name=p4 lab=INP}
 C {iopin.sym} 40 -170 0 0 {name=p5 lab=IB}
-C {opin.sym} 1000 -300 0 0 {name=p6 lab=Q_bar}
+C {opin.sym} 1000 -300 0 0 {name=p6 lab=Q_BAR}

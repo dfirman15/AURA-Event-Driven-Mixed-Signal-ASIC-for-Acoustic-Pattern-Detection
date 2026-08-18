@@ -1,0 +1,65 @@
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_QTST4M in circuit B04_comparator (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_6RKKQV in circuit B04_comparator (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_6PMKVS in circuit B04_comparator (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_FQS73H in circuit B04_comparator (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_JTXF9X in circuit B04_comparator (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_2MEG6F in circuit B04_comparator (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_6PXP3V in circuit B04_comparator (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_DKWKKF in circuit B04_comparator (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_SZY9ED in circuit B04_comparator (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: B04_comparator                  |Circuit 2: B04_comparator                  
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (6)                              |nfet_03v3 (6)                              
+pfet_03v3 (6)                              |pfet_03v3 (6)                              
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: B04_comparator                  |Circuit 2: B04_comparator                  
+-------------------------------------------|-------------------------------------------
+INN                                        |inn                                        
+INP                                        |inp                                        
+Q_BAR                                      |Q_bar                                      
+VDD                                        |VDD                                        
+GND                                        |GND                                        
+IB                                         |IB                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes B04_comparator and B04_comparator are equivalent.
+
+Final result: Circuits match uniquely.
+.
