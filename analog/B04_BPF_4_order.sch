@@ -238,7 +238,7 @@ N 310 -520 2480 -520 {lab=#net8}
 C {iopin.sym} 890 -1210 3 0 {name=p1 lab=VDD}
 C {iopin.sym} -600 140 1 0 {name=p2 lab=GND}
 C {ipin.sym} -20 -1030 0 0 {name=p3 lab=Vin}
-C {opin.sym} 4710 -1010 0 0 {name=p5 lab=Vout}
+C {opin.sym} 4880 -1030 0 0 {name=p5 lab=Vout}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sym} -630 80 0 0 {name=x1 length=410u}
 C {symbols/cap_mim_2f0fF.sym} 1120 -960 0 0 {name=C5
 W=10u

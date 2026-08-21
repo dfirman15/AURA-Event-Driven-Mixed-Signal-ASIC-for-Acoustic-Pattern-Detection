@@ -1,0 +1,193 @@
+timestamp 0
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+parameters nfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters nfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters pfet_03v3_dss l=l w=w a1=as p1=ps a2=ad p2=pd l1=s_sab l2=d_sab
+parameters pfet_03v3 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters cap_mim_2f0_m4m5_noshield l=c_length w=c_width
+port "Vin" 9 -10300 230 -10040 560 m5
+port "VbiasP" 7 2070 2200 2220 2290 m2
+port "Vout" 5 2080 -230 2200 -180 m2
+port "VDD" 1 2070 4560 2210 4610 m1
+port "GND" 2 1940 -12820 1940 -12820 m1
+node "Vin" 4 25908.6 -10300 230 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80000000 0 83498500 175680
+node "VbiasP" 1396 546.329 2070 2200 m2 0 0 0 0 0 0 0 0 0 0 0 0 12288000 94720 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5324000 133968 2230800 17680 0 0 0 0 0 0
+node "w_n100_n1970#" 13542 124992 -100 -1970 nw 2790000 10240 0 0 702720 19520 35200 1152 0 0 0 0 21216000 245568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9255794 276586 740600 6080 1377200 10760 27057700 190560 4185000 9480
+node "Vout" 12737 33438.1 2080 -230 m2 2790000 10240 0 0 4862720 109920 739200 24192 0 0 0 0 1536000 8768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5983996 144774 7244100 125320 1668000 10840 1443200 12000 0 0
+node "VDD" 3466 66600.2 2070 4560 m1 21477600 18540 0 0 1790000 35800 704000 23040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3878440 47660 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 1940 -12820 m1 0 0 242586600 95460 4736000 107840 1973376 54816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6341221 162732 6599200 128560 0 0 0 0 0 0
+cap "VbiasP" "VDD" 40475
+cap "Vout" "VDD" 3268.43
+cap "VDD" "w_n100_n1970#" 176
+cap "VbiasP" "Vout" 8950.41
+cap "VbiasP" "w_n100_n1970#" 94.6433
+cap "Vout" "w_n100_n1970#" 93890
+cap "Vout" "Vin" 23.4486
+cap "Vin" "w_n100_n1970#" 19258.6
+device csubckt cap_mim_2f0_m4m5_noshield -2910 -12690 -2909 -12689 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5510 -12690 -5509 -12689 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -8110 -12690 -8109 -12689 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -10710 -12690 -10709 -12689 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -2910 -10090 -2909 -10089 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5510 -10090 -5509 -10089 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -8110 -10090 -8109 -10089 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -10710 -10090 -10709 -10089 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -2910 -7490 -2909 -7489 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5510 -7490 -5509 -7489 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -8110 -7490 -8109 -7489 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -10710 -7490 -10709 -7489 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -2910 -4890 -2909 -4889 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5510 -4890 -5509 -4889 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -8110 -4890 -8109 -4889 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -10710 -4890 -10709 -4889 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -2910 -2290 -2909 -2289 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5510 -2290 -5509 -2289 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -8110 -2290 -8109 -2289 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -10710 -2290 -10709 -2289 l=2000 w=2000 "None" "Vin" 6912 0 "w_n100_n1970#" 8000 11528850,175280
+device csubckt cap_mim_2f0_m4m5_noshield -5430 1540 -5429 1541 l=2000 w=2000 "None" "w_n100_n1970#" 6912 0 "Vout" 8000 1443200,20000
+device msubckt nfet_03v3 3426 -12570 3427 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -12570 3123 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -12570 2819 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -12570 2515 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -12570 2211 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -12570 1907 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -12570 1603 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -12570 1299 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -12570 995 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -12570 691 -12569 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -11538 3427 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -11538 3123 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -11538 2819 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -11538 2515 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -11538 2211 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -11538 1907 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -11538 1603 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -11538 1299 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -11538 995 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -11538 691 -11537 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -10506 3427 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -10506 3123 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -10506 2819 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -10506 2515 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -10506 2211 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -10506 1907 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -10506 1603 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -10506 1299 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -10506 995 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -10506 691 -10505 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -9474 3427 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -9474 3123 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -9474 2819 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -9474 2515 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -9474 2211 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -9474 1907 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -9474 1603 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -9474 1299 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -9474 995 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -9474 691 -9473 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -8442 3427 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -8442 3123 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -8442 2819 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -8442 2515 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -8442 2211 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -8442 1907 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -8442 1603 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -8442 1299 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -8442 995 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -8442 691 -8441 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -7410 3427 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -7410 3123 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -7410 2819 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -7410 2515 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -7410 2211 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -7410 1907 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -7410 1603 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -7410 1299 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -7410 995 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -7410 691 -7409 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -6378 3427 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -6378 3123 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -6378 2819 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -6378 2515 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -6378 2211 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -6378 1907 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -6378 1603 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -6378 1299 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -6378 995 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -6378 691 -6377 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -5346 3427 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -5346 3123 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -5346 2819 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -5346 2515 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -5346 2211 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -5346 1907 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -5346 1603 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -5346 1299 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -5346 995 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -5346 691 -5345 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -4314 3427 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -4314 3123 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -4314 2819 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -4314 2515 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -4314 2211 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -4314 1907 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -4314 1603 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -4314 1299 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -4314 995 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -4314 691 -4313 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt nfet_03v3 3426 -3282 3427 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 70400,1776
+device msubckt nfet_03v3 3122 -3282 3123 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2818 -3282 2819 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 2514 -3282 2515 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 2210 -3282 2211 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1906 -3282 1907 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 1602 -3282 1603 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 1298 -3282 1299 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 41600,904 "Vout" 800 41600,904
+device msubckt nfet_03v3 994 -3282 995 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "Vout" 800 41600,904 "GND" 800 41600,904
+device msubckt nfet_03v3 690 -3282 691 -3281 l=200 w=800 "GND" "w_n100_n1970#" 400 0 "GND" 800 70400,1776 "Vout" 800 41600,904
+device msubckt pfet_03v3 150 -1760 151 -1759 l=4000 w=200 "w_n100_n1970#" "Vout" 8000 0 "w_n100_n1970#" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 150 -840 151 -839 l=4000 w=200 "Vout" "w_n100_n1970#" 8000 0 "w_n100_n1970#" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 178 3325 179 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 178 2275 179 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 178 1225 179 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 178 175 179 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 610 3325 611 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 610 2275 611 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 610 1225 611 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 610 175 611 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 1042 3325 1043 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 1042 2275 1043 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 1042 1225 1043 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 1042 175 1043 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 1474 3325 1475 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 1474 2275 1475 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 1474 1225 1475 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 1474 175 1475 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 1906 3325 1907 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 1906 2275 1907 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 1906 1225 1907 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 1906 175 1907 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 2338 3325 2339 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 2338 2275 2339 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 2338 1225 2339 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 2338 175 2339 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 2770 3325 2771 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 2770 2275 2771 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 2770 1225 2771 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 2770 175 2771 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 3202 3325 3203 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 3202 2275 3203 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 3202 1225 3203 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 3202 175 3203 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 3634 3325 3635 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 3634 2275 3635 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 3634 1225 3635 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 3634 175 3635 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 3324 4066 3325 4067 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 2274 4066 2275 4067 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576
+device msubckt pfet_03v3 1224 4066 1225 4067 l=800 w=200 "VDD" "VbiasP" 1600 0 "Vout" 200 17600,576 "VDD" 200 17600,576
+device msubckt pfet_03v3 174 4066 175 4067 l=800 w=200 "VDD" "VbiasP" 1600 0 "VDD" 200 17600,576 "Vout" 200 17600,576

@@ -32,7 +32,6 @@ N -630 -320 -610 -320 {lab=VDD}
 N -570 -30 -550 -30 {lab=GND}
 N -570 -60 -570 -30 {lab=GND}
 N -570 -90 -570 -60 {lab=GND}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym} -210 80 0 0 {name=x2}
 C {ipin.sym} -370 70 0 0 {name=p1 lab=VbiasP}
 C {ipin.sym} -370 90 0 0 {name=p2 lab=VbiasN}
 C {iopin.sym} -600 -90 2 0 {name=p3 lab=GND}
@@ -57,3 +56,4 @@ model=ppolyf_u_1k
 spiceprefix=X
 m=1}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA.sym} -120 -580 0 0 {name=x1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym} -210 80 0 0 {name=x2}

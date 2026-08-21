@@ -1,0 +1,1184 @@
+* NGSPICE file created from B04_LNAV2_flat.ext - technology: gf180mcuD
+
+.subckt B04_LNAV2_flat VDD GND Vout VbiasP Vin
+X0 Vout.t49 w_n100_n1970# GND.t56 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X1 VDD.t29 VbiasP.t14 Vout.t133 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X2 Vout.t61 w_n100_n1970# GND.t108 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X3 Vout.t46 w_n100_n1970# GND.t70 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X4 Vout.t39 w_n100_n1970# GND.t66 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X5 GND.t39 w_n100_n1970# Vout.t100 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X6 VDD.t13 VbiasP.t30 Vout.t106 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X7 Vout.t54 w_n100_n1970# GND.t82 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X8 Vout.t55 w_n100_n1970# GND.t74 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X9 GND.t47 w_n100_n1970# Vout.t58 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X10 GND.t11 w_n100_n1970# Vout.t93 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X11 Vin.t15 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X12 VDD.t35 VbiasP.t8 Vout.t117 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X13 VDD.t43 VbiasP.t0 Vout.t127 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X14 Vout.t92 w_n100_n1970# GND.t26 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X15 Vout.t130 VbiasP.t23 VDD.t20 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X16 Vout.t78 w_n100_n1970# GND.t30 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X17 Vout.t83 w_n100_n1970# GND.t34 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X18 Vin.t18 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X19 Vout.t114 VbiasP.t25 VDD.t18 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X20 w_n100_n1970# Vout.t0 cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X21 GND.t15 w_n100_n1970# Vout.t90 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X22 VDD.t3 VbiasP.t38 Vout.t140 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X23 VDD.t11 VbiasP.t32 Vout.t112 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X24 Vout.t24 w_n100_n1970# GND.t52 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X25 Vout.t34 w_n100_n1970# GND.t62 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X26 Vout.t29 w_n100_n1970# GND.t84 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X27 GND.t75 w_n100_n1970# Vout.t62 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X28 Vout.t51 w_n100_n1970# GND.t48 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X29 Vout.t109 VbiasP.t15 VDD.t28 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X30 Vin.t9 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X31 Vout.t89 w_n100_n1970# GND.t22 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X32 GND.t59 w_n100_n1970# Vout.t67 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X33 Vout.t131 VbiasP.t31 VDD.t12 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X34 GND.t83 w_n100_n1970# Vout.t18 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X35 Vin.t14 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X36 GND.t69 w_n100_n1970# Vout.t57 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X37 GND.t99 w_n100_n1970# Vout.t14 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X38 VDD.t19 VbiasP.t24 Vout.t142 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X39 GND.t35 w_n100_n1970# Vout.t76 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X40 GND.t77 w_n100_n1970# Vout.t9 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X41 Vout.t99 w_n100_n1970# GND.t50 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X42 Vout.t115 VbiasP.t21 VDD.t22 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X43 Vout.t88 w_n100_n1970# GND.t17 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X44 GND.t107 w_n100_n1970# Vout.t15 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X45 GND.t43 w_n100_n1970# Vout.t52 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X46 VDD.t25 VbiasP.t18 Vout.t116 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X47 GND.t29 w_n100_n1970# Vout.t101 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X48 Vout.t3 w_n100_n1970# GND.t98 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X49 Vout.t48 w_n100_n1970# GND.t60 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X50 Vout.t68 w_n100_n1970# GND.t54 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X51 Vout.t47 w_n100_n1970# GND.t64 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X52 Vout.t103 VbiasP.t39 VDD.t1 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X53 Vout.t139 VbiasP.t1 VDD.t42 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X54 Vout.t41 w_n100_n1970# GND.t106 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X55 GND.t41 w_n100_n1970# Vout.t22 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X56 GND.t37 w_n100_n1970# Vout.t95 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X57 GND.t101 w_n100_n1970# Vout.t97 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X58 Vout.t86 w_n100_n1970# GND.t20 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X59 Vout.t137 VbiasP.t7 VDD.t36 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X60 GND.t7 w_n100_n1970# Vout.t27 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X61 GND.t105 w_n100_n1970# Vout.t17 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X62 Vout.t79 w_n100_n1970# GND.t24 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X63 Vin.t7 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X64 Vout.t30 w_n100_n1970# GND.t100 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X65 GND.t3 w_n100_n1970# Vout.t28 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X66 Vin.t17 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X67 Vout.t126 VbiasP.t13 VDD.t30 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X68 VDD.t37 VbiasP.t6 Vout.t138 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X69 Vout.t33 w_n100_n1970# GND.t78 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X70 Vout.t107 VbiasP.t29 VDD.t14 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X71 VDD.t23 VbiasP.t20 Vout.t110 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X72 GND.t55 w_n100_n1970# Vout.t21 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X73 VDD.t33 VbiasP.t10 Vout.t123 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X74 Vout.t144 Vout.t143 w_n100_n1970# w_n100_n1970# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=20u
+X75 Vout.t72 w_n100_n1970# GND.t102 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X76 GND.t65 w_n100_n1970# Vout.t11 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X77 Vout.t74 w_n100_n1970# GND.t38 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X78 Vout.t136 VbiasP.t19 VDD.t24 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X79 Vin.t3 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X80 Vin.t8 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X81 GND.t73 w_n100_n1970# Vout.t20 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X82 Vout.t69 w_n100_n1970# GND.t46 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X83 GND.t89 w_n100_n1970# Vout.t32 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X84 GND.t57 w_n100_n1970# Vout.t13 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X85 Vout.t105 VbiasP.t37 VDD.t5 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X86 GND.t25 w_n100_n1970# Vout.t77 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X87 Vin.t4 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X88 Vin.t13 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X89 VDD.t9 VbiasP.t34 Vout.t118 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X90 GND.t71 w_n100_n1970# Vout.t10 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X91 GND.t67 w_n100_n1970# Vout.t60 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X92 GND.t97 w_n100_n1970# Vout.t56 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X93 GND.t33 w_n100_n1970# Vout.t81 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X94 Vout.t8 w_n100_n1970# GND.t88 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X95 VDD.t31 VbiasP.t12 Vout.t121 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X96 Vout.t87 w_n100_n1970# GND.t13 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X97 VDD.t15 VbiasP.t28 Vout.t129 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X98 GND.t27 w_n100_n1970# Vout.t94 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X99 Vout.t4 w_n100_n1970# GND.t96 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X100 GND.t31 w_n100_n1970# Vout.t85 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X101 GND.t91 w_n100_n1970# Vout.t43 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X102 Vin.t5 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X103 Vout.t23 w_n100_n1970# GND.t104 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X104 GND.t95 w_n100_n1970# Vout.t38 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X105 VDD.t39 VbiasP.t4 Vout.t119 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X106 Vout.t64 w_n100_n1970# GND.t90 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X107 Vout.t6 w_n100_n1970# w_n100_n1970# Vout.t5 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=20u
+X108 Vout.t40 w_n100_n1970# GND.t42 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X109 Vin.t0 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X110 GND.t103 w_n100_n1970# Vout.t73 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X111 VDD.t17 VbiasP.t26 Vout.t141 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X112 Vout.t122 VbiasP.t11 VDD.t32 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X113 Vin.t6 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X114 Vin.t16 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X115 Vout.t35 w_n100_n1970# GND.t58 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X116 VDD.t7 VbiasP.t36 Vout.t108 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X117 Vout.t111 VbiasP.t17 VDD.t26 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X118 Vout.t59 w_n100_n1970# GND.t68 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X119 Vin.t11 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X120 Vout.t71 w_n100_n1970# GND.t5 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X121 Vout.t45 w_n100_n1970# GND.t76 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X122 GND.t49 w_n100_n1970# Vout.t25 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X123 Vout.t120 VbiasP.t35 VDD.t8 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X124 Vin.t1 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X125 Vout.t75 w_n100_n1970# GND.t28 GND.t16 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X126 Vout.t7 w_n100_n1970# GND.t92 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X127 GND.t53 w_n100_n1970# Vout.t36 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X128 Vout.t104 VbiasP.t3 VDD.t40 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X129 GND.t63 w_n100_n1970# Vout.t66 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X130 Vout.t82 w_n100_n1970# GND.t40 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X131 Vout.t91 w_n100_n1970# GND.t36 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X132 GND.t19 w_n100_n1970# Vout.t96 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X133 GND.t51 w_n100_n1970# Vout.t50 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X134 Vout.t26 w_n100_n1970# GND.t44 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X135 Vin.t2 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X136 GND.t61 w_n100_n1970# Vout.t12 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X137 GND.t23 w_n100_n1970# Vout.t80 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X138 Vin.t12 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X139 GND.t87 w_n100_n1970# Vout.t44 GND.t14 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X140 VDD.t41 VbiasP.t2 Vout.t128 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X141 VDD.t21 VbiasP.t22 Vout.t135 VDD.t2 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X142 VDD.t27 VbiasP.t16 Vout.t125 VDD.t6 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X143 Vout.t16 w_n100_n1970# GND.t1 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X144 GND.t21 w_n100_n1970# Vout.t102 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X145 Vout.t42 w_n100_n1970# GND.t86 GND.t12 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X146 Vout.t70 w_n100_n1970# GND.t9 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X147 GND.t81 w_n100_n1970# Vout.t1 GND.t2 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X148 Vout.t134 VbiasP.t27 VDD.t16 VDD.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X149 Vout.t98 w_n100_n1970# GND.t72 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X150 Vout.t132 VbiasP.t9 VDD.t34 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X151 Vout.t113 VbiasP.t5 VDD.t38 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X152 Vin.t19 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X153 Vout.t63 w_n100_n1970# GND.t94 GND.t8 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X154 Vin.t10 w_n100_n1970# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+X155 GND.t85 w_n100_n1970# Vout.t53 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X156 Vout.t19 w_n100_n1970# GND.t80 GND.t0 nfet_03v3 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=1u
+X157 Vout.t84 w_n100_n1970# GND.t32 GND.t4 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X158 GND.t93 w_n100_n1970# Vout.t31 GND.t6 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+X159 Vout.t124 VbiasP.t33 VDD.t10 VDD.t4 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X160 GND.t79 w_n100_n1970# Vout.t65 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X161 GND.t109 w_n100_n1970# Vout.t2 GND.t18 nfet_03v3 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=1u
+X162 GND.t45 w_n100_n1970# Vout.t37 GND.t10 nfet_03v3 ad=1.04p pd=4.52u as=1.04p ps=4.52u w=4u l=1u
+R0 Vin.n0 Vin.t2 0.169998
+R1 Vin.n14 Vin.t3 0.169998
+R2 Vin.n6 Vin.t0 0.166579
+R3 Vin.n3 Vin.t1 0.166579
+R4 Vin.n1 Vin.n0 0.132808
+R5 Vin.n2 Vin.n1 0.132808
+R6 Vin.n15 Vin.n14 0.132808
+R7 Vin.n16 Vin.n15 0.132808
+R8 Vin.n17 Vin.n16 0.132808
+R9 Vin.n7 Vin.n6 0.129389
+R10 Vin.n8 Vin.n7 0.129389
+R11 Vin.n9 Vin.n8 0.129389
+R12 Vin.n4 Vin.n3 0.129389
+R13 Vin.n5 Vin.n4 0.129389
+R14 Vin.n13 Vin.n2 0.112808
+R15 Vin.n12 Vin.n11 0.1114
+R16 Vin.n10 Vin.n9 0.1097
+R17 Vin.n11 Vin.n5 0.109389
+R18 Vin.n18 Vin.n13 0.0915
+R19 Vin Vin.n18 0.0913
+R20 Vin.n6 Vin.t4 0.0376901
+R21 Vin.n7 Vin.t8 0.0376901
+R22 Vin.n8 Vin.t12 0.0376901
+R23 Vin.n9 Vin.t16 0.0376901
+R24 Vin.n3 Vin.t5 0.0376901
+R25 Vin.n4 Vin.t9 0.0376901
+R26 Vin.n5 Vin.t13 0.0376901
+R27 Vin.n10 Vin.t17 0.0376901
+R28 Vin.n0 Vin.t6 0.0376901
+R29 Vin.n1 Vin.t10 0.0376901
+R30 Vin.n2 Vin.t14 0.0376901
+R31 Vin.n12 Vin.t18 0.0376901
+R32 Vin.n14 Vin.t7 0.0376901
+R33 Vin.n15 Vin.t11 0.0376901
+R34 Vin.n16 Vin.t15 0.0376901
+R35 Vin.n17 Vin.t19 0.0376901
+R36 Vin.n18 Vin.n17 0.0097
+R37 Vin.n11 Vin.n10 0.0096
+R38 Vin.n13 Vin.n12 0.0095
+R39 VbiasP.n13 VbiasP.n12 2.61742
+R40 VbiasP.n39 VbiasP.n38 2.61742
+R41 VbiasP.n26 VbiasP.n1 2.61742
+R42 VbiasP.n52 VbiasP.n27 2.61742
+R43 VbiasP.n11 VbiasP.t28 2.424
+R44 VbiasP.t28 VbiasP.n3 2.424
+R45 VbiasP.t8 VbiasP.n5 2.424
+R46 VbiasP.n6 VbiasP.t8 2.424
+R47 VbiasP.n37 VbiasP.t31 2.424
+R48 VbiasP.t31 VbiasP.n29 2.424
+R49 VbiasP.t11 VbiasP.n31 2.424
+R50 VbiasP.n32 VbiasP.t11 2.424
+R51 VbiasP.n43 VbiasP.t30 2.424
+R52 VbiasP.t30 VbiasP.n42 2.424
+R53 VbiasP.n50 VbiasP.t10 2.424
+R54 VbiasP.t10 VbiasP.n48 2.424
+R55 VbiasP.n17 VbiasP.t29 2.424
+R56 VbiasP.t29 VbiasP.n16 2.424
+R57 VbiasP.n24 VbiasP.t9 2.424
+R58 VbiasP.t9 VbiasP.n22 2.424
+R59 VbiasP.n14 VbiasP.n13 2.2505
+R60 VbiasP.n40 VbiasP.n39 2.2505
+R61 VbiasP.n26 VbiasP.n25 2.2505
+R62 VbiasP.n52 VbiasP.n51 2.2505
+R63 VbiasP.n4 VbiasP.t0 1.3871
+R64 VbiasP.n28 VbiasP.t39 1.3871
+R65 VbiasP.n30 VbiasP.t3 1.3871
+R66 VbiasP.n49 VbiasP.t2 1.3871
+R67 VbiasP.n41 VbiasP.t38 1.3871
+R68 VbiasP.n23 VbiasP.t1 1.3871
+R69 VbiasP.n15 VbiasP.t37 1.3871
+R70 VbiasP.n2 VbiasP.t36 1.3871
+R71 VbiasP.n2 VbiasP.t32 1.17497
+R72 VbiasP.n10 VbiasP.t24 1.17497
+R73 VbiasP.n9 VbiasP.t20 1.17497
+R74 VbiasP.n8 VbiasP.t16 1.17497
+R75 VbiasP.n7 VbiasP.t12 1.17497
+R76 VbiasP.n4 VbiasP.t4 1.17497
+R77 VbiasP.n28 VbiasP.t35 1.17497
+R78 VbiasP.n36 VbiasP.t27 1.17497
+R79 VbiasP.n35 VbiasP.t23 1.17497
+R80 VbiasP.n34 VbiasP.t19 1.17497
+R81 VbiasP.n33 VbiasP.t15 1.17497
+R82 VbiasP.n30 VbiasP.t7 1.17497
+R83 VbiasP.n41 VbiasP.t34 1.17497
+R84 VbiasP.n44 VbiasP.t26 1.17497
+R85 VbiasP.n45 VbiasP.t22 1.17497
+R86 VbiasP.n46 VbiasP.t18 1.17497
+R87 VbiasP.n47 VbiasP.t14 1.17497
+R88 VbiasP.n49 VbiasP.t6 1.17497
+R89 VbiasP.n15 VbiasP.t33 1.17497
+R90 VbiasP.n18 VbiasP.t25 1.17497
+R91 VbiasP.n19 VbiasP.t21 1.17497
+R92 VbiasP.n20 VbiasP.t17 1.17497
+R93 VbiasP.n21 VbiasP.t13 1.17497
+R94 VbiasP.n23 VbiasP.t5 1.17497
+R95 VbiasP VbiasP.n0 0.336269
+R96 VbiasP VbiasP.n53 0.322423
+R97 VbiasP.n36 VbiasP.n35 0.212636
+R98 VbiasP.n35 VbiasP.n34 0.212636
+R99 VbiasP.n34 VbiasP.n33 0.212636
+R100 VbiasP.n45 VbiasP.n44 0.212636
+R101 VbiasP.n46 VbiasP.n45 0.212636
+R102 VbiasP.n47 VbiasP.n46 0.212636
+R103 VbiasP.n19 VbiasP.n18 0.212636
+R104 VbiasP.n20 VbiasP.n19 0.212636
+R105 VbiasP.n21 VbiasP.n20 0.212636
+R106 VbiasP.n10 VbiasP.n9 0.212636
+R107 VbiasP.n9 VbiasP.n8 0.212636
+R108 VbiasP.n8 VbiasP.n7 0.212636
+R109 VbiasP.n13 VbiasP.n0 0.1805
+R110 VbiasP.n39 VbiasP.n0 0.1805
+R111 VbiasP.n53 VbiasP.n26 0.1805
+R112 VbiasP.n53 VbiasP.n52 0.1805
+R113 VbiasP.n29 VbiasP.n28 0.136568
+R114 VbiasP.n37 VbiasP.n36 0.136568
+R115 VbiasP.n33 VbiasP.n32 0.136568
+R116 VbiasP.n31 VbiasP.n30 0.136568
+R117 VbiasP.n42 VbiasP.n41 0.136568
+R118 VbiasP.n44 VbiasP.n43 0.136568
+R119 VbiasP.n48 VbiasP.n47 0.136568
+R120 VbiasP.n50 VbiasP.n49 0.136568
+R121 VbiasP.n16 VbiasP.n15 0.136568
+R122 VbiasP.n18 VbiasP.n17 0.136568
+R123 VbiasP.n22 VbiasP.n21 0.136568
+R124 VbiasP.n24 VbiasP.n23 0.136568
+R125 VbiasP.n3 VbiasP.n2 0.136568
+R126 VbiasP.n11 VbiasP.n10 0.136568
+R127 VbiasP.n7 VbiasP.n6 0.136568
+R128 VbiasP.n5 VbiasP.n4 0.136568
+R129 VbiasP.n38 VbiasP.n29 0.0795
+R130 VbiasP.n32 VbiasP.n27 0.0795
+R131 VbiasP.n42 VbiasP.n40 0.0795
+R132 VbiasP.n51 VbiasP.n48 0.0795
+R133 VbiasP.n16 VbiasP.n14 0.0795
+R134 VbiasP.n25 VbiasP.n22 0.0795
+R135 VbiasP.n12 VbiasP.n3 0.0795
+R136 VbiasP.n6 VbiasP.n1 0.0795
+R137 VbiasP.n38 VbiasP.n37 0.0775
+R138 VbiasP.n31 VbiasP.n27 0.0775
+R139 VbiasP.n43 VbiasP.n40 0.0775
+R140 VbiasP.n51 VbiasP.n50 0.0775
+R141 VbiasP.n17 VbiasP.n14 0.0775
+R142 VbiasP.n25 VbiasP.n24 0.0775
+R143 VbiasP.n12 VbiasP.n11 0.0775
+R144 VbiasP.n5 VbiasP.n1 0.0775
+R145 Vout.n24 Vout.t5 1769.11
+R146 Vout.n11 Vout.t0 5.24622
+R147 Vout.n25 Vout.t144 4.86805
+R148 Vout.n21 Vout.t139 4.4205
+R149 Vout.n21 Vout.t127 4.4205
+R150 Vout.n20 Vout.t113 4.4205
+R151 Vout.n20 Vout.t119 4.4205
+R152 Vout.n19 Vout.t132 4.4205
+R153 Vout.n19 Vout.t117 4.4205
+R154 Vout.n18 Vout.t126 4.4205
+R155 Vout.n18 Vout.t121 4.4205
+R156 Vout.n17 Vout.t111 4.4205
+R157 Vout.n17 Vout.t125 4.4205
+R158 Vout.n16 Vout.t115 4.4205
+R159 Vout.n16 Vout.t110 4.4205
+R160 Vout.n15 Vout.t114 4.4205
+R161 Vout.n15 Vout.t142 4.4205
+R162 Vout.n14 Vout.t107 4.4205
+R163 Vout.n14 Vout.t129 4.4205
+R164 Vout.n13 Vout.t124 4.4205
+R165 Vout.n13 Vout.t112 4.4205
+R166 Vout.n12 Vout.t105 4.4205
+R167 Vout.n12 Vout.t108 4.4205
+R168 Vout.n9 Vout.t104 4.4205
+R169 Vout.n9 Vout.t128 4.4205
+R170 Vout.n8 Vout.t137 4.4205
+R171 Vout.n8 Vout.t138 4.4205
+R172 Vout.n7 Vout.t122 4.4205
+R173 Vout.n7 Vout.t123 4.4205
+R174 Vout.n6 Vout.t109 4.4205
+R175 Vout.n6 Vout.t133 4.4205
+R176 Vout.n5 Vout.t136 4.4205
+R177 Vout.n5 Vout.t116 4.4205
+R178 Vout.n4 Vout.t130 4.4205
+R179 Vout.n4 Vout.t135 4.4205
+R180 Vout.n3 Vout.t134 4.4205
+R181 Vout.n3 Vout.t141 4.4205
+R182 Vout.n2 Vout.t131 4.4205
+R183 Vout.n2 Vout.t106 4.4205
+R184 Vout.n1 Vout.t120 4.4205
+R185 Vout.n1 Vout.t118 4.4205
+R186 Vout.n0 Vout.t103 4.4205
+R187 Vout.n0 Vout.t140 4.4205
+R188 Vout.n24 Vout.t6 4.4205
+R189 Vout.n125 Vout.n24 3.155
+R190 Vout.n23 Vout.n22 2.65336
+R191 Vout.n67 Vout.n65 2.4785
+R192 Vout.n86 Vout.n84 2.4785
+R193 Vout.n28 Vout.n26 2.4785
+R194 Vout.n47 Vout.n45 2.4785
+R195 Vout.n106 Vout.n104 2.4785
+R196 Vout.n11 Vout.n10 2.2505
+R197 Vout.n25 Vout.t143 1.75196
+R198 Vout.n67 Vout.n66 1.5497
+R199 Vout.n86 Vout.n85 1.5497
+R200 Vout.n28 Vout.n27 1.5497
+R201 Vout.n47 Vout.n46 1.5497
+R202 Vout.n106 Vout.n105 1.5497
+R203 Vout.n69 Vout.n68 1.5479
+R204 Vout.n88 Vout.n87 1.5479
+R205 Vout.n30 Vout.n29 1.5479
+R206 Vout.n49 Vout.n48 1.5479
+R207 Vout.n108 Vout.n107 1.5479
+R208 Vout.n71 Vout.n70 1.5461
+R209 Vout.n90 Vout.n89 1.5461
+R210 Vout.n32 Vout.n31 1.5461
+R211 Vout.n51 Vout.n50 1.5461
+R212 Vout.n110 Vout.n109 1.5461
+R213 Vout.n73 Vout.n72 1.5443
+R214 Vout.n92 Vout.n91 1.5443
+R215 Vout.n34 Vout.n33 1.5443
+R216 Vout.n53 Vout.n52 1.5443
+R217 Vout.n112 Vout.n111 1.5443
+R218 Vout.n75 Vout.n74 1.5425
+R219 Vout.n94 Vout.n93 1.5425
+R220 Vout.n36 Vout.n35 1.5425
+R221 Vout.n55 Vout.n54 1.5425
+R222 Vout.n114 Vout.n113 1.5425
+R223 Vout.n83 Vout.n82 1.5407
+R224 Vout.n77 Vout.n76 1.5407
+R225 Vout.n102 Vout.n101 1.5407
+R226 Vout.n96 Vout.n95 1.5407
+R227 Vout.n44 Vout.n43 1.5407
+R228 Vout.n38 Vout.n37 1.5407
+R229 Vout.n63 Vout.n62 1.5407
+R230 Vout.n57 Vout.n56 1.5407
+R231 Vout.n122 Vout.n121 1.5407
+R232 Vout.n116 Vout.n115 1.5407
+R233 Vout.n81 Vout.n80 1.5389
+R234 Vout.n79 Vout.n78 1.5389
+R235 Vout.n100 Vout.n99 1.5389
+R236 Vout.n98 Vout.n97 1.5389
+R237 Vout.n42 Vout.n41 1.5389
+R238 Vout.n40 Vout.n39 1.5389
+R239 Vout.n61 Vout.n60 1.5389
+R240 Vout.n59 Vout.n58 1.5389
+R241 Vout.n120 Vout.n119 1.5389
+R242 Vout.n118 Vout.n117 1.5389
+R243 Vout.n124 Vout.n25 1.16028
+R244 Vout.n64 Vout.n44 1.0685
+R245 Vout.n103 Vout.n83 1.0585
+R246 Vout.n83 Vout.n81 0.9275
+R247 Vout.n81 Vout.n79 0.9275
+R248 Vout.n79 Vout.n77 0.9275
+R249 Vout.n77 Vout.n75 0.9275
+R250 Vout.n75 Vout.n73 0.9275
+R251 Vout.n73 Vout.n71 0.9275
+R252 Vout.n71 Vout.n69 0.9275
+R253 Vout.n69 Vout.n67 0.9275
+R254 Vout.n102 Vout.n100 0.9275
+R255 Vout.n100 Vout.n98 0.9275
+R256 Vout.n98 Vout.n96 0.9275
+R257 Vout.n96 Vout.n94 0.9275
+R258 Vout.n94 Vout.n92 0.9275
+R259 Vout.n92 Vout.n90 0.9275
+R260 Vout.n90 Vout.n88 0.9275
+R261 Vout.n88 Vout.n86 0.9275
+R262 Vout.n44 Vout.n42 0.9275
+R263 Vout.n42 Vout.n40 0.9275
+R264 Vout.n40 Vout.n38 0.9275
+R265 Vout.n38 Vout.n36 0.9275
+R266 Vout.n36 Vout.n34 0.9275
+R267 Vout.n34 Vout.n32 0.9275
+R268 Vout.n32 Vout.n30 0.9275
+R269 Vout.n30 Vout.n28 0.9275
+R270 Vout.n63 Vout.n61 0.9275
+R271 Vout.n61 Vout.n59 0.9275
+R272 Vout.n59 Vout.n57 0.9275
+R273 Vout.n57 Vout.n55 0.9275
+R274 Vout.n55 Vout.n53 0.9275
+R275 Vout.n53 Vout.n51 0.9275
+R276 Vout.n51 Vout.n49 0.9275
+R277 Vout.n49 Vout.n47 0.9275
+R278 Vout.n122 Vout.n120 0.9275
+R279 Vout.n120 Vout.n118 0.9275
+R280 Vout.n118 Vout.n116 0.9275
+R281 Vout.n116 Vout.n114 0.9275
+R282 Vout.n114 Vout.n112 0.9275
+R283 Vout.n112 Vout.n110 0.9275
+R284 Vout.n110 Vout.n108 0.9275
+R285 Vout.n108 Vout.n106 0.9275
+R286 Vout.n103 Vout.n102 0.5585
+R287 Vout.n64 Vout.n63 0.5585
+R288 Vout.n123 Vout.n122 0.535609
+R289 Vout.n123 Vout.n103 0.4605
+R290 Vout.n123 Vout.n64 0.4305
+R291 Vout.n82 Vout.t96 0.41
+R292 Vout.n82 Vout.t88 0.41
+R293 Vout.n80 Vout.t101 0.41
+R294 Vout.n80 Vout.t75 0.41
+R295 Vout.n78 Vout.t100 0.41
+R296 Vout.n78 Vout.t74 0.41
+R297 Vout.n76 Vout.t25 0.41
+R298 Vout.n76 Vout.t51 0.41
+R299 Vout.n74 Vout.t67 0.41
+R300 Vout.n74 Vout.t35 0.41
+R301 Vout.n72 Vout.t57 0.41
+R302 Vout.n72 Vout.t59 0.41
+R303 Vout.n70 Vout.t65 0.41
+R304 Vout.n70 Vout.t33 0.41
+R305 Vout.n68 Vout.t32 0.41
+R306 Vout.n68 Vout.t8 0.41
+R307 Vout.n66 Vout.t14 0.41
+R308 Vout.n66 Vout.t3 0.41
+R309 Vout.n65 Vout.t2 0.41
+R310 Vout.n65 Vout.t61 0.41
+R311 Vout.n101 Vout.t90 0.41
+R312 Vout.n101 Vout.t87 0.41
+R313 Vout.n99 Vout.t94 0.41
+R314 Vout.n99 Vout.t92 0.41
+R315 Vout.n97 Vout.t95 0.41
+R316 Vout.n97 Vout.t91 0.41
+R317 Vout.n95 Vout.t58 0.41
+R318 Vout.n95 Vout.t69 0.41
+R319 Vout.n93 Vout.t13 0.41
+R320 Vout.n93 Vout.t49 0.41
+R321 Vout.n91 Vout.t60 0.41
+R322 Vout.n91 Vout.t39 0.41
+R323 Vout.n89 Vout.t9 0.41
+R324 Vout.n89 Vout.t45 0.41
+R325 Vout.n87 Vout.t44 0.41
+R326 Vout.n87 Vout.t42 0.41
+R327 Vout.n85 Vout.t56 0.41
+R328 Vout.n85 Vout.t4 0.41
+R329 Vout.n84 Vout.t15 0.41
+R330 Vout.n84 Vout.t41 0.41
+R331 Vout.n43 Vout.t28 0.41
+R332 Vout.n43 Vout.t16 0.41
+R333 Vout.n41 Vout.t102 0.41
+R334 Vout.n41 Vout.t86 0.41
+R335 Vout.n39 Vout.t85 0.41
+R336 Vout.n39 Vout.t78 0.41
+R337 Vout.n37 Vout.t22 0.41
+R338 Vout.n37 Vout.t82 0.41
+R339 Vout.n35 Vout.t50 0.41
+R340 Vout.n35 Vout.t99 0.41
+R341 Vout.n33 Vout.t12 0.41
+R342 Vout.n33 Vout.t48 0.41
+R343 Vout.n31 Vout.t10 0.41
+R344 Vout.n31 Vout.t46 0.41
+R345 Vout.n29 Vout.t1 0.41
+R346 Vout.n29 Vout.t19 0.41
+R347 Vout.n27 Vout.t43 0.41
+R348 Vout.n27 Vout.t64 0.41
+R349 Vout.n26 Vout.t97 0.41
+R350 Vout.n26 Vout.t30 0.41
+R351 Vout.n62 Vout.t27 0.41
+R352 Vout.n62 Vout.t71 0.41
+R353 Vout.n60 Vout.t80 0.41
+R354 Vout.n60 Vout.t89 0.41
+R355 Vout.n58 Vout.t81 0.41
+R356 Vout.n58 Vout.t84 0.41
+R357 Vout.n56 Vout.t52 0.41
+R358 Vout.n56 Vout.t40 0.41
+R359 Vout.n54 Vout.t36 0.41
+R360 Vout.n54 Vout.t24 0.41
+R361 Vout.n52 Vout.t66 0.41
+R362 Vout.n52 Vout.t34 0.41
+R363 Vout.n50 Vout.t20 0.41
+R364 Vout.n50 Vout.t98 0.41
+R365 Vout.n48 Vout.t18 0.41
+R366 Vout.n48 Vout.t54 0.41
+R367 Vout.n46 Vout.t31 0.41
+R368 Vout.n46 Vout.t7 0.41
+R369 Vout.n45 Vout.t73 0.41
+R370 Vout.n45 Vout.t72 0.41
+R371 Vout.n121 Vout.t93 0.41
+R372 Vout.n121 Vout.t70 0.41
+R373 Vout.n119 Vout.t77 0.41
+R374 Vout.n119 Vout.t79 0.41
+R375 Vout.n117 Vout.t76 0.41
+R376 Vout.n117 Vout.t83 0.41
+R377 Vout.n115 Vout.t37 0.41
+R378 Vout.n115 Vout.t26 0.41
+R379 Vout.n113 Vout.t21 0.41
+R380 Vout.n113 Vout.t68 0.41
+R381 Vout.n111 Vout.t11 0.41
+R382 Vout.n111 Vout.t47 0.41
+R383 Vout.n109 Vout.t62 0.41
+R384 Vout.n109 Vout.t55 0.41
+R385 Vout.n107 Vout.t53 0.41
+R386 Vout.n107 Vout.t29 0.41
+R387 Vout.n105 Vout.t38 0.41
+R388 Vout.n105 Vout.t63 0.41
+R389 Vout.n104 Vout.t17 0.41
+R390 Vout.n104 Vout.t23 0.41
+R391 Vout.n23 Vout.n11 0.399071
+R392 Vout.n125 Vout.n124 0.3605
+R393 Vout.n13 Vout.n12 0.269375
+R394 Vout.n14 Vout.n13 0.269375
+R395 Vout.n15 Vout.n14 0.269375
+R396 Vout.n16 Vout.n15 0.269375
+R397 Vout.n17 Vout.n16 0.269375
+R398 Vout.n18 Vout.n17 0.269375
+R399 Vout.n19 Vout.n18 0.269375
+R400 Vout.n20 Vout.n19 0.269375
+R401 Vout.n1 Vout.n0 0.269375
+R402 Vout.n2 Vout.n1 0.269375
+R403 Vout.n3 Vout.n2 0.269375
+R404 Vout.n4 Vout.n3 0.269375
+R405 Vout.n5 Vout.n4 0.269375
+R406 Vout.n6 Vout.n5 0.269375
+R407 Vout.n7 Vout.n6 0.269375
+R408 Vout.n8 Vout.n7 0.269375
+R409 Vout.n22 Vout.n20 0.268438
+R410 Vout.n10 Vout.n8 0.268438
+R411 Vout.n124 Vout.n123 0.237239
+R412 Vout Vout.n125 0.200065
+R413 Vout Vout.n23 0.198109
+R414 Vout.n22 Vout.n21 0.0014375
+R415 Vout.n10 Vout.n9 0.0014375
+R416 VDD.n28 VDD.n27 278.776
+R417 VDD.t4 VDD.t6 222.93
+R418 VDD.t2 VDD.t4 222.93
+R419 VDD.t0 VDD.t2 222.93
+R420 VDD.t6 VDD.n27 133.041
+R421 VDD.n28 VDD.t0 132.615
+R422 VDD.n21 VDD.n20 7.27855
+R423 VDD.n0 VDD.t41 4.45448
+R424 VDD.n0 VDD.t42 4.45356
+R425 VDD.n9 VDD.t3 4.4205
+R426 VDD.n9 VDD.t5 4.4205
+R427 VDD.n8 VDD.t9 4.4205
+R428 VDD.n8 VDD.t10 4.4205
+R429 VDD.n7 VDD.t13 4.4205
+R430 VDD.n7 VDD.t14 4.4205
+R431 VDD.n6 VDD.t17 4.4205
+R432 VDD.n6 VDD.t18 4.4205
+R433 VDD.n5 VDD.t21 4.4205
+R434 VDD.n5 VDD.t22 4.4205
+R435 VDD.n4 VDD.t25 4.4205
+R436 VDD.n4 VDD.t26 4.4205
+R437 VDD.n3 VDD.t29 4.4205
+R438 VDD.n3 VDD.t30 4.4205
+R439 VDD.n2 VDD.t33 4.4205
+R440 VDD.n2 VDD.t34 4.4205
+R441 VDD.n1 VDD.t37 4.4205
+R442 VDD.n1 VDD.t38 4.4205
+R443 VDD.n12 VDD.t7 4.4205
+R444 VDD.n13 VDD.t11 4.4205
+R445 VDD.n14 VDD.t15 4.4205
+R446 VDD.n15 VDD.t19 4.4205
+R447 VDD.n16 VDD.t23 4.4205
+R448 VDD.n25 VDD.t27 4.4205
+R449 VDD.n24 VDD.t31 4.4205
+R450 VDD.n23 VDD.t35 4.4205
+R451 VDD.n22 VDD.t39 4.4205
+R452 VDD.n21 VDD.t43 4.4205
+R453 VDD.n20 VDD.t40 4.4205
+R454 VDD.n19 VDD.t36 4.4205
+R455 VDD.n18 VDD.t32 4.4205
+R456 VDD.n17 VDD.t28 4.4205
+R457 VDD.n11 VDD.t24 4.4205
+R458 VDD.n30 VDD.t20 4.4205
+R459 VDD.n31 VDD.t16 4.4205
+R460 VDD.n32 VDD.t12 4.4205
+R461 VDD.n33 VDD.t8 4.4205
+R462 VDD.n34 VDD.t1 4.4205
+R463 VDD.n12 VDD.n10 0.875972
+R464 VDD VDD.n34 0.848625
+R465 VDD.n2 VDD.n1 0.269375
+R466 VDD.n3 VDD.n2 0.269375
+R467 VDD.n4 VDD.n3 0.269375
+R468 VDD.n5 VDD.n4 0.269375
+R469 VDD.n6 VDD.n5 0.269375
+R470 VDD.n7 VDD.n6 0.269375
+R471 VDD.n8 VDD.n7 0.269375
+R472 VDD.n9 VDD.n8 0.269375
+R473 VDD.n1 VDD.n0 0.223437
+R474 VDD.n10 VDD.n9 0.200938
+R475 VDD.n34 VDD.n33 0.190689
+R476 VDD.n33 VDD.n32 0.190689
+R477 VDD.n32 VDD.n31 0.190689
+R478 VDD.n31 VDD.n30 0.190689
+R479 VDD.n17 VDD.n11 0.190689
+R480 VDD.n18 VDD.n17 0.190689
+R481 VDD.n19 VDD.n18 0.190689
+R482 VDD.n20 VDD.n19 0.190689
+R483 VDD.n22 VDD.n21 0.189999
+R484 VDD.n23 VDD.n22 0.189999
+R485 VDD.n24 VDD.n23 0.189999
+R486 VDD.n25 VDD.n24 0.189999
+R487 VDD.n16 VDD.n15 0.189999
+R488 VDD.n15 VDD.n14 0.189999
+R489 VDD.n14 VDD.n13 0.189999
+R490 VDD.n13 VDD.n12 0.189999
+R491 VDD.n29 VDD.n28 0.13175
+R492 VDD.n27 VDD.n26 0.13175
+R493 VDD.n29 VDD.n11 0.0970158
+R494 VDD.n26 VDD.n25 0.0966704
+R495 VDD.n30 VDD.n29 0.0941737
+R496 VDD.n26 VDD.n16 0.0938283
+R497 VDD VDD.n10 0.0281923
+R498 GND.n0 GND.t0 92.659
+R499 GND.n0 GND.t18 92.27
+R500 GND.t18 GND.t16 90.0643
+R501 GND.t16 GND.t14 90.0643
+R502 GND.t14 GND.t12 90.0643
+R503 GND.t12 GND.t10 90.0643
+R504 GND.t10 GND.t8 90.0643
+R505 GND.t8 GND.t6 90.0643
+R506 GND.t6 GND.t4 90.0643
+R507 GND.t4 GND.t2 90.0643
+R508 GND.t2 GND.t0 90.0643
+R509 GND.n100 GND.n0 3.26137
+R510 GND.n88 GND.t1 3.2522
+R511 GND.n39 GND.t19 2.8772
+R512 GND.n22 GND.n20 2.4677
+R513 GND.n3 GND.n1 2.4677
+R514 GND.n52 GND.n50 2.4677
+R515 GND.n71 GND.n69 2.4677
+R516 GND.n47 GND.t109 1.961
+R517 GND.n96 GND.t100 1.961
+R518 GND.n46 GND.t99 1.9592
+R519 GND.n95 GND.t90 1.9592
+R520 GND.n45 GND.t89 1.9574
+R521 GND.n94 GND.t80 1.9574
+R522 GND.n44 GND.t79 1.9556
+R523 GND.n93 GND.t70 1.9556
+R524 GND.n43 GND.t69 1.9538
+R525 GND.n92 GND.t60 1.9538
+R526 GND.n42 GND.t59 1.952
+R527 GND.n91 GND.t50 1.952
+R528 GND.n41 GND.t49 1.9502
+R529 GND.n90 GND.t40 1.9502
+R530 GND.n39 GND.t29 1.9484
+R531 GND.n40 GND.t39 1.9484
+R532 GND.n88 GND.t20 1.9484
+R533 GND.n89 GND.t30 1.9484
+R534 GND.n38 GND.n37 1.5515
+R535 GND.n19 GND.n18 1.5515
+R536 GND.n68 GND.n67 1.5515
+R537 GND.n87 GND.n86 1.5515
+R538 GND.n36 GND.n35 1.5497
+R539 GND.n17 GND.n16 1.5497
+R540 GND.n66 GND.n65 1.5497
+R541 GND.n85 GND.n84 1.5497
+R542 GND.n34 GND.n33 1.5479
+R543 GND.n15 GND.n14 1.5479
+R544 GND.n64 GND.n63 1.5479
+R545 GND.n83 GND.n82 1.5479
+R546 GND.n32 GND.n31 1.5461
+R547 GND.n13 GND.n12 1.5461
+R548 GND.n62 GND.n61 1.5461
+R549 GND.n81 GND.n80 1.5461
+R550 GND.n30 GND.n29 1.5443
+R551 GND.n11 GND.n10 1.5443
+R552 GND.n60 GND.n59 1.5443
+R553 GND.n79 GND.n78 1.5443
+R554 GND.n28 GND.n27 1.5425
+R555 GND.n9 GND.n8 1.5425
+R556 GND.n58 GND.n57 1.5425
+R557 GND.n77 GND.n76 1.5425
+R558 GND.n26 GND.n25 1.5407
+R559 GND.n7 GND.n6 1.5407
+R560 GND.n56 GND.n55 1.5407
+R561 GND.n75 GND.n74 1.5407
+R562 GND.n22 GND.n21 1.5389
+R563 GND.n24 GND.n23 1.5389
+R564 GND.n3 GND.n2 1.5389
+R565 GND.n5 GND.n4 1.5389
+R566 GND.n52 GND.n51 1.5389
+R567 GND.n54 GND.n53 1.5389
+R568 GND.n71 GND.n70 1.5389
+R569 GND.n73 GND.n72 1.5389
+R570 GND.n40 GND.n39 0.9275
+R571 GND.n41 GND.n40 0.9275
+R572 GND.n42 GND.n41 0.9275
+R573 GND.n43 GND.n42 0.9275
+R574 GND.n44 GND.n43 0.9275
+R575 GND.n45 GND.n44 0.9275
+R576 GND.n46 GND.n45 0.9275
+R577 GND.n47 GND.n46 0.9275
+R578 GND.n24 GND.n22 0.9275
+R579 GND.n26 GND.n24 0.9275
+R580 GND.n28 GND.n26 0.9275
+R581 GND.n30 GND.n28 0.9275
+R582 GND.n32 GND.n30 0.9275
+R583 GND.n34 GND.n32 0.9275
+R584 GND.n36 GND.n34 0.9275
+R585 GND.n38 GND.n36 0.9275
+R586 GND.n5 GND.n3 0.9275
+R587 GND.n7 GND.n5 0.9275
+R588 GND.n9 GND.n7 0.9275
+R589 GND.n11 GND.n9 0.9275
+R590 GND.n13 GND.n11 0.9275
+R591 GND.n15 GND.n13 0.9275
+R592 GND.n17 GND.n15 0.9275
+R593 GND.n19 GND.n17 0.9275
+R594 GND.n54 GND.n52 0.9275
+R595 GND.n56 GND.n54 0.9275
+R596 GND.n58 GND.n56 0.9275
+R597 GND.n60 GND.n58 0.9275
+R598 GND.n62 GND.n60 0.9275
+R599 GND.n64 GND.n62 0.9275
+R600 GND.n66 GND.n64 0.9275
+R601 GND.n68 GND.n66 0.9275
+R602 GND.n73 GND.n71 0.9275
+R603 GND.n75 GND.n73 0.9275
+R604 GND.n77 GND.n75 0.9275
+R605 GND.n79 GND.n77 0.9275
+R606 GND.n81 GND.n79 0.9275
+R607 GND.n83 GND.n81 0.9275
+R608 GND.n85 GND.n83 0.9275
+R609 GND.n87 GND.n85 0.9275
+R610 GND.n89 GND.n88 0.9275
+R611 GND.n90 GND.n89 0.9275
+R612 GND.n91 GND.n90 0.9275
+R613 GND.n92 GND.n91 0.9275
+R614 GND.n93 GND.n92 0.9275
+R615 GND.n94 GND.n93 0.9275
+R616 GND.n95 GND.n94 0.9275
+R617 GND.n96 GND.n95 0.9275
+R618 GND.n48 GND.n47 0.8735
+R619 GND.n97 GND.n96 0.8735
+R620 GND.n48 GND.n38 0.536
+R621 GND.n49 GND.n19 0.536
+R622 GND.n98 GND.n68 0.536
+R623 GND.n97 GND.n87 0.536
+R624 GND.n20 GND.t17 0.41
+R625 GND.n20 GND.t15 0.41
+R626 GND.n21 GND.t28 0.41
+R627 GND.n21 GND.t27 0.41
+R628 GND.n23 GND.t38 0.41
+R629 GND.n23 GND.t37 0.41
+R630 GND.n25 GND.t48 0.41
+R631 GND.n25 GND.t47 0.41
+R632 GND.n27 GND.t58 0.41
+R633 GND.n27 GND.t57 0.41
+R634 GND.n29 GND.t68 0.41
+R635 GND.n29 GND.t67 0.41
+R636 GND.n31 GND.t78 0.41
+R637 GND.n31 GND.t77 0.41
+R638 GND.n33 GND.t88 0.41
+R639 GND.n33 GND.t87 0.41
+R640 GND.n35 GND.t98 0.41
+R641 GND.n35 GND.t97 0.41
+R642 GND.n37 GND.t108 0.41
+R643 GND.n37 GND.t107 0.41
+R644 GND.n1 GND.t13 0.41
+R645 GND.n1 GND.t11 0.41
+R646 GND.n2 GND.t26 0.41
+R647 GND.n2 GND.t25 0.41
+R648 GND.n4 GND.t36 0.41
+R649 GND.n4 GND.t35 0.41
+R650 GND.n6 GND.t46 0.41
+R651 GND.n6 GND.t45 0.41
+R652 GND.n8 GND.t56 0.41
+R653 GND.n8 GND.t55 0.41
+R654 GND.n10 GND.t66 0.41
+R655 GND.n10 GND.t65 0.41
+R656 GND.n12 GND.t76 0.41
+R657 GND.n12 GND.t75 0.41
+R658 GND.n14 GND.t86 0.41
+R659 GND.n14 GND.t85 0.41
+R660 GND.n16 GND.t96 0.41
+R661 GND.n16 GND.t95 0.41
+R662 GND.n18 GND.t106 0.41
+R663 GND.n18 GND.t105 0.41
+R664 GND.n50 GND.t9 0.41
+R665 GND.n50 GND.t7 0.41
+R666 GND.n51 GND.t24 0.41
+R667 GND.n51 GND.t23 0.41
+R668 GND.n53 GND.t34 0.41
+R669 GND.n53 GND.t33 0.41
+R670 GND.n55 GND.t44 0.41
+R671 GND.n55 GND.t43 0.41
+R672 GND.n57 GND.t54 0.41
+R673 GND.n57 GND.t53 0.41
+R674 GND.n59 GND.t64 0.41
+R675 GND.n59 GND.t63 0.41
+R676 GND.n61 GND.t74 0.41
+R677 GND.n61 GND.t73 0.41
+R678 GND.n63 GND.t84 0.41
+R679 GND.n63 GND.t83 0.41
+R680 GND.n65 GND.t94 0.41
+R681 GND.n65 GND.t93 0.41
+R682 GND.n67 GND.t104 0.41
+R683 GND.n67 GND.t103 0.41
+R684 GND.n69 GND.t5 0.41
+R685 GND.n69 GND.t3 0.41
+R686 GND.n70 GND.t22 0.41
+R687 GND.n70 GND.t21 0.41
+R688 GND.n72 GND.t32 0.41
+R689 GND.n72 GND.t31 0.41
+R690 GND.n74 GND.t42 0.41
+R691 GND.n74 GND.t41 0.41
+R692 GND.n76 GND.t52 0.41
+R693 GND.n76 GND.t51 0.41
+R694 GND.n78 GND.t62 0.41
+R695 GND.n78 GND.t61 0.41
+R696 GND.n80 GND.t72 0.41
+R697 GND.n80 GND.t71 0.41
+R698 GND.n82 GND.t82 0.41
+R699 GND.n82 GND.t81 0.41
+R700 GND.n84 GND.t92 0.41
+R701 GND.n84 GND.t91 0.41
+R702 GND.n86 GND.t102 0.41
+R703 GND.n86 GND.t101 0.41
+R704 GND.n49 GND.n48 0.343625
+R705 GND.n98 GND.n97 0.338
+R706 GND.n99 GND.n49 0.172062
+R707 GND.n99 GND.n98 0.172062
+R708 GND.n100 GND.n99 0.155672
+R709 GND GND.n100 0.0987234
+C0 VbiasP VDD 40.475f
+C1 Vin w_n100_n1970# 19.2586f
+C2 Vout VbiasP 8.95041f
+C3 VDD w_n100_n1970# 0.176f
+C4 Vout w_n100_n1970# 93.89f
+C5 Vout VDD 3.26843f
+C6 Vin GND 25.93528f
+C7 VbiasP GND 1.3453f
+C8 Vout GND 33.9189f
+C9 VDD GND 67.11933f
+C10 w_n100_n1970# GND 0.12499p
+C11 VDD.n0 GND 0.10504f
+C12 VDD.n1 GND 0.11245f
+C13 VDD.n2 GND 0.12011f
+C14 VDD.n3 GND 0.12011f
+C15 VDD.n4 GND 0.12011f
+C16 VDD.n5 GND 0.12011f
+C17 VDD.n6 GND 0.12011f
+C18 VDD.n7 GND 0.12011f
+C19 VDD.n8 GND 0.12011f
+C20 VDD.n9 GND 0.1094f
+C21 VDD.n10 GND 0.56269f
+C22 VDD.n11 GND 0.11666f
+C23 VDD.n12 GND 0.5707f
+C24 VDD.n13 GND 0.14893f
+C25 VDD.n14 GND 0.14893f
+C26 VDD.n15 GND 0.14893f
+C27 VDD.n16 GND 0.11632f
+C28 VDD.n17 GND 0.14831f
+C29 VDD.n18 GND 0.14831f
+C30 VDD.n19 GND 0.14831f
+C31 VDD.n20 GND 0.34287f
+C32 VDD.n21 GND 0.34351f
+C33 VDD.n22 GND 0.14893f
+C34 VDD.n23 GND 0.14893f
+C35 VDD.n24 GND 0.14893f
+C36 VDD.n25 GND 0.11729f
+C37 VDD.n27 GND 4.3276f
+C38 VDD.t6 GND 6.22726f
+C39 VDD.t4 GND 7.79904f
+C40 VDD.t2 GND 7.79904f
+C41 VDD.t0 GND 6.21983f
+C42 VDD.n28 GND 4.32017f
+C43 VDD.n30 GND 0.1157f
+C44 VDD.n31 GND 0.14831f
+C45 VDD.n32 GND 0.14831f
+C46 VDD.n33 GND 0.14831f
+C47 VDD.n34 GND 0.55349f
+C48 Vout.t0 GND 9.74321f
+C49 Vout.n0 GND 0.25243f
+C50 Vout.n1 GND 0.31372f
+C51 Vout.n2 GND 0.31372f
+C52 Vout.n3 GND 0.31372f
+C53 Vout.n4 GND 0.31372f
+C54 Vout.n5 GND 0.31372f
+C55 Vout.n6 GND 0.31372f
+C56 Vout.n7 GND 0.31372f
+C57 Vout.n8 GND 0.31325f
+C58 Vout.n9 GND 0.11541f
+C59 Vout.n10 GND 0.13551f
+C60 Vout.n11 GND 4.00194f
+C61 Vout.n12 GND 0.25243f
+C62 Vout.n13 GND 0.31372f
+C63 Vout.n14 GND 0.31372f
+C64 Vout.n15 GND 0.31372f
+C65 Vout.n16 GND 0.31372f
+C66 Vout.n17 GND 0.31372f
+C67 Vout.n18 GND 0.31372f
+C68 Vout.n19 GND 0.31372f
+C69 Vout.n20 GND 0.31325f
+C70 Vout.n21 GND 0.11541f
+C71 Vout.n22 GND 0.20513f
+C72 Vout.n23 GND 1.5363f
+C73 Vout.t5 GND 5.6081f
+C74 Vout.n24 GND 11.0112f
+C75 Vout.t143 GND 6.93638f
+C76 Vout.n25 GND 2.18794f
+C77 Vout.n26 GND 0.48331f
+C78 Vout.n27 GND 0.30018f
+C79 Vout.n28 GND 0.86598f
+C80 Vout.n29 GND 0.30019f
+C81 Vout.n30 GND 0.55956f
+C82 Vout.n31 GND 0.3002f
+C83 Vout.n32 GND 0.55955f
+C84 Vout.n33 GND 0.3002f
+C85 Vout.n34 GND 0.55955f
+C86 Vout.n35 GND 0.3002f
+C87 Vout.n36 GND 0.55955f
+C88 Vout.n37 GND 0.3002f
+C89 Vout.n38 GND 0.55955f
+C90 Vout.n39 GND 0.3002f
+C91 Vout.n40 GND 0.55955f
+C92 Vout.n41 GND 0.3002f
+C93 Vout.n42 GND 0.55955f
+C94 Vout.n43 GND 0.3002f
+C95 Vout.n44 GND 0.59008f
+C96 Vout.n45 GND 0.48331f
+C97 Vout.n46 GND 0.30018f
+C98 Vout.n47 GND 0.86598f
+C99 Vout.n48 GND 0.30019f
+C100 Vout.n49 GND 0.55956f
+C101 Vout.n50 GND 0.3002f
+C102 Vout.n51 GND 0.55955f
+C103 Vout.n52 GND 0.3002f
+C104 Vout.n53 GND 0.55955f
+C105 Vout.n54 GND 0.3002f
+C106 Vout.n55 GND 0.55955f
+C107 Vout.n56 GND 0.3002f
+C108 Vout.n57 GND 0.55955f
+C109 Vout.n58 GND 0.3002f
+C110 Vout.n59 GND 0.55955f
+C111 Vout.n60 GND 0.3002f
+C112 Vout.n61 GND 0.55955f
+C113 Vout.n62 GND 0.3002f
+C114 Vout.n63 GND 0.47511f
+C115 Vout.n64 GND 0.44625f
+C116 Vout.n65 GND 0.48331f
+C117 Vout.n66 GND 0.30018f
+C118 Vout.n67 GND 0.86598f
+C119 Vout.n68 GND 0.30019f
+C120 Vout.n69 GND 0.55956f
+C121 Vout.n70 GND 0.3002f
+C122 Vout.n71 GND 0.55955f
+C123 Vout.n72 GND 0.3002f
+C124 Vout.n73 GND 0.55955f
+C125 Vout.n74 GND 0.3002f
+C126 Vout.n75 GND 0.55955f
+C127 Vout.n76 GND 0.3002f
+C128 Vout.n77 GND 0.55955f
+C129 Vout.n78 GND 0.3002f
+C130 Vout.n79 GND 0.55955f
+C131 Vout.n80 GND 0.3002f
+C132 Vout.n81 GND 0.55955f
+C133 Vout.n82 GND 0.3002f
+C134 Vout.n83 GND 0.58801f
+C135 Vout.n84 GND 0.48331f
+C136 Vout.n85 GND 0.30018f
+C137 Vout.n86 GND 0.86598f
+C138 Vout.n87 GND 0.30019f
+C139 Vout.n88 GND 0.55956f
+C140 Vout.n89 GND 0.3002f
+C141 Vout.n90 GND 0.55955f
+C142 Vout.n91 GND 0.3002f
+C143 Vout.n92 GND 0.55955f
+C144 Vout.n93 GND 0.3002f
+C145 Vout.n94 GND 0.55955f
+C146 Vout.n95 GND 0.3002f
+C147 Vout.n96 GND 0.55955f
+C148 Vout.n97 GND 0.3002f
+C149 Vout.n98 GND 0.55955f
+C150 Vout.n99 GND 0.3002f
+C151 Vout.n100 GND 0.55955f
+C152 Vout.n101 GND 0.3002f
+C153 Vout.n102 GND 0.47511f
+C154 Vout.n103 GND 0.45017f
+C155 Vout.n104 GND 0.48331f
+C156 Vout.n105 GND 0.30018f
+C157 Vout.n106 GND 0.86598f
+C158 Vout.n107 GND 0.30019f
+C159 Vout.n108 GND 0.55956f
+C160 Vout.n109 GND 0.3002f
+C161 Vout.n110 GND 0.55955f
+C162 Vout.n111 GND 0.3002f
+C163 Vout.n112 GND 0.55955f
+C164 Vout.n113 GND 0.3002f
+C165 Vout.n114 GND 0.55955f
+C166 Vout.n115 GND 0.3002f
+C167 Vout.n116 GND 0.55955f
+C168 Vout.n117 GND 0.3002f
+C169 Vout.n118 GND 0.55955f
+C170 Vout.n119 GND 0.3002f
+C171 Vout.n120 GND 0.55955f
+C172 Vout.n121 GND 0.3002f
+C173 Vout.n122 GND 0.47044f
+C174 Vout.n123 GND 0.60801f
+C175 Vout.n124 GND 1.72503f
+C176 Vout.n125 GND 2.12523f
+C177 VbiasP.n0 GND 0.84523f
+C178 VbiasP.n1 GND 0.16394f
+C179 VbiasP.t36 GND 0.70726f
+C180 VbiasP.t32 GND 0.64714f
+C181 VbiasP.n2 GND 0.63194f
+C182 VbiasP.n3 GND 0.27849f
+C183 VbiasP.t0 GND 0.70725f
+C184 VbiasP.t4 GND 0.64714f
+C185 VbiasP.n4 GND 0.63195f
+C186 VbiasP.n5 GND 0.27732f
+C187 VbiasP.t8 GND 0.64714f
+C188 VbiasP.n6 GND 0.27849f
+C189 VbiasP.t12 GND 0.64714f
+C190 VbiasP.n7 GND 0.29883f
+C191 VbiasP.t16 GND 0.64714f
+C192 VbiasP.n8 GND 0.41477f
+C193 VbiasP.t20 GND 0.64714f
+C194 VbiasP.n9 GND 0.41477f
+C195 VbiasP.t24 GND 0.64714f
+C196 VbiasP.n10 GND 0.29883f
+C197 VbiasP.t28 GND 0.64714f
+C198 VbiasP.n11 GND 0.27732f
+C199 VbiasP.n12 GND 0.16394f
+C200 VbiasP.n13 GND 1.11273f
+C201 VbiasP.t37 GND 0.70726f
+C202 VbiasP.t33 GND 0.64714f
+C203 VbiasP.n15 GND 0.63194f
+C204 VbiasP.n16 GND 0.27849f
+C205 VbiasP.t29 GND 0.64714f
+C206 VbiasP.n17 GND 0.27732f
+C207 VbiasP.t25 GND 0.64714f
+C208 VbiasP.n18 GND 0.29883f
+C209 VbiasP.t21 GND 0.64714f
+C210 VbiasP.n19 GND 0.41477f
+C211 VbiasP.t17 GND 0.64714f
+C212 VbiasP.n20 GND 0.41477f
+C213 VbiasP.t13 GND 0.64714f
+C214 VbiasP.n21 GND 0.29883f
+C215 VbiasP.n22 GND 0.27849f
+C216 VbiasP.t1 GND 0.70725f
+C217 VbiasP.t5 GND 0.64714f
+C218 VbiasP.n23 GND 0.63195f
+C219 VbiasP.t9 GND 0.64714f
+C220 VbiasP.n24 GND 0.27732f
+C221 VbiasP.n26 GND 1.11273f
+C222 VbiasP.n27 GND 0.16394f
+C223 VbiasP.t39 GND 0.70725f
+C224 VbiasP.t35 GND 0.64714f
+C225 VbiasP.n28 GND 0.63195f
+C226 VbiasP.n29 GND 0.27849f
+C227 VbiasP.t3 GND 0.70725f
+C228 VbiasP.t7 GND 0.64714f
+C229 VbiasP.n30 GND 0.63195f
+C230 VbiasP.n31 GND 0.27732f
+C231 VbiasP.t11 GND 0.64714f
+C232 VbiasP.n32 GND 0.27849f
+C233 VbiasP.t15 GND 0.64714f
+C234 VbiasP.n33 GND 0.29883f
+C235 VbiasP.t19 GND 0.64714f
+C236 VbiasP.n34 GND 0.41477f
+C237 VbiasP.t23 GND 0.64714f
+C238 VbiasP.n35 GND 0.41477f
+C239 VbiasP.t27 GND 0.64714f
+C240 VbiasP.n36 GND 0.29883f
+C241 VbiasP.t31 GND 0.64714f
+C242 VbiasP.n37 GND 0.27732f
+C243 VbiasP.n38 GND 0.16394f
+C244 VbiasP.n39 GND 1.11273f
+C245 VbiasP.t38 GND 0.70726f
+C246 VbiasP.t34 GND 0.64714f
+C247 VbiasP.n41 GND 0.63194f
+C248 VbiasP.n42 GND 0.27849f
+C249 VbiasP.t30 GND 0.64714f
+C250 VbiasP.n43 GND 0.27732f
+C251 VbiasP.t26 GND 0.64714f
+C252 VbiasP.n44 GND 0.29883f
+C253 VbiasP.t22 GND 0.64714f
+C254 VbiasP.n45 GND 0.41477f
+C255 VbiasP.t18 GND 0.64714f
+C256 VbiasP.n46 GND 0.41477f
+C257 VbiasP.t14 GND 0.64714f
+C258 VbiasP.n47 GND 0.29883f
+C259 VbiasP.n48 GND 0.27849f
+C260 VbiasP.t2 GND 0.70725f
+C261 VbiasP.t6 GND 0.64714f
+C262 VbiasP.n49 GND 0.63195f
+C263 VbiasP.t10 GND 0.64714f
+C264 VbiasP.n50 GND 0.27732f
+C265 VbiasP.n52 GND 1.11273f
+C266 VbiasP.n53 GND 0.82841f
+C267 Vin.t2 GND 0.84628f
+C268 Vin.t6 GND 0.47286f
+C269 Vin.n0 GND 0.59626f
+C270 Vin.t10 GND 0.47286f
+C271 Vin.n1 GND 0.4913f
+C272 Vin.t14 GND 0.47286f
+C273 Vin.n2 GND 0.4686f
+C274 Vin.t1 GND 0.84404f
+C275 Vin.t5 GND 0.47286f
+C276 Vin.n3 GND 0.59911f
+C277 Vin.t9 GND 0.47286f
+C278 Vin.n4 GND 0.49201f
+C279 Vin.t13 GND 0.47286f
+C280 Vin.n5 GND 0.46854f
+C281 Vin.t0 GND 0.84428f
+C282 Vin.t4 GND 0.47286f
+C283 Vin.n6 GND 0.59918f
+C284 Vin.t8 GND 0.47286f
+C285 Vin.n7 GND 0.49201f
+C286 Vin.t12 GND 0.47286f
+C287 Vin.n8 GND 0.49201f
+C288 Vin.t16 GND 0.47286f
+C289 Vin.n9 GND 0.49693f
+C290 Vin.t17 GND 0.47286f
+C291 Vin.n10 GND 0.29317f
+C292 Vin.n11 GND 0.24219f
+C293 Vin.t18 GND 0.47286f
+C294 Vin.n12 GND 0.2844f
+C295 Vin.n13 GND 0.21295f
+C296 Vin.t3 GND 0.84628f
+C297 Vin.t7 GND 0.47286f
+C298 Vin.n14 GND 0.59626f
+C299 Vin.t11 GND 0.47286f
+C300 Vin.n15 GND 0.4913f
+C301 Vin.t15 GND 0.47286f
+C302 Vin.n16 GND 0.4913f
+C303 Vin.t19 GND 0.47286f
+C304 Vin.n17 GND 0.30003f
+C305 Vin.n18 GND 0.20128f
+.ends
+

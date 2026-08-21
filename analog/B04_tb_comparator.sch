@@ -41,4 +41,4 @@ C {lab_pin.sym} 390 0 2 0 {name=p1 sig_type=std_logic lab=Q_bar}
 C {lab_pin.sym} 400 20 3 0 {name=p2 sig_type=std_logic lab=ib}
 C {lab_pin.sym} -100 -20 0 0 {name=p3 sig_type=std_logic lab=inn}
 C {lab_pin.sym} -40 0 0 0 {name=p4 sig_type=std_logic lab=inp}
-C {B04_comparator.sym} 220 10 0 0 {name=x1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sym} 220 10 0 0 {name=x1}

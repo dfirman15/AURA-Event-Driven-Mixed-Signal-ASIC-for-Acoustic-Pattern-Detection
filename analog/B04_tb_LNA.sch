@@ -33,19 +33,44 @@ N 140 -500 290 -500 {lab=0}
 N 140 -810 140 -500 {lab=0}
 N 710 -900 710 -810 {lab=0}
 N 460 -810 710 -810 {lab=0}
+N 420 -570 440 -570 {lab=#net3}
+N 440 -580 440 -570 {lab=#net3}
+N 420 -550 440 -550 {lab=#net5}
+N 440 -550 440 -540 {lab=#net5}
+N 420 -530 420 -500 {lab=0}
+N 290 -500 420 -500 {lab=0}
+N 290 -620 420 -620 {lab=#net1}
+N 420 -620 420 -590 {lab=#net1}
 C {vsource.sym} 200 -840 0 0 {name=VDD value=3.3 savecurrent=false}
 C {gnd.sym} 200 -810 0 0 {name=l1 lab=0}
 C {vsource.sym} 390 -840 0 0 {name=Vplus value="DC 1.65 AC 1" savecurrent=false}
 C {code_shown.sym} 1000 -910 0 0 {name=s1 only_toplevel=false value="
+.ic v(vout)=1.65 v(x2.net1)=1.65 v(x2.net3)=1.65 v(x2.net2)=1.65
 .control
 set color0=white  ;
-set color1=black  ; 
+set color1=black  ;
+
+* paksa titik kerja pakai transient dulu, baru snapshot op
+tran 1n 10u uic
 op
+print v(vout)
 print @m.x2.x1.xm2.m0[gm]
 print @m.x2.x1.xm2.m0[id]
 print @m.x2.x1.xm2.m0[vgs]
 print @m.x2.x1.xm2.m0[vth]
+print v(x2.x1.net8)
+print v(x2.x1.net6)
+print v(x2.x1.net10)
+print v(x2.net1)
+print v(x2.net2)
+print v(x2.net3)
+print v(x2.net4)
+print v(x2.net5)
+print v(x2.net6)
+print v(x2.net7)
+print v(x2.net8)
 .endc
+
 .control
 op
 ac dec 20 1 1meg
@@ -65,14 +90,9 @@ C {lab_pin.sym} 270 -990 1 0 {name=p2 sig_type=std_logic lab=Vinp}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNA.sym} 520 -960 0 0 {name=x2}
 C {vsource.sym} 100 -840 0 0 {name=VDD/2 value=1.65 savecurrent=false}
 C {vsource.sym} 270 -840 0 0 {name=VDD/1 value=1.65 savecurrent=false}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sym} 290 -560 0 0 {name=x1 length=410u}
 C {code_shown.sym} -30 -1210 0 0 {name=include2 only_toplevel=false value=".include /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical"}
-C {capa.sym} 710 -930 0 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BMR.sym} 270 -560 0 0 {name=x1}

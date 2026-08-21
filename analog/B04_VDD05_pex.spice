@@ -1,0 +1,172 @@
+* NGSPICE file created from B04_VDD05_flat.ext - technology: gf180mcuD
+
+.subckt B04_VDD05_flat VDD GND VbiasN
+X0 a_n3954_6382# a_n4434_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X1 a_5946_4337# a_6034_5405# VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X2 GND a_2584_2555# a_2872_2555# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X3 VDD a_6034_5405# a_5946_4337# VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X4 GND GND GND GND nfet_03v3 ad=0.44p pd=2.88u as=31.24p ps=0.17192m w=1u l=1u
+X5 a_2872_2967# a_1974_4337# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X6 GND a_2584_2555# a_3334_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X7 a_1974_4669# a_1974_4337# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X8 a_3334_4669# B04_OTA_0.Vin- a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=1u
+X9 VDD VDD VDD VDD pfet_03v3 ad=0.22p pd=1.88u as=30.36p ps=0.15912m w=0.5u l=1u
+X10 a_1686_4337# B04_OTA_0.Vbias0 VDD VDD pfet_03v3 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=4u
+X11 a_n6834_6382# a_n6354_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X12 a_n6834_6382# a_n7314_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X13 a_1686_4337# B04_OTA_0.Vin- a_1974_4337# VDD pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=1u
+X14 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X15 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X16 a_n9714_6382# a_n9234_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X17 a_n9714_6382# a_n10194_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X18 GND GND GND GND nfet_03v3 ad=0.44p pd=2.88u as=0 ps=0 w=1u l=1u
+X19 VDD VDD VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=0 ps=0 w=2.5u l=4u
+X20 a_1974_4337# B04_OTA_0.Vbias2 a_2872_2967# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+X21 a_3334_4669# a_2584_2555# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X22 a_1686_4337# B04_OTA_0.Vin+ a_1974_4669# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X23 B04_OTA_0.Vbias2 B04_OTA_bias_ratio_5_0.VbiasP VDD VDD pfet_03v3 ad=11p pd=50.88u as=11p ps=50.88u w=25u l=4u
+X24 a_5946_4337# B04_OTA_0.Vbias3 B04_OTA_0.Vin- VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X25 VDD B04_OTA_0.Vbias0 a_1686_4337# VDD pfet_03v3 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=4u
+X26 a_2872_2555# a_2584_2555# GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X27 B04_OTA_0.Vin- B04_OTA_0.Vbias3 a_5946_4337# VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X28 a_n2994_6382# a_n3474_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X29 VDD VDD VDD VDD pfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=1u
+X30 a_2584_2555# B04_OTA_0.Vin+ a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=1u
+X31 a_n5874_6382# a_n5394_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X32 a_n5874_6382# a_n6354_n2# GND ppolyf_u_1k r_width=2u r_length=30u
+X33 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X34 a_2584_2555# B04_OTA_0.Vbias2 a_2872_2555# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+X35 a_1686_4337# B04_OTA_0.Vin- a_3334_4669# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X36 a_3334_4669# B04_OTA_0.Vbias2 B04_OTA_0.Vin- GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X37 a_n4434_n2# a_n4914_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X38 B04_OTA_0.Vin- B04_OTA_0.Vbias2 a_3334_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X39 a_1686_4337# B04_OTA_0.Vin- a_1974_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X40 a_3430_n2670# B04_OTA_0.Vbias1 GND GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X41 a_n5394_n2# a_n4914_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X42 a_n8754_6382# a_n8274_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X43 GND GND GND ppolyf_u_1k r_width=2u r_length=30u
+X44 a_n8754_6382# a_n9234_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X45 a_n3474_n2# a_n3954_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X46 a_6630_n1720# B04_OTA_0.Vbias0 VDD VDD pfet_03v3 ad=2.2p pd=10.88u as=2.2p ps=10.88u w=5u l=4u
+X47 a_n9234_n2# a_n9714_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X48 a_1686_4337# B04_OTA_0.Vin- a_3334_4669# VDD pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=1u
+X49 a_n4434_n2# a_n3954_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X50 GND VbiasN B04_OTA_0.Vbias3 GND nfet_03v3 ad=22p pd=0.10088m as=22p ps=0.10088m w=50u l=4u
+X51 a_n10194_n2# a_n10674_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X52 a_6996_4337# a_6034_5405# VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X53 a_n10194_n2# a_n9714_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X54 a_n2034_6382# a_n2514_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X55 GND B04_OTA_0.Vbias1 a_1974_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X56 VDD VDD VDD VDD pfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=1u
+X57 a_n8274_n2# a_n8754_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X58 B04_OTA_0.Vin+ a_n10674_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X59 a_n2994_6382# a_n2514_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X60 GND B04_OTA_0.Vbias1 a_3334_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X61 a_n3474_n2# a_n2994_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X62 a_1686_4337# B04_OTA_0.Vin+ a_2584_2555# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X63 a_n9234_n2# a_n8754_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X64 GND GND GND ppolyf_u_1k r_width=2u r_length=30u
+X65 VDD VDD VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=0 ps=0 w=2.5u l=4u
+X66 GND a_1974_4337# a_1974_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X67 a_n8274_n2# a_n7794_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X68 GND a_1974_4337# a_2872_2967# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X69 a_2872_2555# B04_OTA_0.Vbias2 a_2584_2555# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+X70 a_1686_4337# B04_OTA_0.Vin+ a_2584_2555# VDD pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=1u
+X71 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X72 a_1974_4669# B04_OTA_0.Vin+ a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=1u
+X73 VDD a_6034_5405# a_6996_4337# VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X74 a_n7794_6382# a_n8274_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X75 a_3334_4669# B04_OTA_0.Vbias1 GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X76 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X77 a_6034_5405# B04_OTA_0.Vbias3 a_6996_4337# VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X78 VDD VDD VDD VDD pfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=1u
+X79 a_1974_4669# B04_OTA_0.Vbias1 GND GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X80 B04_OTA_0.Vbias1 B04_OTA_0.Vbias2 a_3430_n2670# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+X81 GND GND GND ppolyf_u_1k r_width=2u r_length=30u
+X82 a_1974_4669# B04_OTA_0.Vin+ a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X83 a_n2034_6382# VDD GND ppolyf_u_1k r_width=2u r_length=30u
+X84 a_2872_2967# B04_OTA_0.Vbias2 a_1974_4337# GND nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+X85 B04_OTA_0.Vbias0 B04_OTA_0.Vbias3 a_6630_n1720# VDD pfet_03v3 ad=2.2p pd=10.88u as=2.2p ps=10.88u w=5u l=4u
+X86 VDD VDD VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=0 ps=0 w=2.5u l=4u
+X87 GND GND GND GND nfet_03v3 ad=0.44p pd=2.88u as=0 ps=0 w=1u l=1u
+X88 a_n10674_6382# a_n10194_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X89 a_n2514_n2# a_n2034_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X90 a_n10674_6382# B04_OTA_0.Vin+ GND ppolyf_u_1k r_width=2u r_length=30u
+X91 a_6034_5405# B04_OTA_0.Vbias2 a_1974_4669# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X92 a_1974_4337# B04_OTA_0.Vin- a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.22p ps=1.88u w=0.5u l=1u
+X93 a_n4914_6382# a_n4434_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X94 B04_OTA_0.Vbias0 VDD B04_OTA_0.Vbias3 GND nfet_03v3 ad=4.4p pd=20.88u as=4.4p ps=20.88u w=10u l=4u
+X95 a_n2514_n2# a_n2994_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X96 a_6996_4337# B04_OTA_0.Vbias3 a_6034_5405# VDD pfet_03v3 ad=1.1p pd=5.88u as=1.1p ps=5.88u w=2.5u l=4u
+X97 a_n4914_6382# a_n5394_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X98 GND GND GND ppolyf_u_1k r_width=2u r_length=30u
+X99 a_3334_4669# B04_OTA_0.Vin- a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X100 GND a_n2034_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X101 GND GND GND GND nfet_03v3 ad=0.22p pd=1.88u as=0 ps=0 w=0.5u l=4u
+X102 a_n7314_n2# a_n7794_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X103 GND GND GND GND nfet_03v3 ad=0.44p pd=2.88u as=0 ps=0 w=1u l=1u
+X104 a_n7794_6382# a_n7314_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X105 a_1974_4337# B04_OTA_0.Vin- a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+X106 a_n6354_n2# a_n6834_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X107 a_1974_4669# B04_OTA_0.Vbias2 a_6034_5405# GND nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+X108 a_n7314_n2# a_n6834_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X109 a_1686_4337# B04_OTA_0.Vin+ a_1974_4669# VDD pfet_03v3 ad=0.22p pd=1.88u as=0.13p ps=1.02u w=0.5u l=1u
+X110 a_n5394_n2# a_n5874_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X111 B04_OTA_0.Vbias1 GND B04_OTA_0.Vbias2 VDD pfet_03v3 ad=2.2p pd=10.88u as=2.2p ps=10.88u w=5u l=4u
+X112 a_n6354_260# a_n5874_n6124# GND ppolyf_u_1k r_width=2u r_length=30u
+X113 VDD VDD VDD VDD pfet_03v3 ad=1.1p pd=5.88u as=0 ps=0 w=2.5u l=4u
+X114 a_n3954_6382# a_n3474_260# GND ppolyf_u_1k r_width=2u r_length=30u
+X115 a_2584_2555# B04_OTA_0.Vin+ a_1686_4337# VDD pfet_03v3 ad=0.13p pd=1.02u as=0.13p ps=1.02u w=0.5u l=1u
+C0 VDD a_6630_n1720# 1.55734f
+C1 a_2872_2555# a_3334_4669# 1.17854f
+C2 VDD B04_OTA_0.Vbias3 9.90638f
+C3 VDD B04_OTA_0.Vin- 3.46388f
+C4 a_1974_4669# a_3334_4669# 1.58984f
+C5 a_6034_5405# VDD 5.49686f
+C6 a_2872_2555# a_2584_2555# 2.31595f
+C7 a_n6354_260# a_n6354_n2# 1.08375f
+C8 B04_OTA_0.Vbias0 B04_OTA_0.Vbias3 1.82312f
+C9 a_5946_4337# a_6034_5405# 1.18875f
+C10 a_1686_4337# VDD 1.25156f
+C11 a_6996_4337# a_6034_5405# 1.01293f
+C12 a_5946_4337# VDD 2.49085f
+C13 B04_OTA_0.Vbias1 a_3334_4669# 1.04895f
+C14 VDD B04_OTA_bias_ratio_5_0.VbiasP 4.52766f
+C15 B04_OTA_0.Vbias0 VDD 10.2159f
+C16 VDD a_3334_4669# 1.02108f
+C17 B04_OTA_0.Vin+ VDD 3.78297f
+C18 a_1974_4337# a_2872_2967# 1.08849f
+C19 B04_OTA_0.Vbias2 VDD 4.55195f
+C20 a_1974_4669# a_1974_4337# 1.5632f
+C21 a_2584_2555# a_3334_4669# 1.93892f
+C22 B04_OTA_0.Vbias3 B04_OTA_0.Vin- 1.2979f
+C23 B04_OTA_0.Vbias2 B04_OTA_bias_ratio_5_0.VbiasP 1.51197f
+C24 VbiasN B04_OTA_0.Vbias3 4.72647f
+C25 VbiasN GND 6.15198f
+C26 VDD GND 0.14056p
+C27 B04_OTA_0.Vbias1 GND 9.89929f
+C28 a_2872_2555# GND 1.58276f
+C29 a_2872_2967# GND 1.2605f
+C30 B04_OTA_0.Vbias2 GND 17.0217f
+C31 a_2584_2555# GND 6.75113f
+C32 a_1974_4337# GND 6.14965f
+C33 a_3334_4669# GND 3.5823f
+C34 a_1974_4669# GND 3.19669f
+C35 B04_OTA_0.Vbias3 GND 12.542f
+C36 B04_OTA_0.Vin- GND 1.28395f
+C37 B04_OTA_0.Vbias0 GND 4.80776f
+C38 a_n2034_n6124# GND 1.0595f
+C39 a_n2994_n6124# GND 1.00238f
+C40 a_n3954_n6124# GND 1.00221f
+C41 a_n4914_n6124# GND 1.00221f
+C42 a_n5874_n6124# GND 1.00221f
+C43 a_n6834_n6124# GND 1.00221f
+C44 a_n7794_n6124# GND 1.00221f
+C45 a_n8754_n6124# GND 1.00221f
+C46 a_n9714_n6124# GND 1.00239f
+C47 a_n10674_n6124# GND 1.06001f
+C48 a_n2034_6382# GND 1.04871f
+C49 B04_OTA_0.Vin+ GND 6.59018f
+C50 a_n10674_6382# GND 1.04923f
+.ends
+

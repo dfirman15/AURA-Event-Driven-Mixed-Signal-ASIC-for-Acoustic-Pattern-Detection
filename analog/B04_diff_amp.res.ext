@@ -1,0 +1,52 @@
+scale 1000 1 0.5
+rnode "GND.n0" 0 0.0425496 4402 -1969 0
+rnode "GND.n1" 0 0.00693726 4002 -1969 0
+rnode "GND.n2" 0 2.94155 4002 -1969 0
+rnode "GND.n3" 0 0.0425058 -848 -1969 0
+rnode "GND.n4" 0 0.00692523 -448 -1969 0
+rnode "GND.n5" 0 2.88642 -448 -1969 0
+rnode "GND.n6" 0 0.715431 -1475 -2070 0
+rnode "GND" 0 1.27902 1490 -3220 0
+resist "GND" "GND.n6" 0.453556
+resist "GND.n6" "GND.n5" 1.90643
+resist "GND.n6" "GND.n2" 2.01387
+resist "GND.n5" "GND.n3" 2.12138
+resist "GND.n2" "GND.n0" 2.12766
+resist "GND.n5" "GND.n4" 4.64057
+resist "GND.n2" "GND.n1" 4.64818
+rnode "VDD.n0" 0 292.305 4404 -300 0
+rnode "VDD.n1" 0 332.831 4404 406 0
+rnode "VDD.n2" 0 90.3713 4804 -300 0
+rnode "VDD.n3" 0 2715.67 4804 -300 0
+rnode "VDD.n4" 0 88.28 -446 -300 0
+rnode "VDD.n5" 0 2771.05 -446 -300 0
+rnode "VDD.n6" 0 292.305 -846 -300 0
+rnode "VDD.n7" 0 328.52 -846 406 0
+rnode "VDD" 0 141.343 1700 600 0
+resist "VDD.n7" "VDD.n5" 0.0748336
+resist "VDD.n3" "VDD.n1" 0.0826125
+resist "VDD.n5" "VDD.n4" 0.643327
+resist "VDD.n3" "VDD.n2" 0.694095
+resist "VDD" "VDD.n7" 1.29527
+resist "VDD" "VDD.n1" 1.38164
+resist "VDD.n7" "VDD.n6" 7.44225
+resist "VDD.n1" "VDD.n0" 7.44225
+resist "VDD.n5" "VDD.n3" 11.7477
+rnode "Vo" 0 1474.49 1910 -1410 0
+rnode "V+.n0" 0 261.191 3352 -1969 0
+rnode "V+.n1" 0 91.0137 202 -1969 0
+rnode "V+.n2" 0 559.956 205 -1945 0
+rnode "V+" 0 286.927 -1270 -2240 0
+resist "V+.n2" "V+.n1" 2.04861
+resist "V+" "V+.n2" 2.40851
+resist "V+.n2" "V+.n0" 4.53455
+rnode "V-.n0" 0 215.062 1252 -1969 0
+rnode "V-.n1" 0 147.311 2302 -1969 0
+rnode "V-.n2" 0 476.948 2302 -2080 0
+rnode "V-" 0 608.2 4710 -2320 0
+resist "V-.n2" "V-.n1" 2.01288
+resist "V-.n2" "V-.n0" 2.99907
+resist "V-" "V-.n2" 3.83983
+rnode "Vbias.n0" 0 57.4497 1692 -2664 0
+rnode "Vbias" 0 35.6777 1060 -2930 0
+resist "Vbias" "Vbias.n0" 4.93533

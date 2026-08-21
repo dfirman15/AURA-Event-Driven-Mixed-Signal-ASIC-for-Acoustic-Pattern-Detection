@@ -141,7 +141,7 @@ C {opin.sym} 580 -350 0 0 {name=p14 lab=Vbias0}
 C {opin.sym} 610 -230 0 0 {name=p15 lab=Vbias3}
 C {symbols/pfet_03v3.sym} 190 -430 0 0 {name=M2
 L=4u
-W=\{ratio*5u\}
+W=\{ratio*2u\}
 nf=1
 m=1
 ad="'int((nf+1)/2) * W/nf * 0.18u'"

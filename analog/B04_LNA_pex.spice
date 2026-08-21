@@ -1,0 +1,294 @@
+* NGSPICE file created from B04_LNA.ext - technology: gf180mcuD
+
+.option scale=5n
+
+X0 Vout m1_23950_n2750# m1_23950_n2750# Vout pfet_03v3 ad=17.6n pd=0.576m as=17.6n ps=0.576m w=200 l=800
+X1 m3_38520_1210# m1_23950_n2750# m1_23950_n2750# m3_38520_1210# pfet_03v3 ad=17.6n pd=0.576m as=35.2n ps=1.152m w=200 l=800
+X2 m1_14160_n4650# m1_14320_n4310# m1_14320_n4310# m1_14160_n4650# pfet_03v3 ad=17.6n pd=0.576m as=35.2n ps=1.152m w=200 l=800
+X3 m3_230_4060# m1_14320_n4310# m1_14320_n4310# m3_230_4060# pfet_03v3 ad=17.6n pd=0.576m as=0 ps=0 w=200 l=800
+X4 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X5 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X6 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X7 m3_230_4060# m1_14160_n4650# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X8 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X9 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X10 B04_OTA_bias_ratio_8_0/Vbias1 VSUBS B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=88n pd=2.176m as=88n ps=2.176m w=1000 l=800
+X11 B04_OTA_bias_ratio_8_0/Vbias2 VbiasP B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.704u pd=0.01618 as=0.704u ps=0.01618 w=8000 l=800
+X12 B04_OTA_bias_ratio_8_0/Vbias3 VbiasN VSUBS VSUBS nfet_03v3 ad=1.408u pd=0.03218 as=1.408u ps=0.03218 w=16000 l=800
+X13 B04_OTA_bias_ratio_8_0/Vbias1 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/m1_960_n780# VSUBS nfet_03v3 ad=17.6n pd=0.576m as=17.6n ps=0.576m w=200 l=800
+X14 B04_OTA_bias_ratio_8_0/m1_960_n780# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=35.2n pd=1.152m as=2.04u ps=0.04862 w=200 l=800
+X15 B04_OTA_bias_ratio_8_0/Vbias3 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/Vbias0 VSUBS nfet_03v3 ad=0.176u pd=4.176m as=0.176u ps=4.176m w=2000 l=800
+X16 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/Vbias3 B04_OTA_bias_ratio_8_0/m1_4120_180# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=88n pd=2.176m as=0.176u ps=4.352m w=1000 l=800
+X17 B04_OTA_bias_ratio_8_0/m1_4120_180# B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=2.4464u ps=0.05736 w=1000 l=800
+X18 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X19 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X20 m3_38520_1210# Vout cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X21 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X22 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X23 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X24 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X25 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X26 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X27 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X28 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X29 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X30 B04_LNA_OTA_0/m1_30700_n3980# B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.176u pd=4.176m as=0.176u ps=4.176m w=2000 l=1600
+X31 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_27880_n1540# B04_LNA_OTA_0/m1_27210_n1450# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0.352u ps=8.352m w=2000 l=1600
+X32 B04_LNA_OTA_0/m1_30700_n3980# B04_OTA_bias_ratio_8_0/Vbias3 Vout B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.352u pd=8.352m as=0.1936u ps=4.752m w=2000 l=1600
+X33 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.2816u pd=6.576m as=0.2816u ps=6.576m w=3200 l=1600
+X34 B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/Vbias3 B04_LNA_OTA_0/m1_27210_n1450# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.176u pd=4.176m as=0 ps=0 w=2000 l=1600
+X35 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias2 Vout VSUBS nfet_03v3 ad=35.2n pd=0.976m as=35.2n ps=0.976m w=400 l=1600
+X36 B04_LNA_OTA_0/m1_n9910_n1220# m3_38520_1210# B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.1664u ps=3.304m w=3200 l=1600
+X37 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.2816u ps=6.576m w=3200 l=1600
+X38 B04_LNA_OTA_0/m1_n9910_n1220# m3_38520_1210# B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.2816u pd=6.576m as=0.1664u ps=3.304m w=3200 l=1600
+X39 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.1664u ps=3.304m w=3200 l=1600
+X40 B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=20.8n pd=0.504m as=20.8n ps=0.504m w=400 l=1600
+X41 B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=20.8n pd=0.504m as=20.8n ps=0.504m w=400 l=1600
+X42 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=35.2n pd=0.976m as=20.8n ps=0.504m w=400 l=1600
+X43 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=20.8n pd=0.504m as=35.2n ps=0.976m w=400 l=1600
+X44 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=20.8n pd=0.504m as=20.8n ps=0.504m w=400 l=1600
+X45 B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=35.2n pd=0.976m as=0.3072u ps=7.936m w=400 l=1600
+X46 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X47 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X48 B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X49 B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X50 B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X51 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.2816u pd=6.576m as=0.1664u ps=3.304m w=3200 l=1600
+X52 B04_LNA_OTA_0/m1_n9910_n1220# m3_38520_1210# B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.1664u ps=3.304m w=3200 l=1600
+X53 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.1664u ps=3.304m w=3200 l=1600
+X54 B04_LNA_OTA_0/m1_n9910_n1220# m3_38520_1210# B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.1664u ps=3.304m w=3200 l=1600
+X55 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.1664u pd=3.304m as=0.2816u ps=6.576m w=3200 l=1600
+X56 B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=52n pd=1.104m as=88n ps=2.176m w=1000 l=800
+X57 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/Vbias0 B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=88n pd=2.176m as=52n ps=1.104m w=1000 l=800
+X58 B04_LNA_OTA_0/m1_n8470_n3950# m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0.2816u pd=6.576m as=4.3536u ps=0.09446 w=3200 l=1600
+X59 B04_LNA_OTA_0/m1_n9910_n1220# m3_38520_1210# B04_LNA_OTA_0/m1_15900_n5860# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0.2816u ps=6.576m w=3200 l=1600
+X60 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_12750_n5900# VSUBS nfet_03v3 ad=70.4n pd=1.776m as=70.4n ps=1.776m w=800 l=400
+X61 B04_LNA_OTA_0/m1_16360_n5860# B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_15900_n5860# VSUBS nfet_03v3 ad=0.1056u pd=2.752m as=70.4n ps=1.776m w=800 l=400
+X62 VSUBS B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_12750_n5900# VSUBS nfet_03v3 ad=0 pd=0 as=0.1056u ps=2.752m w=400 l=1600
+X63 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0.3072u ps=7.936m w=400 l=1600
+X64 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X65 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X66 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X67 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X68 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X69 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X70 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X71 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X72 VSUBS B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X73 B04_LNA_OTA_0/m1_n9910_n1220# m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=1.6128u ps=0.03301 w=3200 l=1600
+X74 B04_LNA_OTA_0/m1_n6610_n3920# m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X75 B04_LNA_OTA_0/m1_n9910_n1220# m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X76 B04_LNA_OTA_0/m1_n6610_n3920# m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X77 B04_LNA_OTA_0/m1_n9910_n1220# m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X78 B04_LNA_OTA_0/m1_n6610_n3920# m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X79 B04_LNA_OTA_0/m1_n9910_n1220# m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X80 B04_LNA_OTA_0/m1_n6610_n3920# m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X81 B04_LNA_OTA_0/m1_n9910_n1220# m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X82 B04_LNA_OTA_0/m1_n6610_n3920# B04_LNA_OTA_0/m1_15900_n5860# VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X83 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/VDD pfet_03v3 ad=0 pd=0 as=0 ps=0 w=3200 l=1600
+X84 VSUBS B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_n5250_n5920# VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X85 B04_LNA_OTA_0/m1_16360_n5860# B04_LNA_OTA_0/m1_15900_n5860# VSUBS VSUBS nfet_03v3 ad=0 pd=0 as=0 ps=0 w=400 l=1600
+X86 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X87 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X88 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X89 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X90 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X91 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X92 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X93 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X94 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X95 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X96 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X97 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X98 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X99 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X100 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X101 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X102 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X103 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X104 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X105 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X106 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X107 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X108 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X109 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X110 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X111 Vout VSUBS cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X112 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X113 m3_38520_1210# m4_30150_n5940# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+X114 m3_230_4060# m5_9970_n3140# cap_mim_2f0_m4m5_noshield c_width=2000 c_length=2000
+C0 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_n9910_n1220# 2.93745f
+C1 B04_LNA_OTA_0/m1_15900_n5860# m3_38520_1210# 1.45772f
+C2 B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/Vbias2 0.33964f
+C3 m1_14160_n4650# m5_9970_n3140# 0.0128f
+C4 VbiasP m5_9970_n3140# 0
+C5 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/Vbias1 0.46603f
+C6 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_12750_n5900# 0.51162f
+C7 m3_38520_1210# B04_LNA_OTA_0/m1_30700_n3980# 0.0041f
+C8 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/VDD 11.99428f
+C9 B04_OTA_bias_ratio_8_0/Vbias3 B04_OTA_bias_ratio_8_0/Vbias1 0.0175f
+C10 B04_LNA_OTA_0/m1_n8470_n3950# Vout 0.00574f
+C11 Vout m5_9970_n3140# 1.1506f
+C12 B04_LNA_OTA_0/m1_16360_n5860# B04_LNA_OTA_0/m1_n6610_n3920# 0.03342f
+C13 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_27210_n1450# 2.96281f
+C14 B04_OTA_bias_ratio_8_0/Vbias0 B04_LNA_OTA_0/m1_n6610_n3920# 0.29737f
+C15 B04_OTA_bias_ratio_8_0/Vbias3 B04_OTA_bias_ratio_8_0/VDD 13.03412f
+C16 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_n5250_n5920# 2.53849f
+C17 Vout m3_38520_1210# 4.92981f
+C18 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_15900_n5860# 0.76515f
+C19 m1_14160_n4650# B04_OTA_bias_ratio_8_0/Vbias1 0.44625f
+C20 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_n9910_n1220# 0
+C21 B04_LNA_OTA_0/m1_27210_n1450# B04_LNA_OTA_0/m1_n6610_n3920# 0.00293f
+C22 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_30700_n3980# 2.32095f
+C23 B04_OTA_bias_ratio_8_0/Vbias3 B04_LNA_OTA_0/m1_n6610_n3920# 0.24871f
+C24 B04_OTA_bias_ratio_8_0/VDD m1_14160_n4650# 0.09945f
+C25 B04_OTA_bias_ratio_8_0/VDD VbiasP 5.67089f
+C26 B04_LNA_OTA_0/m1_15900_n5860# B04_LNA_OTA_0/m1_n6610_n3920# 1.77693f
+C27 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_12750_n5900# 0.49282f
+C28 B04_LNA_OTA_0/m1_27880_n1540# B04_LNA_OTA_0/m1_27210_n1450# 0.98303f
+C29 B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/Vbias3 1.39264f
+C30 m3_38520_1210# m4_30150_n5940# 18.7226f
+C31 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/m1_4120_180# 1.56325f
+C32 m1_14160_n4650# B04_LNA_OTA_0/m1_n6610_n3920# 0.01504f
+C33 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_16360_n5860# 0.41979f
+C34 B04_OTA_bias_ratio_8_0/VDD Vout 4.11614f
+C35 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/m1_960_n780# 0.28393f
+C36 B04_OTA_bias_ratio_8_0/Vbias0 B04_LNA_OTA_0/m1_n5250_n5920# 0.55402f
+C37 B04_LNA_OTA_0/m1_27880_n1540# B04_LNA_OTA_0/m1_30700_n3980# 0.96537f
+C38 B04_OTA_bias_ratio_8_0/Vbias0 B04_LNA_OTA_0/m1_n9910_n1220# 1.64625f
+C39 B04_OTA_bias_ratio_8_0/Vbias3 B04_LNA_OTA_0/m1_n5250_n5920# 2.39319f
+C40 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_15900_n5860# 0.14181f
+C41 B04_LNA_OTA_0/m1_n8470_n3950# m3_230_4060# 1.59924f
+C42 B04_LNA_OTA_0/m1_16360_n5860# B04_LNA_OTA_0/m1_12750_n5900# 0
+C43 m3_230_4060# m5_9970_n3140# 20.41098f
+C44 B04_LNA_OTA_0/m1_27880_n1540# Vout 2.21428f
+C45 B04_LNA_OTA_0/m1_15900_n5860# B04_LNA_OTA_0/m1_n9910_n1220# 1.65504f
+C46 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_30700_n3980# 0
+C47 m3_230_4060# m3_38520_1210# 17.6331f
+C48 m4_30150_n5940# B04_LNA_OTA_0/m1_n6610_n3920# 0.0323f
+C49 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_16360_n5860# 1.47558f
+C50 B04_LNA_OTA_0/m1_15900_n5860# B04_LNA_OTA_0/m1_12750_n5900# 0
+C51 B04_OTA_bias_ratio_8_0/Vbias2 m1_23950_n2750# 0.00491f
+C52 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/Vbias2 0.49619f
+C53 B04_LNA_OTA_0/m1_27880_n1540# m4_30150_n5940# 0
+C54 B04_LNA_OTA_0/m1_n5250_n5920# Vout 0.14741f
+C55 m3_230_4060# B04_OTA_bias_ratio_8_0/Vbias1 0.92529f
+C56 VbiasN B04_OTA_bias_ratio_8_0/VDD 0.36079f
+C57 m1_14320_n4310# m1_14160_n4650# 3.05759f
+C58 VbiasP m1_14320_n4310# 0.00232f
+C59 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_27210_n1450# 0
+C60 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/Vbias3 4.0258f
+C61 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_15900_n5860# 1.69978f
+C62 B04_OTA_bias_ratio_8_0/VDD m3_230_4060# 46.85989f
+C63 B04_LNA_OTA_0/m1_n8470_n3950# m3_38520_1210# 0.658f
+C64 B04_LNA_OTA_0/m1_n5250_n5920# m4_30150_n5940# 0.09262f
+C65 Vout B04_LNA_OTA_0/m1_12750_n5900# 0.01057f
+C66 B04_OTA_bias_ratio_8_0/Vbias2 m1_14160_n4650# 0.09115f
+C67 B04_OTA_bias_ratio_8_0/Vbias2 VbiasP 2.34076f
+C68 m3_230_4060# B04_LNA_OTA_0/m1_n6610_n3920# 16.42132f
+C69 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/m1_4120_180# 0.01857f
+C70 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/Vbias1 2.25339f
+C71 B04_OTA_bias_ratio_8_0/Vbias1 m5_9970_n3140# 0.12052f
+C72 B04_OTA_bias_ratio_8_0/Vbias3 m1_23950_n2750# 0.01275f
+C73 B04_OTA_bias_ratio_8_0/Vbias2 Vout 0.66375f
+C74 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/Vbias3 1.54633f
+C75 B04_LNA_OTA_0/m1_15900_n5860# B04_LNA_OTA_0/m1_16360_n5860# 1.33643f
+C76 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/VDD 1.29452f
+C77 m3_38520_1210# B04_OTA_bias_ratio_8_0/Vbias1 0.18423f
+C78 B04_OTA_bias_ratio_8_0/VDD m5_9970_n3140# 3.88262f
+C79 B04_OTA_bias_ratio_8_0/Vbias3 B04_LNA_OTA_0/m1_27210_n1450# 1.0093f
+C80 B04_OTA_bias_ratio_8_0/Vbias0 m1_14160_n4650# 0.20741f
+C81 B04_OTA_bias_ratio_8_0/VDD m3_38520_1210# 41.61949f
+C82 B04_OTA_bias_ratio_8_0/Vbias2 m4_30150_n5940# 0.10657f
+C83 B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_n6610_n3920# 5.76558f
+C84 B04_LNA_OTA_0/m1_n5250_n5920# m3_230_4060# 0.81938f
+C85 B04_OTA_bias_ratio_8_0/Vbias0 B04_OTA_bias_ratio_8_0/m1_4120_180# 0.5954f
+C86 B04_OTA_bias_ratio_8_0/Vbias3 B04_LNA_OTA_0/m1_30700_n3980# 1.13244f
+C87 m3_230_4060# B04_LNA_OTA_0/m1_n9910_n1220# 19.02682f
+C88 m3_38520_1210# B04_LNA_OTA_0/m1_n6610_n3920# 5.94021f
+C89 Vout m1_23950_n2750# 3.00684f
+C90 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/Vbias1 1.10868f
+C91 B04_OTA_bias_ratio_8_0/Vbias3 B04_OTA_bias_ratio_8_0/m1_4120_180# 0.59702f
+C92 B04_LNA_OTA_0/m1_27880_n1540# m3_38520_1210# 0.08556f
+C93 m3_230_4060# B04_LNA_OTA_0/m1_12750_n5900# 0
+C94 m3_230_4060# m1_14320_n4310# 3.10852f
+C95 VbiasP m1_14160_n4650# 0.00116f
+C96 B04_OTA_bias_ratio_8_0/Vbias3 Vout 2.06028f
+C97 Vout B04_LNA_OTA_0/m1_15900_n5860# 0.00121f
+C98 B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n6610_n3920# 6.12816f
+C99 B04_OTA_bias_ratio_8_0/Vbias2 VbiasN 0.09109f
+C100 m4_30150_n5940# B04_LNA_OTA_0/m1_16360_n5860# 0.00213f
+C101 B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_n5250_n5920# 2.25457f
+C102 B04_LNA_OTA_0/m1_n5250_n5920# m5_9970_n3140# 0.05033f
+C103 B04_OTA_bias_ratio_8_0/Vbias2 m3_230_4060# 0.00757f
+C104 Vout B04_LNA_OTA_0/m1_30700_n3980# 0.0308f
+C105 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_n6610_n3920# 11.8259f
+C106 VbiasP Vout 0.3437f
+C107 B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_n9910_n1220# 1.55639f
+C108 B04_LNA_OTA_0/m1_n5250_n5920# m3_38520_1210# 20.29291f
+C109 B04_OTA_bias_ratio_8_0/Vbias3 m4_30150_n5940# 1.00407f
+C110 B04_LNA_OTA_0/m1_27880_n1540# B04_OTA_bias_ratio_8_0/VDD 10.31746f
+C111 B04_LNA_OTA_0/m1_15900_n5860# m4_30150_n5940# 0.00113f
+C112 m3_38520_1210# B04_LNA_OTA_0/m1_n9910_n1220# 18.33341f
+C113 B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_12750_n5900# 1.39787f
+C114 m1_14320_n4310# m5_9970_n3140# 0.01697f
+C115 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/Vbias1 5.99095f
+C116 m3_38520_1210# B04_LNA_OTA_0/m1_12750_n5900# 0.00985f
+C117 m3_230_4060# B04_LNA_OTA_0/m1_16360_n5860# 0
+C118 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/Vbias2 1.09478f
+C119 B04_OTA_bias_ratio_8_0/Vbias0 m3_230_4060# 0.5395f
+C120 B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_n9910_n1220# 0.00226f
+C121 B04_LNA_OTA_0/m1_n5250_n5920# B04_OTA_bias_ratio_8_0/VDD 3.89242f
+C122 VbiasN B04_OTA_bias_ratio_8_0/Vbias3 6.34833f
+C123 Vout m4_30150_n5940# 2.62401f
+C124 B04_OTA_bias_ratio_8_0/Vbias2 m3_38520_1210# 0.67814f
+C125 B04_OTA_bias_ratio_8_0/VDD B04_LNA_OTA_0/m1_n9910_n1220# 17.62411f
+C126 B04_OTA_bias_ratio_8_0/Vbias1 B04_LNA_OTA_0/m1_12750_n5900# 0
+C127 B04_LNA_OTA_0/m1_n5250_n5920# B04_LNA_OTA_0/m1_n6610_n3920# 6.48623f
+C128 m3_230_4060# B04_LNA_OTA_0/m1_15900_n5860# 0.15355f
+C129 VbiasN VbiasP 0.48692f
+C130 B04_OTA_bias_ratio_8_0/VDD m1_14320_n4310# 0.00164f
+C131 B04_LNA_OTA_0/m1_27880_n1540# B04_LNA_OTA_0/m1_n5250_n5920# 0.02123f
+C132 B04_OTA_bias_ratio_8_0/m1_960_n780# B04_OTA_bias_ratio_8_0/Vbias1 0.30231f
+C133 B04_LNA_OTA_0/m1_n9910_n1220# B04_LNA_OTA_0/m1_n6610_n3920# 2.4596f
+C134 m3_230_4060# m1_14160_n4650# 1.64897f
+C135 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/Vbias1 0.9254f
+C136 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/Vbias0 0.55123f
+C137 B04_OTA_bias_ratio_8_0/VDD B04_OTA_bias_ratio_8_0/m1_960_n780# 0.00509f
+C138 B04_LNA_OTA_0/m1_n6610_n3920# B04_LNA_OTA_0/m1_12750_n5900# 0.00754f
+C139 VbiasN Vout 0.38108f
+C140 B04_OTA_bias_ratio_8_0/Vbias2 B04_OTA_bias_ratio_8_0/VDD 6.44896f
+C141 m3_38520_1210# B04_LNA_OTA_0/m1_16360_n5860# 0.00256f
+C142 m1_23950_n2750# m3_38520_1210# 3.08419f
+C143 B04_OTA_bias_ratio_8_0/Vbias0 m3_38520_1210# 0.86035f
+C144 B04_LNA_OTA_0/m1_n8470_n3950# B04_OTA_bias_ratio_8_0/Vbias3 0.0102f
+C145 B04_LNA_OTA_0/m1_n8470_n3950# B04_LNA_OTA_0/m1_15900_n5860# 0.6499f
+C146 B04_OTA_bias_ratio_8_0/Vbias2 B04_LNA_OTA_0/m1_n6610_n3920# 2.03786f
+C147 B04_LNA_OTA_0/m1_27210_n1450# m3_38520_1210# 0.03764f
+C148 B04_OTA_bias_ratio_8_0/Vbias3 m3_38520_1210# 2.06589f
+C149 m3_230_4060# VSUBS 27.71216f $ **FLOATING
+C150 m5_9970_n3140# VSUBS 8.19796f $ **FLOATING
+C151 m3_38520_1210# VSUBS 20.93772f $ **FLOATING
+C152 m4_30150_n5940# VSUBS 7.64017f $ **FLOATING
+C153 B04_OTA_bias_ratio_8_0/Vbias2 VSUBS 20.52699f
+C154 B04_LNA_OTA_0/m1_n6610_n3920# VSUBS 16.20538f $ **FLOATING
+C155 B04_LNA_OTA_0/m1_n5250_n5920# VSUBS 14.27235f $ **FLOATING
+C156 B04_LNA_OTA_0/m1_12750_n5900# VSUBS 1.31998f $ **FLOATING
+C157 B04_LNA_OTA_0/m1_16360_n5860# VSUBS 1.35633f $ **FLOATING
+C158 B04_LNA_OTA_0/m1_15900_n5860# VSUBS 8.04107f $ **FLOATING
+C159 B04_LNA_OTA_0/m1_n8470_n3950# VSUBS 8.79682f $ **FLOATING
+C160 B04_LNA_OTA_0/m1_n9910_n1220# VSUBS 3.83106f $ **FLOATING
+C161 B04_OTA_bias_ratio_8_0/Vbias1 VSUBS 68.51653f
+C162 B04_LNA_OTA_0/m1_27880_n1540# VSUBS 0.81222f $ **FLOATING
+C163 B04_OTA_bias_ratio_8_0/VDD VSUBS 0.33293p
+C164 B04_LNA_OTA_0/m1_30700_n3980# VSUBS 0.6921f $ **FLOATING
+C165 B04_OTA_bias_ratio_8_0/m1_4120_180# VSUBS 0.28465f $ **FLOATING
+C166 B04_OTA_bias_ratio_8_0/Vbias0 VSUBS 4.97185f
+C167 B04_OTA_bias_ratio_8_0/m1_960_n780# VSUBS 0.66108f $ **FLOATING
+C168 B04_OTA_bias_ratio_8_0/Vbias3 VSUBS 19.47637f
+C169 VbiasN VSUBS 8.24269f
+C170 VbiasP VSUBS 0.6991f
+C171 Vout VSUBS 86.53622f
+C172 m1_14320_n4310# VSUBS 0.61894f $ **FLOATING
+C173 m1_14160_n4650# VSUBS 6.81835f $ **FLOATING
+C174 m1_23950_n2750# VSUBS 0.61327f $ **FLOATING

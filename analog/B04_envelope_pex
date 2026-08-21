@@ -1,0 +1,123 @@
+* NGSPICE file created from B04_envelope.ext - technology: gf180mcuD
+
+.subckt nfet_03v3_7CUFV7 a_n488_n50# a_n400_n142# a_400_n50# VSUBS
+X0 a_400_n50# a_n400_n142# a_n488_n50# VSUBS nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=4u
+.ends
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+.ends
+
+.subckt nfet_03v3_SE6W7U a_n100_n292# a_100_n200# a_n188_n200# VSUBS
+X0 a_100_n200# a_n100_n292# a_n188_n200# VSUBS nfet_03v3 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=1u
+.ends
+
+.subckt B04_envelope VDD Vout GND Vin VbiasN
+Xnfet_03v3_7CUFV7_0 m1_n30_110# VbiasN m1_980_460# GND nfet_03v3_7CUFV7
+Xnfet_03v3_7CUFV7_1 m1_n30_810# VbiasN m1_980_1160# GND nfet_03v3_7CUFV7
+Xnfet_03v3_7CUFV7_2 m1_n30_810# VbiasN m1_980_460# GND nfet_03v3_7CUFV7
+Xnfet_03v3_7CUFV7_3 Vout VbiasN m1_980_1160# GND nfet_03v3_7CUFV7
+Xcap_mim_0[0|0] GND Vout cap_mim
+Xcap_mim_0[1|0] GND Vout cap_mim
+Xcap_mim_0[2|0] GND Vout cap_mim
+Xcap_mim_0[3|0] GND Vout cap_mim
+Xcap_mim_0[4|0] GND Vout cap_mim
+Xcap_mim_0[5|0] GND Vout cap_mim
+Xcap_mim_0[6|0] GND Vout cap_mim
+Xcap_mim_0[7|0] GND Vout cap_mim
+Xcap_mim_0[8|0] GND Vout cap_mim
+Xcap_mim_0[9|0] GND Vout cap_mim
+Xcap_mim_0[0|1] GND Vout cap_mim
+Xcap_mim_0[1|1] GND Vout cap_mim
+Xcap_mim_0[2|1] GND Vout cap_mim
+Xcap_mim_0[3|1] GND Vout cap_mim
+Xcap_mim_0[4|1] GND Vout cap_mim
+Xcap_mim_0[5|1] GND Vout cap_mim
+Xcap_mim_0[6|1] GND Vout cap_mim
+Xcap_mim_0[7|1] GND Vout cap_mim
+Xcap_mim_0[8|1] GND Vout cap_mim
+Xcap_mim_0[9|1] GND Vout cap_mim
+Xcap_mim_0[0|2] GND Vout cap_mim
+Xcap_mim_0[1|2] GND Vout cap_mim
+Xcap_mim_0[2|2] GND Vout cap_mim
+Xcap_mim_0[3|2] GND Vout cap_mim
+Xcap_mim_0[4|2] GND Vout cap_mim
+Xcap_mim_0[5|2] GND Vout cap_mim
+Xcap_mim_0[6|2] GND Vout cap_mim
+Xcap_mim_0[7|2] GND Vout cap_mim
+Xcap_mim_0[8|2] GND Vout cap_mim
+Xcap_mim_0[9|2] GND Vout cap_mim
+Xcap_mim_0[0|3] GND Vout cap_mim
+Xcap_mim_0[1|3] GND Vout cap_mim
+Xcap_mim_0[2|3] GND Vout cap_mim
+Xcap_mim_0[3|3] GND Vout cap_mim
+Xcap_mim_0[4|3] GND Vout cap_mim
+Xcap_mim_0[5|3] GND Vout cap_mim
+Xcap_mim_0[6|3] GND Vout cap_mim
+Xcap_mim_0[7|3] GND Vout cap_mim
+Xcap_mim_0[8|3] GND Vout cap_mim
+Xcap_mim_0[9|3] GND Vout cap_mim
+Xcap_mim_0[0|4] GND Vout cap_mim
+Xcap_mim_0[1|4] GND Vout cap_mim
+Xcap_mim_0[2|4] GND Vout cap_mim
+Xcap_mim_0[3|4] GND Vout cap_mim
+Xcap_mim_0[4|4] GND Vout cap_mim
+Xcap_mim_0[5|4] GND Vout cap_mim
+Xcap_mim_0[6|4] GND Vout cap_mim
+Xcap_mim_0[7|4] GND Vout cap_mim
+Xcap_mim_0[8|4] GND Vout cap_mim
+Xcap_mim_0[9|4] GND Vout cap_mim
+Xcap_mim_0[0|5] GND Vout cap_mim
+Xcap_mim_0[1|5] GND Vout cap_mim
+Xcap_mim_0[2|5] GND Vout cap_mim
+Xcap_mim_0[3|5] GND Vout cap_mim
+Xcap_mim_0[4|5] GND Vout cap_mim
+Xcap_mim_0[5|5] GND Vout cap_mim
+Xcap_mim_0[6|5] GND Vout cap_mim
+Xcap_mim_0[7|5] GND Vout cap_mim
+Xcap_mim_0[8|5] GND Vout cap_mim
+Xcap_mim_0[9|5] GND Vout cap_mim
+Xcap_mim_0[0|6] GND Vout cap_mim
+Xcap_mim_0[1|6] GND Vout cap_mim
+Xcap_mim_0[2|6] GND Vout cap_mim
+Xcap_mim_0[3|6] GND Vout cap_mim
+Xcap_mim_0[4|6] GND Vout cap_mim
+Xcap_mim_0[5|6] GND Vout cap_mim
+Xcap_mim_0[6|6] GND Vout cap_mim
+Xcap_mim_0[7|6] GND Vout cap_mim
+Xcap_mim_0[8|6] GND Vout cap_mim
+Xcap_mim_0[9|6] GND Vout cap_mim
+Xcap_mim_0[0|7] GND Vout cap_mim
+Xcap_mim_0[1|7] GND Vout cap_mim
+Xcap_mim_0[2|7] GND Vout cap_mim
+Xcap_mim_0[3|7] GND Vout cap_mim
+Xcap_mim_0[4|7] GND Vout cap_mim
+Xcap_mim_0[5|7] GND Vout cap_mim
+Xcap_mim_0[6|7] GND Vout cap_mim
+Xcap_mim_0[7|7] GND Vout cap_mim
+Xcap_mim_0[8|7] GND Vout cap_mim
+Xcap_mim_0[9|7] GND Vout cap_mim
+Xcap_mim_0[0|8] GND Vout cap_mim
+Xcap_mim_0[1|8] GND Vout cap_mim
+Xcap_mim_0[2|8] GND Vout cap_mim
+Xcap_mim_0[3|8] GND Vout cap_mim
+Xcap_mim_0[4|8] GND Vout cap_mim
+Xcap_mim_0[5|8] GND Vout cap_mim
+Xcap_mim_0[6|8] GND Vout cap_mim
+Xcap_mim_0[7|8] GND Vout cap_mim
+Xcap_mim_0[8|8] GND Vout cap_mim
+Xcap_mim_0[9|8] GND Vout cap_mim
+Xcap_mim_0[0|9] GND Vout cap_mim
+Xcap_mim_0[1|9] GND Vout cap_mim
+Xcap_mim_0[2|9] GND Vout cap_mim
+Xcap_mim_0[3|9] GND Vout cap_mim
+Xcap_mim_0[4|9] GND Vout cap_mim
+Xcap_mim_0[5|9] GND Vout cap_mim
+Xcap_mim_0[6|9] GND Vout cap_mim
+Xcap_mim_0[7|9] GND Vout cap_mim
+Xcap_mim_0[8|9] GND Vout cap_mim
+Xcap_mim_0[9|9] GND Vout cap_mim
+XXM1 Vin Vout VDD GND nfet_03v3_SE6W7U
+XXM2 m1_n30_110# VbiasN GND GND nfet_03v3_7CUFV7
+.ends
+

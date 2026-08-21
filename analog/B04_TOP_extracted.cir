@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 12/08/2026 19:11
+* Extracted by KLayout with GF180MCU LVS runset on : 13/08/2026 05:01
 
 .SUBCKT B04_TOP VDD VbiasP|Vo Vbias2 Vin|Vin+|Vout Vbias3 V\x2d|Vbias|VbiasN
 + Vin|Vin+|Vin\x2d|Vout Vin\x2d|Vout Vbias0 Vin+|Vin\x2d|Vout Vin Vbias1 Vout

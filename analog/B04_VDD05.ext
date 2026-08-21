@@ -1,0 +1,814 @@
+timestamp 1787068306
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use B04_OTA B04_OTA_0 1 0 1460 0 1 5299
+use B04_OTA_bias_ratio_5 B04_OTA_bias_ratio_5_0 1 0 2480 0 1 -1870
+use ppolyf_u_1k_7A6E7G ppolyf_u_1k_7A6E7G_0 1 0 -5914 0 1 190
+port "VbiasN" 3 -20 -5210 10 -5170 m2
+port "VDD" 1 3500 6510 3700 6550 m1
+port "GND" 2 6380 -6350 6990 -6180 m1
+node "VbiasN" 0 168.789 -20 -5210 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57600 960 0 0 0 0 0 0
+node "m2_n240_n1440#" 0 209.66 -240 -1440 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 86100 1240 0 0 0 0 0 0
+node "m2_6770_4190#" 4 1261.08 6770 4190 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7000 340 350100 7960 0 0 0 0
+node "m1_10170_n4600#" 0 7532.28 10170 -4600 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6574400 13980 0 0 0 0 0 0 0 0
+node "m1_n2030_n6100#" 1 289.709 -2030 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n2990_n6100#" 1 285.577 -2990 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n3950_n6100#" 1 285.577 -3950 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n4910_n6100#" 1 285.577 -4910 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n5870_n6100#" 1 285.577 -5870 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n6830_n6100#" 1 285.577 -6830 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n7790_n6100#" 1 285.577 -7790 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n8750_n6100#" 1 285.577 -8750 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n9710_n6100#" 1 285.577 -9710 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n10670_n6100#" 1 289.337 -10670 -6100 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_5010_1330#" 2 873.273 5010 1330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21000 620 185700 4280 0 0 0 0 0 0
+node "m1_4440_3290#" 3 2723.45 4440 3290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51200 960 282900 3520 563400 5380 917600 6540 0 0
+node "m1_7360_4180#" 3 2293.87 7360 4180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10800 480 149600 2420 700300 7140 535900 5120 0 0
+node "m1_3560_5970#" 4 3887.05 3560 5970 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39200 840 675400 6220 550700 4980 1860000 12620 0 0
+node "m1_n2510_20#" 1 283.165 -2510 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n3470_20#" 1 283.165 -3470 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n4430_20#" 1 283.165 -4430 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n5390_20#" 1 284.136 -5390 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n7310_20#" 1 288.99 -7310 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n8270_20#" 1 283.165 -8270 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n9230_20#" 1 283.165 -9230 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n10190_20#" 1 287.561 -10190 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n2510_290#" 1 284.277 -2510 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n3470_290#" 1 283.165 -3470 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n4430_290#" 1 283.165 -4430 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n5390_290#" 1 288.99 -5390 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n6350_80#" 1 372.219 -6350 80 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 113700 2200 0 0 0 0 0 0 0 0
+node "m1_n6350_290#" 2 635.448 -6350 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62400 1880 174000 2460 0 0 0 0 0 0
+node "m1_n7310_290#" 1 283.165 -7310 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n8270_290#" 1 283.165 -8270 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n9230_290#" 1 283.165 -9230 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n10190_290#" 1 288.66 -10190 290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n10670_60#" 11 5756.89 -10670 60 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 101400 1300 191600 3160 2809700 35040 0 0 0 0
+node "VDD" 4 14949.5 3500 6510 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10199700 37900 427900 5240 0 0 0 0 0 0
+node "m1_n1550_20#" 3 8747.5 -1550 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5365600 27860 0 0 0 0 0 0 0 0
+node "m1_n2030_6400#" 1 403.349 -2030 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n2990_6400#" 1 399.217 -2990 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n3950_6400#" 1 400.47 -3950 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n4910_6410#" 1 402.513 -4910 6410 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n5870_6400#" 1 400.47 -5870 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n6830_6400#" 1 399.217 -6830 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n7790_6400#" 1 399.217 -7790 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n8750_6400#" 1 399.217 -8750 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n9710_6400#" 1 399.217 -9710 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "m1_n10670_6400#" 1 402.976 -10670 6400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69600 1900 0 0 0 0 0 0 0 0
+node "GND" 9 23663.4 6380 -6350 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14081800 74300 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n1550_20#" "m1_n2510_20#" 40.512
+cap "m1_n4910_6410#" "m1_n3950_6400#" 35.448
+cap "m1_n6350_290#" "m1_n8270_20#" 0.0579954
+cap "m1_n4910_n6100#" "GND" 185.502
+cap "GND" "m1_n10190_20#" 2.25067
+cap "m1_n3950_n6100#" "m1_n2990_n6100#" 40.512
+cap "m1_n10670_60#" "m1_n2510_290#" 34.0153
+cap "m1_n10670_60#" "m1_n9230_290#" 32.7412
+cap "m1_n2510_290#" "m1_n3470_290#" 40.512
+cap "m1_n5390_290#" "m1_n5390_20#" 195.808
+cap "m1_n2030_n6100#" "m1_n2990_n6100#" 40.512
+cap "m1_n8270_20#" "m1_n7310_20#" 40.512
+cap "m1_n10670_60#" "VDD" 968.391
+cap "m1_n10670_n6100#" "m1_n9710_n6100#" 40.512
+cap "m1_n6350_290#" "m1_n5390_20#" 47.2015
+cap "VDD" "m1_n3470_290#" 0.659841
+cap "m1_n5390_290#" "m1_n4430_290#" 40.512
+cap "m1_n2510_290#" "m1_n1550_20#" 0.547459
+cap "m1_n6350_290#" "m1_n4430_290#" 0.0579954
+cap "m1_n8750_6400#" "m1_n7790_6400#" 40.512
+cap "m1_n10670_60#" "m1_n8270_20#" 32.7412
+cap "m1_n5390_20#" "m1_n6350_80#" 0.723429
+cap "VDD" "m1_n1550_20#" 973.292
+cap "m1_n10670_60#" "m1_n10190_290#" 100.724
+cap "m1_n2510_290#" "m1_n2510_20#" 195.808
+cap "m1_n4430_20#" "m1_n6350_290#" 0.659841
+cap "VbiasN" "m1_n1550_20#" 16.6337
+cap "VbiasN" "GND" 2.07771
+cap "GND" "m1_n10190_290#" 2.81333
+cap "m1_n5870_n6100#" "m1_n6830_n6100#" 40.512
+cap "m1_n10670_n6100#" "GND" 199.006
+cap "m1_n10670_60#" "m1_n5390_20#" 32.7412
+cap "m1_10170_n4600#" "GND" 39.5922
+cap "m1_n10670_60#" "m1_n4430_290#" 32.7412
+cap "m1_n4430_290#" "m1_n3470_290#" 40.512
+cap "m1_7360_4180#" "m1_3560_5970#" 199.12
+cap "m1_n10190_290#" "m1_n10190_20#" 195.808
+cap "m1_n9710_6400#" "m1_n10670_6400#" 40.512
+cap "m1_n8270_290#" "m1_n6350_290#" 0.659841
+cap "m1_n4430_20#" "m1_n3470_20#" 40.512
+cap "m1_n4430_20#" "m1_n10670_60#" 32.7412
+cap "m1_n7790_n6100#" "m1_n6830_n6100#" 40.512
+cap "m1_n3950_6400#" "m1_n5870_6400#" 0.389538
+cap "VDD" "m1_n2510_290#" 47.321
+cap "m1_n5390_290#" "m1_n6350_290#" 6.42135
+cap "GND" "m1_n2990_n6100#" 185.502
+cap "m1_7360_4180#" "m2_6770_4190#" 9.90569
+cap "m1_n5870_n6100#" "GND" 185.502
+cap "m1_n10670_60#" "m1_n9230_20#" 32.7412
+cap "m2_n240_n1440#" "m1_n1550_20#" 32.9772
+cap "m1_n9230_290#" "m1_n10190_290#" 40.512
+cap "m1_n5390_290#" "m1_n6350_80#" 10.128
+cap "m1_n4910_n6100#" "m1_n5870_n6100#" 40.512
+cap "m1_n6350_290#" "m1_n6350_80#" 696.491
+cap "m1_n8750_n6100#" "m1_n7790_n6100#" 40.512
+cap "m1_n10670_60#" "m1_n8270_290#" 32.7412
+cap "m1_n7790_n6100#" "GND" 185.502
+cap "m1_n6350_290#" "m1_n7310_20#" 6.42135
+cap "m1_n3950_n6100#" "GND" 185.502
+cap "m1_n10670_60#" "m1_n5390_290#" 32.7412
+cap "VDD" "m1_3560_5970#" 344.723
+cap "m1_n2030_n6100#" "m1_n1550_20#" 12.4652
+cap "m1_n10670_60#" "m1_n6350_290#" 299.675
+cap "m1_n10190_20#" "m1_n9230_20#" 40.512
+cap "m1_n8270_290#" "m1_n7310_290#" 40.512
+cap "m1_n2030_n6100#" "GND" 185.502
+cap "m1_n6350_80#" "m1_n7310_20#" 10.128
+cap "m1_n4910_n6100#" "m1_n3950_n6100#" 40.512
+cap "m1_n2030_6400#" "m1_n1550_20#" 12.4652
+cap "m1_n4910_6410#" "m1_n5870_6400#" 35.448
+cap "m1_n10670_60#" "m1_n6350_80#" 46.9389
+cap "m1_n6830_6400#" "m1_n5870_6400#" 40.512
+cap "m1_n6350_290#" "m1_n7310_290#" 51.5074
+cap "m1_4440_3290#" "m1_5010_1330#" 30.5563
+cap "m1_4440_3290#" "m1_3560_5970#" 2.50978
+cap "m1_n10670_60#" "m1_n7310_20#" 32.7412
+cap "m1_n2030_6400#" "m1_n2990_6400#" 40.512
+cap "m1_5010_1330#" "m1_3560_5970#" 32.9891
+cap "VDD" "m2_n240_n1440#" 7.27004
+cap "m1_n9230_290#" "m1_n9230_20#" 195.808
+cap "m1_n8750_n6100#" "m1_n9710_n6100#" 40.512
+cap "m1_n10670_60#" "m1_n3470_20#" 32.7412
+cap "m1_n3470_20#" "m1_n3470_290#" 195.808
+cap "GND" "m1_n9710_n6100#" 185.502
+cap "m1_n10670_60#" "m1_n3470_290#" 32.7412
+cap "GND" "m1_n6830_n6100#" 185.502
+cap "m1_n9710_6400#" "m1_n8750_6400#" 40.512
+cap "m1_4440_3290#" "m2_6770_4190#" 70.4205
+cap "m1_n7310_20#" "m1_n7310_290#" 195.808
+cap "m1_n8270_290#" "m1_n9230_290#" 40.512
+cap "m2_6770_4190#" "m1_3560_5970#" 193.974
+cap "m1_n8270_20#" "m1_n9230_20#" 40.512
+cap "m1_n10670_60#" "m1_n1550_20#" 782.574
+cap "m1_n10670_60#" "GND" 56.3735
+cap "GND" "m1_n10670_6400#" 13.504
+cap "m1_n10670_60#" "m1_n7310_290#" 32.7412
+cap "m1_n4430_20#" "m1_n5390_20#" 40.512
+cap "m1_n3950_6400#" "m1_n2990_6400#" 40.512
+cap "m1_n3470_20#" "m1_n2510_20#" 40.512
+cap "m1_n10670_60#" "m1_n2510_20#" 32.7412
+cap "m1_n8270_290#" "m1_n8270_20#" 195.808
+cap "m1_n4430_20#" "m1_n4430_290#" 195.808
+cap "GND" "m1_n1550_20#" 276.832
+cap "m1_n8750_n6100#" "GND" 185.502
+cap "m1_n10670_60#" "m1_n10190_20#" 105.788
+cap "m1_n6830_6400#" "m1_n7790_6400#" 40.512
+cap "ppolyf_u_1k_7A6E7G_0/a_n3320_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" 0.173384
+cap "ppolyf_u_1k_7A6E7G_0/a_n4280_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" -118.366
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" -31.9045
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n3320_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n4280_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" -37.8697
+cap "ppolyf_u_1k_7A6E7G_0/a_n4280_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n3320_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n3320_n6314#" -154.115
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "GND" -7.36503
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" "GND" -100.62
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "GND" -122.565
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_n440_n6314#" -154.469
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" -7.36503
+cap "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n440_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n440_n6314#" -17.4378
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" -15.9253
+cap "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" "GND" -53.8489
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" 0.353789
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" -138.544
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" -7.36503
+cap "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.353789
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" -84.641
+cap "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" "ppolyf_u_1k_7A6E7G_0/a_2440_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_2440_n6314#" -8.74778
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "GND" -7.36503
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_2440_n6314#" 0.353789
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_2440_n6314#" -154.469
+cap "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" "GND" -69.8281
+cap "GND" "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" 0.0539243
+cap "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_4360_n6314#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_4360_n6314#" -77.1366
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" -154.169
+cap "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 42.158
+cap "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.162732
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "B04_OTA_bias_ratio_5_0/VbiasN" 0.826252
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_4360_n6314#" -78.574
+cap "B04_OTA_bias_ratio_5_0/VbiasN" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 5.77442
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" 203.192
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "B04_OTA_bias_ratio_5_0/XM2/a_n400_n2592#" 7.11111
+cap "B04_OTA_bias_ratio_5_0/VbiasN" "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" 14.0425
+cap "B04_OTA_bias_ratio_5_0/XM3/a_n626_n5186#" "B04_OTA_bias_ratio_5_0/VbiasN" 20.0875
+cap "B04_OTA_bias_ratio_5_0/XM3/a_n626_n5186#" "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" 14.2059
+cap "B04_OTA_bias_ratio_5_0/XM3/a_400_n5000#" "B04_OTA_bias_ratio_5_0/GND" 62.2607
+cap "B04_OTA_bias_ratio_5_0/GND" "B04_OTA_bias_ratio_5_0/XM3/a_400_n5000#" 47.7138
+cap "B04_OTA_bias_ratio_5_0/XM3/a_n400_n5092#" "B04_OTA_bias_ratio_5_0/XM3/a_n626_n5186#" 1.70077
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" 64.9281
+cap "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 58.7978
+cap "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 64.9281
+cap "B04_OTA_bias_ratio_5_0/XM2/w_n650_n2710#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 58.7978
+cap "B04_OTA_bias_ratio_5_0/VbiasP" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" 3.53071
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" 64.9281
+cap "B04_OTA_bias_ratio_5_0/VbiasP" "ppolyf_u_1k_7A6E7G_0/a_4360_70#" 49.3749
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" "ppolyf_u_1k_7A6E7G_0/a_4360_70#" 58.7978
+cap "B04_OTA_bias_ratio_5_0/XM2/a_400_n2500#" "ppolyf_u_1k_7A6E7G_0/a_4360_70#" 1.14025
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" 0.108068
+cap "ppolyf_u_1k_7A6E7G_0/a_n5240_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" 0.258184
+cap "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" -45.0133
+cap "ppolyf_u_1k_7A6E7G_0/a_n5240_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" 0.342246
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" 0.108068
+cap "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" 4.7465
+cap "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" -4.22189
+cap "ppolyf_u_1k_7A6E7G_0/a_n5240_n192#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" -6.68783
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" 0.0257343
+cap "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" -131.805
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" 8.85845
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" 18.8748
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" -19.4888
+cap "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" -14.3612
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" 6.24495
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" 13.4514
+cap "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" 0.0421376
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" -125.053
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" -51.7653
+cap "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" -19.4888
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_70#" "m1_n10670_60#" 1.87609
+cap "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" -176.819
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "m1_n10670_60#" 2.53628
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" -14.3612
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" "m1_n10670_60#" 1.34662
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_70#" "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" -27.008
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" 11.5542
+cap "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" "m1_n10670_60#" 8.33158
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_70#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" -14.3612
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" "m1_n10670_60#" 3.46963
+cap "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" -19.4888
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" 0.0115311
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "m1_n10670_60#" 3.64434
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" -0.0092732
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_n920_70#" 9.67808
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" -3.64604
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" 0.108698
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_70#" 0.696292
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" "m1_n10670_60#" 6.98496
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "m1_n10670_60#" 5.6729
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_1480_n192#" 0.0112131
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" 0.342951
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_n920_70#" -10.6488
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_1480_70#" 0.0413221
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" "ppolyf_u_1k_7A6E7G_0/a_40_n192#" 0.124911
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" 0.0622893
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_40_n192#" 27.7272
+cap "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" "ppolyf_u_1k_7A6E7G_0/a_n920_70#" -149.811
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_n920_70#" 0.354082
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_70#" -2.45642
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_70#" -0.300928
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" 0.544095
+cap "ppolyf_u_1k_7A6E7G_0/a_1960_70#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" -9.00267
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_1960_70#" 0.108068
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "m1_n10670_60#" 2.62157
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "m1_n10670_60#" 2.8039
+cap "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" -19.4888
+cap "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" -0.361714
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" -10.5618
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" 0.492759
+cap "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" -13.1403
+cap "ppolyf_u_1k_7A6E7G_0/a_1000_70#" "ppolyf_u_1k_7A6E7G_0/a_1960_70#" -14.3612
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_1000_70#" 11.5542
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_1960_70#" 0.783456
+cap "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" "ppolyf_u_1k_7A6E7G_0/a_1000_70#" -176.819
+cap "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" "m1_n10670_60#" 8.33158
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_2920_70#" 5.89927
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" 4.19026
+cap "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" "ppolyf_u_1k_7A6E7G_0/a_2920_70#" -89.0427
+cap "ppolyf_u_1k_7A6E7G_0/a_1960_70#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" -167.816
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" 7.78749
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_1960_70#" 10.7707
+cap "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" -19.4888
+cap "ppolyf_u_1k_7A6E7G_0/a_1960_70#" "ppolyf_u_1k_7A6E7G_0/a_2920_70#" -14.3612
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" 4.14133
+cap "ppolyf_u_1k_7A6E7G_0/a_2920_70#" "m1_n10670_60#" 5.6549
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" -176.819
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" -0.27373
+cap "ppolyf_u_1k_7A6E7G_0/a_2920_70#" "ppolyf_u_1k_7A6E7G_0/a_3880_70#" -14.3612
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "m1_n10670_60#" 11.5542
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" -9.77073
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" -19.4888
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" 8.33158
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "ppolyf_u_1k_7A6E7G_0/a_4360_70#" -5.55895
+cap "ppolyf_u_1k_7A6E7G_0/a_2920_70#" "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" -87.776
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" -0.51341
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_3880_70#" 0.455093
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "m1_n10670_60#" 0.368947
+cap "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" -9.58953
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" -40.4097
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" "m1_n10670_60#" 12.9132
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "m1_n10670_60#" 3.14161
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_2920_70#" 0.426565
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" "B04_OTA_bias_ratio_5_0/VbiasP" 0.489179
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" 14.7819
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "B04_OTA_bias_ratio_5_0/VbiasP" 54.1971
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/VDD" 12.7523
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/Vbias2" 1.31618
+cap "B04_OTA_bias_ratio_5_0/Vbias1" "B04_OTA_bias_ratio_5_0/Vbias2" -0.432741
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/VDD" 18.7928
+cap "B04_OTA_bias_ratio_5_0/Vbias2" "B04_OTA_0/XM10_2/a_n400_n118#" 0.0390478
+cap "B04_OTA_bias_ratio_5_0/VDD" "B04_OTA_bias_ratio_5_0/Vbias2" 46.0585
+cap "B04_OTA_bias_ratio_5_0/XM1/a_n400_n592#" "B04_OTA_0/Vbias1" 0.542769
+cap "B04_OTA_bias_ratio_5_0/Vbias2" "B04_OTA_0/Vbias1" -0.432741
+cap "B04_OTA_bias_ratio_5_0/VDD" "B04_OTA_0/Vbias1" 13.4014
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/VDD" 18.7928
+cap "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" "B04_OTA_0/GND" 18.7928
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" 53.0881
+cap "B04_OTA_0/Vbias1" "B04_OTA_bias_ratio_5_0/Vbias0" 0.108933
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/GND" 1.19847
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" 34.9923
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/Vbias3" 0.889185
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" 18.7928
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM11_1/a_n400_n118#" 0.0968288
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/XM10/w_n650_n710#" 3.12595
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" 32.2617
+cap "B04_OTA_bias_ratio_5_0/VDD" "B04_OTA_0/XM9_2/a_n488_n74#" 1.65451
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/VDD" 44.6202
+cap "B04_OTA_bias_ratio_5_0/Vbias2" "B04_OTA_0/XM9_2/a_n488_n74#" 0.106141
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM9_2/a_n488_n74#" 249.651
+cap "B04_OTA_0/XM9_2/a_n488_n74#" "B04_OTA_0/GND" -1.59772
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/XM9_2/a_n488_n74#" -0.965754
+cap "B04_OTA_0/Vbias2" "B04_OTA_bias_ratio_5_0/Vbias1" 2.47836
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/Vbias1" 1.42913
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/GND" 138.899
+cap "B04_OTA_0/XM9_2/a_n488_n74#" "B04_OTA_0/XM7_2/a_100_n124#" -1.13687e-13
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM19_2/a_n488_n26#" 0.0564157
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM7_2/a_100_n124#" 94.3685
+cap "B04_OTA_0/XM9_2/a_n488_n74#" "B04_OTA_0/XM7_2/a_n188_n124#" -1.13687e-13
+cap "B04_OTA_bias_ratio_5_0/VDD" "B04_OTA_0/GND" 18.7928
+cap "B04_OTA_0/XM9_2/a_n488_n74#" "B04_OTA_0/XM6_2/a_100_n76#" -0.329338
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM7_2/a_n188_n124#" 33.1152
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/XM6_2/a_100_n76#" 0.324781
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM7_2/a_n188_n124#" 0.66444
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/GND" 288.419
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/XM7_2/a_n188_n124#" 5.76407
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/VDD" 18.7928
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/Vbias2" -0.457032
+cap "B04_OTA_0/GND" "B04_OTA_0/XM19_2/a_n488_n26#" -19.3196
+cap "B04_OTA_0/XM9_2/a_n488_n74#" "B04_OTA_0/GND" -3.58411
+cap "B04_OTA_0/Vbias1" "B04_OTA_bias_ratio_5_0/Vbias0" -0.644555
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/XM19_2/a_n488_n26#" 114.372
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM9_2/a_n488_n74#" 21.2395
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/XM9_2/a_n488_n74#" 22.973
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/XM8_2/a_n488_n74#" 3.58932
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/Vbias1" 52.0341
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/GND" 2.22827
+cap "B04_OTA_0/XM19_2/a_n488_n26#" "B04_OTA_bias_ratio_5_0/Vbias0" 77.7261
+cap "B04_OTA_0/XM9_1/a_400_n26#" "B04_OTA_bias_ratio_5_0/Vbias3" 0.984179
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/XM10_1/a_400_n74#" 1.50875
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/GND" 112.296
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/XM11_1/a_n400_n118#" 4.46486
+cap "B04_OTA_bias_ratio_5_0/Vbias0" "B04_OTA_0/XM9_1/a_n400_n118#" 1.61125
+cap "B04_OTA_0/GND" "B04_OTA_0/XM9_1/a_n400_n118#" -0.0990534
+cap "B04_OTA_0/XM9_1/a_400_n26#" "B04_OTA_bias_ratio_5_0/Vbias0" 327.471
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" 18.7928
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/XM18_1/a_400_n26#" -0.972466
+cap "B04_OTA_0/XM16_2/a_n400_n118#" "B04_OTA_0/XM8_2/a_n488_n74#" -2.75024
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/XM17_1/a_400_n74#" -0.265266
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/XM1/w_n650_n710#" 18.7928
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/Vbias1" 3.68697
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_bias_ratio_5_0/Vbias3" 85.295
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_bias_ratio_5_0/Vbias0" 2.28306
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM8_2/a_n488_n74#" 193.475
+cap "B04_OTA_0/GND" "B04_OTA_bias_ratio_5_0/Vbias3" 103.418
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_bias_ratio_5_0/Vbias0" 0.318058
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_0/XM8_2/a_n488_n74#" -1.99029
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM18_1/a_400_n26#" 4.15637
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM11_1/a_n400_n118#" 43.6488
+cap "B04_OTA_0/GND" "B04_OTA_0/XM8_2/a_n488_n74#" -0.0645972
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM8_2/a_n488_n74#" 3.33674
+cap "B04_OTA_bias_ratio_5_0/Vbias3" "B04_OTA_0/XM19_1/a_400_n74#" 0.18945
+cap "B04_OTA_bias_ratio_5_0/XM10/w_n650_n710#" "B04_OTA_0/GND" 3.15934
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "B04_OTA_bias_ratio_5_0/Vbias3" 0.102838
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "m1_n10670_60#" 1.36089
+cap "B04_OTA_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.320311
+cap "B04_OTA_0/Vin+" "B04_OTA_0/VDD" -0.235431
+cap "B04_OTA_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 51.7184
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM2/a_n356_n74#" -0.149654
+cap "B04_OTA_0/XM2/a_n356_n74#" "m1_4440_3290#" 6.13569
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM6_2/a_n188_n76#" 0.190096
+cap "B04_OTA_0/GND" "B04_OTA_0/VDD" 48.3948
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/VDD" 1.66777
+cap "B04_OTA_0/GND" "B04_OTA_0/XM2/a_n356_n74#" -0.0685725
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/XM6_2/a_n188_n76#" -0.168985
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/VDD" 15.3398
+cap "B04_OTA_0/GND" "B04_OTA_0/XM5/a_n356_n26#" -11.0876
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/Vin+" -2.57565
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM2/a_n356_n74#" 18.3646
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/XM5/a_n644_n26#" -1.18148
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/VDD" -0.387478
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vin-" 0.732508
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vbias2" 222.817
+cap "B04_OTA_0/GND" "B04_OTA_0/XM6_2/a_n188_n76#" -0.30332
+cap "B04_OTA_0/XM19_2/a_n400_n118#" "B04_OTA_0/Vbias2" 2.60364
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vin+" -0.0508939
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/XM5/a_n356_n26#" -9.37848
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vbias2" 0.470397
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM6_2/a_100_n76#" 122.122
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM6_2/a_100_n76#" 0.0736871
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/VDD" 3.61215
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin-" 0.264706
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/XM5/a_n356_n26#" -0.190033
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/XM6_2/a_100_n76#" -3.22072
+cap "B04_OTA_0/XM7_2/a_100_n124#" "B04_OTA_0/Vbias2" 10.0122
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias2" 147.886
+cap "B04_OTA_0/GND" "B04_OTA_0/Vin-" 0.0001279
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/VDD" -1.80016
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM5/a_n356_n26#" 170.265
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin+" 1.02548
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/Vin-" 11.8484
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM5/a_n644_n26#" 1.0189
+cap "B04_OTA_0/XM7_2/a_n188_n124#" "B04_OTA_0/Vbias2" 3.62555
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/VDD" -11.9445
+cap "B04_OTA_0/XM6_2/a_100_n76#" "B04_OTA_0/Vbias2" 6.54887
+cap "B04_OTA_0/XM7_2/a_100_n124#" "B04_OTA_0/Vbias2" 0.0152995
+cap "B04_OTA_0/XM6_2/a_100_n76#" "B04_OTA_0/GND" -0.0208233
+cap "m1_3560_5970#" "B04_OTA_0/Vbias2" -0.496402
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vbias2" 1.50901
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" 0.00610376
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias2" 0.00121648
+cap "B04_OTA_0/XM2/a_252_n74#" "B04_OTA_0/XM6_2/a_100_n76#" 1.77636e-15
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vbias2" 124.545
+cap "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" "B04_OTA_0/Vbias2" 96.823
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vin+" -1.41252
+cap "B04_OTA_0/XM5/a_556_n26#" "B04_OTA_0/XM6_2/a_n188_n76#" -0.516543
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/GND" -7.583
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/XM6_2/a_100_n76#" 0.324781
+cap "B04_OTA_0/XM2/a_252_n74#" "B04_OTA_0/Vbias2" 10.0896
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vin-" 0.698965
+cap "B04_OTA_0/XM6_2/a_100_n76#" "m1_3560_5970#" 1.16802
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" -5.68434e-14
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "m1_3560_5970#" 51.0942
+cap "m1_3560_5970#" "B04_OTA_0/Vbias2" 65.0027
+cap "m1_3560_5970#" "B04_OTA_0/XM17_1/a_400_n74#" 0.303248
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/XM9_1/a_400_n26#" 4.41277
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/XM16_2/a_400_n74#" 0.0653347
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/XM3/a_252_n74#" 0.506645
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "B04_OTA_0/XM16_2/a_400_n74#" 0.286895
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/Vbias2" 0.00541458
+cap "m1_3560_5970#" "B04_OTA_0/XM16_2/a_400_n74#" 13.6446
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/XM9_1/a_400_n26#" 2.84217e-14
+cap "B04_OTA_0/XM9_1/a_400_n26#" "B04_OTA_0/XM3/a_252_n74#" -1.16607
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM9_1/a_400_n26#" 17.2961
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "B04_OTA_0/XM9_1/a_400_n26#" 7.10543e-15
+cap "m1_3560_5970#" "B04_OTA_0/XM9_1/a_400_n26#" 254.501
+cap "m1_3560_5970#" "B04_OTA_0/XM9_1/a_n400_n118#" 1.61552
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "m1_3560_5970#" 88.5724
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM3/a_252_n74#" 0.0508961
+cap "B04_OTA_0/Vbias1" "m1_3560_5970#" 43.6723
+cap "m1_3560_5970#" "B04_OTA_0/nfet_03v3_BN4D6P_0/a_100_n76#" 12.1813
+cap "B04_OTA_0/XM3/a_252_n74#" "B04_OTA_0/Vbias2" 1.15239
+cap "m1_3560_5970#" "B04_OTA_0/XM3/a_252_n74#" 85.8639
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "B04_OTA_0/Vbias2" 0.666011
+cap "m1_3560_5970#" "B04_OTA_0/Vout" 0.156976
+cap "B04_OTA_0/Vbias1" "B04_OTA_0/Vbias3" 2.86186
+cap "m1_3560_5970#" "B04_OTA_0/XM8_2/a_n488_n74#" 5.7353
+cap "m1_3560_5970#" "B04_OTA_0/XM18_1/a_400_n26#" 1.75531
+cap "B04_OTA_0/XM16_2/a_n400_n118#" "B04_OTA_0/Vbias3" 110.619
+cap "m1_3560_5970#" "B04_OTA_0/XM17_1/a_400_n74#" 0.0111231
+cap "B04_OTA_0/Vout" "B04_OTA_0/Vbias3" 4.48342
+cap "m1_3560_5970#" "B04_OTA_0/Vbias3" -1.72371
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/Vbias3" 51.7504
+cap "B04_OTA_0/XM18_1/a_400_n26#" "B04_OTA_0/Vbias3" 69.7062
+cap "B04_OTA_0/XM17_1/a_400_n74#" "B04_OTA_0/Vbias3" 92.6666
+cap "m1_3560_5970#" "B04_OTA_0/XM11_1/a_n400_n118#" 1.1359
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias3" 0.678599
+cap "B04_OTA_0/XM11_1/a_n400_n118#" "B04_OTA_0/Vbias3" 74.5287
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_0/Vbias3" 53.323
+cap "B04_OTA_0/XM17_1/a_n488_n74#" "B04_OTA_0/Vbias3" 0.320137
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM11_1/a_n400_n118#" 0.137117
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM19_1/a_400_n74#" 3.91975
+cap "m1_n10670_60#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 2.74877
+cap "B04_OTA_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.509585
+cap "m1_n10670_60#" "B04_OTA_0/VDD" 3.33099
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/VDD" 0.37652
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/VDD" 0.598552
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin+" -0.156481
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "B04_OTA_0/VDD" 12.0879
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM5/a_n356_n26#" 0.00188046
+cap "B04_OTA_0/Vin+" "B04_OTA_0/VDD" 0.354363
+cap "m1_4440_3290#" "B04_OTA_0/XM2/a_n356_n74#" 2.48849
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/VDD" 4.01067
+cap "B04_OTA_0/XM5/a_n644_n26#" "B04_OTA_0/Vin+" 0.333264
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/VDD" 4.77793
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/XM2/a_n356_n74#" -0.0783373
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM2/a_n356_n74#" -0.49172
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/XM2/a_n356_n74#" -6.23485
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin+" 32.8
+cap "B04_OTA_0/GND" "B04_OTA_0/VDD" 8.06864
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin-" 1.42109e-14
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/VDD" -2.94839
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin+" 0.615678
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/VDD" 5.63259
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM5/a_n644_n26#" 17.6745
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin-" 7.10543e-15
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM6_2/a_n188_n76#" 121.582
+cap "B04_OTA_0/Vin-" "B04_OTA_0/Vbias0" 11.6933
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vin-" 7.26247
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vbias0" -2.42466
+cap "B04_OTA_0/GND" "B04_OTA_0/Vin-" 9.76383
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vbias0" 7.74682
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin-" 5.18066
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vbias2" 2.48849
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM6_2/a_100_n76#" 0.311092
+cap "B04_OTA_0/GND" "B04_OTA_0/XM6_2/a_n188_n76#" -0.0508028
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM5/a_n356_n26#" 12.749
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM6_2/a_n188_n76#" 45.2836
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias2" 6.40524
+cap "B04_OTA_0/Vin-" "B04_OTA_0/Vin+" 83.7396
+cap "B04_OTA_0/Vin-" "B04_OTA_0/VDD" 59.2642
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin+" 8.18042
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/VDD" -4.0478
+cap "B04_OTA_0/Vin+" "B04_OTA_0/XM6_2/a_n188_n76#" 1.13687e-13
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vbias0" -0.711676
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias2" 31.2063
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin+" 2.88843
+cap "B04_OTA_0/Vin-" "B04_OTA_0/XM6_2/a_100_n76#" 1.61816
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin-" 3.04123
+cap "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" "B04_OTA_0/XM3/a_n356_n74#" -0.725994
+cap "B04_OTA_0/GND" "B04_OTA_0/Vin-" 11.7414
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vbias0" 26.7938
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/VDD" -13.5084
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias2" 105.349
+cap "B04_OTA_0/XM5/a_556_n26#" "B04_OTA_0/Vbias0" 0.0896887
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vin-" 23.9818
+cap "B04_OTA_0/XM5/a_556_n26#" "B04_OTA_0/Vin-" 8.70845
+cap "B04_OTA_0/XM3/a_n356_n74#" "B04_OTA_0/Vbias2" 26.2286
+cap "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" "B04_OTA_0/XM6_2/a_n188_n76#" -0.135474
+cap "B04_OTA_0/XM5/a_556_n26#" "B04_OTA_0/Vbias2" 0.929876
+cap "B04_OTA_0/GND" "B04_OTA_0/XM3/a_n356_n74#" 8.88178e-16
+cap "B04_OTA_0/nfet_03v3_BN4D6P_0/a_n188_n76#" "B04_OTA_0/Vin-" 5.73046
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vin-" 8.44513
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias0" 0.150109
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin-" 259.761
+cap "B04_OTA_0/XM6_2/a_n188_n76#" "B04_OTA_0/Vbias2" 3.83767
+cap "B04_OTA_0/Vin-" "B04_OTA_0/Vin+" 18.1544
+cap "B04_OTA_0/XM3/a_252_n74#" "B04_OTA_0/Vbias2" 1.5825
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/VDD" 145.629
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/VDD" 0.0586124
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM1/a_52_n318#" 97.4689
+cap "B04_OTA_0/XM18_2/a_n488_n74#" "B04_OTA_0/XM16_2/a_400_n74#" 4.57995
+cap "B04_OTA_0/XM8_2/a_n400_n118#" "B04_OTA_0/XM16_2/a_400_n74#" 1.25787
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "B04_OTA_0/XM16_2/a_400_n74#" 12.5218
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM16_2/a_400_n74#" 82.7962
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "B04_OTA_0/XM1/a_52_n318#" 1.44499
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/XM1/a_52_n318#" 54.1711
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/XM14_1/a_n488_n226#" 25.973
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM1/a_52_n318#" 81.5481
+cap "B04_OTA_0/XM3/a_252_n74#" "B04_OTA_0/VDD" -2.1392
+cap "B04_OTA_0/XM14_1/a_n488_n226#" "B04_OTA_0/XM1/a_52_n318#" 38.6304
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/nfet_03v3_BN4D6P_0/a_100_n76#" 2.91706
+cap "B04_OTA_0/XM15_1/a_n488_n226#" "B04_OTA_0/XM1/a_52_n318#" 2.13284
+cap "B04_OTA_0/XM3/a_252_n74#" "B04_OTA_0/XM16_2/a_400_n74#" 93.1106
+cap "B04_OTA_0/XM3/a_252_n74#" "B04_OTA_0/XM1/a_52_n318#" 64.0862
+cap "B04_OTA_0/XM8_2/a_n488_n74#" "B04_OTA_0/XM16_2/a_400_n74#" 0.373828
+cap "B04_OTA_0/XM16_2/a_400_n74#" "B04_OTA_0/Vbias2" 17.8753
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/XM1/a_52_n318#" 21.0095
+cap "B04_OTA_0/GND" "B04_OTA_0/XM16_2/a_400_n74#" 10.4834
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/Vbias2" 8.88178e-16
+cap "B04_OTA_0/XM14_1/a_n488_n226#" "B04_OTA_0/Vbias2" 1.11022e-16
+cap "B04_OTA_0/GND" "B04_OTA_0/XM1/a_52_n318#" 30.5744
+cap "B04_OTA_0/Vout" "m1_3560_5970#" 0.293642
+cap "B04_OTA_0/Vout" "B04_OTA_0/XM14_1/a_n488_n226#" 0.0300625
+cap "B04_OTA_0/Vout" "B04_OTA_0/XM8_2/a_n488_n74#" 0.0211032
+cap "B04_OTA_0/Vout" "B04_OTA_0/XM16_2/a_n400_n118#" -2.05779
+cap "B04_OTA_0/Vout" "B04_OTA_0/Vbias3" 73.5109
+cap "B04_OTA_0/GND" "B04_OTA_0/Vbias3" 47.1895
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "B04_OTA_0/Vbias3" 211.843
+cap "B04_OTA_0/XM17_1/a_n488_n74#" "B04_OTA_0/Vbias3" 0.996448
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias3" 165.322
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_0/Vbias3" 0.850883
+cap "m1_3560_5970#" "B04_OTA_0/Vbias3" -1.22697
+cap "B04_OTA_0/Vout" "B04_OTA_0/GND" -1.20719
+cap "B04_OTA_0/Vout" "B04_OTA_0/XM12_1/a_n400_n318#" -10.085
+cap "B04_OTA_0/Vout" "B04_OTA_0/XM17_1/a_n488_n74#" 0.136064
+cap "B04_OTA_0/Vout" "B04_OTA_0/VDD" -10.2501
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM16_2/a_n400_n118#" 40.8764
+cap "B04_OTA_0/XM16_2/a_n488_n74#" "B04_OTA_0/Vout" 0.0149471
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "B04_OTA_0/VDD" -10.889
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM15_1/a_n488_n226#" 1.87184
+cap "B04_OTA_0/VDD" "m1_n10670_60#" 0.370194
+cap "B04_OTA_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" 0.509585
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" "m1_n10670_60#" 2.44159
+cap "B04_OTA_0/Vin+" "B04_OTA_0/VDD" 38.3679
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" "B04_OTA_0/VDD" 2.6779
+cap "B04_OTA_0/Vin-" "B04_OTA_0/Vin+" 17.2362
+cap "B04_OTA_0/XM5/a_n356_n26#" "B04_OTA_0/Vin+" 4.03789
+cap "B04_OTA_0/XM5/a_n644_n26#" "B04_OTA_0/Vin+" 13.6946
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin+" 169.228
+cap "B04_OTA_0/GND" "B04_OTA_0/Vin+" 3.04909
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin+" 218.988
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/VDD" -16.0004
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vbias0" -11.85
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/Vin+" 31.0294
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias0" 2.78099
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin-" -2.90671
+cap "B04_OTA_0/XM2/a_n356_n74#" "B04_OTA_0/Vin+" 12.3093
+cap "B04_OTA_0/XM5/a_n644_n26#" "B04_OTA_0/Vbias0" 0.249965
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/Vin+" 3.3348
+cap "B04_OTA_0/XM5/a_n644_n26#" "B04_OTA_0/Vin+" 0.0768475
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/VDD" 82.7603
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/Vin-" 2.33303
+cap "B04_OTA_0/Vin+" "B04_OTA_0/VDD" 3.65147
+cap "B04_OTA_0/Vin+" "B04_OTA_0/Vin-" 0.993342
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/XM3/a_n356_n74#" 9.03347
+cap "B04_OTA_0/GND" "B04_OTA_0/Vin-" -0.368391
+cap "B04_OTA_0/Vbias2" "B04_OTA_0/Vin-" -0.452902
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/XM5/a_556_n26#" 0.175956
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/Vin-" 2.21356
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/VDD" 538.126
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/XM3/a_n356_n74#" 26.819
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM1/a_52_n318#" 521.601
+cap "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/XM12_1/a_n400_n318#" 138.53
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM12_1/a_n400_n318#" 4.30486
+cap "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/XM14_1/a_400_n226#" 6.00175
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM1/a_52_n318#" 22.4814
+cap "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/XM3/a_252_n74#" 8.04497
+cap "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/XM14_1/a_n488_n226#" 301.818
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM14_1/a_n488_n226#" 3.77491
+cap "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/XM15_1/a_n488_n226#" 6.71289
+cap "B04_OTA_0/XM14_1/a_n488_n226#" "B04_OTA_0/XM14_1/a_400_n226#" 0.21182
+cap "B04_OTA_0/Vbias3" "B04_OTA_0/XM14_1/a_n488_n226#" 1.42109e-14
+cap "B04_OTA_0/Vout" "m1_3560_5970#" 0.226699
+cap "B04_OTA_0/XM14_1/a_n488_n226#" "B04_OTA_0/VDD" 14.6159
+cap "B04_OTA_0/XM15_1/a_n488_n226#" "m1_3560_5970#" 2.63582
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "m1_3560_5970#" 0.104412
+cap "B04_OTA_0/VDD" "m1_3560_5970#" 7.84586
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM12_1/a_n400_n318#" 4.99275
+cap "B04_OTA_0/XM14_2/a_400_n226#" "B04_OTA_0/Vbias3" 1.77636e-15
+cap "B04_OTA_0/XM12_1/a_n400_n318#" "B04_OTA_0/VDD" 6.37962
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM14_2/a_400_n226#" 14.6159
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM15_2/a_n488_n226#" 2.0836
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM14_2/a_400_n226#" 4.42477
+cap "ppolyf_u_1k_7A6E7G_0/a_n4280_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5240_6192#" 18.4822
+cap "ppolyf_u_1k_7A6E7G_0/a_n3320_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5240_6192#" 0.173384
+cap "ppolyf_u_1k_7A6E7G_0/a_n5240_6192#" "ppolyf_u_1k_7A6E7G_0/a_n3320_6192#" 20.6021
+cap "ppolyf_u_1k_7A6E7G_0/a_n4280_6192#" "ppolyf_u_1k_7A6E7G_0/a_n3320_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n3320_6192#" "ppolyf_u_1k_7A6E7G_0/a_n2360_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n2360_6192#" "ppolyf_u_1k_7A6E7G_0/a_n1400_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n2360_6192#" 20.2483
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n1400_6192#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n2360_6192#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n1400_6192#" 20.2483
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n440_6192#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_6192#" "ppolyf_u_1k_7A6E7G_0/a_n1400_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n440_6192#" "ppolyf_u_1k_7A6E7G_0/a_520_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_n440_6192#" 20.2483
+cap "ppolyf_u_1k_7A6E7G_0/a_1480_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.362021
+cap "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "ppolyf_u_1k_7A6E7G_0/a_520_6192#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_520_6192#" "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" 0.00101753
+cap "ppolyf_u_1k_7A6E7G_0/a_1480_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 21.5291
+cap "ppolyf_u_1k_7A6E7G_0/a_1480_6192#" "ppolyf_u_1k_7A6E7G_0/a_520_6192#" -16.1546
+cap "ppolyf_u_1k_7A6E7G_0/a_520_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 20.2483
+cap "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_1480_6192#" -16.1428
+cap "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 20.2483
+cap "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_3400_6192#" -8.74778
+cap "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" 0.353789
+cap "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_520_6192#" 0.00152912
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_6192#" "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" 11.2883
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_6192#" "ppolyf_u_1k_7A6E7G_0/a_3400_6192#" -17.4378
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" "ppolyf_u_1k_7A6E7G_0/a_3400_6192#" 20.6021
+cap "B04_OTA_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" 1.14744
+cap "ppolyf_u_1k_7A6E7G_0/a_3400_6192#" "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" 0.162732
+cap "ppolyf_u_1k_7A6E7G_0/a_4360_6192#" "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" 7.7186
+cap "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" "B04_OTA_0/VDD" 0.975521
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin+" -0.074691
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin+" -0.714714
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias0" 0.0331097
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vbias0" 27.0424
+cap "B04_OTA_0/VDD" "B04_OTA_0/Vin+" -0.0706229
+cap "B04_OTA_0/Vbias0" "B04_OTA_0/VDD" 163.643
+cap "B04_OTA_0/VDD" "B04_OTA_0/XM1/a_52_n318#" 93.0788
+cap "B04_OTA_0/VDD" "m1_3560_5970#" 0.57732
+merge "ppolyf_u_1k_7A6E7G_0/a_3880_n192#" "ppolyf_u_1k_7A6E7G_0/a_3400_n192#" -244.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_3400_n192#" "m1_n2510_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4840_6192#" "ppolyf_u_1k_7A6E7G_0/a_n5240_6192#" -35797.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14313919 -126227 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n5240_6192#" "B04_OTA_0/GND"
+merge "B04_OTA_0/GND" "ppolyf_u_1k_7A6E7G_0/a_4840_n192#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4840_n192#" "ppolyf_u_1k_7A6E7G_0/a_4840_70#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4840_70#" "ppolyf_u_1k_7A6E7G_0/a_4360_n192#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4360_n192#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n192#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n5240_n192#" "ppolyf_u_1k_7A6E7G_0/a_n5240_70#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n5240_70#" "B04_OTA_bias_ratio_5_0/XM3/a_n626_n5186#"
+merge "B04_OTA_bias_ratio_5_0/XM3/a_n626_n5186#" "m1_10170_n4600#"
+merge "m1_10170_n4600#" "B04_OTA_bias_ratio_5_0/GND"
+merge "B04_OTA_bias_ratio_5_0/GND" "B04_OTA_bias_ratio_5_0/VSUBS"
+merge "B04_OTA_bias_ratio_5_0/VSUBS" "ppolyf_u_1k_7A6E7G_0/a_4840_n6314#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4840_n6314#" "m1_n1550_20#"
+merge "m1_n1550_20#" "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n5240_n6314#" "VSUBS"
+merge "VSUBS" "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n5452_n6526#" "GND"
+merge "ppolyf_u_1k_7A6E7G_0/a_2920_70#" "ppolyf_u_1k_7A6E7G_0/a_2440_70#" -240.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_2440_70#" "m1_n3470_290#"
+merge "B04_OTA_0/Vin+" "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" -4503.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35880 -1744 -2670 -238 -2295500 -26180 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n4760_n192#" "ppolyf_u_1k_7A6E7G_0/a_n4760_70#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n4760_70#" "m1_n10670_60#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n920_n192#" "ppolyf_u_1k_7A6E7G_0/a_n1400_n192#" -250.354 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n1400_n192#" "m1_n7310_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n920_70#" "ppolyf_u_1k_7A6E7G_0/a_n1400_70#" -240.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n1400_70#" "m1_n7310_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n440_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n920_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n920_n6314#" "m1_n6830_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_3880_70#" "ppolyf_u_1k_7A6E7G_0/a_3400_70#" -241.951 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_3400_70#" "m1_n2510_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1480_n6314#" "ppolyf_u_1k_7A6E7G_0/a_1000_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1000_n6314#" "m1_n4910_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_40_n192#" "ppolyf_u_1k_7A6E7G_0/a_n440_70#" -285.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22620 -1676 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n440_70#" "m1_n6350_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n3800_70#" "ppolyf_u_1k_7A6E7G_0/a_n4280_70#" -245.895 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n4280_70#" "m1_n10190_290#"
+merge "B04_OTA_bias_ratio_5_0/VbiasN" "VbiasN" -162.405 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16800 -690 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n2840_n192#" "ppolyf_u_1k_7A6E7G_0/a_n3320_n192#" -244.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n3320_n192#" "m1_n9230_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n1880_n192#" "ppolyf_u_1k_7A6E7G_0/a_n2360_n192#" -244.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n2360_n192#" "m1_n8270_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n3800_n192#" "ppolyf_u_1k_7A6E7G_0/a_n4280_n192#" -248.932 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n4280_n192#" "m1_n10190_20#"
+merge "B04_OTA_0/XM1/a_52_n318#" "B04_OTA_0/Vbias0" -2949.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39200 -840 -96200 -1520 -231400 -2300 -1311300 -8770 0 0
+merge "B04_OTA_0/Vbias0" "B04_OTA_bias_ratio_5_0/Vbias0"
+merge "B04_OTA_bias_ratio_5_0/Vbias0" "m1_3560_5970#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n1400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n1880_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n1880_n6314#" "m1_n7790_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4360_6192#" "ppolyf_u_1k_7A6E7G_0/a_3880_6192#" -364.055 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_3880_6192#" "m1_n2030_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_3400_6192#" "ppolyf_u_1k_7A6E7G_0/a_2920_6192#" -372.432 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1747 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_2920_6192#" "m1_n2990_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_3880_n6314#" -250.416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_3880_n6314#" "m1_n2030_n6100#"
+merge "B04_OTA_bias_ratio_5_0/VbiasP" "m2_n240_n1440#" -222.485 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16400 -900 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_2440_6192#" "ppolyf_u_1k_7A6E7G_0/a_1960_6192#" -361.059 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1960_6192#" "m1_n3950_6400#"
+merge "B04_OTA_0/Vout" "B04_OTA_0/Vin-" -1032.67 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7000 -340 -131400 -3100 0 0 0 0
+merge "B04_OTA_0/Vin-" "m2_6770_4190#"
+merge "B04_OTA_0/Vbias1" "B04_OTA_0/XM19_2/a_n400_n118#" -264.068 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3744 -360 -1800 -220 0 0 0 0 0 0
+merge "B04_OTA_0/XM19_2/a_n400_n118#" "B04_OTA_bias_ratio_5_0/Vbias1"
+merge "B04_OTA_bias_ratio_5_0/Vbias1" "m1_5010_1330#"
+merge "B04_OTA_0/Vbias2" "B04_OTA_bias_ratio_5_0/Vbias2" -1225.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28800 -820 -65100 -1040 0 0 0 0 0 0
+merge "B04_OTA_bias_ratio_5_0/Vbias2" "m1_4440_3290#"
+merge "B04_OTA_0/VDD" "B04_OTA_bias_ratio_5_0/VDD" -11280.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6349890 -33707 0 0 0 0 0 0 0 0
+merge "B04_OTA_bias_ratio_5_0/VDD" "ppolyf_u_1k_7A6E7G_0/a_4360_70#"
+merge "ppolyf_u_1k_7A6E7G_0/a_4360_70#" "VDD"
+merge "ppolyf_u_1k_7A6E7G_0/a_n440_6192#" "ppolyf_u_1k_7A6E7G_0/a_n920_6192#" -359.923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n920_6192#" "m1_n6830_6400#"
+merge "B04_OTA_0/Vbias3" "B04_OTA_bias_ratio_5_0/Vbias3" -1007.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10800 -480 0 -460 0 0 0 0 0 0
+merge "B04_OTA_bias_ratio_5_0/Vbias3" "m1_7360_4180#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1960_70#" "ppolyf_u_1k_7A6E7G_0/a_1480_70#" -240.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1480_70#" "m1_n4430_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1000_n192#" "ppolyf_u_1k_7A6E7G_0/a_520_n192#" -245.858 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_520_n192#" "m1_n5390_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n440_n192#" "ppolyf_u_1k_7A6E7G_0/a_40_70#" -247.768 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24960 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_40_70#" "m1_n6350_80#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1000_70#" "ppolyf_u_1k_7A6E7G_0/a_520_70#" -246.216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_520_70#" "m1_n5390_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_520_6192#" "ppolyf_u_1k_7A6E7G_0/a_40_6192#" -361.059 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_40_6192#" "m1_n5870_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n1400_6192#" "ppolyf_u_1k_7A6E7G_0/a_n1880_6192#" -359.923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n1880_6192#" "m1_n7790_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n2840_70#" "ppolyf_u_1k_7A6E7G_0/a_n3320_70#" -240.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n3320_70#" "m1_n9230_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1960_n192#" "ppolyf_u_1k_7A6E7G_0/a_1480_n192#" -244.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1480_n192#" "m1_n4430_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n3320_6192#" "ppolyf_u_1k_7A6E7G_0/a_n3800_6192#" -359.923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n3800_6192#" "m1_n9710_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n2360_6192#" "ppolyf_u_1k_7A6E7G_0/a_n2840_6192#" -359.923 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n2840_6192#" "m1_n8750_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n4280_6192#" "ppolyf_u_1k_7A6E7G_0/a_n4760_6192#" -363.683 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n4760_6192#" "m1_n10670_6400#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n4280_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n4760_n6314#" -250.043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n4760_n6314#" "m1_n10670_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n1880_70#" "ppolyf_u_1k_7A6E7G_0/a_n2360_70#" -240.839 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22794 -1688 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n2360_70#" "m1_n8270_290#"
+merge "ppolyf_u_1k_7A6E7G_0/a_520_n6314#" "ppolyf_u_1k_7A6E7G_0/a_40_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_40_n6314#" "m1_n5870_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_1480_6192#" "ppolyf_u_1k_7A6E7G_0/a_1000_6192#" -367.504 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35370 -1752 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1000_6192#" "m1_n4910_6410#"
+merge "ppolyf_u_1k_7A6E7G_0/a_2440_n6314#" "ppolyf_u_1k_7A6E7G_0/a_1960_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_1960_n6314#" "m1_n3950_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_3400_n6314#" "ppolyf_u_1k_7A6E7G_0/a_2920_n6314#" -258.793 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1747 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_2920_n6314#" "m1_n2990_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n3320_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n3800_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n3800_n6314#" "m1_n9710_n6100#"
+merge "ppolyf_u_1k_7A6E7G_0/a_2920_n192#" "ppolyf_u_1k_7A6E7G_0/a_2440_n192#" -244.888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30654 -1728 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_2440_n192#" "m1_n3470_20#"
+merge "ppolyf_u_1k_7A6E7G_0/a_n2360_n6314#" "ppolyf_u_1k_7A6E7G_0/a_n2840_n6314#" -246.284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27510 -1712 0 0 0 0 0 0 0 0
+merge "ppolyf_u_1k_7A6E7G_0/a_n2840_n6314#" "m1_n8750_n6100#"

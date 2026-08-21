@@ -1,36 +1,701 @@
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_tb_beta_multiplier_reference.sch
-**.subckt B04_tb_beta_multiplier_reference
+* =========================================================================
+* Combined Testbench: B04_BMR Schematic vs Post-Layout (PEX)
+* =========================================================================
 
-* --- CATATAN PERUBAHAN ---
-* Lama : x1 net1 net2 net3 0 B04_beta_multiplier_reference length=410u
-*        pin order lama: VDD VbiasP VbiasN GND
-* Baru : pin order hasil ext2spice (B04_BMR): VbiasN VbiasP VDD GND
-*        jadi net di-reorder, bukan cuma ganti nama subckt
+* --- Opsi Solver Numerik (Untuk Mengatasi Error Konvergensi PEX) ---
+.options reltol=1e-3 abstol=1e-12 vntol=1e-6
+.options gmin=1e-12
+.options cshunt=1e-15
+.options method=gear
 
-x1 net3 net2 net1 0 B04_BMR
-V_DD net1 0 3.3
-**** begin user architecture code
+* --- Pancingan Tegangan Awal (Mencegah BMR Terjebak di Arus 0) ---
+.nodeset v(VbiasN_sch)=0.6 v(VbiasN_pex)=0.6
+
+* --- Sumber Tegangan Utama ---
+V_DD VDD_net 0 3.3
+
+* --- Sumber Tegangan Dummy (0V) untuk Pengukuran Arus ---
+V_meas_sch VDD_net VDD_sch 0
+V_meas_pex VDD_net VDD_pex 0
+
+* --- Instansiasi Skematik (Pin: VDD VbiasP VbiasN GND) ---
+x_sch VDD_sch VbiasP_sch VbiasN_sch 0 B04_BMR_sch
+
+* --- Instansiasi Post-Layout/PEX (Pin: VDD GND VbiasP VbiasN) ---
+x_pex VDD_pex 0 VbiasP_pex VbiasN_pex B04_BMR_pex
+
+* =========================================================================
+* USER ARCHITECTURE CODE (Control Block)
+* =========================================================================
 .control
-save @m.x1.xxm3.x0.m0[id]
-dc V_DD 0 4 0.01
-plot @m.x1.xxm3.x0.m0[id] ylabel "nA" xlabel "VDD Sweep (V)" title "Reference Current vs VDD"
-save -i(v_dd) @m.x1.xxm3.x0.m0[id]
-dc V_DD 0 4 0.01
-plot -i(v_dd) ylabel "nA" xlabel "VDD Sweep (V)" title "Current Usage vs VDD"
-save @m.x1.xxm3.x0.m0[id]
-dc temp -40 125 1
-plot @m.x1.xxm3.x0.m0[id] ylabel "nA" xlabel "Temperature Sweep (C)" title "Reference Current vs Temperature"
+* Simpan semua sinyal
+save all
 
+* ----------------------------------------------------
+* 1. Analisis Transient (Startup)
+* ----------------------------------------------------
+tran 1u 5m
+let i_sch_tran = -i(v_meas_sch)
+let i_pex_tran = -i(v_meas_pex)
+
+echo Memeriksa kestabilan Transient...
+plot v(VbiasP_sch) v(VbiasP_pex) v(VbiasN_sch) v(VbiasN_pex) ylabel 'Voltage (V)' xlabel 'Time (s)' title 'Transient: Vbias (Sch vs PEX)'
+plot i_sch_tran i_pex_tran ylabel 'Current (A)' xlabel 'Time (s)' title 'Transient: Total Current (Sch vs PEX)'
+
+* ----------------------------------------------------
+* 2. Analisis DC Sweep (VDD Sweep)
+* ----------------------------------------------------
+dc V_DD 0 4 0.01
+let i_sch_dc = -i(v_meas_sch)
+let i_pex_dc = -i(v_meas_pex)
+
+plot v(VbiasP_sch) v(VbiasP_pex) ylabel 'Voltage (V)' xlabel 'VDD (V)' title 'DC: VbiasP vs VDD Sweep (Sch vs PEX)'
+plot i_sch_dc i_pex_dc ylabel 'Current (A)' xlabel 'VDD (V)' title 'DC: Supply Current vs VDD (Sch vs PEX)'
+
+* ----------------------------------------------------
+* 3. Analisis Temperature Sweep
+* ----------------------------------------------------
+* Kembalikan VDD ke tegangan nominal sebelum sweep suhu
+alter V_DD = 3.3
+dc temp -50 150 1
+let i_sch_temp = -i(v_meas_sch)
+let i_pex_temp = -i(v_meas_pex)
+
+plot i_sch_temp i_pex_temp ylabel 'Current (A)' xlabel 'Temp (C)' title 'DC: Current vs Temperature (Sch vs PEX)'
 
 .endc
+
+* --- PDK Includes & Libs ---
 .include /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/design.ngspice
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_typical
 
-**** end user architecture code
-**.ends
+* =========================================================================
+* 1. SCHEMATIC SUBCIRCUITS
+* =========================================================================
+.subckt B04_BMR_sch VDD VbiasP VbiasN GND
+XM2 VbiasN VbiasP VDD VDD pfet_03v3 L=4u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM3 net2 VbiasP VDD VDD pfet_03v3 L=4u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM6 VbiasN VbiasN GND GND nfet_03v3 L=4u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM7 net2 VbiasN net1 GND nfet_03v3 L=4u W=20u nf=2 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM1 net4 net4 VDD VDD pfet_03v3 L=40u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM4 VbiasP net3 VbiasN GND nfet_03v3 L=1u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM5 net3 VbiasN GND GND nfet_03v3 L=1u W=20u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM8 net5 net5 net4 VDD pfet_03v3 L=40u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM9 net3 net3 net5 VDD pfet_03v3 L=40u W=0.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+x1 VDD VbiasP net2 VbiasN VbiasN GND B04_diff_amp_sch
+XR1 GND net1 GND ppolyf_u_1k r_width=2u r_length=820u
+XMdummy VDD VDD VDD VDD pfet_03v3 L=4u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMdummy1 VDD VDD VDD VDD pfet_03v3 L=4u W=1u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMdummy2 GND GND GND GND nfet_03v3 L=4u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMdummy3 GND GND GND GND nfet_03v3 L=4u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XC1 VbiasP VbiasN cap_mim_2f0fF c_width=10u c_length=10u m=20
+.ends
 
-* ganti bagian expanding symbol di bawah ini dengan .include ke file hasil ext2spice kamu
-.include B04_BMR.spice
+.subckt B04_diff_amp_sch VDD Vo V+ V- Vbias VSS
+XM1 net1 V+ net2 VSS nfet_03v3 L=4u W=0.55u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM2 net2 Vbias VSS VSS nfet_03v3 L=4u W=2.2u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XM3 Vo V- net2 VSS nfet_03v3 L=4u W=0.55u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM4 Vo net1 VDD VDD pfet_03v3 L=4u W=6.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XM5 net1 net1 VDD VDD pfet_03v3 L=4u W=6.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=2
+XMDummy VDD VDD VDD VDD pfet_03v3 L=4u W=6.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMDummy1 VDD VDD VDD VDD pfet_03v3 L=4u W=6.5u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMdummy2 VSS VSS VSS VSS nfet_03v3 L=4u W=0.55u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XMdummy3 VSS VSS VSS VSS nfet_03v3 L=4u W=0.55u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ends
 
-.end
+* =========================================================================
+* 2. POST-LAYOUT (PEX) SUBCIRCUITS
+* =========================================================================
+.subckt pfet_03v3_YNZBKP w_n574_n804# a_n488_n674# a_400_n674# a_n400_n718# VSUBS
+X0 a_400_n674.t0 a_n400_n718# a_n488_n674.t0 w_n574_n804.t0 pfet_03v3 ad=2.86p pd=13.88u as=2.86p ps=13.88u w=6.5u l=4u
+R0 w_n574_n804.n0 w_n574_n804.t0 679.443
+C0 a_n400_n718# VSUBS 0.39457f
+C1 w_n574_n804.n0 VSUBS 0.28575f
+C2 w_n574_n804.t0 VSUBS 0.89241f
+C3 a_n488_n674.t0 VSUBS 0.53618f
+C4 a_400_n674.t0 VSUBS 0.53618f
+.ends
+
+.subckt nfet_03v3_LT7U5F a_n488_n31# a_n400_n123# a_400_n31# w_n512_n147#
+X0 a_400_n31.t0 a_n400_n123# a_n488_n31.t0 w_n512_n147.t0 nfet_03v3 ad=0.242p pd=1.98u as=0.242p ps=1.98u w=0.55u l=4u
+R0 w_n512_n147.n0 w_n512_n147.t0 5659.86
+C0 a_n400_n123# 0 1.05382f
+C1 a_n488_n31.t0 0 0.02419f
+C2 a_400_n31.t0 0 0.02419f
+.ends
+
+.subckt nfet_03v3_LPRCZE a_n488_n196# w_n512_n312# a_400_n196# a_n400_n288#
+X0 a_400_n196.t0 a_n400_n288# a_n488_n196.t0 w_n512_n312.t0 nfet_03v3 ad=0.968p pd=5.28u as=0.968p ps=5.28u w=2.2u l=4u
+R0 w_n512_n312.n0 w_n512_n312.t0 2666.67
+C0 a_n400_n288# 0 1.00525f
+C1 a_n488_n196.t0 0 0.0995f
+C2 a_400_n196.t0 0 0.0995f
+.ends
+
+.subckt B04_diff_amp_pex GND Vo Vbias V- w_n1560_660# V+ m1_630_n2010# VDD m1_n240_n310#
+XXM5_1 VDD m1_n240_n310# VDD m1_n240_n310# GND pfet_03v3_YNZBKP
+Xdummy VDD VDD VDD VDD GND pfet_03v3_YNZBKP
+XXM5_2 VDD VDD m1_n240_n310# m1_n240_n310# GND pfet_03v3_YNZBKP
+XXM3_1 m1_630_n2010# V- Vo GND nfet_03v3_LT7U5F
+XXM3_2 Vo V- m1_630_n2010# GND nfet_03v3_LT7U5F
+XXM1_1 m1_n240_n310# V+ m1_630_n2010# GND nfet_03v3_LT7U5F
+XXM1_2 m1_630_n2010# V+ m1_n240_n310# GND nfet_03v3_LT7U5F
+XXM2 m1_630_n2010# GND GND Vbias nfet_03v3_LPRCZE
+Xnfet_03v3_LT7U5F_1 GND GND GND GND nfet_03v3_LT7U5F
+Xnfet_03v3_LT7U5F_0 GND GND GND GND nfet_03v3_LT7U5F
+XXM4_1 VDD VDD Vo m1_n240_n310# GND pfet_03v3_YNZBKP
+XXM4_2 VDD Vo VDD m1_n240_n310# GND pfet_03v3_YNZBKP
+Xpfet_03v3_YNZBKP_0 VDD VDD VDD VDD GND pfet_03v3_YNZBKP
+R0 Vbias Vbias.n0 4.93583
+R1 V- V-.n2 3.84033
+R2 V-.n2 V-.n0 2.99957
+R3 V-.n2 V-.n1 2.01338
+R4 V+.n2 V+.n0 4.53505
+R5 V+ V+.n2 2.40901
+R6 V+.n2 V+.n1 2.04911
+R7 VDD.n5 VDD.n3 11.7482
+R8 VDD.n1 VDD.n0 7.44275
+R9 VDD.n7 VDD.n6 7.44275
+R10 VDD VDD.n1 1.38214
+R11 VDD VDD.n7 1.29577
+R12 VDD.n3 VDD.n2 0.694595
+R13 VDD.n5 VDD.n4 0.643827
+R14 VDD.n3 VDD.n1 0.0831125
+R15 VDD.n7 VDD.n5 0.0753336
+R16 GND.n2 GND.n1 4.64868
+R17 GND.n5 GND.n4 4.64107
+R18 GND.n2 GND.n0 2.12816
+R19 GND.n5 GND.n3 2.12188
+R20 GND.n6 GND.n2 2.01437
+R21 GND.n6 GND.n5 1.90693
+R22 GND GND.n6 0.454056
+C0 V- V+ 0.50631f
+C1 V- Vbias 0.03899f
+C2 V+ Vbias 0.00203f
+C3 GND.n0 0 0
+C4 GND.n1 0 0
+C5 GND.n2 0 0.00294f
+C6 GND.n3 0 0
+C7 GND.n4 0 0
+C8 GND.n5 0 0.00289f
+C9 GND.n6 0 0
+C10 VDD.n0 0 0.2923f
+C11 VDD.n1 0 0.33283f
+C12 VDD.n2 0 0.09037f
+C13 VDD.n3 0 2.71567f
+C14 VDD.n4 0 0.08828f
+C15 VDD.n5 0 2.77105f
+C16 VDD.n6 0 0.2923f
+C17 VDD.n7 0 0.32852f
+C18 V+.n0 0 0.26119f
+C19 V+.n1 0 0.09101f
+C20 V+.n2 0 0.55996f
+C21 V-.n0 0 0.21506f
+C22 V-.n1 0 0.14731f
+C23 V-.n2 0 0.47695f
+C24 Vbias.n0 0 0.05745f
+C25 Vbias 0 0.2194f
+C26 V+ 0 3.71281f
+C27 V- 0 0.31977f
+.ends
+
+.subckt pfet_03v3_J76TDP w_n574_n278# a_n488_n100# a_n400_n192# a_400_n100# VSUBS
+X0 a_400_n100.t0 a_n400_n192# a_n488_n100.t0 w_n574_n278.t0 pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=4u
+R0 w_n574_n278.n0 w_n574_n278.t0 1032.37
+C0 a_n400_n192# VSUBS 0.52046f
+C1 w_n574_n278.n0 VSUBS 0.22959f
+C2 w_n574_n278.t0 VSUBS 0.68877f
+C3 a_n488_n100.t0 VSUBS 0.0779f
+C4 a_400_n100.t0 VSUBS 0.0779f
+.ends
+
+.subckt nfet_03v3_6ZW7H2 w_n512_n1092# a_n488_n976# a_400_n976# a_n400_n1068#
+X0 a_400_n976.t0 a_n400_n1068# a_n488_n976.t0 w_n512_n1092.t0 nfet_03v3 ad=4.4p pd=20.88u as=4.4p ps=20.88u w=10u l=4u
+R0 w_n512_n1092.n0 w_n512_n1092.t0 3541.99
+C0 a_n400_n1068# 0 0.96796f
+C1 a_n488_n976.t0 0 0.45553f
+C2 a_400_n976.t0 0 0.45553f
+.ends
+
+.subckt ppolyf_u_1k_2Q22HA a_1000_4100# a_2920_n4222# a_n3800_n4222# a_2440_n4222#
++ a_n3320_n4222# a_n920_4100# a_3880_4100# a_1960_4100# a_2920_4100# a_n4760_4100#
++ a_n1880_4100# a_n2840_4100# a_n3800_4100# a_3400_n4222# a_520_4100# a_n1400_n4222#
++ w_n4996_n4458# a_3880_n4222# a_40_n4222# a_n4760_n4222# a_n440_4100# a_n4280_n4222#
++ a_1480_4100# a_4360_4100# a_2440_4100# a_n4280_4100# a_1000_n4222# a_3400_4100#
++ a_n2360_4100# a_n1880_n4222# a_n3320_4100# a_n920_n4222# a_n1400_4100# a_n440_n4222#
++ a_40_4100# a_4360_n4222# a_520_n4222# a_1960_n4222# a_n2840_n4222# a_1480_n4222#
++ a_n2360_n4222#
+X0 a_n3320_4100.t0 a_n3320_n4222.t0 w_n4996_n4458.t15 ppolyf_u_1k r_width=2u r_length=41u
+X1 a_n2360_4100.t0 a_n2360_n4222.t0 w_n4996_n4458.t5 ppolyf_u_1k r_width=2u r_length=41u
+X2 a_n2840_4100.t0 a_n2840_n4222.t0 w_n4996_n4458.t11 ppolyf_u_1k r_width=2u r_length=41u
+X3 a_n1400_4100.t0 a_n1400_n4222.t0 w_n4996_n4458.t2 ppolyf_u_1k r_width=2u r_length=41u
+X4 a_1000_4100.t0 a_1000_n4222.t0 w_n4996_n4458.t4 ppolyf_u_1k r_width=2u r_length=41u
+X5 a_n1880_4100.t0 a_n1880_n4222.t0 w_n4996_n4458.t17 ppolyf_u_1k r_width=2u r_length=41u
+X6 a_520_4100.t0 a_520_n4222.t0 w_n4996_n4458.t8 ppolyf_u_1k r_width=2u r_length=41u
+X7 a_4360_4100.t0 a_4360_n4222.t0 w_n4996_n4458.t6 ppolyf_u_1k r_width=2u r_length=41u
+X8 a_3880_4100.t0 a_3880_n4222.t0 w_n4996_n4458.t13 ppolyf_u_1k r_width=2u r_length=41u
+X9 a_n440_4100.t0 a_n440_n4222.t0 w_n4996_n4458.t0 ppolyf_u_1k r_width=2u r_length=41u
+X10 a_n920_4100.t0 a_n920_n4222.t0 w_n4996_n4458.t18 ppolyf_u_1k r_width=2u r_length=41u
+X11 a_n4280_4100.t0 a_n4280_n4222.t0 w_n4996_n4458.t9 ppolyf_u_1k r_width=2u r_length=41u
+X12 a_40_4100.t0 a_40_n4222.t0 w_n4996_n4458.t10 ppolyf_u_1k r_width=2u r_length=41u
+X13 a_n4760_4100.t0 a_n4760_n4222.t0 w_n4996_n4458.t7 ppolyf_u_1k r_width=2u r_length=41u
+X14 a_n3800_4100.t0 a_n3800_n4222.t0 w_n4996_n4458.t3 ppolyf_u_1k r_width=2u r_length=41u
+X15 a_3400_4100.t0 a_3400_n4222.t0 w_n4996_n4458.t19 ppolyf_u_1k r_width=2u r_length=41u
+X16 a_2440_4100.t0 a_2440_n4222.t0 w_n4996_n4458.t16 ppolyf_u_1k r_width=2u r_length=41u
+X17 a_2920_4100.t0 a_2920_n4222.t0 w_n4996_n4458.t12 ppolyf_u_1k r_width=2u r_length=41u
+X18 a_1480_4100.t0 a_1480_n4222.t0 w_n4996_n4458.t14 ppolyf_u_1k r_width=2u r_length=41u
+X19 a_1960_4100.t0 a_1960_n4222.t0 w_n4996_n4458.t1 ppolyf_u_1k r_width=2u r_length=41u
+R0 w_n4996_n4458.n0 w_n4996_n4458.n1 21.8713
+R1 w_n4996_n4458.n1 w_n4996_n4458.t7 137.058
+R2 w_n4996_n4458.t7 w_n4996_n4458.t9 174.966
+R3 w_n4996_n4458.t9 w_n4996_n4458.t3 174.966
+R4 w_n4996_n4458.t3 w_n4996_n4458.t15 174.966
+R5 w_n4996_n4458.t15 w_n4996_n4458.t11 174.966
+R6 w_n4996_n4458.t11 w_n4996_n4458.t5 174.966
+R7 w_n4996_n4458.t5 w_n4996_n4458.t17 174.966
+R8 w_n4996_n4458.t17 w_n4996_n4458.t2 174.966
+R9 w_n4996_n4458.t2 w_n4996_n4458.t18 174.966
+R10 w_n4996_n4458.t18 w_n4996_n4458.t0 174.966
+R11 w_n4996_n4458.t0 w_n4996_n4458.t10 174.966
+R12 w_n4996_n4458.t8 w_n4996_n4458.t10 174.966
+R13 w_n4996_n4458.t4 w_n4996_n4458.t8 174.966
+R14 w_n4996_n4458.t14 w_n4996_n4458.t4 174.966
+R15 w_n4996_n4458.t1 w_n4996_n4458.t14 174.966
+R16 w_n4996_n4458.t16 w_n4996_n4458.t1 174.966
+R17 w_n4996_n4458.t12 w_n4996_n4458.t16 174.966
+R18 w_n4996_n4458.t19 w_n4996_n4458.t12 174.966
+R19 w_n4996_n4458.t13 w_n4996_n4458.t19 174.966
+R20 w_n4996_n4458.t6 w_n4996_n4458.t13 174.966
+R21 w_n4996_n4458.n1 w_n4996_n4458.t6 155.137
+C0 a_n4760_4100.t0 0 0.04464f
+C1 a_n4760_n4222.t0 0 0.04464f
+C2 a_n4280_4100.t0 0 0.08929f
+C3 a_n4280_n4222.t0 0 0.08929f
+C4 a_n3800_4100.t0 0 0.08929f
+C5 a_n3800_n4222.t0 0 0.08929f
+C6 a_n3320_4100.t0 0 0.08929f
+C7 a_n3320_n4222.t0 0 0.08929f
+C8 a_n2840_4100.t0 0 0.08929f
+C9 a_n2840_n4222.t0 0 0.08929f
+C10 a_n2360_4100.t0 0 0.08929f
+C11 a_n2360_n4222.t0 0 0.08929f
+C12 a_n1880_4100.t0 0 0.08929f
+C13 a_n1880_n4222.t0 0 0.08929f
+C14 a_n1400_4100.t0 0 0.08929f
+C15 a_n1400_n4222.t0 0 0.08929f
+C16 a_n920_4100.t0 0 0.08929f
+C17 a_n920_n4222.t0 0 0.08929f
+C18 a_n440_4100.t0 0 0.08929f
+C19 a_n440_n4222.t0 0 0.08929f
+C20 a_40_4100.t0 0 0.08929f
+C21 a_40_n4222.t0 0 0.08929f
+C22 a_520_4100.t0 0 0.08929f
+C23 a_520_n4222.t0 0 0.08929f
+C24 a_1000_4100.t0 0 0.08929f
+C25 a_1000_n4222.t0 0 0.08929f
+C26 a_1480_4100.t0 0 0.08929f
+C27 a_1480_n4222.t0 0 0.08929f
+C28 a_1960_4100.t0 0 0.08929f
+C29 a_1960_n4222.t0 0 0.08929f
+C30 a_2440_4100.t0 0 0.08929f
+C31 a_2440_n4222.t0 0 0.08929f
+C32 a_2920_4100.t0 0 0.08929f
+C33 a_2920_n4222.t0 0 0.08929f
+C34 a_3400_4100.t0 0 0.08929f
+C35 a_3400_n4222.t0 0 0.08929f
+C36 a_3880_4100.t0 0 0.08929f
+C37 a_3880_n4222.t0 0 0.08929f
+C38 a_4360_4100.t0 0 0.04464f
+C39 a_4360_n4222.t0 0 0.04464f
+.ends
+
+.subckt cap_mim w_n120_n120# m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120.t0 cap_mim_2f0_m4m5_noshield c_width=10u c_length=10u
+C0 m4_0_0# w_n120_n120# 1.92189f
+C1 m4_n120_n120.t0 w_n120_n120# 0.59194f
+.ends
+
+.subckt pfet_03v3_LEPL4X w_n4174_n228# a_4000_n50# a_n4000_n142# a_n4088_n50# VSUBS
+X0 a_4000_n50.t0 a_n4000_n142# a_n4088_n50.t0 w_n4174_n228.t0 pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=40u
+R0 w_n4174_n228.n0 w_n4174_n228.t0 9153.51
+C0 a_n4000_n142# VSUBS 4.7326f
+C1 w_n4174_n228.n0 VSUBS 1.9038f
+C2 w_n4174_n228.t0 VSUBS 5.71141f
+C3 a_n4088_n50.t0 VSUBS 0.03513f
+C4 a_4000_n50.t0 VSUBS 0.03513f
+.ends
+
+.subckt nfet_03v3_V3BJRC a_n188_n100# a_n100_n192# a_100_n100# w_n212_n216#
+X0 a_100_n100.t0 a_n100_n192# a_n188_n100.t0 w_n212_n216.t0 nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+R0 w_n212_n216.n0 w_n212_n216.t0 1655.66
+C0 a_n100_n192# 0 0.40813f
+C1 a_n188_n100.t0 0 0.05605f
+C2 a_100_n100.t0 0 0.05605f
+.ends
+
+.subckt nfet_03v3_QHJDE5 a_n188_n1976# a_n100_n2068# w_n350_n2186# a_100_n1976#
+X0 a_100_n1976.t0 a_n100_n2068# a_n188_n1976.t0 w_n350_n2186.t0 nfet_03v3 ad=8.8p pd=40.88u as=8.8p ps=40.88u w=20u l=1u
+R0 w_n350_n2186.n0 w_n350_n2186.t0 153.639
+C0 a_n100_n2068# 0 0.54891f
+C1 a_n188_n1976.t0 0 1.14269f
+C2 a_100_n1976.t0 0 1.14269f
+.ends
+
+.subckt nfet_03v3_D2LTTM a_n940_n976# w_n964_n1092# a_n52_n976# a_52_n1068# a_852_n976#
++ a_n852_n1068#
+X0 a_852_n976.t0 a_52_n1068# a_n52_n976.t0 w_n964_n1092.t0 nfet_03v3 ad=4.4p pd=20.88u as=2.6p ps=10.52u w=10u l=4u
+X1 a_n52_n976.t1 a_n852_n1068# a_n940_n976.t0 w_n964_n1092.t1 nfet_03v3 ad=2.6p pd=10.52u as=4.4p ps=20.88u w=10u l=4u
+R0 a_n52_n976.t0 a_n52_n976.t1 0.3281
+R1 w_n964_n1092.n0 w_n964_n1092.t1 761.905
+R2 w_n964_n1092.t1 w_n964_n1092.t0 1345.24
+C0 a_52_n1068# a_n852_n1068# 0.03518f
+C1 a_52_n1068# 0 0.94492f
+C2 a_n852_n1068# 0 0.94492f
+C3 a_n940_n976.t0 0 0.45553f
+C4 a_n52_n976.t0 0 0.45553f
+C5 a_n52_n976.t1 0 0.45553f
+C6 a_852_n976.t0 0 0.45553f
+.ends
+
+.subckt B04_BMR_pex VDD GND VbiasP VbiasN
+XB04_diff_amp_0 GND VbiasP VbiasN VbiasN GND B04_diff_amp_0/V+ B04_diff_amp_0/m1_630_n2010#
++ VDD B04_diff_amp_0/m1_n240_n310# B04_diff_amp_pex
+Xdummy VDD VDD VDD VDD GND pfet_03v3_J76TDP
+Xnfet_03v3_6ZW7H2_0 GND GND GND GND nfet_03v3_6ZW7H2
+Xnfet_03v3_6ZW7H2_1 GND GND GND GND nfet_03v3_6ZW7H2
+XXM3_1 VDD VDD VbiasP B04_diff_amp_0/V+ GND pfet_03v3_J76TDP
+XXM3_2 VDD B04_diff_amp_0/V+ VbiasP VDD GND pfet_03v3_J76TDP
+XXR2 m1_5550_10240# m1_6990_1850# m1_270_1850# m1_6990_1850# m1_1230_1850# m1_3630_10240#
++ m1_8430_10240# m1_6510_10240# m1_7470_10240# m1_n210_10240# m1_2670_10240# m1_1710_10240#
++ m1_750_10240# m1_7950_1850# m1_4590_10240# m1_3150_1850# GND m1_7950_1850# m1_4110_1850#
++ m1_n13920_7340# m1_3630_10240# m1_270_1850# m1_5550_10240# m1_8430_10240# m1_6510_10240#
++ m1_n210_10240# m1_5070_1850# m1_7470_10240# m1_1710_10240# m1_2190_1850# m1_750_10240#
++ m1_3150_1850# m1_2670_10240# m1_4110_1850# m1_4590_10240# GND m1_5070_1850# m1_6030_1850#
++ m1_1230_1850# m1_6030_1850# m1_2190_1850# ppolyf_u_1k_2Q22HA
+Xpfet_03v3_J76TDP_0 VDD VDD VDD VDD GND pfet_03v3_J76TDP
+XXM1 VDD VDD m1_n15420_9660# m1_n15420_9660# GND pfet_03v3_LEPL4X
+XXM4 VbiasN m1_n16340_7940# VbiasP GND nfet_03v3_V3BJRC
+XXM5 GND VbiasN GND m1_n16340_7940# nfet_03v3_QHJDE5
+XXM6 GND VbiasN GND VbiasN nfet_03v3_6ZW7H2
+XXM9 VDD m1_n7420_9600# m1_n16340_7940# m1_n16340_7940# GND pfet_03v3_LEPL4X
+XXM8 VDD m1_n7420_9600# m1_n7420_9600# m1_n15420_9660# GND pfet_03v3_LEPL4X
+XXM2_1 VDD VbiasN VbiasP VDD GND pfet_03v3_J76TDP
+XXM2_2 VDD VDD VbiasP VbiasN GND pfet_03v3_J76TDP
+XXM7_2 m1_n13920_7340# GND B04_diff_amp_0/V+ VbiasN m1_n13920_7340# VbiasN nfet_03v3_D2LTTM
+XXM7_1 m1_n13920_7340# GND B04_diff_amp_0/V+ VbiasN m1_n13920_7340# VbiasN nfet_03v3_D2LTTM
+R0 VbiasP.n45 VbiasP.n44 7.89265
+R1 VbiasP VbiasP.n37 7.23837
+R2 VbiasP.n45 VbiasP 4.0855
+R3 VbiasP.n40 VbiasP.n38 2.11858
+R4 VbiasP.n42 VbiasP.n41 2.08115
+R5 VbiasP.n44 VbiasP.n43 1.21341
+R6 VbiasP.n40 VbiasP.n39 1.21325
+R7 VbiasP.n42 VbiasP.n40 0.764609
+R8 VbiasP.n15 VbiasP.n13 0.160449
+R9 VbiasP.n2 VbiasP.n0 0.160449
+R10 VbiasP.n30 VbiasP.n28 0.160449
+R11 VbiasP.n25 VbiasP.n23 0.160449
+R12 VbiasP.n37 VbiasP.n22 0.126426
+R13 VbiasP.n17 VbiasP.n15 0.123259
+R14 VbiasP.n19 VbiasP.n17 0.123259
+R15 VbiasP.n21 VbiasP.n19 0.123259
+R16 VbiasP.n4 VbiasP.n2 0.123259
+R17 VbiasP.n6 VbiasP.n4 0.123259
+R18 VbiasP.n8 VbiasP.n6 0.123259
+R19 VbiasP.n10 VbiasP.n8 0.123259
+R20 VbiasP.n12 VbiasP.n10 0.123259
+R21 VbiasP.n32 VbiasP.n30 0.123259
+R22 VbiasP.n34 VbiasP.n32 0.123259
+R23 VbiasP.n36 VbiasP.n34 0.123259
+R24 VbiasP.n27 VbiasP.n25 0.123259
+R25 VbiasP.n22 VbiasP.n12 0.111159
+R26 VbiasP.n37 VbiasP.n27 0.110959
+R27 VbiasP VbiasP.n45 0.0655
+R28 VbiasP.n44 VbiasP.n42 0.0479559
+R29 VbiasP.n15 VbiasP.n14 0.0376901
+R30 VbiasP.n17 VbiasP.n16 0.0376901
+R31 VbiasP.n19 VbiasP.n18 0.0376901
+R32 VbiasP.n2 VbiasP.n1 0.0376901
+R33 VbiasP.n4 VbiasP.n3 0.0376901
+R34 VbiasP.n6 VbiasP.n5 0.0376901
+R35 VbiasP.n8 VbiasP.n7 0.0376901
+R36 VbiasP.n10 VbiasP.n9 0.0376901
+R37 VbiasP.n12 VbiasP.n11 0.0376901
+R38 VbiasP.n21 VbiasP.n20 0.0376901
+R39 VbiasP.n30 VbiasP.n29 0.0376901
+R40 VbiasP.n32 VbiasP.n31 0.0376901
+R41 VbiasP.n34 VbiasP.n33 0.0376901
+R42 VbiasP.n25 VbiasP.n24 0.0376901
+R43 VbiasP.n27 VbiasP.n26 0.0376901
+R44 VbiasP.n36 VbiasP.n35 0.0376901
+R45 VbiasP.n37 VbiasP.n36 0.0128
+R46 VbiasP.n22 VbiasP.n21 0.0126
+R47 VbiasN.n17 VbiasN.n15 86.8429
+R48 VbiasN.n9 VbiasN.n7 11.2635
+R49 VbiasN.n17 VbiasN.n16 10.6365
+R50 VbiasN.n14 VbiasN.n13 10.6365
+R51 VbiasN.n11 VbiasN.n10 10.6365
+R52 VbiasN.n9 VbiasN.n8 10.6365
+R53 VbiasN.n5 VbiasN.n4 4.42856
+R54 VbiasN VbiasN.n18 4.35932
+R55 VbiasN.n2 VbiasN.n0 2.99957
+R56 VbiasN.n3 VbiasN.n2 2.38748
+R57 VbiasN.n2 VbiasN.n1 2.01338
+R58 VbiasN VbiasN 1.64618
+R59 VbiasN.n3 VbiasN 1.45336
+R60 VbiasN.n12 VbiasN.n6 0.788582
+R61 VbiasN.n11 VbiasN.n9 0.746965
+R62 VbiasN.n5 VbiasN.n3 0.620364
+R63 VbiasN.n14 VbiasN.n12 0.491502
+R64 VbiasN VbiasN.n5 0.432693
+R65 VbiasN.n18 VbiasN.n14 0.276391
+R66 VbiasN.n12 VbiasN.n11 0.201336
+R67 VbiasN.n18 VbiasN.n17 0.15852
+R68 VDD.n21 VDD.n20 478.527
+R69 VDD.n20 VDD.n19 13.4803
+R70 VDD.n12 VDD.n5 11.7361
+R71 VDD.n18 VDD.n17 7.44275
+R72 VDD.n16 VDD.n15 7.44275
+R73 VDD.n10 VDD.n9 4.54039
+R74 VDD.n20 VDD 4.49632
+R75 VDD.n22 VDD.n0 4.42785
+R76 VDD.n24 VDD.n0 4.42417
+R77 VDD.n11 VDD.n10 4.4205
+R78 VDD.n22 VDD.n21 3.10258
+R79 VDD.n23 VDD.n2 1.21376
+R80 VDD.n9 VDD.n8 1.21325
+R81 VDD.n7 VDD.n6 0.68469
+R82 VDD.n5 VDD.n4 0.643827
+R83 VDD.n13 VDD.n11 0.483986
+R84 VDD VDD.n16 0.438864
+R85 VDD.n18 VDD 0.412408
+R86 VDD.n13 VDD.n12 0.213732
+R87 VDD.n9 VDD.n3 0.100556
+R88 VDD.n12 VDD.n7 0.0822845
+R89 VDD.n14 VDD.n7 0.0657684
+R90 VDD.n14 VDD.n13 0.0558279
+R91 VDD.n19 VDD.n5 0.046991
+R92 VDD.n24 VDD.n23 0.0416959
+R93 VDD.n23 VDD.n22 0.0409536
+R94 VDD.n21 VDD.n3 0.0256866
+R95 VDD VDD.n1 0.023
+R96 VDD.n24 VDD.n1 0.0205
+R97 VDD.n19 VDD.n18 0.0145164
+R98 VDD VDD.n24 0.0144175
+R99 VDD.n1 VDD 0.0105
+R100 VDD.n16 VDD.n14 0.00554098
+R101 VDD.n11 VDD.n3 0.00117164
+R102 GND.n26 GND.n25 275519
+R103 GND.n25 GND.n6 86277
+R104 GND.n14 GND.n7 2588.85
+R105 GND.n28 GND.n27 2439.08
+R106 GND.n24 GND.n8 678.097
+R107 GND.n29 GND.n5 368.2
+R108 GND.n16 GND.n15 272.014
+R109 GND.n28 GND.n6 219.297
+R110 GND.n27 GND.n26 155.404
+R111 GND.n25 GND.n7 37.8375
+R112 GND.n13 GND.n8 35.5773
+R113 GND.n14 GND.n6 33.8547
+R114 GND.n8 GND.n0 32.4475
+R115 GND.n25 GND.n24 19.2807
+R116 GND.n30 GND.n4 15.5919
+R117 GND.n34 GND.n32 10.6383
+R118 GND.n38 GND.n37 10.6365
+R119 GND.n13 GND.n12 9.88336
+R120 GND.n21 GND.n20 9.54208
+R121 GND.n22 GND.n21 9.27868
+R122 GND.n11 GND.n10 4.64107
+R123 GND.n35 GND.n34 4.60009
+R124 GND.n39 GND.n2 2.31454
+R125 GND.n11 GND.n9 2.12188
+R126 GND.n20 GND.n19 2.01338
+R127 GND.n4 GND.n2 2.01264
+R128 GND.n36 GND.n3 1.94214
+R129 GND GND.n0 1.16012
+R130 GND GND.n40 1.02685
+R131 GND.n31 GND.n3 0.945604
+R132 GND.n40 GND.n1 0.939071
+R133 GND.n26 GND.n2 0.727368
+R134 GND.n34 GND.n33 0.720657
+R135 GND.n31 GND.n30 0.624071
+R136 GND.n17 GND.n16 0.3255
+R137 GND.n16 GND.n7 0.3255
+R138 GND.n15 GND.n1 0.3255
+R139 GND.n15 GND.n14 0.3255
+R140 GND.n12 GND.n1 0.309071
+R141 GND.n20 GND.n18 0.214916
+R142 GND.n17 GND.n0 0.208007
+R143 GND.n12 GND.n11 0.204944
+R144 GND.n40 GND 0.175308
+R145 GND.n30 GND.n29 0.158076
+R146 GND.n29 GND.n28 0.158076
+R147 GND.n5 GND.n4 0.158076
+R148 GND.n27 GND.n5 0.158076
+R149 GND.n23 GND.n13 0.0999102
+R150 GND GND.n39 0.0835769
+R151 GND.n18 GND.n17 0.0721622
+R152 GND.n24 GND.n23 0.0716475
+R153 GND.n39 GND.n38 0.0338333
+R154 GND.n38 GND.n36 0.03325
+R155 GND.n36 GND.n35 0.0256667
+R156 GND.n22 GND.n18 0.0111166
+R157 GND.n35 GND.n31 0.0100833
+R158 GND.n23 GND.n22 0.00218901
+C0 GND.n0 0 0
+C1 GND.n1 0 0
+C2 GND.n2 0 0
+C3 GND.n3 0 0
+C4 GND.n4 0 0
+C5 GND.n5 0 0
+C6 GND.n6 0 0.00335f
+C7 GND.n7 0 0.01748f
+C8 GND.n8 0 0.03982f
+C9 GND.n9 0 0
+C10 GND.n10 0 0
+C11 GND.n11 0 0
+C12 GND.n12 0 0
+C13 GND.n13 0 0
+C14 GND.n14 0 0.01745f
+C15 GND.n15 0 0
+C16 GND.n16 0 0
+C17 GND.n17 0 0
+C18 GND.n18 0 0
+C19 GND.n19 0 0
+C20 GND.n20 0 0
+C21 GND.n21 0 0
+C22 GND.n22 0 0
+C23 GND.n23 0 0
+C24 GND.n24 0 0.0388f
+C25 GND.n25 0 0.00231f
+C26 GND.n26 0 0.04606f
+C27 GND.n27 0 0.02754f
+C28 GND.n28 0 0.02818f
+C29 GND.n29 0 0
+C30 GND.n30 0 0
+C31 GND.n31 0 0
+C32 GND.n32 0 0
+C33 GND.n33 0 0
+C34 GND.n34 0 0.00121f
+C35 GND.n35 0 0
+C36 GND.n36 0 0
+C37 GND.n37 0 0
+C38 GND.n38 0 0
+C39 GND.n39 0 0
+C40 GND.n40 0 0
+C41 VDD.n0 0 0.00469f
+C42 VDD.n1 0 0.00727f
+C43 VDD.n2 0 0.03753f
+C44 VDD.n3 0 0.0153f
+C45 VDD.n4 0 0.04582f
+C46 VDD.n5 0 1.40084f
+C47 VDD.n6 0 0.0464f
+C48 VDD.n7 0 0.006f
+C49 VDD.n8 0 0.03752f
+C50 VDD.n9 0 0.06412f
+C51 VDD.n10 0 0.00509f
+C52 VDD.n11 0 0.00963f
+C53 VDD.n12 0 1.37857f
+C54 VDD.n13 0 0.04726f
+C55 VDD.n14 0 0.07846f
+C56 VDD.n15 0 0.15172f
+C57 VDD.n16 0 0.20882f
+C58 VDD.n17 0 0.15172f
+C59 VDD.n18 0 0.20552f
+C60 VDD.n19 0 0.18665f
+C61 VDD.n20 0 2.37365f
+C62 VDD.n21 0 2.27902f
+C63 VDD.n22 0 0.1802f
+C64 VDD.n23 0 0.10624f
+C65 VDD.n24 0 0.06034f
+C66 VbiasN.n0 0 0.01489f
+C67 VbiasN.n1 0 0.0102f
+C68 VbiasN.n2 0 0.02214f
+C69 VbiasN.n3 0 0.11243f
+C70 VbiasN.n4 0 0.03666f
+C71 VbiasN.n5 0 0.02476f
+C72 VbiasN.n6 0 0.04362f
+C73 VbiasN.n7 0 0.14331f
+C74 VbiasN.n8 0 0.14001f
+C75 VbiasN.n9 0 0.11677f
+C76 VbiasN.n10 0 0.14001f
+C77 VbiasN.n11 0 0.05661f
+C78 VbiasN.n12 0 0.06631f
+C79 VbiasN.n13 0 0.14001f
+C80 VbiasN.n14 0 0.05553f
+C81 VbiasN.n15 0 0.07226f
+C82 VbiasN.n16 0 0.14001f
+C83 VbiasN.n17 0 0.12145f
+C84 VbiasN.n18 0 0.04824f
+C85 VbiasP.n0 0 0.08109f
+C86 VbiasP.n1 0 0.04545f
+C87 VbiasP.n2 0 0.05823f
+C88 VbiasP.n3 0 0.04545f
+C89 VbiasP.n4 0 0.04743f
+C90 VbiasP.n5 0 0.04545f
+C91 VbiasP.n6 0 0.04743f
+C92 VbiasP.n7 0 0.04545f
+C93 VbiasP.n8 0 0.04743f
+C94 VbiasP.n9 0 0.04545f
+C95 VbiasP.n10 0 0.04743f
+C96 VbiasP.n11 0 0.04545f
+C97 VbiasP.n12 0 0.04559f
+C98 VbiasP.n13 0 0.08109f
+C99 VbiasP.n14 0 0.04545f
+C100 VbiasP.n15 0 0.05823f
+C101 VbiasP.n16 0 0.04545f
+C102 VbiasP.n17 0 0.04743f
+C103 VbiasP.n18 0 0.04545f
+C104 VbiasP.n19 0 0.04743f
+C105 VbiasP.n20 0 0.04545f
+C106 VbiasP.n21 0 0.03059f
+C107 VbiasP.n22 0 0.01998f
+C108 VbiasP.n23 0 0.08102f
+C109 VbiasP.n24 0 0.04545f
+C110 VbiasP.n25 0 0.0582f
+C111 VbiasP.n26 0 0.04545f
+C112 VbiasP.n27 0 0.04557f
+C113 VbiasP.n28 0 0.08109f
+C114 VbiasP.n29 0 0.04545f
+C115 VbiasP.n30 0 0.05823f
+C116 VbiasP.n31 0 0.04545f
+C117 VbiasP.n32 0 0.04743f
+C118 VbiasP.n33 0 0.04545f
+C119 VbiasP.n34 0 0.04743f
+C120 VbiasP.n35 0 0.04545f
+C121 VbiasP.n36 0 0.0307f
+C122 VbiasP.n37 0 0.02704f
+C123 VbiasP.n38 0 0.00339f
+C124 VbiasP.n39 0 0.00227f
+C125 VbiasP.n40 0 0.00493f
+C126 VbiasP.n41 0 0.00336f
+C127 VbiasP.n42 0 0.00322f
+C128 VbiasP.n43 0 0.00229f
+C129 VbiasP.n44 0 0.00356f
+C130 VbiasP.n45 0 0.01538f
+.ends

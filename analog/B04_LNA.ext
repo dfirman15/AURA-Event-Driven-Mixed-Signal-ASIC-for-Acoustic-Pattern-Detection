@@ -1,0 +1,1851 @@
+timestamp 1786480252
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_30 0 1 1270 -1 0 -10740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_31 0 1 3830 -1 0 -10740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_32 0 1 6390 -1 0 -10740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_33 0 1 8950 -1 0 -10740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_34 0 1 11510 -1 0 -10740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_39 0 1 1270 -1 0 -7940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_9 0 1 1270 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_38 0 1 3830 -1 0 -7940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_8 0 1 3830 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_37 0 1 6390 -1 0 -7940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_7 0 1 6390 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_36 0 1 8950 -1 0 -7940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_6 0 1 8950 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_35 0 1 11510 -1 0 -7940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_5 0 1 11510 -1 0 -4740
+use B04_OTA_bias_ratio_8 B04_OTA_bias_ratio_8_0 1 0 16110 0 1 -7170
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_40 0 1 20420 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_41 0 1 25540 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_42 0 1 22980 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_44 0 1 28100 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_43 0 1 30660 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_23 0 1 36980 -1 0 -10030
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_24 0 1 34420 -1 0 -10030
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_28 0 1 34420 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_29 0 1 36980 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_18 0 1 31770 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_17 0 1 36890 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_19 0 1 34330 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_27 0 1 39540 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_26 0 1 42100 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_25 0 1 44660 -1 0 -12830
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_22 0 1 39540 -1 0 -10030
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_21 0 1 42100 -1 0 -10030
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_20 0 1 44660 -1 0 -10030
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_16 0 1 39450 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_15 0 1 42010 -1 0 -4740
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_0 0 1 1270 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_1 0 1 3830 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_2 0 1 6390 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_3 0 1 8950 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_4 0 1 11510 -1 0 -1940
+use pfet_03v3_5D338Y XM3 1 0 14770 0 1 -4230
+use pfet_03v3_5D338Y XM4 1 0 14770 0 1 -3310
+use cap_mim_2p0fF_6GG5NH cap_mim_2p0fF_6GG5NH_0 0 1 17400 -1 0 -2140
+use pfet_03v3_5D338Y XM1 1 0 24410 0 1 -1750
+use pfet_03v3_5D338Y xm2 1 0 24410 0 1 -2670
+use cap_mim_2p0fF_6GG5NH cap_mim_2p0fF_6GG5NH_1 0 1 27200 -1 0 -2000
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_13 0 1 31770 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_14 0 1 34330 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_12 0 1 36890 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_11 0 1 39450 -1 0 -1940
+use cap_mim_2p0fF_5GVGCQ cap_mim_2p0fF_5GVGCQ_10 0 1 42010 -1 0 -1940
+use B04_LNA_OTA B04_LNA_OTA_0 1 0 11980 0 1 6280
+port "VbiasN" 2 13470 -10520 13490 -10510 m2
+port "VbiasP" 1 13340 -6660 13380 -6630 m2
+port "Vout" 3 43260 1380 43360 1450 v2
+node "m5_43100_n14030#" 0 156.586 43100 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_40540_n14030#" 0 164.754 40540 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_37990_n14030#" 0 164.754 37990 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_35420_n14030#" 0 164.754 35420 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_31660_n14030#" 1 433.152 31660 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 228800 3780
+node "m5_29090_n14030#" 0 164.754 29090 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_26540_n14030#" 0 164.754 26540 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_23990_n14030#" 0 164.754 23990 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_21410_n14030#" 0 155.642 21410 -14030 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_43090_n11230#" 0 105.799 43090 -11230 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_40550_n11230#" 0 113.967 40550 -11230 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_37990_n11230#" 0 113.967 37990 -11230 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_35440_n11230#" 0 106.658 35440 -11230 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_9960_n11940#" 0 156.307 9960 -11940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_7380_n11940#" 0 164.983 7380 -11940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_4830_n11940#" 0 164.983 4830 -11940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_2260_n11940#" 0 164.983 2260 -11940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_9950_n9140#" 0 109.241 9950 -9140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_7400_n9140#" 0 117.917 7400 -9140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_4840_n9140#" 0 117.917 4840 -9140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_2270_n9140#" 0 117.917 2270 -9140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_9950_n5940#" 0 93.9444 9950 -5940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_7400_n5940#" 0 93.9444 7400 -5940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_4840_n5940#" 0 93.9444 4840 -5940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_2260_n5940#" 0 73.4356 2260 -5940 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_9970_n3140#" 0 107.534 9970 -3140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_7380_n3140#" 0 116.938 7380 -3140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_4840_n3140#" 0 114.41 4840 -3140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m5_2290_n3140#" 0 31.7761 2290 -3140 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72800 1380
+node "m4_43820_n11230#" 5 2615.76 43820 -11230 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1172100 17000 0 0
+node "m4_10610_n9140#" 10 5709.59 10610 -9140 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2906500 36780 0 0
+node "m4_30150_n5940#" 25 9575.63 30150 -5940 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16055800 101460 2364576 50488
+node "m4_10510_n5940#" 5 2159.51 10510 -5940 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1111000 16060 0 0
+node "m3_38520_1210#" 4 13320.6 38520 1210 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 607200 5540 41654600 9980 37466000 98600
+node "m3_230_4060#" 6 12591.3 230 4060 v3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210900 1880 2904900 9800 10032900 72440
+node "VbiasN" 0 143.377 13470 -10520 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36000 780 0 0 0 0 0 0
+node "VbiasP" 0 250.826 13340 -6660 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 246000 2020 0 0 0 0 0 0
+node "m2_19720_n5790#" 5 4622.04 19720 -5790 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62400 1000 171600 2360 3745800 26020 0 0
+node "m2_18640_n5810#" 6 2371.47 18640 -5810 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27900 800 1087500 16300 0 0 0 0
+node "m2_17300_n5920#" 5 5997.67 17300 -5920 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 936900 8600 4519900 27600 0 0 0 0
+node "m2_21330_n6020#" 9 12403.4 21330 -6020 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7485700 50480 1894800 12700 0 0 0 0
+node "m1_28900_n9870#" 3 29030.7 28900 -9870 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29647500 26000 409400 2700 496800 3080 1240800 11160 0 0
+node "m1_14160_n4650#" 1 3581.34 14160 -4650 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 881200 6220 982800 4720 945900 3940 605900 3120 0 0
+node "m1_15230_n3400#" 0 120.125 15230 -3400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23400 620 0 0 0 0 0 0 0 0
+node "m1_14320_n4310#" 1 970.782 14320 -4310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 184000 2660 273700 2840 0 0 0 0 0 0
+node "Vout" 23 40386.9 43260 1380 v2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 88800 1220 6343900 51580 1202900 8340 807100 5340 28341500 181860
+node "m1_24880_n2760#" 0 97.9864 24880 -2760 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 600 0 0 0 0 0 0 0 0
+node "m1_14510_n3060#" 6 8017.88 14510 -3060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132000 1460 346500 2760 6969800 40840 0 0 0 0
+node "m1_24880_n1840#" 0 114.684 24880 -1840 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 600 0 0 0 0 0 0 0 0
+node "m1_23950_n2750#" 1 1065.3 23950 -2750 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188000 2840 224000 2640 0 0 0 0 0 0
+node "m1_23810_n1500#" 1 1295.6 23810 -1500 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56000 960 74800 1220 86700 1360 88400 1380 306000 3940
+node "m1_2090_n7620#" 1 33808 2090 -7620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34689000 42580 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m5_4840_n5940#" "m3_230_4060#" 61.2587
+cap "Vout" "m5_23990_n14030#" 61.2587
+cap "m5_9950_n5940#" "m1_2090_n7620#" 83.3014
+cap "m4_43820_n11230#" "Vout" 61.6764
+cap "m5_4840_n3140#" "m1_2090_n7620#" 3.72687
+cap "Vout" "m5_26540_n14030#" 61.2587
+cap "m1_2090_n7620#" "m5_7400_n5940#" 95.9307
+cap "m4_10610_n9140#" "m5_21410_n14030#" 42.0771
+cap "m5_2260_n11940#" "Vout" 60.6808
+cap "m1_14320_n4310#" "m1_14160_n4650#" 180.295
+cap "VbiasN" "m4_10610_n9140#" 15.2221
+cap "Vout" "m5_37990_n14030#" 61.2587
+cap "m5_9970_n3140#" "m4_10510_n5940#" 47.3723
+cap "Vout" "m4_10610_n9140#" 1370.08
+cap "m5_4840_n5940#" "m1_2090_n7620#" 95.9307
+cap "m3_38520_1210#" "m4_30150_n5940#" 18722.6
+cap "m1_14320_n4310#" "m1_14510_n3060#" 127.173
+cap "Vout" "m5_4840_n9140#" 103.338
+cap "m5_2260_n5940#" "m3_230_4060#" 61.2587
+cap "m1_24880_n2760#" "m1_23810_n1500#" 0.89482
+cap "Vout" "m3_38520_1210#" 2945.09
+cap "Vout" "m4_30150_n5940#" 2622.59
+cap "Vout" "m5_21410_n14030#" 61.2587
+cap "VbiasN" "Vout" 10.3103
+cap "Vout" "m5_4830_n11940#" 60.6808
+cap "m2_19720_n5790#" "m2_18640_n5810#" 111.976
+cap "m2_21330_n6020#" "m2_17300_n5920#" 3325.58
+cap "m1_24880_n2760#" "m1_24880_n1840#" 6.65951
+cap "m1_2090_n7620#" "m3_230_4060#" 1084.9
+cap "Vout" "m5_35440_n11230#" 113.606
+cap "m5_2260_n5940#" "m1_2090_n7620#" 125.753
+cap "m5_7400_n9140#" "m1_2090_n7620#" 0.771662
+cap "m5_40540_n14030#" "Vout" 61.2587
+cap "m1_14160_n4650#" "m3_230_4060#" 9.81894
+cap "m4_10610_n9140#" "m5_9960_n11940#" 34.6214
+cap "m5_7380_n11940#" "Vout" 60.6808
+cap "m2_21330_n6020#" "m1_23810_n1500#" 67.2986
+cap "m1_14510_n3060#" "m3_230_4060#" 813.98
+cap "m1_14160_n4650#" "m2_17300_n5920#" 88.4618
+cap "m5_9950_n9140#" "m1_2090_n7620#" 0.771662
+cap "m1_24880_n2760#" "m1_23950_n2750#" 15.5065
+cap "m5_2290_n3140#" "m3_230_4060#" 105.961
+cap "m5_9950_n5940#" "m4_10510_n5940#" 47.3723
+cap "m1_14320_n4310#" "m4_10510_n5940#" 13.5499
+cap "m3_38520_1210#" "m1_28900_n9870#" 2672.15
+cap "m4_30150_n5940#" "m1_28900_n9870#" 2065.13
+cap "m2_21330_n6020#" "m1_24880_n1840#" 0.843017
+cap "Vout" "m5_31660_n14030#" 192.527
+cap "m1_23810_n1500#" "m2_17300_n5920#" 99.8656
+cap "Vout" "m5_9960_n11940#" 60.6808
+cap "Vout" "m1_28900_n9870#" 2881.36
+cap "m1_14320_n4310#" "m1_15230_n3400#" 14.703
+cap "m5_43100_n14030#" "m4_43820_n11230#" 27.3058
+cap "m1_24880_n1840#" "m2_17300_n5920#" 0.772311
+cap "Vout" "m1_24880_n2760#" 37.1447
+cap "m1_28900_n9870#" "m5_35440_n11230#" 18.4601
+cap "m5_43090_n11230#" "m4_43820_n11230#" 27.3058
+cap "m2_18640_n5810#" "m3_230_4060#" 22.5793
+cap "m5_2270_n9140#" "m1_2090_n7620#" 0.771662
+cap "m1_2090_n7620#" "m1_14510_n3060#" 1091.82
+cap "m5_2290_n3140#" "m1_2090_n7620#" 119.033
+cap "m2_18640_n5810#" "m2_17300_n5920#" 400.869
+cap "m5_9970_n3140#" "m3_230_4060#" 105.961
+cap "m5_7380_n3140#" "m3_230_4060#" 105.961
+cap "m1_14160_n4650#" "m1_14510_n3060#" 5.10818
+cap "m2_21330_n6020#" "m1_23950_n2750#" 5.67374
+cap "m3_230_4060#" "m4_10510_n5940#" 464.145
+cap "m1_23810_n1500#" "m1_24880_n1840#" 2.19439
+cap "m2_21330_n6020#" "m3_38520_1210#" 1582.72
+cap "m5_43100_n14030#" "Vout" 61.2587
+cap "m1_23950_n2750#" "m2_17300_n5920#" 0.724321
+cap "m2_21330_n6020#" "m4_30150_n5940#" 1004.07
+cap "m5_43090_n11230#" "Vout" 113.606
+cap "m2_21330_n6020#" "Vout" 513.494
+cap "m3_38520_1210#" "m2_17300_n5920#" 2.15637
+cap "m1_15230_n3400#" "m3_230_4060#" 1.24007
+cap "m4_10610_n9140#" "m1_2090_n7620#" 21.8861
+cap "m1_14160_n4650#" "m2_18640_n5810#" 82.4202
+cap "m5_35420_n14030#" "Vout" 61.2587
+cap "Vout" "m5_7400_n9140#" 103.338
+cap "m4_10610_n9140#" "m5_9950_n9140#" 34.6214
+cap "m1_2090_n7620#" "m5_4840_n9140#" 0.771662
+cap "m1_2090_n7620#" "m4_10510_n5940#" 446.508
+cap "Vout" "m1_2090_n7620#" 1287.48
+cap "Vout" "m5_9950_n9140#" 103.338
+cap "m1_23810_n1500#" "m1_23950_n2750#" 68.2156
+cap "m2_21330_n6020#" "m2_19720_n5790#" 23.7428
+cap "m1_14160_n4650#" "m4_10510_n5940#" 3.87781
+cap "m5_40550_n11230#" "Vout" 113.606
+cap "m1_24880_n1840#" "m1_23950_n2750#" 15.5065
+cap "m5_9950_n5940#" "m3_230_4060#" 61.2587
+cap "m1_14320_n4310#" "m3_230_4060#" 17.0107
+cap "Vout" "m5_37990_n11230#" 113.606
+cap "m2_19720_n5790#" "m2_17300_n5920#" 474.842
+cap "m1_14160_n4650#" "m1_15230_n3400#" 7.36919
+cap "m5_4840_n3140#" "m3_230_4060#" 105.961
+cap "Vout" "m1_23810_n1500#" 6.43344
+cap "m1_14510_n3060#" "m4_10510_n5940#" 0.539474
+cap "m2_21330_n6020#" "m1_28900_n9870#" 2683.92
+cap "m5_2270_n9140#" "Vout" 103.338
+cap "VbiasP" "m1_2090_n7620#" 520.853
+cap "m3_230_4060#" "m5_7400_n5940#" 61.2587
+cap "Vout" "m1_24880_n1840#" 0.398665
+cap "Vout" "m5_29090_n14030#" 61.2587
+cap "m1_28900_n9870#" "m2_17300_n5920#" 20.8743
+cap "Vout" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 12.9016
+cap "Vout" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 8.67671
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 3.42387
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_n488_n4000#" 22.2131
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 59.6943
+cap "B04_OTA_bias_ratio_8_0/XM2/a_n488_n4000#" "Vout" 6.0804
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 65.9383
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "Vout" 15.4293
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 39.2691
+cap "Vout" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 48.7373
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 102.52
+cap "Vout" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 6.0804
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 14.0967
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 41.5026
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" -13.497
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 89.9635
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" 93.5306
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" 31.7193
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 61.7369
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 45.7218
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 47.8087
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 37.271
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 37.271
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" 93.4562
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" 93.5306
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" 31.7193
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 61.7369
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" 46.7281
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 37.6581
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" 38.4973
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" -0.188226
+cap "cap_mim_2p0fF_5GVGCQ_30/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" 6.61684
+cap "cap_mim_2p0fF_5GVGCQ_30/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" 4.09403
+cap "cap_mim_2p0fF_5GVGCQ_30/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" 5.08307
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 9.10262
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 9.1771
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" 6.08743
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 12.5644
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 42.8587
+cap "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 3.41175
+cap "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 57.691
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 65.0665
+cap "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 4.52209
+cap "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 64.0096
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 56.4051
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 27.3175
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 0.537365
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 14.0299
+cap "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 91.4507
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "Vout" 8.14491
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 8.14491
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasN" 0.733224
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 10.0567
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasN" 0.963166
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 4.57518
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/GND" 4.51133
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/GND" 8.92777
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 0.15456
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 80.6923
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 1.677
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 2.64827
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 37.0758
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 21.0529
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 58.7174
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 19.105
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 64.0526
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 13.4843
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 13.4684
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 6.54953
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 153.364
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 15.7109
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 1.81056
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 19.6449
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 14.6733
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 16.2408
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 18.0083
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 8.5892
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasN" 13.4843
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 8.20585
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 37.0758
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasN" 14.6645
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 19.105
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 3.0912
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 33.5401
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 9.5126
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 21.0529
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 2.38464
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 13.4684
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 18.0083
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 4.6204
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasN" 6.54953
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 16.2408
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" 153.364
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 6.33023
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 25.8738
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasN" 11.3126
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 8.56134
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" 23.5992
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" 16.7827
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasN" 12.1359
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" 33.3682
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 8.20585
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" 22.2598
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" 14.6645
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" 33.5401
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 6.33023
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 16.4811
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" 5.57166
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 21.7158
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 12.9965
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" 129.765
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasN" 11.3126
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasN" 7.89796
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 25.8738
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 7.15082
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 6.93061
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 29.2278
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 27.0124
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 76.6819
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 2.70604
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 14.4342
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 15.9115
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasN" 12.779
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 9.82429
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 7.20239
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 2.79476
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 43.3841
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 76.6819
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 38.2812
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 11.6079
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 10.9422
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 7.38527
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 4.61511
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 102.379
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 41.9871
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 2.75482
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 5.02842
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 28.6397
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 2.64075
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 12.8298
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 16.183
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 1.04249
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 149.025
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 26.3823
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 16.1796
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" 144.383
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 123.117
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" 78.686
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" 153.364
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 123.117
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 148.216
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 79.0834
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" 153.364
+cap "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" 23.5992
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" 137.306
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" 123.117
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 89.9932
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" 129.765
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 107.288
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" 111.112
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 76.6819
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 76.6819
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 110.806
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 113.591
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" 134.875
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" -4.70565
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 6.6369
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 86.8969
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 3.7162
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" 209.52
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 3.54383
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 24.9599
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 7.26004
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" 234.48
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" 234.48
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" 7.26004
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 232.057
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 5.63086
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 53.503
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 44.7873
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 109.905
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 50.0018
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasP" 16.1002
+cap "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 3.44142
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 26.4957
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 19.0817
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "B04_OTA_bias_ratio_8_0/VbiasN" 13.1221
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasP" 20.2702
+cap "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 3.73723
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 32.6368
+cap "B04_OTA_bias_ratio_8_0/VbiasN" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 27.2979
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 0.15285
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "Vout" 2.86498
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 2.86498
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/GND" 4.07349
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" 3.47869
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 2.26963
+cap "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/GND" 6.26186
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 27.0565
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" 31.1951
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 7.93329
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 6.53157
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/GND" 5.19319
+cap "B04_OTA_bias_ratio_8_0/GND" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 5.19319
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 5.02477
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/GND" 19.3719
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" 1.47332
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 6.53157
+cap "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 31.1951
+cap "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 6.31289
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" 19.3719
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" 4.07349
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" 29.2165
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" 7.73314
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 19.9897
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" 1.56778
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 7.24717
+cap "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 8.16086
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" 24.0462
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 8.07182
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" 23.6266
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 7.02554
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 24.2574
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 2.87755
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" 0.178031
+cap "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 45.5273
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 17.877
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 160.275
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 152.889
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 0.582262
+cap "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 1.78553
+cap "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 0.141671
+cap "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" 16.0922
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 34.2379
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 150.919
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" 131.983
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 64.5134
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 115.535
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" 64.3988
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 87.5344
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 150.919
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 151.514
+cap "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 38.5685
+cap "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" 87.9627
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" 90.3696
+cap "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1120_n1000#" 117.072
+cap "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#" 32.1186
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" 143.951
+cap "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" 154.013
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 95.5265
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 116.241
+cap "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 84.9536
+cap "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 9.60307
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 57.4042
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" 117.171
+cap "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 137.801
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" 142.056
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 46.2165
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 119.338
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 91.238
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" 0.141671
+cap "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 107.542
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 39.257
+cap "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 246.532
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 234.667
+cap "cap_mim_2p0fF_5GVGCQ_39/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 6.19177
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1120_n1000#" 4.43591
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#" 199.971
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" 176.326
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" 22.2579
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 275.584
+cap "cap_mim_2p0fF_5GVGCQ_39/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 4.43591
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 283.373
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 8.94749
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 152.952
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 159.995
+cap "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 70.7984
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 299.73
+cap "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 274.037
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" 159.995
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 8.94749
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" 117.776
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" 105.975
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 299.73
+cap "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 274.037
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 6.22105
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 157.916
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 4.36748
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" -3.57759
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 164.738
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" 59.0382
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 276.489
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" 281.638
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" -8.48919
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 64.1349
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 1.93991
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/VbiasP" 19.4313
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 32.0765
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 3.29491
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 42.7793
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 38.8877
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" 36.2339
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasP" 18.8468
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 50.5869
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" 31.9775
+cap "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" 4.15344
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n400_n8092#" 29.9911
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_400_n8000#" 0.929204
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" 2.37777
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 16.0305
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" 63.8005
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" "B04_OTA_bias_ratio_8_0/XM3/a_n488_n8000#" 1.20327
+cap "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" 130.816
+cap "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1120_n1000#" 130.816
+cap "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#" 24.8761
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#" 105.94
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 65.408
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" 242.455
+cap "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" 40.041
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 91.3054
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 0.0657587
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 0.0953501
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 26.3441
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 63.4406
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 209.318
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 23.9715
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "m1_2090_n7620#" 75.3303
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 0.0361673
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "m1_2090_n7620#" 11.4291
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "m1_2090_n7620#" 56.2281
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 233.289
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 0.131517
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "m1_2090_n7620#" 71.437
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" 58.5495
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 6.76862
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 71.437
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 233.289
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 0.131517
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "m1_2090_n7620#" 56.2281
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "m1_2090_n7620#" 6.76862
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "m1_2090_n7620#" 58.5495
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 0.131517
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 70.4923
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 56.2281
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 231.228
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 50.9881
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 18.6323
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 85.161
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 0.0558949
+cap "B04_OTA_bias_ratio_8_0/VbiasP" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 1.68592
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 100.407
+cap "B04_OTA_bias_ratio_8_0/VbiasP" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 16.1216
+cap "B04_OTA_bias_ratio_8_0/VbiasP" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 39.6583
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 56.3417
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 0.0098638
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 34.9374
+cap "B04_OTA_bias_ratio_8_0/XM2/a_400_n4000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 3.20408
+cap "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" 124.319
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" 131.018
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "m1_2090_n7620#" 61.3207
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 10.7848
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 98.9752
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "m1_2090_n7620#" 42.0276
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" "m1_2090_n7620#" 68.662
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" 100.311
+cap "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" 4.36748
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" 74.5628
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" 253.07
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 287.052
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" 160.605
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 158.319
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 138.893
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "m1_2090_n7620#" 194.581
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 118.697
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "m1_2090_n7620#" 72.3554
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" 86.9853
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 76.5893
+cap "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "m1_2090_n7620#" 166.241
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 35.1243
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "m1_2090_n7620#" 263.153
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 154.472
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 138.275
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "m1_2090_n7620#" 279.649
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 172.595
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 4.36748
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 92.2161
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 4.36748
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 98.8363
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 86.9853
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 166.241
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" 52.885
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 58.8286
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "m1_2090_n7620#" 194.581
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "m1_2090_n7620#" 154.472
+cap "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 138.275
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "m1_2090_n7620#" 263.153
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "m1_2090_n7620#" 279.649
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 172.595
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 4.36748
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "m1_2090_n7620#" 125.317
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 4.36748
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 65.7351
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 86.9744
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 94.9762
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "m1_2090_n7620#" 66.2707
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 82.5296
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" 29.1949
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "m1_2090_n7620#" 194.581
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 293.481
+cap "B04_OTA_bias_ratio_8_0/VbiasP" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 1.79129
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 166.013
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 68.5956
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" 153.208
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 139.333
+cap "B04_OTA_bias_ratio_8_0/VbiasP" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 0.524369
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VbiasP" 8.27971
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "B04_OTA_bias_ratio_8_0/VbiasP" -101.426
+cap "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 2.76386
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 8.15459
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" 60.3862
+cap "XM3/a_n400_n192#" "B04_OTA_bias_ratio_8_0/VbiasP" 1.10538
+cap "XM3/w_n650_n310#" "B04_OTA_bias_ratio_8_0/VbiasP" 1.15869
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "B04_OTA_bias_ratio_8_0/XM5/a_n626_n286#" 4.08504
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/Vbias2" 0.399128
+cap "B04_OTA_bias_ratio_8_0/XM1/a_n400_n592#" "B04_OTA_bias_ratio_8_0/Vbias2" 6.24466
+cap "B04_OTA_bias_ratio_8_0/XM1/a_n400_n592#" "B04_OTA_bias_ratio_8_0/Vbias1" 0.415227
+cap "B04_OTA_bias_ratio_8_0/XM10/a_400_n500#" "m2_17300_n5920#" 7.59216
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "m2_17300_n5920#" 2.32861
+cap "B04_OTA_bias_ratio_8_0/XM10/a_400_n500#" "B04_OTA_bias_ratio_8_0/XM1/w_n650_n710#" 2.27374e-13
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" 62.3337
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" 6.1862
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" "m1_2090_n7620#" 77.1875
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 4.43532
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "m1_2090_n7620#" 208.051
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" 198.765
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "m1_2090_n7620#" 124.643
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "m1_2090_n7620#" 219.575
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 2.60336
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 26.3033
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 7.03869
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 10.7219
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "m1_2090_n7620#" 37.8842
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 225.069
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 43.0008
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" "m1_2090_n7620#" 20.94
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" 7.03869
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" 10.7219
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "m1_2090_n7620#" 37.8842
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" 225.069
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 43.0008
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 20.94
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 5.28739
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "m1_2090_n7620#" 14.9694
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 218.653
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "m1_2090_n7620#" 28.5316
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 25.8299
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" 28.6963
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 63.8131
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" -0.200783
+cap "XM3/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 1.23878
+cap "XM3/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 1.34567
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 36.0936
+cap "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 3.87232
+cap "B04_OTA_bias_ratio_8_0/VDD" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 45.2281
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" -2.61257
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" -0.0951234
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.312359
+cap "XM4/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" -63.0784
+cap "B04_OTA_bias_ratio_8_0/VDD" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 46.1049
+cap "B04_OTA_bias_ratio_8_0/XM1/a_n400_n592#" "B04_OTA_bias_ratio_8_0/Vbias2" 9.50002
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/Vbias2" 1.62861
+cap "B04_OTA_bias_ratio_8_0/VDD" "B04_OTA_bias_ratio_8_0/Vbias2" 55.3082
+cap "B04_OTA_bias_ratio_8_0/Vbias1" "B04_OTA_bias_ratio_8_0/Vbias2" -0.649111
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/VDD" 8.11595
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "m1_14160_n4650#" 0.206962
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "B04_OTA_bias_ratio_8_0/Vbias1" -0.243335
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "B04_OTA_bias_ratio_8_0/Vbias0" 4.16241
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/Vbias1" -0.224692
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "B04_OTA_bias_ratio_8_0/XM1/a_n400_n592#" 12.8621
+cap "B04_OTA_bias_ratio_8_0/Vbias2" "B04_OTA_bias_ratio_8_0/XM1/w_n650_n710#" 30.8683
+cap "B04_OTA_bias_ratio_8_0/Vbias1" "B04_OTA_bias_ratio_8_0/XM1/w_n650_n710#" 12.6716
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/Vbias3" -0.166914
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/XM1/w_n650_n710#" 37.856
+cap "m2_17300_n5920#" "B04_OTA_bias_ratio_8_0/Vbias0" 14.0884
+cap "m2_17300_n5920#" "B04_OTA_bias_ratio_8_0/XM1/w_n650_n710#" 30.4835
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/Vbias1" -0.224692
+cap "m2_17300_n5920#" "B04_OTA_bias_ratio_8_0/XM10/a_400_n500#" 10.9814
+cap "B04_OTA_bias_ratio_8_0/Vbias3" "B04_OTA_bias_ratio_8_0/Vbias0" -0.166914
+cap "B04_OTA_bias_ratio_8_0/Vbias3" "B04_OTA_bias_ratio_8_0/XM10/w_n650_n710#" 34.379
+cap "cap_mim_2p0fF_5GVGCQ_18/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_18/m4_n1120_n1000#" -3.63616
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -767.551
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" -720.475
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#" -720.475
+cap "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" -678.554
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" -544.752
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" -555.044
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" 246.587
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" 234.562
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "m1_2090_n7620#" 44.8824
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" 9.50569
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 222.336
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 177.124
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "m1_2090_n7620#" 158.794
+cap "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" "m1_2090_n7620#" 129.067
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 275.642
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 282.572
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 9.50569
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "m1_2090_n7620#" 121.156
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "m1_2090_n7620#" 89.3426
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "m1_2090_n7620#" 354.279
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" 159.94
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "m1_2090_n7620#" -2.21393
+cap "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" 19.0114
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" 223.967
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 274.037
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 299.73
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 19.0114
+cap "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 159.94
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" 223.967
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 274.037
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 299.73
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 223.941
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 158.036
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 19.0114
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 279.808
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 35.3959
+cap "XM3/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 5.54965
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "XM4/w_n650_n310#" 6.79017
+cap "XM4/a_n488_n100#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 4.23227
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "XM3/w_n650_n310#" 5.67704
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "XM4/w_n650_n310#" 7.02695
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "XM4/a_n488_n100#" 4.69264
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.777209
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 149.046
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 1.822
+cap "XM4/a_n488_n100#" "B04_OTA_bias_ratio_8_0/VDD" 1.63811
+cap "XM4/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 16.3745
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "XM4/w_n650_n310#" 0.423819
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "XM4/w_n650_n310#" 2.23436
+cap "B04_OTA_bias_ratio_8_0/XM2/a_n400_n4092#" "XM4/a_n488_n100#" 1.21464
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "XM4/a_n488_n100#" -0.0292688
+cap "XM4/a_n488_n100#" "XM4/w_n650_n310#" 3.43292
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "XM4/a_n488_n100#" -0.816966
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 10.8428
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 7.21005
+cap "XM4/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 13.5745
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/Vbias1" -0.213934
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "XM4/w_n650_n310#" 1.08938
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 29.465
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_OTA_bias_ratio_8_0/Vbias2" 0.51717
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "B04_OTA_bias_ratio_8_0/Vbias1" -3.55271e-15
+cap "m1_14160_n4650#" "B04_OTA_bias_ratio_8_0/Vbias1" 51.7193
+cap "m1_14160_n4650#" "B04_OTA_bias_ratio_8_0/Vbias2" 0.337744
+cap "B04_OTA_bias_ratio_8_0/Vbias0" "m1_14160_n4650#" 29.336
+cap "XM1/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 0.0523228
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 8.63481
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 11.0094
+cap "Vout" "cap_mim_2p0fF_5GVGCQ_18/m4_n1120_n1000#" 6.26293
+cap "Vout" "Vout" 58.2312
+cap "Vout" "m1_28900_n9870#" 5.22712
+cap "m1_28900_n9870#" "cap_mim_2p0fF_5GVGCQ_18/m4_n1240_n1120#" -5.68434e-14
+cap "cap_mim_2p0fF_5GVGCQ_18/m4_n1120_n1000#" "Vout" -3.55271e-15
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -126.819
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" -84.9505
+cap "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#" -84.9505
+cap "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" -115.897
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" -100.12
+cap "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" -101.334
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" -1.57073
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 54.7536
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" -0.413511
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_9/m4_n1240_n1120#" 0.0154533
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "m1_2090_n7620#" 212.508
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 201.589
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" -12.9877
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 79.1264
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" "m1_14510_n3060#" -15.4641
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 110.593
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" 225.715
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 23.064
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" -8.15164
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" 224.578
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" -0.664178
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" -16.7828
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 224.578
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" -8.15164
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" -16.7828
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 218.888
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" -8.15164
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "m1_14510_n3060#" -14.7449
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 51.594
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" 0.00887742
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 113.941
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 0.616511
+cap "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" 0.0098638
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "XM4/w_n650_n310#" 0.489793
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "XM4/a_n488_n100#" 8.28062
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 0.0176866
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 4.92026
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "XM4/w_n650_n310#" 14.3341
+cap "XM4/a_n488_n100#" "XM4/w_n650_n310#" 22.8263
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 4.47328
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 0.36453
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "m2_18640_n5810#" -4.67423
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 114.262
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "m2_18640_n5810#" -8.55814
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" -3.17051
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "m2_19720_n5790#" 11.9664
+cap "m1_14160_n4650#" "m2_19720_n5790#" 116.498
+cap "m2_18640_n5810#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 105.459
+cap "m1_14160_n4650#" "m2_18640_n5810#" 120.623
+cap "XM1/w_n650_n310#" "xm2/w_n650_n310#" 0.37435
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "m2_21330_n6020#" -0.437556
+cap "xm2/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 72.7601
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "m2_17300_n5920#" -0.0908766
+cap "xm2/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 58.0741
+cap "xm2/a_n488_n100#" "m2_21330_n6020#" -0.502305
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 156.197
+cap "xm2/a_n488_n100#" "m2_17300_n5920#" -0.104702
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "xm2/a_n488_n100#" 3.04227
+cap "xm2/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 7.20261
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 56.0702
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 147.97
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "Vout" 15.8461
+cap "m1_28900_n9870#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" 53.1094
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "Vout" 115.467
+cap "Vout" "Vout" 49.2138
+cap "m1_28900_n9870#" "Vout" 68.5126
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" -3.63616
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" -767.551
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" -720.475
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" -720.475
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" -502.831
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" -678.554
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" -544.752
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" -555.044
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 12.9925
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 15.2425
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 257.227
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" "m1_2090_n7620#" -12.4959
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 175.223
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" 9.50569
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" "m1_14510_n3060#" 113.107
+cap "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "m1_14510_n3060#" 190.833
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 130.268
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" 139.993
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "m1_2090_n7620#" 131.049
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" 9.50569
+cap "m1_2090_n7620#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" 398.474
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "m1_14510_n3060#" 201.887
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 170.933
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 19.0114
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" "m1_14510_n3060#" 79.9819
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 4.62846
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 9.25288
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 6.11236
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM18_1/a_n4296_n200#" 0.432052
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 4.16356
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 199.785
+cap "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 2.67033
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 8.63856
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 4.69285
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "m1_14510_n3060#" 146.57
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 3.30494
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 3.67337
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 4.31847
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "m1_14510_n3060#" 79.9819
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 4.85792
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 19.0114
+cap "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" "m1_14510_n3060#" 9.28223
+cap "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 4.56062
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "m1_14510_n3060#" 67.6663
+cap "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 2.76558
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 25.4773
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 10.9423
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 12.6414
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 170.933
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 4.15695
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 5.84464
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "m1_14510_n3060#" 199.785
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "m1_14510_n3060#" 59.0742
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 5.69384
+cap "B04_LNA_OTA_0/XM19_2/a_n2608_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 3.92098
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 8.58298
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 2.35937
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "m1_14510_n3060#" 9.28223
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "m1_14510_n3060#" 146.57
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 27.9481
+cap "B04_LNA_OTA_0/XM19_2/a_n2608_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 3.36295
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 4.17987
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 1.41815
+cap "B04_LNA_OTA_0/XM19_2/a_n2608_n200#" "m1_14510_n3060#" 4.56892
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 5.91192
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 30.2186
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 4.56062
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "m1_14510_n3060#" 170.933
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n2608_n200#" 2.0852
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 19.0114
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 3.22447
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 11.4523
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 1.094
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 79.9819
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 2.76558
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 23.2229
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 8.58298
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 2.35937
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 2.01909
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 2.83883
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "m1_14510_n3060#" 59.061
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n2608_n200#" 1.85644
+cap "B04_LNA_OTA_0/XM18_1/a_n904_n200#" "m1_14510_n3060#" 0.544728
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 18.3264
+cap "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 27.7785
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "m1_14510_n3060#" 9.28223
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_800_n200#" 4.6285
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 1.41815
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 4.17987
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 5.91192
+cap "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 21.3732
+cap "B04_LNA_OTA_0/XM19_2/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 3.98974
+cap "m1_14510_n3060#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 206.09
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 5.13494
+cap "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" "m1_14510_n3060#" 59.4204
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 3.65218
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 2.35937
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 5.00245
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_800_n200#" 3.36295
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/a_n5430_n6170#" 8.58298
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "m1_14510_n3060#" 133.349
+cap "B04_LNA_OTA_0/XM19_2/a_2504_n200#" "XM4/w_n650_n310#" 11.4523
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "XM4/w_n650_n310#" 6.38278
+cap "B04_LNA_OTA_0/XM19_2/a_800_n200#" "XM4/w_n650_n310#" 10.6682
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "XM4/w_n650_n310#" 2.35937
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "XM4/w_n650_n310#" -0.181368
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_2504_n200#" 0.126684
+cap "B04_LNA_OTA_0/XM19_2/a_n800_n292#" "XM4/w_n650_n310#" 59.1041
+cap "XM4/w_n650_n310#" "B04_LNA_OTA_0/XM18_1/a_2504_n200#" 0.544728
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_800_n200#" 0.141137
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.0303889
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n800_n292#" 0.650146
+cap "XM4/w_n650_n310#" "B04_LNA_OTA_0/m1_n5140_n5470#" 63.691
+cap "XM4/w_n650_n310#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 0.838214
+cap "XM4/w_n650_n310#" "B04_LNA_OTA_0/XM19_2/a_2504_n200#" 0.729318
+cap "XM4/w_n650_n310#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.185379
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.882087
+cap "XM4/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 0.211688
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5140_n5470#" 22.9121
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 0.597837
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "XM4/w_n650_n310#" 1.31018
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.0702745
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5140_n5470#" 29.8972
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 1.20011
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.806062
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_n5140_n5470#" 0.133808
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 0.187696
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 1.05324
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 0.512892
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 0.807779
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5140_n5470#" 72.3007
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.2298
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5140_n5470#" 85.3153
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_n5140_n5470#" 2.34164
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 5.2505
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 5.54508
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 6.25363
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 11.1005
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 3.28468
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 3.53403
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 10.4621
+cap "B04_LNA_OTA_0/XM19_1/a_n2608_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 0.523789
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.302917
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 0.983199
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 23.9093
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.886477
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 0.394966
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/a_n5430_n6170#" 3.18423
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "m2_19720_n5790#" 61.5775
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5140_n5470#" 86.6779
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n904_n200#" 0.776436
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5140_n5470#" 56.8402
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "m2_19720_n5790#" 4.97067
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 3.39791
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 4.75281
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.281098
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 1.25404
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.450043
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.750784
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 6.57163
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 2.6801
+cap "B04_LNA_OTA_0/XM18_2/a_800_n200#" "m2_21330_n6020#" 50.0075
+cap "B04_LNA_OTA_0/XM18_2/a_4208_n200#" "m2_21330_n6020#" 65.4304
+cap "XM1/w_n650_n310#" "B04_LNA_OTA_0/a_n5430_n6170#" 0.000692393
+cap "XM1/w_n650_n310#" "m2_21330_n6020#" 0.9896
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 12.1051
+cap "m2_17300_n5920#" "XM1/w_n650_n310#" 0.931734
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "m2_21330_n6020#" 14.0585
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM19_1/a_4208_n200#" 64.7163
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 5.36257
+cap "m2_21330_n6020#" "xm2/a_n488_n100#" 7.57873
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 0.21867
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_1/a_4208_n200#" 5.33838
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "xm2/a_n488_n100#" 0.0999673
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "xm2/a_n488_n100#" 28.3815
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 8.99974
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "m2_17300_n5920#" 11.8385
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 1.71297
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 5.39192
+cap "m2_17300_n5920#" "xm2/a_n488_n100#" 4.28927
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM9/a_n888_n200#" 0.124572
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "xm2/w_n650_n310#" 18.1066
+cap "B04_LNA_OTA_0/XM18_2/a_4208_n200#" "m2_21330_n6020#" 8.87984
+cap "m2_21330_n6020#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 27.677
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "B04_LNA_OTA_0/XM9/a_n888_n200#" 4.30715
+cap "m2_21330_n6020#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 23.9422
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 19.7598
+cap "B04_LNA_OTA_0/XM19_1/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 7.2655
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 35.3293
+cap "B04_LNA_OTA_0/XM19_1/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 3.53147
+cap "xm2/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 0.546023
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 6.00076
+cap "xm2/a_n488_n100#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 0.849302
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 3.44745
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 95.6096
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 6.78137
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM19_1/a_4208_n200#" 86.0926
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.32402
+cap "B04_LNA_OTA_0/XM9/a_n888_n200#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 2.57054
+cap "xm2/w_n650_n310#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" -0.789733
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 9.2155
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 9.5078
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM7/a_n288_n400#" 7.09467
+cap "m2_21330_n6020#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 116.903
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 92.0515
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 2.0375
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 1.21071
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 19.3298
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5250_n5920#" 8.92383
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 105.945
+cap "B04_LNA_OTA_0/XM7/a_n288_n400#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 6.26744
+cap "m2_21330_n6020#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 47.3978
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 2.00671
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 1.26532
+cap "Vout" "m2_21330_n6020#" 20.1156
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" 0.7649
+cap "Vout" "B04_LNA_OTA_0/a_n5430_n6170#" 48.8622
+cap "Vout" "B04_LNA_OTA_0/m1_16100_n5950#" 22.4251
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" -8.64715
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "m2_21330_n6020#" 13.2422
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "m2_21330_n6020#" -4.85369
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 38.5146
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "Vout" 1.15452
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 14.9899
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 0.587051
+cap "B04_LNA_OTA_0/XM8/a_200_n400#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 1.0528
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 0.902467
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 1.1322
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" -24.212
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" -0.892513
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 5.47914
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" -126.819
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 9.18888
+cap "B04_LNA_OTA_0/XM11/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 2.56041
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" -18.159
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 27.6097
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 10.5672
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 9.43724
+cap "B04_LNA_OTA_0/XM11/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 1.07403
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 16.287
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/XM11/a_n800_n292#" 0.231766
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5250_n5920#" 8.15187
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5250_n5920#" 4.62847
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.22676
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 21.6278
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.75357
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 15.0547
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 9.78677
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" 10.5672
+cap "B04_LNA_OTA_0/m1_n6610_n3920#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 6.3272
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 20.4424
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 9.52921
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 5.47914
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" -84.9505
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 30.995
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n6610_n3920#" 6.28887
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5250_n5920#" 8.15187
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 4.62847
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n6610_n3920#" 7.76529
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 12.4142
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 15.0547
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/m1_n6610_n3920#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 7.96759
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.22676
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.75357
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" -84.9505
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 16.3903
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" 16.3228
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 9.78677
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5250_n5920#" 9.52921
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n888_n200#" 9.82617
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 5.47914
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5250_n5920#" 10.5672
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" 30.995
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "m2_21330_n6020#" "m3_38520_1210#" -0.94948
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 15.246
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 4.22676
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 4.75357
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 8.15187
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 7.61802
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" 4.62847
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n888_n200#" 8.16496
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" -131.066
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 11.5806
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n888_n200#" 0.803885
+cap "m3_38520_1210#" "m2_21330_n6020#" -2.89503
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_n5250_n5920#" 10.3408
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 91.9731
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 8.35847
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 40.8322
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 3.21287
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 23.0051
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" 2.88419
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 0.964653
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "m2_21330_n6020#" 18.841
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" -115.897
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5250_n5920#" 7.9637
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.25681
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 6.19399
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 6.50103
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "m2_21330_n6020#" 79.0414
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "m2_21330_n6020#" -2.20671
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_29070_n5910#" 1.41826
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 1.72336
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "m2_21330_n6020#" 38.4764
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 16.0255
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" -100.12
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 4.09247
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_800_n200#" 0.660998
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 31.7008
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM16/a_800_n200#" 8.37831
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "m2_21330_n6020#" -0.458267
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 6.14384
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "m2_21330_n6020#" -0.127583
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 16.943
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" 4.67817
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 9.90163
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "m2_21330_n6020#" -0.0526743
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM16/a_n800_n292#" 7.78128
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM16/a_800_n200#" 6.10454
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" -101.334
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 1.35032
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "m2_21330_n6020#" 11.767
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "m2_21330_n6020#" 4.63311
+cap "cap_mim_2p0fF_5GVGCQ_0/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" 24.7212
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 1.01468
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 5.88406
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 4.29306
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 0.65566
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 1.21115
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 3.55096
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 0.97639
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 3.06924
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 0.286524
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 9.54876
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 19.1574
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" 2.63455
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 1.47918
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 5.15687
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.80355
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 1.57576
+cap "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 3.28073
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 18.4124
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4296_n200#" 3.50622
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" 8.38644
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 4.60768
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "m1_14510_n3060#" 4.77379
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 19.1574
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 2.08615
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" 3.94329
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "m1_14510_n3060#" 18.4124
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 5.26132
+cap "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 7.109
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 13.9774
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 15.9146
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 4.60768
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 1.09286
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 4.77379
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n4208_n292#" 1.96209
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 9.54876
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 2.37879
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 8.38644
+cap "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.95855
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 18.4124
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/a_n5430_n6170#" 19.1574
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 4.40816
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 3.47954
+cap "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" "m1_14510_n3060#" 4.77379
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m1_14510_n3060#" 19.1574
+cap "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 2.57983
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 4.84184
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 18.4124
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" 13.0789
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n2504_n292#" 6.61532
+cap "B04_LNA_OTA_0/XM19_2/a_n904_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 6.2844
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_n904_n200#" 14.8915
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_n800_n292#" 0.212851
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_n800_n292#" 4.77379
+cap "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "B04_LNA_OTA_0/XM19_2/a_2504_n200#" 0.45377
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_2504_n200#" 18.4124
+cap "B04_LNA_OTA_0/XM19_2/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" 0.384015
+cap "B04_LNA_OTA_0/XM19_2/a_800_n200#" "m1_14510_n3060#" 19.1574
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/XM19_2/a_2504_n200#" 15.2172
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "m1_14510_n3060#" 17.1234
+cap "m1_14510_n3060#" "B04_LNA_OTA_0/m1_n5140_n5470#" 63.5797
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 2.44167
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_n5140_n5470#" 1.89802
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 1.88515
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 16.5752
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 2.59802
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 2.48856
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 2.20639
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 10.7504
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 9.09307
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 8.54586
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 1.7591
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 15.1264
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 3.84189
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM19_2/a_4208_n200#" 15.5773
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" 4.07278
+cap "B04_LNA_OTA_0/XM19_2/a_4208_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 3.10329
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "m2_19720_n5790#" 0.174266
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" 1.29901
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.22084
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 0.628515
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 1.65755
+cap "B04_LNA_OTA_0/XM18_2/a_n904_n200#" "m2_19720_n5790#" 64.2378
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" 1.44183
+cap "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 0.811455
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "B04_LNA_OTA_0/m1_n5140_n5470#" 7.0122
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "m2_19720_n5790#" 159.922
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_n5140_n5470#" 7.60555
+cap "B04_LNA_OTA_0/XM18_2/a_n2608_n200#" "m2_19720_n5790#" 63.5675
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 2.12588
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.63323
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 22.1449
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 130.96
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "m2_17300_n5920#" 48.059
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/m1_n8470_n3950#" 64.4515
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_17300_n5920#" 30.8844
+cap "B04_LNA_OTA_0/XM18_2/a_n2504_n292#" "m2_17300_n5920#" 36.0876
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.22045e-16
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 7.44619
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_n2504_n292#" 64.4863
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM18_2/a_800_n200#" 34.9461
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM18_2/a_n904_n200#" 1.53335
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_800_n200#" 23.8418
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_n904_n200#" 15.7809
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_4208_n1600#" -4.05879e-17
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.54374
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.63323
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "B04_LNA_OTA_0/XM18_2/a_800_n200#" 1.77636e-15
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.54263
+cap "B04_LNA_OTA_0/XM18_2/a_n800_n292#" "m2_21330_n6020#" 7.80206
+cap "B04_LNA_OTA_0/XM18_2/a_800_n200#" "m2_21330_n6020#" 50.0075
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 21.4516
+cap "B04_LNA_OTA_0/XM18_2/a_n800_n292#" "m2_17300_n5920#" 56.8305
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM18_2/a_800_n200#" 26.3853
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_17300_n5920#" 21.1132
+cap "B04_LNA_OTA_0/XM18_2/a_2504_n200#" "m2_17300_n5920#" 4.7757
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "m2_17300_n5920#" 79.156
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM18_2/a_4208_n200#" 65.4304
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "XM1/a_400_n100#" 0.0196479
+cap "B04_LNA_OTA_0/XM18_2/a_4208_n200#" "m2_17300_n5920#" 22.0612
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 24.2118
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "m2_17300_n5920#" 79.156
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_17300_n5920#" 19.5148
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM18_2/a_904_n292#" 9.06245
+cap "B04_LNA_OTA_0/XM18_2/a_904_n292#" "m2_17300_n5920#" 64.3965
+cap "B04_LNA_OTA_0/XM19_1/a_4208_n200#" "m2_21330_n6020#" 64.7163
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 23.849
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/XM18_2/a_2608_n292#" 0.0558398
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM18_2/a_2608_n292#" 4.37165
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM18_2/a_4208_n200#" 5.46032
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "m2_21330_n6020#" 2.48248
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM19_1/a_4208_n200#" 42.805
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/a_n5430_n6170#" 31.648
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 5.7127
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM9/a_n888_n200#" 6.91048
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 0.194203
+cap "m2_17300_n5920#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 88.4095
+cap "B04_LNA_OTA_0/XM18_2/a_2608_n292#" "m2_21330_n6020#" 0.634371
+cap "B04_LNA_OTA_0/XM18_2/a_4208_n200#" "m2_21330_n6020#" 8.87984
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 5.00713
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "B04_LNA_OTA_0/m1_16100_n5950#" 51.44
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_16100_n5950#" 17.3649
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 1.02426
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM19_1/a_4208_n200#" 86.0926
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 2.36798
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "B04_LNA_OTA_0/XM9/a_n888_n200#" 17.62
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM9/a_n800_n292#" 7.49734
+cap "B04_LNA_OTA_0/XM19_1/a_4208_n200#" "B04_LNA_OTA_0/m1_16100_n5950#" 46.9323
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 1.26349
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 23.3927
+cap "B04_LNA_OTA_0/XM9/a_n800_n292#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.49774
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "B04_LNA_OTA_0/m1_16100_n5950#" 46.9323
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 0.65114
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 3.65252
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "B04_LNA_OTA_0/m1_16100_n5950#" 2.79498
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_16100_n5950#" 2.59653
+cap "B04_LNA_OTA_0/XM7/a_n288_n400#" "B04_LNA_OTA_0/m1_16100_n5950#" 10.2243
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 23.9485
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_16100_n5950#" 34.5325
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 1.80629
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" 12.1197
+cap "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.8847
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" 1.74435
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_n5250_n5920#" 125.134
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" 1.57261
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" 0.80638
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "B04_LNA_OTA_0/m1_n5250_n5920#" 104.925
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "B04_LNA_OTA_0/m1_n5250_n5920#" -0.53926
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 15.5647
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "m2_21330_n6020#" 20.9463
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "B04_LNA_OTA_0/a_n5430_n6170#" 51.881
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "B04_LNA_OTA_0/a_n5430_n6170#" 7.96154
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "B04_LNA_OTA_0/XM8/a_n288_n400#" 0.819377
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 1.04562
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "B04_LNA_OTA_0/a_n5430_n6170#" 70.5453
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "B04_LNA_OTA_0/a_n5430_n6170#" 321.078
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "m2_21330_n6020#" 22.6227
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" 0.175413
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "B04_LNA_OTA_0/a_n5430_n6170#" 101.84
+cap "B04_LNA_OTA_0/XM8/a_n288_n400#" "B04_LNA_OTA_0/m1_n5250_n5920#" -4.77825
+cap "B04_LNA_OTA_0/XM11/a_n800_n292#" "B04_LNA_OTA_0/m1_n5250_n5920#" -0.143347
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_n5250_n5920#" 266.22
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_16100_n5950#" 76.3804
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 3.34355
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 8.18592
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 5.65344
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_16100_n5950#" 22.6227
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 0.962153
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 3.21042
+cap "B04_LNA_OTA_0/XM11/a_n800_n292#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.11636
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 22.6137
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 4.91155
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 1.59598
+cap "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 2.28393
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" 8.02452
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 2.21847
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_16100_n5950#" 22.6227
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" 3.04318
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 3.21042
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 13.3742
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 22.6137
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" "B04_LNA_OTA_0/m1_16100_n5950#" 8.18592
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 3.84861
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_16100_n5950#" 22.6227
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 2.14634
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 1.73357
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_n5250_n5920#" 86.0926
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/m1_16100_n5950#" 22.6227
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 8.02452
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" 2.87824
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" 2.38341
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" 4.91155
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 22.6137
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "m2_21330_n6020#" 22.6227
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" 13.3742
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 22.6137
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/m1_16100_n5950#" 3.21042
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/m1_16100_n5950#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" 8.18592
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 3.84861
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 1.18321
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 3.55085
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 4.91155
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "m3_38520_1210#" 14.0629
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "B04_LNA_OTA_0/w_n11980_n4270#" -0.380852
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "m2_21330_n6020#" 22.6227
+cap "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.72365
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 8.10639
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 2.84217e-14
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "m3_38520_1210#" 13.8064
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" 2.6967
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m3_38520_1210#" 15.4079
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_21330_n6020#" 22.8306
+cap "m3_38520_1210#" "B04_LNA_OTA_0/XM17/a_n888_n200#" 1.83892
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/a_n5430_n6170#" 24.2118
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 12.4798
+cap "m3_38520_1210#" "B04_LNA_OTA_0/a_n5430_n6170#" 20.3738
+cap "m2_21330_n6020#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 43.4606
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 5.05685
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m2_21330_n6020#" 86.0926
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 12.6222
+cap "m3_38520_1210#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 31.6215
+cap "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 5.18443
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m3_38520_1210#" 6.90101
+cap "B04_LNA_OTA_0/XM14/a_n800_n1092#" "B04_LNA_OTA_0/XM17/a_n800_n292#" -0.800478
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/XM17/a_n800_n292#" -1.38327
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/XM16/a_800_n200#" 19.059
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 18.6545
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 23.7703
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/m1_29070_n5910#" 1.30072
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" 4.32453
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" 6.94912
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_29070_n5910#" 21.6292
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 1.41736
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/m1_29070_n5910#" 11.3792
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "B04_LNA_OTA_0/m1_29070_n5910#" 28.7381
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM16/a_800_n200#" 43.7005
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/m1_27860_n4070#" 23.4774
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 80.3662
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/XM14/a_n800_n1092#" -0.0961543
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/w_n11980_n4270#" -0.476991
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" 1.13644
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/w_n11980_n4270#" -0.558637
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/m1_27860_n4070#" -3.52863
+cap "B04_LNA_OTA_0/XM17/a_800_n200#" "B04_LNA_OTA_0/m1_27860_n4070#" 1.1272
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/XM16/a_800_n200#" 3.56145
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/a_n5430_n6170#" 67.3375
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/a_n5430_n6170#" 86.1077
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/m1_29070_n5910#" 20.2112
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/m1_27860_n4070#" 260.18
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/XM16/a_800_n200#" 71.8499
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 1.92562
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM16/a_800_n200#" 277.025
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/a_n5430_n6170#" 40.6573
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/a_n5430_n6170#" -1.09395
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" 40.5395
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/XM14/a_n800_n1092#" -0.276027
+cap "B04_LNA_OTA_0/XM14/a_800_n1000#" "B04_LNA_OTA_0/XM16/a_800_n200#" -1.31185
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "B04_LNA_OTA_0/a_n5430_n6170#" 2.70397
+cap "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "B04_LNA_OTA_0/XM16/a_800_n200#" 40.3523
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/XM16/a_800_n200#" -1.4421
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "Vout" 2.69214
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "Vout" 4.73777
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "Vout" 0.709037
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_n9250_n4090#" 324.32
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/XM4/a_n888_n1600#" 1.00114
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_n9250_n4090#" 247.159
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/XM4/a_n888_n1600#" 4.02838
+cap "B04_LNA_OTA_0/XM2_1/a_n1756_n1600#" "B04_LNA_OTA_0/w_n11980_n4270#" 18.5759
+cap "B04_LNA_OTA_0/XM4/a_800_n1600#" "B04_LNA_OTA_0/XM4/a_n800_n1692#" -3.49656
+cap "B04_LNA_OTA_0/XM4/a_800_n1600#" "B04_LNA_OTA_0/w_n11980_n4270#" 347.491
+cap "B04_LNA_OTA_0/XM4/a_n800_n1692#" "B04_LNA_OTA_0/w_n11980_n4270#" 50.7231
+cap "B04_LNA_OTA_0/m1_n5140_n5470#" "m2_19720_n5790#" 0.0362044
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_n4208_n292#" 43.0497
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.45096
+cap "B04_LNA_OTA_0/m1_n8470_n3950#" "m2_19720_n5790#" 318.588
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "m2_19720_n5790#" 4.03855
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/m1_n6610_n3920#" 154.155
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_1/a_n3444_n1600#" 6.11649
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_904_n1692#" 18.3792
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM19_1/a_n2608_n200#" 48.0602
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 11.6296
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "m2_19720_n5790#" 2.32621
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" 0.152217
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM18_2/a_n904_n200#" 5.12024
+cap "B04_LNA_OTA_0/XM18_2/a_n2504_n292#" "m2_19720_n5790#" 29.1293
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_4208_n1600#" 190.378
+cap "B04_LNA_OTA_0/m1_n6610_n3920#" "m2_19720_n5790#" 55.8025
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m2_19720_n5790#" 5.69478
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/w_n11980_n4270#" 0.445897
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/a_n5430_n6170#" 1.23092
+cap "B04_LNA_OTA_0/XM3_1/a_n3444_n1600#" "m2_19720_n5790#" 0.146664
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_2608_n1692#" 14.8339
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/m1_n8470_n3950#" 8.26728
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "m2_21330_n6020#" -0.317576
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/a_n5430_n6170#" 27.906
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "B04_LNA_OTA_0/XM5/a_n800_n1692#" 3.28265
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "B04_LNA_OTA_0/XM5/a_n800_n1692#" 17.9867
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "B04_LNA_OTA_0/XM5/a_n800_n1692#" 14.547
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/w_n11980_n4270#" 240.1
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/XM15/a_n888_n1000#" 4.36118
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/XM15/a_n800_n1092#" 19.1732
+cap "B04_LNA_OTA_0/XM15/a_n888_n1000#" "m3_38520_1210#" 4.61725
+cap "B04_LNA_OTA_0/m1_n5250_n5920#" "m3_38520_1210#" 6.86514
+cap "B04_LNA_OTA_0/XM17/a_n800_n292#" "m3_38520_1210#" 50.9308
+cap "B04_LNA_OTA_0/XM17/a_n888_n200#" "m3_38520_1210#" 2.46489
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "m3_38520_1210#" 32.7808
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m3_38520_1210#" 15.1659
+cap "m3_38520_1210#" "B04_LNA_OTA_0/m1_27860_n4070#" 61.2009
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/a_n5430_n6170#" 13.8052
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/XM17/a_800_n200#" 1.13687e-13
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 40.4903
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "m3_38520_1210#" 23.6243
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/m1_29070_n5910#" 11.3792
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "m3_38520_1210#" 46.4562
+cap "B04_LNA_OTA_0/XM17/a_800_n200#" "m3_38520_1210#" 85.5576
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "m3_38520_1210#" 13.3606
+cap "m3_38520_1210#" "B04_LNA_OTA_0/XM17/a_n800_n292#" 43.5921
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/w_n11980_n4270#" 33.6692
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "m3_38520_1210#" 6.96888
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "m3_38520_1210#" 31.1855
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/m1_27860_n4070#" 51.6678
+cap "B04_LNA_OTA_0/XM15/a_n800_n1092#" "B04_LNA_OTA_0/m1_27860_n4070#" 1.77043
+cap "m3_38520_1210#" "B04_LNA_OTA_0/a_n5430_n6170#" 12.6111
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/m1_29070_n5910#" 30.0383
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/XM14/a_800_n1000#" -1.32125
+cap "B04_LNA_OTA_0/a_n5430_n6170#" "B04_LNA_OTA_0/XM14/a_800_n1000#" -0.209585
+cap "m3_38520_1210#" "B04_LNA_OTA_0/XM14/a_800_n1000#" 4.09839
+cap "m3_38520_1210#" "B04_LNA_OTA_0/w_n11980_n4270#" 26.987
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/m1_27860_n4070#" 40.7945
+cap "m3_38520_1210#" "B04_LNA_OTA_0/XM16/a_n800_n292#" 15.4606
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/XM14/a_800_n1000#" 2.84217e-14
+cap "B04_LNA_OTA_0/XM16/a_n800_n292#" "B04_LNA_OTA_0/XM14/a_800_n1000#" -0.0702315
+cap "m3_38520_1210#" "B04_LNA_OTA_0/m1_27860_n4070#" 13.4744
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "B04_LNA_OTA_0/m1_29070_n5910#" 16.2754
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/a_n5430_n6170#" 20.7579
+cap "B04_LNA_OTA_0/XM14/a_800_n1000#" "B04_LNA_OTA_0/m1_27860_n4070#" 37.9911
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_27860_n4070#" 76.9372
+cap "B04_LNA_OTA_0/m1_29070_n5910#" "B04_LNA_OTA_0/XM14/a_800_n1000#" 7.69266
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_29070_n5910#" 49.6055
+cap "B04_LNA_OTA_0/XM16/a_800_n200#" "m3_38520_1210#" 7.42908
+cap "B04_LNA_OTA_0/XM17/a_800_n200#" "B04_LNA_OTA_0/m1_27860_n4070#" 2.11969
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_n9250_n4090#" 679.135
+cap "B04_LNA_OTA_0/XM4/a_n888_n1600#" "B04_LNA_OTA_0/m1_n9250_n4090#" 4.64134
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/XM4/a_n888_n1600#" 18.7138
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_n9250_n4090#" 384.06
+cap "B04_LNA_OTA_0/XM4/a_n800_n1692#" "B04_LNA_OTA_0/w_n11980_n4270#" 1.07484
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/w_n11980_n4270#" 5.81553
+cap "B04_LNA_OTA_0/XM3_2/a_904_n1692#" "m2_19720_n5790#" 430.309
+cap "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" "m2_19720_n5790#" 20.8182
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM19_1/a_n2608_n200#" 167.117
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_1/a_n3444_n1600#" 0.36666
+cap "B04_LNA_OTA_0/XM3_2/a_2608_n1692#" "m2_19720_n5790#" 186.72
+cap "m2_19720_n5790#" "B04_LNA_OTA_0/XM3_2/a_4208_n1600#" 115.467
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/XM15/a_n800_n1092#" 42.9103
+cap "B04_LNA_OTA_0/XM5/a_n800_n1692#" "B04_LNA_OTA_0/XM15/a_n888_n1000#" 9.15729
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/XM5/a_n800_n1692#" 214.658
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "m3_38520_1210#" 20.075
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/w_n11980_n4270#" -9.37357
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "m3_38520_1210#" 1.37011
+cap "B04_LNA_OTA_0/XM15/a_800_n1000#" "B04_LNA_OTA_0/m1_27860_n4070#" -1.13687e-13
+cap "B04_LNA_OTA_0/XM14/a_n888_n1000#" "B04_LNA_OTA_0/m1_27860_n4070#" 10.1489
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM14/a_800_n1000#" 99.0023
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM12/a_n800_n1092#" 1.05502
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM15/a_800_n1000#" 0.396933
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/w_n11980_n4270#" 16.2347
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM15/a_n800_n1092#" 0.922587
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "B04_LNA_OTA_0/XM14/a_n888_n1000#" 2.64329
+cap "B04_LNA_OTA_0/m1_27860_n4070#" "m3_38520_1210#" 0.0393478
+cap "B04_LNA_OTA_0/XM4/a_n888_n1600#" "B04_LNA_OTA_0/m1_n9250_n4090#" 0.0994574
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/w_n11980_n4270#" 68.3272
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/XM4/a_n888_n1600#" 0.401009
+cap "B04_LNA_OTA_0/m1_n9250_n4090#" "B04_LNA_OTA_0/w_n11980_n4270#" -59.6493
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" 0.818141
+cap "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" "B04_LNA_OTA_0/m1_6910_n130#" 77.5373
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM3_2/a_4208_n1600#" 30.4589
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/m1_n9250_n4090#" 384.758
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/w_n11980_n4270#" 11.2434
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM3_2/a_2608_n1692#" 85.1537
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM3_1/a_n1756_n1600#" 0.638133
+cap "B04_LNA_OTA_0/XM3_2/a_2608_n1692#" "B04_LNA_OTA_0/m1_6910_n130#" 81.6461
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/m1_n9250_n4090#" 137.803
+cap "B04_LNA_OTA_0/XM1/a_n52_n500#" "B04_LNA_OTA_0/m1_6910_n130#" 26.6207
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_27860_n4070#" 2.27374e-13
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_n9250_n4090#" 2.72959
+cap "B04_LNA_OTA_0/XM3_2/a_4208_n1600#" "B04_LNA_OTA_0/m1_6910_n130#" 0.756276
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/w_n11980_n4270#" 6.67907
+cap "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" "B04_LNA_OTA_0/m1_6910_n130#" 159.325
+cap "B04_LNA_OTA_0/XM1/w_n1102_n710#" "B04_LNA_OTA_0/m1_6910_n130#" 81.9461
+cap "B04_LNA_OTA_0/XM3_2/a_2608_n1692#" "B04_LNA_OTA_0/m1_6910_n130#" 2.21314
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM1/a_n52_n500#" 31.7905
+cap "B04_LNA_OTA_0/XM1/w_n1102_n710#" "B04_LNA_OTA_0/m1_6910_n130#" 59.6093
+cap "B04_LNA_OTA_0/w_n11980_n4270#" "B04_LNA_OTA_0/m1_6910_n130#" 5.30081
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM3_1/a_n3356_n1692#" 1.37412
+cap "B04_LNA_OTA_0/XM1/w_n1102_n710#" "B04_LNA_OTA_0/m1_6910_n130#" 3.72249
+cap "B04_LNA_OTA_0/XM3_2/a_2504_n1600#" "B04_LNA_OTA_0/m1_6910_n130#" 9.05259
+cap "B04_LNA_OTA_0/m1_6910_n130#" "B04_LNA_OTA_0/XM1/w_n1102_n710#" 1.13479
+merge "B04_LNA_OTA_0/m1_n420_n4090#" "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" -19115.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9640 -1222 0 0 -607200 -5540 -41654600 -9980 -33987900 -75780
+merge "cap_mim_2p0fF_5GVGCQ_10/m4_n1120_n1000#" "XM1/w_n650_n310#"
+merge "XM1/w_n650_n310#" "m1_23810_n1500#"
+merge "m1_23810_n1500#" "XM1/a_400_n100#"
+merge "XM1/a_400_n100#" "m1_24880_n1840#"
+merge "m1_24880_n1840#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_11/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_12/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_14/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_13/m4_n1120_n1000#" "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_6GG5NH_1/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_15/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_16/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_17/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_17/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_19/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_18/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_18/m4_n1120_n1000#" "m3_38520_1210#"
+merge "B04_LNA_OTA_0/a_n5430_n6170#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" -5232.58 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5369000 -6590 0 0 0 0 0 0 0 0
+merge "cap_mim_2p0fF_5GVGCQ_35/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_36/m4_n1240_n1120#" "m5_9950_n9140#"
+merge "m5_9950_n9140#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_37/m4_n1240_n1120#" "m5_7400_n9140#"
+merge "m5_7400_n9140#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_38/m4_n1240_n1120#" "m5_4840_n9140#"
+merge "m5_4840_n9140#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_39/m4_n1240_n1120#" "m5_2270_n9140#"
+merge "m5_2270_n9140#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_20/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_21/m4_n1240_n1120#" "m5_43090_n11230#"
+merge "m5_43090_n11230#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_22/m4_n1240_n1120#" "m5_40550_n11230#"
+merge "m5_40550_n11230#" "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#"
+merge "B04_OTA_bias_ratio_8_0/XM3/a_n626_n8186#" "m5_37990_n11230#"
+merge "m5_37990_n11230#" "cap_mim_2p0fF_5GVGCQ_23/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_23/m4_n1240_n1120#" "m5_35440_n11230#"
+merge "m5_35440_n11230#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_24/m4_n1240_n1120#" "m1_28900_n9870#"
+merge "m1_28900_n9870#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_25/m4_n1240_n1120#" "m4_43820_n11230#"
+merge "m4_43820_n11230#" "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_26/m4_n1240_n1120#" "m5_43100_n14030#"
+merge "m5_43100_n14030#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_27/m4_n1240_n1120#" "m5_40540_n14030#"
+merge "m5_40540_n14030#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_29/m4_n1240_n1120#" "m5_37990_n14030#"
+merge "m5_37990_n14030#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_28/m4_n1240_n1120#" "m5_35420_n14030#"
+merge "m5_35420_n14030#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_43/m4_n1240_n1120#" "m5_31660_n14030#"
+merge "m5_31660_n14030#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_44/m4_n1240_n1120#" "m5_29090_n14030#"
+merge "m5_29090_n14030#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_41/m4_n1240_n1120#" "m5_26540_n14030#"
+merge "m5_26540_n14030#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_42/m4_n1240_n1120#" "m5_23990_n14030#"
+merge "m5_23990_n14030#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_40/m4_n1240_n1120#" "m5_21410_n14030#"
+merge "m5_21410_n14030#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_34/m4_n1240_n1120#" "m4_10610_n9140#"
+merge "m4_10610_n9140#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_33/m4_n1240_n1120#" "m5_9960_n11940#"
+merge "m5_9960_n11940#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_32/m4_n1240_n1120#" "m5_7380_n11940#"
+merge "m5_7380_n11940#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_31/m4_n1240_n1120#" "m5_4830_n11940#"
+merge "m5_4830_n11940#" "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_30/m4_n1240_n1120#" "m5_2260_n11940#"
+merge "m5_2260_n11940#" "XM1/VSUBS"
+merge "XM1/VSUBS" "cap_mim_2p0fF_5GVGCQ_10/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_10/VSUBS" "cap_mim_2p0fF_5GVGCQ_11/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_11/VSUBS" "cap_mim_2p0fF_5GVGCQ_12/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_12/VSUBS" "cap_mim_2p0fF_5GVGCQ_14/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_14/VSUBS" "cap_mim_2p0fF_5GVGCQ_13/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_13/VSUBS" "cap_mim_2p0fF_6GG5NH_1/VSUBS"
+merge "cap_mim_2p0fF_6GG5NH_1/VSUBS" "xm2/VSUBS"
+merge "xm2/VSUBS" "cap_mim_2p0fF_6GG5NH_0/VSUBS"
+merge "cap_mim_2p0fF_6GG5NH_0/VSUBS" "XM4/VSUBS"
+merge "XM4/VSUBS" "cap_mim_2p0fF_5GVGCQ_4/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_4/VSUBS" "cap_mim_2p0fF_5GVGCQ_3/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_3/VSUBS" "cap_mim_2p0fF_5GVGCQ_2/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_2/VSUBS" "cap_mim_2p0fF_5GVGCQ_1/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_1/VSUBS" "cap_mim_2p0fF_5GVGCQ_0/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_0/VSUBS" "XM3/VSUBS"
+merge "XM3/VSUBS" "cap_mim_2p0fF_5GVGCQ_15/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_15/VSUBS" "cap_mim_2p0fF_5GVGCQ_16/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_16/VSUBS" "cap_mim_2p0fF_5GVGCQ_17/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_17/VSUBS" "cap_mim_2p0fF_5GVGCQ_19/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_19/VSUBS" "cap_mim_2p0fF_5GVGCQ_18/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_18/VSUBS" "cap_mim_2p0fF_5GVGCQ_5/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_5/VSUBS" "cap_mim_2p0fF_5GVGCQ_6/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_6/VSUBS" "cap_mim_2p0fF_5GVGCQ_7/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_7/VSUBS" "cap_mim_2p0fF_5GVGCQ_8/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_8/VSUBS" "cap_mim_2p0fF_5GVGCQ_9/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_9/VSUBS" "cap_mim_2p0fF_5GVGCQ_35/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_35/VSUBS" "cap_mim_2p0fF_5GVGCQ_36/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_36/VSUBS" "cap_mim_2p0fF_5GVGCQ_37/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_37/VSUBS" "cap_mim_2p0fF_5GVGCQ_38/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_38/VSUBS" "cap_mim_2p0fF_5GVGCQ_39/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_39/VSUBS" "cap_mim_2p0fF_5GVGCQ_20/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_20/VSUBS" "cap_mim_2p0fF_5GVGCQ_25/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_25/VSUBS" "cap_mim_2p0fF_5GVGCQ_21/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_21/VSUBS" "cap_mim_2p0fF_5GVGCQ_26/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_26/VSUBS" "cap_mim_2p0fF_5GVGCQ_22/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_22/VSUBS" "cap_mim_2p0fF_5GVGCQ_27/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_27/VSUBS" "cap_mim_2p0fF_5GVGCQ_29/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_29/VSUBS" "cap_mim_2p0fF_5GVGCQ_23/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_23/VSUBS" "cap_mim_2p0fF_5GVGCQ_28/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_28/VSUBS" "cap_mim_2p0fF_5GVGCQ_24/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_24/VSUBS" "cap_mim_2p0fF_5GVGCQ_43/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_43/VSUBS" "cap_mim_2p0fF_5GVGCQ_44/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_44/VSUBS" "cap_mim_2p0fF_5GVGCQ_41/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_41/VSUBS" "cap_mim_2p0fF_5GVGCQ_42/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_42/VSUBS" "cap_mim_2p0fF_5GVGCQ_40/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_40/VSUBS" "B04_OTA_bias_ratio_8_0/VSUBS"
+merge "B04_OTA_bias_ratio_8_0/VSUBS" "cap_mim_2p0fF_5GVGCQ_34/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_34/VSUBS" "cap_mim_2p0fF_5GVGCQ_33/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_33/VSUBS" "cap_mim_2p0fF_5GVGCQ_32/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_32/VSUBS" "cap_mim_2p0fF_5GVGCQ_31/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_31/VSUBS" "cap_mim_2p0fF_5GVGCQ_30/VSUBS"
+merge "cap_mim_2p0fF_5GVGCQ_30/VSUBS" "VSUBS"
+merge "B04_LNA_OTA_0/m1_29070_n5910#" "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" -47754.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9850 -1542 -4301000 -37710 -224000 -1630 -876200 -7280 -20273844 -140864
+merge "cap_mim_2p0fF_6GG5NH_1/m4_n1240_n1120#" "xm2/a_400_n100#"
+merge "xm2/a_400_n100#" "m1_24880_n2760#"
+merge "m1_24880_n2760#" "xm2/w_n650_n310#"
+merge "xm2/w_n650_n310#" "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_35/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_36/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_37/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_38/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_39/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_39/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_20/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_21/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_22/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_22/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_23/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_23/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_24/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_34/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_33/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_32/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_31/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_30/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_30/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_25/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_26/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_27/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_29/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_28/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_43/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_44/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_41/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_42/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_40/m4_n1120_n1000#" "Vout"
+merge "B04_LNA_OTA_0/m1_n9250_n4090#" "XM4/w_n650_n310#" -16844.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -453900 -3860 0 0 -6177100 -55110
+merge "XM4/w_n650_n310#" "m1_14510_n3060#"
+merge "m1_14510_n3060#" "XM4/a_400_n100#"
+merge "XM4/a_400_n100#" "m1_15230_n3400#"
+merge "m1_15230_n3400#" "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_6GG5NH_0/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_4/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_3/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_2/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_1/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_0/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_0/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_5/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_6/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_7/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_8/m4_n1120_n1000#" "cap_mim_2p0fF_5GVGCQ_9/m4_n1120_n1000#"
+merge "cap_mim_2p0fF_5GVGCQ_9/m4_n1120_n1000#" "m3_230_4060#"
+merge "cap_mim_2p0fF_5GVGCQ_10/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" -24034.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18254000 -116220 -3665628 -66534
+merge "cap_mim_2p0fF_5GVGCQ_11/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_12/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_14/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_13/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_15/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_16/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_17/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_17/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_19/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_18/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_18/m4_n1240_n1120#" "m4_30150_n5940#"
+merge "cap_mim_2p0fF_5GVGCQ_4/m4_n1240_n1120#" "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" -15760.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -548600 -8960 -88704 -4832
+merge "cap_mim_2p0fF_5GVGCQ_3/m4_n1240_n1120#" "m5_9970_n3140#"
+merge "m5_9970_n3140#" "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_2/m4_n1240_n1120#" "m5_7380_n3140#"
+merge "m5_7380_n3140#" "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_1/m4_n1240_n1120#" "m5_4840_n3140#"
+merge "m5_4840_n3140#" "cap_mim_2p0fF_5GVGCQ_0/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_0/m4_n1240_n1120#" "m5_2290_n3140#"
+merge "m5_2290_n3140#" "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_5/m4_n1240_n1120#" "m4_10510_n5940#"
+merge "m4_10510_n5940#" "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_6/m4_n1240_n1120#" "m5_9950_n5940#"
+merge "m5_9950_n5940#" "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_7/m4_n1240_n1120#" "m5_7400_n5940#"
+merge "m5_7400_n5940#" "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_8/m4_n1240_n1120#" "m5_4840_n5940#"
+merge "m5_4840_n5940#" "cap_mim_2p0fF_5GVGCQ_9/m4_n1240_n1120#"
+merge "cap_mim_2p0fF_5GVGCQ_9/m4_n1240_n1120#" "m5_2260_n5940#"
+merge "B04_LNA_OTA_0/w_n11980_n4270#" "B04_OTA_bias_ratio_8_0/VDD" -28889.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29300200 -37100 0 0 0 0 0 0 0 0
+merge "B04_OTA_bias_ratio_8_0/VDD" "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#"
+merge "B04_OTA_bias_ratio_8_0/XM2/w_n650_n4210#" "m1_2090_n7620#"
+merge "B04_LNA_OTA_0/m1_6910_n130#" "B04_OTA_bias_ratio_8_0/Vbias0" -3277.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2600 -540 -41600 -840 -2100000 -14000 0 0
+merge "B04_OTA_bias_ratio_8_0/Vbias0" "m2_19720_n5790#"
+merge "xm2/a_n400_n192#" "XM1/a_n400_n192#" -830.881 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27520 -2540 0 0 0 0 0 0 0 0
+merge "XM1/a_n400_n192#" "xm2/a_n488_n100#"
+merge "xm2/a_n488_n100#" "XM1/a_n488_n100#"
+merge "XM1/a_n488_n100#" "m1_23950_n2750#"
+merge "B04_LNA_OTA_0/m1_16100_n5950#" "B04_OTA_bias_ratio_8_0/Vbias2" -4371.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -255500 -3130 -3596500 -20560 0 0 0 0
+merge "B04_OTA_bias_ratio_8_0/Vbias2" "m2_17300_n5920#"
+merge "B04_LNA_OTA_0/m1_n5140_n5470#" "B04_OTA_bias_ratio_8_0/Vbias1" -1266.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2700 -240 -395900 -7110 0 0 0 0
+merge "B04_OTA_bias_ratio_8_0/Vbias1" "m2_18640_n5810#"
+merge "B04_OTA_bias_ratio_8_0/VbiasN" "VbiasN" -84.146 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2400 -500 0 0 0 0 0 0
+merge "B04_OTA_bias_ratio_8_0/VbiasP" "VbiasP" -283.052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -139400 -1500 0 0 0 0 0 0
+merge "B04_LNA_OTA_0/m1_27860_n4070#" "B04_OTA_bias_ratio_8_0/Vbias3" -10703.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6855500 -45230 -786200 -6100 0 0 0 0
+merge "B04_OTA_bias_ratio_8_0/Vbias3" "m2_21330_n6020#"
+merge "cap_mim_2p0fF_6GG5NH_0/m4_n1240_n1120#" "XM3/a_400_n100#" -1748.11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27679 -3668 0 0 0 0 -355500 -3900 -23144 -614
+merge "XM3/a_400_n100#" "XM3/w_n650_n310#"
+merge "XM3/w_n650_n310#" "m1_14160_n4650#"
+merge "XM4/a_n488_n100#" "XM4/a_n400_n192#" -730.694 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -29960 -2760 0 0 0 0 0 0 0 0
+merge "XM4/a_n400_n192#" "XM3/a_n400_n192#"
+merge "XM3/a_n400_n192#" "XM3/a_n488_n100#"
+merge "XM3/a_n488_n100#" "m1_14320_n4310#"

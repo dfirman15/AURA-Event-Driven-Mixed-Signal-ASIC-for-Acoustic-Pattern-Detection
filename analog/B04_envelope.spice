@@ -1,12 +1,11 @@
 ** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope.sch
-.subckt B04_envelope VDD GND Vin Vout
-*.PININFO VDD:B GND:B Vin:I Vout:O
+.subckt B04_envelope VDD Vin Vout VbiasN GND
+*.PININFO VDD:B GND:B Vin:I Vout:O VbiasN:I
 M1 VDD Vin Vout GND nfet_03v3 L=1u W=2u nf=1
-M2 Vout net1 GND GND nfet_03v3 L=4u W=7u nf=1
+M2 net2 VbiasN net1 GND nfet_03v3 L=4u W=0.5u nf=1
 XC2 GND Vout cap_mim_2f0fF c_width=10u c_length=10u m=100
-M3 net1 net1 GND GND nfet_03v3 L=4u W=5u nf=1
-M7 net2 net2 VDD VDD pfet_03v3 L=5u W=1u nf=1
-M8 net3 net3 net2 net2 pfet_03v3 L=5u W=1u nf=1
-M9 net4 net4 net3 net3 pfet_03v3 L=5u W=1u nf=1
-M10 net1 net1 net4 net4 pfet_03v3 L=5u W=1u nf=1
+M3 net1 VbiasN GND GND nfet_03v3 L=4u W=0.5u nf=1
+M4 net3 VbiasN net2 GND nfet_03v3 L=4u W=0.5u nf=1
+M5 net4 VbiasN net3 GND nfet_03v3 L=4u W=0.5u nf=1
+M6 Vout VbiasN net4 GND nfet_03v3 L=4u W=0.5u nf=1
 .ends

@@ -1,0 +1,12 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 21/08/2026 04:43
+
+.SUBCKT B04_LNAv2 Vin Vout VDD VbiasP GND
+C$1 \$8 Vin 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$20 Vout \$8 2e-13 cap_mim_2f0fF A=100P P=40U
+M$22 VDD VbiasP Vout VDD pfet_03v3 L=4U W=40U AS=17.6P AD=17.6P PS=115.2U
++ PD=115.2U
+M$62 Vout Vout \$8 \$8 pfet_03v3 L=20U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$63 Vout \$8 \$8 Vout pfet_03v3 L=20U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$64 Vout \$8 GND GND nfet_03v3 L=1U W=400U AS=111.2P AD=111.2P PS=495.6U
++ PD=495.6U
+.ENDS B04_LNAv2

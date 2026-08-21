@@ -42,6 +42,10 @@ N 500 -840 500 -650 {lab=#net8}
 N 330 -900 500 -900 {lab=#net2}
 N 360 -940 360 -930 {lab=#net2}
 N 380 -840 380 -810 {lab=0}
+N 200 -700 200 -610 {lab=#net1}
+N 200 -550 200 -490 {lab=0}
+N 200 -570 260 -560 {lab=#net7}
+N 200 -590 260 -580 {lab=#net6}
 C {vsource.sym} 200 -840 0 0 {name=VDD value=3.3 savecurrent=false}
 C {gnd.sym} 200 -810 0 0 {name=l1 lab=0}
 C {vsource.sym} 270 -840 0 0 {name=Vplus value="DC 1.65 AC 1" savecurrent=false}
@@ -62,7 +66,6 @@ C {code_shown.sym} -100 -1250 0 0 {name=include1 only_toplevel=false value=".inc
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_typical"}
 C {lab_pin.sym} 280 -1000 1 0 {name=p2 sig_type=std_logic lab=Vinp}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_core.sym} 400 -560 0 0 {name=x1 ratio=0.25}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_beta_multiplier_reference.sym} 80 -570 0 0 {name=x3 length=410u}
 C {capa.sym} 750 -920 0 0 {name=C1
 m=1
 value=5p
@@ -78,4 +81,5 @@ m=1
 value=10000g
 footprint=1206
 device=inductor}
-C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_folded_cascode_OTA.sym} 530 -950 0 0 {name=x2}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA.sym} 510 -970 0 0 {name=x2}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BMR.sym} 50 -580 0 0 {name=x3}
