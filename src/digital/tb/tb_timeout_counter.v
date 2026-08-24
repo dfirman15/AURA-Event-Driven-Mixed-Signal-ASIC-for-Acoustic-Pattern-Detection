@@ -2,7 +2,7 @@
 
 module tb_timeout_counter;
     reg clk;
-    reg rst_n;
+    reg en;
     reg pulse_in;
     reg [7:0] timeout_val;
 
@@ -11,7 +11,7 @@ module tb_timeout_counter;
     // DUT instantiation
     timeout_counter uut (
         .clk(clk),
-        .rst_n(rst_n),
+        .en(en),
         .pulse_in(pulse_in),
         .timeout_val(timeout_val),
         .timeout_rst(timeout_rst)
@@ -20,18 +20,18 @@ module tb_timeout_counter;
     always #5 clk = ~clk; // Clock generation: 100MHz clock (10ns period)
 
     initial begin
-        $dumpfile("tb_timeout_counter.vcd");
+        $dumpfile("tb/vcd_file/tb_timeout_counter.vcd");
         $dumpvars(0, tb_timeout_counter);
 
         //  initialization
         clk = 0;
-        rst_n = 0;
+        en = 0;
         pulse_in = 0;
         timeout_val = 8'h00;
 
         // releasing reset after a few clock cycles
         #20;
-        rst_n = 1;
+        en = 1;
         #10;
 
         // test 1: Normal timeout counting with timeout_val = 5
@@ -69,8 +69,8 @@ module tb_timeout_counter;
 
 
     initial begin
-        $monitor("Time=%0t | rst_n=%b | pulse_in=%b | timeout_val=%d || timer_count=%d | timeout_rst=%b", 
-        $time, rst_n, pulse_in, timeout_val, uut.timer_count, timeout_rst);
+        $monitor("Time=%0t | en=%b | pulse_in=%b | timeout_val=%d || timer_count=%d | timeout_rst=%b", 
+        $time, en, pulse_in, timeout_val, uut.timer_count, timeout_rst);
     end
 
 endmodule

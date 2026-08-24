@@ -6,7 +6,7 @@ module tb_main_event_counter;
 
   //signal declaration
     reg clk;
-    reg rst_n;
+    reg en;
     reg pulse_in;
     reg timeout_rst;
     reg [7:0] threshold;
@@ -17,7 +17,7 @@ module tb_main_event_counter;
 //dut instantiation
     main_event_counter uut (
         .clk(clk),
-        .rst_n(rst_n),
+        .en(en),
         .pulse_in(pulse_in),
         .timeout_rst(timeout_rst),
         .threshold(threshold),
@@ -39,18 +39,18 @@ module tb_main_event_counter;
 
     //main simulation block
     initial begin
-        $dumpfile("tb_main_event_counter.vcd");
+        $dumpfile("tb/vcd_file/tb_main_event_counter.vcd");
         $dumpvars(0, tb_main_event_counter);
 
         clk = 0;
-        rst_n = 0; // hold reset active
+        en = 0; // hold reset active
         pulse_in = 0;
         timeout_rst = 0;
         threshold = 8'h00;
 
         // wait for a few clock cycles before releasing reset
         #20;
-        rst_n = 1; 
+        en = 1; 
         #10;
 
 // test1: Normal counting to threshold
@@ -100,8 +100,8 @@ module tb_main_event_counter;
 
     // Opsional: Monitor perubahan nilai di konsol secara real-time
     initial begin
-        $monitor("Time=%0t | rst=%b | threshold=%d | count=%d | trigger_out=%b | timeout=%b", 
-                 $time, rst_n, threshold, count_reg, trigger_out, timeout_rst);
+        $monitor("Time=%0t | en=%b | threshold=%d | count=%d | trigger_out=%b | timeout=%b", 
+                 $time, en, threshold, count_reg, trigger_out, timeout_rst);
     end
 
 endmodule

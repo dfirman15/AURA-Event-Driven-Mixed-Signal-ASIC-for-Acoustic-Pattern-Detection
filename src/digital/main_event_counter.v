@@ -1,6 +1,6 @@
 module main_event_counter (
     input  wire       clk,
-    input  wire       rst_n,
+    input  wire       en,
     input  wire       pulse_in,      // from pulse generator
     input  wire       timeout_rst,   // signal from timeout counter
     input  wire [7:0] threshold,     // from I2C Config
@@ -16,8 +16,8 @@ module main_event_counter (
     assign trigger_out = auto_reset;
     assign count_reg   = current_count;
 
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    always @(posedge clk or posedge en) begin
+        if (en) begin
             current_count <= 8'h00;
 
         end else begin

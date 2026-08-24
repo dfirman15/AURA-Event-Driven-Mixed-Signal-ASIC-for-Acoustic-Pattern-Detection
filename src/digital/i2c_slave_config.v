@@ -2,19 +2,20 @@ module i2c_slave_config #(
     parameter SLAVE_ADDR = 7'h50
 )(
     input  wire       clk,           
-    input  wire       rst_n,
+    input  wire       en,
     input  wire       scl,
     input  wire       sda_in,
     output reg        sda_out,       
     output reg        sda_oe,        
     output wire [7:0] threshold_reg,
-    output wire [7:0] timeout_reg
+    output wire [7:0] timeout_reg,
+    output wire [7:0] capacitor_ctrl_reg
 );
 
     // Block 1: edge detection for SCL and SDA
     reg scl_d1, scl_d2, sda_d1, sda_d2;
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    always @(posedge clk or posedge en) begin
+        if (en) begin
             scl_d1 <= 1'b1; scl_d2 <= 1'b1;
             sda_d1 <= 1'b1; sda_d2 <= 1'b1;
         end else begin
@@ -37,8 +38,8 @@ module i2c_slave_config #(
 
     wire shift_en = (state == ADDR || state == REGADDR || state == DATA) && scl_rise;
 
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    always @(posedge clk or posedge en) begin
+        if (en) begin
             state <= IDLE; 
             bit_cnt <= 4'd0; 
             sda_out <= 1'b1; 
@@ -133,13 +134,13 @@ module i2c_slave_config #(
 
     // Block 3: Shift Register 
     reg [7:0] shift_reg_internal;
-    reg       reg_addr_0;
+    reg [1:0] reg_addr;
     wire [7:0] parallel_data = shift_reg_internal;
 
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
+    always @(posedge clk or posedge en) begin
+        if (en) begin
             shift_reg_internal <= 8'h00;
-            reg_addr_0         <= 1'b0;
+            reg_addr           <= 2'b00;
         end else begin
             if (shift_en) begin
                 shift_reg_internal <= {shift_reg_internal[6:0], sda_d1};
@@ -147,23 +148,35 @@ module i2c_slave_config #(
             
             // Simpan alamat register tepat di SCL fall ke-8 saat REGADDR_ACK
             if (state == REGADDR_ACK && scl_fall && sda_oe == 1'b0) begin
-                reg_addr_0 <= shift_reg_internal[0];
+                reg_addr <= shift_reg_internal[1:0];
             end
         end
     end
 
     // Block 4: Decoder & Registers
-    reg [7:0] threshold_int, timeout_int;
-    assign threshold_reg = threshold_int;
-    assign timeout_reg   = timeout_int;
+    // Register Map:
+    // 0x00: threshold_reg (default: 0x05)
+    // 0x01: timeout_reg (default: 0xA0)
+    // 0x02: capacitor_ctrl_reg (default: 0x00)
+    // 0x03: reserved for future use
+    
+    reg [7:0] threshold_int, timeout_int, capacitor_ctrl_int;
+    assign threshold_reg      = threshold_int;
+    assign timeout_reg        = timeout_int;
+    assign capacitor_ctrl_reg = capacitor_ctrl_int;
 
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            threshold_int <= 8'h05; 
-            timeout_int   <= 8'hA0;
+    always @(posedge clk or posedge en) begin
+        if (en) begin
+            threshold_int       <= 8'h05; 
+            timeout_int         <= 8'hA0;
+            capacitor_ctrl_int  <= 8'h00;
         end else if (write_en) begin
-            if (!reg_addr_0) threshold_int <= parallel_data;
-            else             timeout_int   <= parallel_data;
+            case (reg_addr)
+                2'b00: threshold_int       <= parallel_data;
+                2'b01: timeout_int         <= parallel_data;
+                2'b10: capacitor_ctrl_int  <= parallel_data;
+                default: ; // Reserved register, do nothing
+            endcase
         end
     end
 endmodule
