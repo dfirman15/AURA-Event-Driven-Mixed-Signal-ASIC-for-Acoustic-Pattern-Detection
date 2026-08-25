@@ -47,6 +47,8 @@ N 710 -560 710 -470 {lab=GND}
 N 710 -560 750 -560 {lab=GND}
 N 750 -620 750 -560 {lab=GND}
 N 690 -620 750 -620 {lab=GND}
+N 760 -310 760 -250 {lab=VDD}
+N 760 -210 760 -150 {lab=GND}
 C {symbols/pfet_03v3.sym} 790 -280 0 0 {name=M1
 L=1u
 W=0.5u
@@ -140,4 +142,4 @@ m=12}
 C {iopin.sym} 700 -150 1 0 {name=p1 lab=GND}
 C {iopin.sym} 690 -310 3 0 {name=p2 lab=VDD}
 C {opin.sym} 1060 -230 0 0 {name=p3 lab=Vout}
-C {/foss/designs/B04_schmitt_trigger.sym} 550 -230 0 0 {name=x1}
+C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym} 610 -230 0 0 {name=x1}

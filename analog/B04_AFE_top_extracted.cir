@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 10:21
+* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 11:11
 
 .SUBCKT B04_AFE_top Venvelope Vbpf VDD Vin Cap2 Cap1 Cap0 Vthreshold Vout GND
 X$101 \$9 \$17 VDD Venvelope \$15 Vbpf \$28 GND B04_buffer_out

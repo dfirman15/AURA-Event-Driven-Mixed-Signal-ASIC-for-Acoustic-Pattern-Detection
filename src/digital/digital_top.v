@@ -1,6 +1,9 @@
 module digital_top #(
     parameter SLAVE_ADDR = 7'h50
 )(
+    inout  wire       VDD,
+    inout  wire       VSS,
+
     input  wire       clk,
     input  wire       comp_out,
 

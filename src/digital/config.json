@@ -1,0 +1,29 @@
+{
+  "DESIGN_NAME": "digital_top",
+  "VERILOG_FILES": [
+    "dir::digital_top.v",
+    "dir::i2c_slave_config.v",
+    "dir::pulse_generator.v",
+    "dir::timeout_counter.v",
+    "dir::main_event_counter.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 33333,
+
+  "PDK": "gf180mcuD",
+  "STD_CELL_LIBRARY": "gf180mcu_fd_sc_mcu7t5v0",
+
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 120 200",
+
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+
+  "PL_TARGET_DENSITY_PCT": 45,
+  
+  "VDD_NETS": ["VDD"],
+  "GND_NETS": ["VSS"],
+  "VDD_PIN": "VDD",
+  "GND_PIN": "VSS",
+
+  "RUN_LINTER": true
+}

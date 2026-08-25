@@ -1,5 +1,42 @@
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_TOP.sch
-.subckt B04_TOP Vin VDD GND Vout Cap0 Cap1 Cap2 Vthreshold Vbpf Venvelope
+.include "/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice"
+.include "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/digital_top.spice"
+.subckt B04_TOP Vin Venvelope Vbpf VDD GND Vout sda scl en Vthreshold
+XX_ANALOG VDD net_cap0 net_cap1 Vthreshold net_cap2 net_comp Vin GND Vbpf Venvelope B04_AFE_top
+XX_CLOCK VDD internal_clk GND B04_clock_gen
+XX_DIGITAL VDD GND net_cap0 net_cap1 net_cap2 internal_clk net_comp en scl sda Vout digital_top
+.ends
+
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_clock_gen.sch
+.subckt B04_clock_gen VDD Vout GND
+*.PININFO GND:B VDD:B Vout:O
+M1 net2 net3 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
+M2 net2 net3 GND GND nfet_03v3 L=1u W=0.5u nf=1
+M3 Vout net2 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
+M4 Vout net2 GND GND nfet_03v3 L=1u W=0.5u nf=1
+M5 net1 GND Vout VDD pfet_03v3 L=10u W=0.5u nf=1
+M6 Vout VDD net1 GND nfet_03v3 L=20u W=0.5u nf=1
+XC2 net1 GND cap_mim_2f0fF c_width=10u c_length=20u m=12
+x1 VDD net1 net3 GND B04_schmitt_trigger
+.ends
+
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym
+*+ # of pins=4
+** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sch
+.subckt B04_schmitt_trigger VDD Vin Vout GND
+*.PININFO VDD:B GND:B Vin:I Vout:O
+M1 net1 Vin net2 VDD pfet_03v3 L=27u W=0.5u nf=1
+M2 Vout Vin net1 VDD pfet_03v3 L=27u W=0.5u nf=1
+M3 net1 Vout GND VDD pfet_03v3 L=1u W=1u nf=1
+M4 Vout Vin net3 GND nfet_03v3 L=27u W=0.5u nf=1
+M5 net3 Vin GND GND nfet_03v3 L=27u W=0.5u nf=1
+M6 net3 Vout VDD GND nfet_03v3 L=1u W=1u nf=1
+M7 net2 GND VDD VDD pfet_03v3 L=27u W=0.5u nf=1
+M8 GND VDD GND GND nfet_03v3 L=27u W=0.5u nf=1
+.ends
+
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_AFE_top.sym # of pins=10
+.subckt B04_AFE_top VDD Cap0 Cap1 Vthreshold Cap2 Vout Vin GND Vbpf Venvelope
 *.PININFO Vin:I VDD:B GND:B Vout:O Cap0:I Cap1:I Cap2:I Vthreshold:I Vbpf:O Venvelope:O
 x5 VDD VbiasP net2 Vin GND B04_LNAv2
 x3 VDD VbiasP VbiasN GND B04_BMR
@@ -12,8 +49,6 @@ x8 VDD net4 Vbpf net5 Venvelope GND VbiasP VbiasN B04_buffer_out
 .ends
 
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNAv2.sym # of pins=5
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNAv2.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_LNAv2.sch
 .subckt B04_LNAv2 VDD VbiasP Vout Vin GND
 *.PININFO VbiasP:I Vin:I VDD:B GND:B Vout:O
 M1 Vout VbiasP VDD VDD pfet_03v3 L=4u W=1u nf=1 m=40
@@ -24,10 +59,7 @@ M3 Vout Vout net1 net1 pfet_03v3 L=20u W=1u nf=1
 M4 net1 net1 Vout Vout pfet_03v3 L=20u W=1u nf=1
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BMR.sym # of pins=4
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BMR.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BMR.sch
 .subckt B04_BMR VDD VbiasP VbiasN GND
 *.PININFO VDD:B GND:B VbiasP:O VbiasN:O
 M2 VbiasN VbiasP VDD VDD pfet_03v3 L=4u W=1u nf=1 m=2
@@ -48,10 +80,7 @@ Mdummy3 GND GND GND GND nfet_03v3 L=4u W=10u nf=1
 XC1 VbiasP VbiasN cap_mim_2f0fF c_width=10u c_length=10u m=20
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_coupling.sym # of pins=3
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_coupling.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_coupling.sch
 .subckt B04_coupling Vout Vin VDD05
 *.PININFO Vin:I VDD05:I Vout:O
 XC1 Vin Vout cap_mim_2f0fF c_width=10u c_length=10u m=20
@@ -59,10 +88,7 @@ M3 VDD05 VDD05 Vout Vout pfet_03v3 L=4u W=0.5u nf=1
 M4 Vout Vout VDD05 VDD05 pfet_03v3 L=4u W=0.5u nf=1
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_VDD05.sym # of pins=5
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_VDD05.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_VDD05.sch
 .subckt B04_VDD05 VDD Vout GND VbiasP VbiasN
 *.PININFO VbiasP:I VbiasN:I GND:B VDD:B Vout:O
 XR1 net4 VDD GND ppolyf_u_1k r_width=2u r_length=600u
@@ -72,21 +98,14 @@ x1 VDD net1 net4 Vout net3 net5 Vout net2 GND B04_OTA
 x2 VDD VbiasP net1 net2 net3 net5 VbiasN GND B04_OTA_bias_ratio_5
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BPF4.sym # of pins=10
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BPF4.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_BPF4.sch
 .subckt B04_BPF4 cap0 cap1 cap2 VDD Vin Vout VDD05 VbiasP VbiasN GND
 *.PININFO VDD:B GND:B Vin:I Vout:O VDD05:I VbiasP:I VbiasN:I cap0:I cap1:I cap2:I
 **** begin user architecture code
-
 .param m_cap=64
-
 **** end user architecture code
 **** begin user architecture code
-
 .param m_cap_1=30
-
 **** end user architecture code
 x1 VDD VbiasP net1 net3 net4 net2 VbiasN GND B04_OTA_bias_ratio_025
 x2 VDD VbiasP net5 net7 net8 net6 VbiasN GND B04_OTA_bias_ratio_025
@@ -140,10 +159,7 @@ XC24 net18 net37 cap_mim_2f0fF c_width=10u c_length=10u m=40
 x14 VDD VbiasP net21 net23 net24 net22 VbiasN GND B04_OTA_bias_ratio_5
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope.sym # of pins=5
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope.sch
 .subckt B04_envelope VDD Vin Vout VbiasN GND
 *.PININFO VDD:B GND:B Vin:I Vout:O VbiasN:I
 M1 VDD Vin Vout GND nfet_03v3 L=1u W=2u nf=1
@@ -155,10 +171,7 @@ M5 net4 VbiasN net3 GND nfet_03v3 L=4u W=0.5u nf=1
 M6 Vout VbiasN net4 GND nfet_03v3 L=4u W=0.5u nf=1
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sym # of pins=6
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sch
 .subckt B04_comparator VDD Q_BAR INN INP VbiasP GND
 *.PININFO VDD:B GND:B INN:I INP:I Q_BAR:O VbiasP:I
 M1 net3 net1 GND GND nfet_03v3 L=0.56u W=1u nf=1
@@ -176,10 +189,7 @@ Mq3 Q_BAR net5 VDD VDD pfet_03v3 L=0.28u W=1.5u nf=1
 Mq6 VDD VbiasP net1 VDD pfet_03v3 L=4u W=2u nf=1
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_buffer_out.sym # of pins=8
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_buffer_out.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_buffer_out.sch
 .subckt B04_buffer_out VDD Vinbpf Vbpf Vinenvelope Venvelope GND VbiasP VbiasN
 *.PININFO Vbpf:O Venvelope:O Vinbpf:I Vinenvelope:I VbiasP:I VbiasN:I GND:B VDD:B
 x8 VDD VbiasP net1 net3 net4 net2 VbiasN GND B04_OTA_bias_ratio_5
@@ -187,10 +197,7 @@ x9 VDD net1 Vinenvelope Venvelope net4 net2 Venvelope net3 GND B04_OTA
 x10 VDD net1 Vinbpf Vbpf net4 net2 Vbpf net3 GND B04_OTA
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym # of pins=6
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_diff_amp.sch
 .subckt B04_diff_amp VDD Vo V+ V- Vbias VSS
 *.PININFO VDD:B VSS:B V+:I V-:I Vo:O Vbias:I
 M1 net1 V+ net2 VSS nfet_03v3 L=4u W=0.55u nf=1 m=2
@@ -204,10 +211,7 @@ Mdummy2 VSS VSS VSS VSS nfet_03v3 L=4u W=0.55u nf=1
 Mdummy3 VSS VSS VSS VSS nfet_03v3 L=4u W=0.55u nf=1
 .ends
 
-
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA.sym # of pins=9
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA.sch
 .subckt B04_OTA VDD Vbias0 Vin+ Vin- Vbias3 Vbias1 Vout Vbias2 GND
 *.PININFO VDD:B Vbias0:I Vin+:I Vin-:I Vout:O Vbias3:I Vbias2:I GND:B Vbias1:I
 M1 net1 Vbias0 VDD VDD pfet_03v3 L=4u W=5u nf=2
@@ -249,11 +253,7 @@ Mdummy18 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
 Mdummy19 GND GND GND GND nfet_03v3 L=4u W=0.5u nf=1
 .ends
 
-
-* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym # of
-*+ pins=8
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sch
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym # of pins=8
 .subckt B04_OTA_bias_ratio_5 VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND
 *.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
 M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
@@ -266,11 +266,7 @@ M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W=25u nf=1
 M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W=50u nf=1
 .ends
 
-
-* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_025.sym # of
-*+ pins=8
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_025.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_025.sch
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_025.sym # of pins=8
 .subckt B04_OTA_bias_ratio_025 VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND
 *.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
 M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
@@ -283,11 +279,7 @@ M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W=1.25u nf=1
 M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W=2.5u nf=1
 .ends
 
-
-* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_04.sym # of
-*+ pins=8
-** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_04.sym
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_04.sch
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_04.sym # of pins=8
 .subckt B04_OTA_bias_ratio_04 VDD VbiasP Vbias0 Vbias2 Vbias3 Vbias1 VbiasN GND
 *.PININFO VDD:B Vbias2:O Vbias1:O Vbias0:O Vbias3:O GND:B VbiasP:I VbiasN:I
 M1 Vbias1 GND Vbias2 VDD pfet_03v3 L=4u W=5u nf=1
@@ -299,4 +291,3 @@ M6 Vbias3 VDD Vbias0 GND nfet_03v3 L=4u W=10u nf=1
 M2 Vbias2 VbiasP VDD VDD pfet_03v3 L=4u W=2u nf=1
 M3 GND VbiasN Vbias3 GND nfet_03v3 L=4u W=4u nf=1
 .ends
-

@@ -1,4 +1,3 @@
-runs/
 __pycache__/
 gf180mcu/
 gf180_drc.lyrdb
@@ -7,3 +6,6 @@ final/
 img/
 *.lyrdb
 .ipynb_checkpoints/
+src/digital/runs/RUN_*/*
+!src/digital/runs/RUN_*/final
+!src/digital/runs/RUN_*/final/**
