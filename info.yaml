@@ -18,7 +18,7 @@ project:
   description: "Low Power Mixed Signal Frequency Detection"
   lvs_config: "lvs_config.json"
 
-  pins:
+pins:
   - name: GND
     io_type: ground
   - name: VDD
