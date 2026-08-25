@@ -28,10 +28,10 @@ project:
     secondary_esd: true
   - name: Vbpf
     io_type: analog
-    secondary_esd: false
+    secondary_esd: true
   - name: Venvelope
     io_type: analog
-    secondary_esd: false
+    secondary_esd: true
   - name: Vthreshold
     io_type: analog
     secondary_esd: true
@@ -43,5 +43,3 @@ project:
     io_type: input_schmitt
   - name: en
     io_type: input_cmos
-
-
