@@ -1,18 +1,18 @@
 module i2c_slave_config #(
     parameter SLAVE_ADDR = 7'h50
 )(
-    input  wire       clk,           
+    input  wire       clk,
     input  wire       en,
     input  wire       scl,
     input  wire       sda_in,
-    output reg        sda_out,       
-    output reg        sda_oe,        
+    output reg        sda_out,
+    output reg        sda_oe,
     output wire [7:0] threshold_reg,
     output wire [7:0] timeout_reg,
-    output wire [7:0] capacitor_ctrl_reg
+    output wire [2:0] cap_ctrl_reg
 );
 
-    // Block 1: edge detection for SCL and SDA
+    // Block 1: edge detection SCL/SDA
     reg scl_d1, scl_d2, sda_d1, sda_d2;
     always @(posedge clk or posedge en) begin
         if (en) begin
@@ -29,8 +29,8 @@ module i2c_slave_config #(
     wire start_det = scl_d1 & scl_d2 & ~sda_d1 & sda_d2;
     wire stop_det  = scl_d1 & scl_d2 & sda_d1 & ~sda_d2;
 
-    // Block 2: FSM States 
-    localparam IDLE = 3'd0, ADDR = 3'd1, ADDR_ACK = 3'd2, REGADDR = 3'd3, REGADDR_ACK = 3'd4, DATA = 3'd5, DATA_ACK = 3'd6;
+    // Block 2: FSM
+    localparam IDLE=3'd0, ADDR=3'd1, ADDR_ACK=3'd2, REGADDR=3'd3, REGADDR_ACK=3'd4, DATA=3'd5, DATA_ACK=3'd6;
 
     reg [2:0] state;
     reg [3:0] bit_cnt;
@@ -40,23 +40,23 @@ module i2c_slave_config #(
 
     always @(posedge clk or posedge en) begin
         if (en) begin
-            state <= IDLE; 
-            bit_cnt <= 4'd0; 
-            sda_out <= 1'b1; 
-            sda_oe <= 1'b0; 
+            state    <= IDLE;
+            bit_cnt  <= 4'd0;
+            sda_out  <= 1'b1;
+            sda_oe   <= 1'b0;
             write_en <= 1'b0;
         end else begin
-            write_en <= 1'b0; // Default: clear flag write_en
+            write_en <= 1'b0;
 
-            if (start_det) begin 
-                state <= ADDR; 
-                bit_cnt <= 4'd0; 
-                sda_oe <= 1'b0; 
-            end 
-            else if (stop_det) begin 
-                state <= IDLE; 
-                sda_oe <= 1'b0; 
-            end 
+            if (start_det) begin
+                state   <= ADDR;
+                bit_cnt <= 4'd0;
+                sda_oe  <= 1'b0;
+            end
+            else if (stop_det) begin
+                state  <= IDLE;
+                sda_oe <= 1'b0;
+            end
             else begin
                 case (state)
                     ADDR: begin
@@ -65,21 +65,19 @@ module i2c_slave_config #(
                             if (bit_cnt == 4'd7) state <= ADDR_ACK;
                         end
                     end
-                    
+
                     ADDR_ACK: begin
                         if (scl_fall) begin
                             if (sda_oe == 1'b0) begin
-                                // scl fall 9 check: if address matches and R/W bit is 0 (write), then ACK
                                 if (parallel_data[7:1] == SLAVE_ADDR && parallel_data[0] == 1'b0) begin
-                                    sda_out <= 1'b0; 
-                                    sda_oe <= 1'b1; 
+                                    sda_out <= 1'b0;
+                                    sda_oe  <= 1'b1;
                                 end else begin
-                                    state <= IDLE; // NACK, wrong address or R/W bit is 1 (read), go back to IDLE
+                                    state <= IDLE;
                                 end
                             end else begin
-                                // scl fall 10: release SDA and move to REGADDR state
-                                sda_oe <= 1'b0;
-                                state <= REGADDR;
+                                sda_oe  <= 1'b0;
+                                state   <= REGADDR;
                                 bit_cnt <= 4'd0;
                             end
                         end
@@ -91,15 +89,15 @@ module i2c_slave_config #(
                             if (bit_cnt == 4'd7) state <= REGADDR_ACK;
                         end
                     end
-                    
+
                     REGADDR_ACK: begin
                         if (scl_fall) begin
                             if (sda_oe == 1'b0) begin
-                                sda_out <= 1'b0; 
-                                sda_oe <= 1'b1; 
+                                sda_out <= 1'b0;
+                                sda_oe  <= 1'b1;
                             end else begin
-                                sda_oe <= 1'b0; 
-                                state <= DATA;
+                                sda_oe  <= 1'b0;
+                                state   <= DATA;
                                 bit_cnt <= 4'd0;
                             end
                         end
@@ -115,24 +113,24 @@ module i2c_slave_config #(
                     DATA_ACK: begin
                         if (scl_fall) begin
                             if (sda_oe == 1'b0) begin
-                                sda_out <= 1'b0; 
-                                sda_oe <= 1'b1; 
-                                write_en <= 1'b1; // Trigger write_en to indicate that a full byte has been received and should be written to the appropriate register
+                                sda_out  <= 1'b0;
+                                sda_oe   <= 1'b1;
+                                write_en <= 1'b1;
                             end else begin
-                                sda_oe <= 1'b0; 
-                                state <= DATA; // Loop back to DATA state for next byte
+                                sda_oe  <= 1'b0;
+                                state   <= DATA;
                                 bit_cnt <= 4'd0;
                             end
                         end
                     end
-                    
+
                     default: state <= IDLE;
                 endcase
             end
         end
     end
 
-    // Block 3: Shift Register 
+    // Block 3: Shift register
     reg [7:0] shift_reg_internal;
     reg [1:0] reg_addr;
     wire [7:0] parallel_data = shift_reg_internal;
@@ -142,40 +140,35 @@ module i2c_slave_config #(
             shift_reg_internal <= 8'h00;
             reg_addr           <= 2'b00;
         end else begin
-            if (shift_en) begin
+            if (shift_en)
                 shift_reg_internal <= {shift_reg_internal[6:0], sda_d1};
-            end
-            
-            // Simpan alamat register tepat di SCL fall ke-8 saat REGADDR_ACK
-            if (state == REGADDR_ACK && scl_fall && sda_oe == 1'b0) begin
+
+            if (state == REGADDR_ACK && scl_fall && sda_oe == 1'b0)
                 reg_addr <= shift_reg_internal[1:0];
-            end
         end
     end
 
-    // Block 4: Decoder & Registers
-    // Register Map:
-    // 0x00: threshold_reg (default: 0x05)
-    // 0x01: timeout_reg (default: 0xA0)
-    // 0x02: capacitor_ctrl_reg (default: 0x00)
-    // 0x03: reserved for future use
-    
-    reg [7:0] threshold_int, timeout_int, capacitor_ctrl_int;
-    assign threshold_reg      = threshold_int;
-    assign timeout_reg        = timeout_int;
-    assign capacitor_ctrl_reg = capacitor_ctrl_int;
+    // Block 4: Registers
+    // 0x00: threshold_reg   (default 0x05)
+    // 0x01: timeout_reg     (default 0xA0)
+    // 0x02: cap_ctrl_reg    (default 3'b000, 3-bit sahaja)
+    reg [7:0] threshold_int, timeout_int;
+    reg [2:0] cap_ctrl_int;
+    assign threshold_reg = threshold_int;
+    assign timeout_reg   = timeout_int;
+    assign cap_ctrl_reg  = cap_ctrl_int;
 
     always @(posedge clk or posedge en) begin
         if (en) begin
-            threshold_int       <= 8'h05; 
-            timeout_int         <= 8'hA0;
-            capacitor_ctrl_int  <= 8'h00;
+            threshold_int <= 8'h05;
+            timeout_int   <= 8'hA0;
+            cap_ctrl_int  <= 3'b000;
         end else if (write_en) begin
             case (reg_addr)
-                2'b00: threshold_int       <= parallel_data;
-                2'b01: timeout_int         <= parallel_data;
-                2'b10: capacitor_ctrl_int  <= parallel_data;
-                default: ; // Reserved register, do nothing
+                2'b00: threshold_int <= parallel_data;
+                2'b01: timeout_int   <= parallel_data;
+                2'b10: cap_ctrl_int  <= parallel_data[2:0];
+                default: ; // reserved
             endcase
         end
     end
