@@ -1,7 +1,7 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 14:41
+* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 15:05
 
-.SUBCKT B04_TOP scl sda Vout VDD Vthreshold Vin Venvelope Vbpf en GND
-X$3 \$33 \$46 \$36 \$37 VDD en scl \$41 sda Vout GND digital_top
+.SUBCKT B04_TOP Vtrigger scl sda VDD Vthreshold Vin Venvelope Vbpf en GND
+X$2 \$33 \$46 \$36 \$37 VDD en scl \$41 sda Vtrigger GND digital_top
 X$14 Venvelope Vbpf VDD Vin \$37 \$36 \$46 Vthreshold \$33 GND B04_AFE_top
 C$1 \$I58 GND 4.8e-12 cap_mim_2f0fF A=2400P P=720U
 M$13 \$41 \$I73 VDD VDD pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
