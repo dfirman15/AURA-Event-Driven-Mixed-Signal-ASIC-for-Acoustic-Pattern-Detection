@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_AFE_top.sch
-.subckt B04_AFE_top Vin VDD GND Vout Cap0 Cap1 Cap2 Vthreshold Vbpf Venvelope
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_AFE_topv1.sch
+.subckt B04_AFE_topv1 Vin VDD GND Vout Cap0 Cap1 Cap2 Vthreshold Vbpf Venvelope
 *.PININFO Vin:I VDD:B GND:B Vout:O Cap0:I Cap1:I Cap2:I Vthreshold:I Vbpf:O Venvelope:O
 x5 VDD VbiasP net2 Vin GND B04_LNAv2
 x3 VDD VbiasP VbiasN GND B04_BMR

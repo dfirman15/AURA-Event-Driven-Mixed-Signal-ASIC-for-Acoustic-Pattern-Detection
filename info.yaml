@@ -15,31 +15,33 @@ project:
   title: "Event Driven Mixed Signal ASIC for Acoustic Pattern Detection"
   team: "B04-AURA"
   discord: "Hawur"
-  description: "PDK test data for LNA, BMR, and Envelope Detector"
+  description: "Low Power Mixed Signal Frequency Detection"
   lvs_config: "lvs_config.json"
 
   pins:
-  - name: gnd
+  - name: GND
     io_type: ground
-  - name: vdd
+  - name: VDD
     io_type: power
+  - name: Vin
+    io_type: analog
+    secondary_esd: true
+  - name: Vbpf
+    io_type: analog
+    secondary_esd: false
+  - name: Venvelope
+    io_type: analog
+    secondary_esd: false
+  - name: Vthreshold
+    io_type: analog
+    secondary_esd: true
+  - name: Vtrigger
+    io_type: bidirectional
   - name: sda
     io_type: bidirectional
   - name: scl
     io_type: input_schmitt
   - name: en
     io_type: input_cmos
-  - name: mic
-    io_type: analog
-    secondary_esd: true
-  - name: trigger
-    io_type: output
-  - name: verification_bpf
-    io_type: analog
-    secondary_esd: false
-  - name: verification_envelope
-    io_type: analog
-    secondary_esd: false
-  - name: comparator_threshold
-    io_type: analog
-    secondary_esd: true
+
+
