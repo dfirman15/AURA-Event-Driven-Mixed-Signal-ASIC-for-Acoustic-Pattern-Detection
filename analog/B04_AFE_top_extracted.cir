@@ -1,14 +1,14 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 03:55
+* Extracted by KLayout with GF180MCU LVS runset on : 25/08/2026 05:11
 
-.SUBCKT B04_AFE_top Venvelope Vbpf VDD Vin Cap2 Cap1 Cap0 Vthreshold Vout GND
-X$1 \$9 \$10 VDD Venvelope \$16 Vbpf \$28 GND B04_buffer_out
-X$126 \$10 \$9 VDD GND B04_BMR
-X$127 Cap0 Cap1 Cap2 \$9 \$29 \$10 VDD \$28 \$74 GND B04_BPF4
-X$132 \$10 \$9 VDD \$29 GND B04_VDD05
-X$152 \$16 \$9 VDD \$28 GND B04_envelope
-X$153 \$10 Vout Vthreshold \$16 VDD GND B04_comparator
-X$179 Vin \$26 VDD \$10 GND B04_LNAv2
-X$722 \$26 \$74 \$29 B04_coupling
+.SUBCKT B04_AFE_top Venvelope Vbpf VDD Vin Cap2 Cap1 Cap0 Vout GND
+X$101 \$9 \$17 VDD Venvelope \$15 Vbpf \$28 GND B04_buffer_out
+X$126 \$17 \$9 VDD GND B04_BMR
+X$127 Cap0 Cap1 Cap2 \$9 \$29 \$17 VDD \$28 \$72 GND B04_BPF4
+X$132 \$17 \$9 VDD \$29 GND B04_VDD05
+X$152 \$15 \$9 VDD \$28 GND B04_envelope
+X$153 Vin \$26 VDD \$17 GND B04_LNAv2
+X$573 \$17 Vout \$86 \$15 VDD GND B04_comparator
+X$722 \$26 \$72 \$29 B04_coupling
 .ENDS B04_AFE_top
 
 .SUBCKT B04_buffer_out VbiasN VbiasP VDD Venvelope Vinenvelope Vbpf Vinbpf GND

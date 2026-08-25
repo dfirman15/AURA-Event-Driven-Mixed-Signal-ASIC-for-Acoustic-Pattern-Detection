@@ -8,10 +8,10 @@ tile_size = 500.0
 
 # creates a fill cell with a shape on 
 # DM.1
-fc_box = RBA::DBox::new(-1.5, -1.5, 1.5, 1.5)
+fc_box = RBA::DBox::new(-1.0, -1.0, 1.0, 1.0)
 
 # define the fill cell's content
-fill_shape = RBA::DBox::new(-1.5, -1.5, 1.5, 1.5)
+fill_shape = RBA::DBox::new(-1.0, -1.0, 1.0, 1.0)
 
 # ----------------------------
 # implementation
@@ -114,8 +114,8 @@ for metal in do_layers
   fc_origin_in_dbu = $micron2dbu * fc_origins[metal]
 
   # DM.10
-  row_step = RBA::DVector::new(2 + line_spaces[metal], 0)
-  column_step = RBA::DVector::new(0, 2 + line_spaces[metal])
+  row_step = RBA::DVector::new(2 + line_spaces[metal], 0.5)
+  column_step = RBA::DVector::new(0.5, 2 + line_spaces[metal])
 
   row_step_in_dbu    = $micron2dbu * row_step
   column_step_in_dbu = $micron2dbu * column_step
@@ -148,7 +148,7 @@ for metal in do_layers
   tp.input("Metal5", $ly, $top_cell.cell_index, Metal5)
 
   # DM.3
-  tp.var("space_to_Metal", 0.8 / $ly.dbu)
+  tp.var("space_to_Metal", 0.4 / $ly.dbu)
   
   # DM.4_DM.6
   tp.var("space_to_subsequent_Metal", 0.4 / $ly.dbu)
@@ -168,21 +168,6 @@ for metal in do_layers
   
   tp.var("um1", 1 / $ly.dbu)
   tp.var("um2", 2 / $ly.dbu)
-
-  # MT.2b: Space to wide metaltop (length & width > 10um) is 0.6um
-  # Only relevant for Metal5 (top metal). "Wide" shapes are isolated via an
-  # opening operation (erode 5um then dilate 5um) exactly like the DRC rule deck.
-  wide_mt_clause  = ""
-  wide_mt_exclude = ""
-  if metal == "Metal5"
-    tp.var("open_amount",     5.0 / $ly.dbu)
-    tp.var("space_to_wide_mt", 1.0 / $ly.dbu)
-    wide_mt_clause = "
-var wide_top_metal = Metal5.sized(-open_amount).sized(open_amount) & Metal5;
-"
-    wide_mt_exclude = "
-                  - wide_top_metal.sized(space_to_wide_mt)"
-  end
   
   tp.output("to_fill", TilingOperator::new($ly, fill_cells[metal], fill_cell.cell_index, fc_box_in_dbu, row_step_in_dbu, column_step_in_dbu, fc_origin_in_dbu))
 
@@ -190,7 +175,7 @@ var wide_top_metal = Metal5.sized(-open_amount).sized(open_amount) & Metal5;
       tp.queue("
 # Not a dedicated rule, but it makes sense here as well
 var scribe_line_ring = _frame - _frame.sized(-space_to_scribe_line);
-#{wide_mt_clause}
+
 var fill_region = _tile & _frame
                   - Metal.sized(space_to_Metal)
                   - FuseTop.sized(space_to_FuseTop)
@@ -198,7 +183,7 @@ var fill_region = _tile & _frame
                   - FUSEWINDOW_D.sized(space_to_FUSEWINDOW_D)
                   - PMNDMY.sized(space_to_PMNDMY)
                   - MTPMK.sized(space_to_MTPMK)
-                  - OTP_MK.sized(space_to_OTP_MK)#{wide_mt_exclude}
+                  - OTP_MK.sized(space_to_OTP_MK)
                   - scribe_line_ring;
 
 _output(to_fill, fill_region)")
@@ -206,7 +191,7 @@ _output(to_fill, fill_region)")
       tp.queue("
 # Not a dedicated rule, but it makes sense here as well
 var scribe_line_ring = _frame - _frame.sized(-space_to_scribe_line);
-#{wide_mt_clause}
+
 var fill_region = _tile & _frame
                   - Metal.sized(space_to_Metal)
                   - previous_metal.sized(space_to_previous_Metal)
@@ -216,7 +201,7 @@ var fill_region = _tile & _frame
                   - FUSEWINDOW_D.sized(space_to_FUSEWINDOW_D)
                   - PMNDMY.sized(space_to_PMNDMY)
                   - MTPMK.sized(space_to_MTPMK)
-                  - OTP_MK.sized(space_to_OTP_MK)#{wide_mt_exclude}
+                  - OTP_MK.sized(space_to_OTP_MK)
                   - scribe_line_ring;
 
 _output(to_fill, fill_region)")
