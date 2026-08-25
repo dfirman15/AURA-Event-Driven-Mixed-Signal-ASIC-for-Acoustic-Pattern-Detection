@@ -7,7 +7,7 @@ module tb_i2c_slave_config;
 
     // Inputs
     reg clk;
-    reg rst_n;
+    reg en;
     reg scl;
     reg sda_in;
 
@@ -16,17 +16,19 @@ module tb_i2c_slave_config;
     wire sda_oe;
     wire [7:0] threshold_reg;
     wire [7:0] timeout_reg;
+    wire [7:0] capacitor_ctrl_reg;
 
     // DUT Instantiation
     i2c_slave_config #(.SLAVE_ADDR(7'h50)) u_i2c (
         .clk(clk),
-        .rst_n(rst_n),
+        .en(en),
         .scl(scl),
         .sda_in(sda_in),
         .sda_out(sda_out),
         .sda_oe(sda_oe),
         .threshold_reg(threshold_reg),
-        .timeout_reg(timeout_reg)
+        .timeout_reg(timeout_reg),
+        .capacitor_ctrl_reg(capacitor_ctrl_reg)
     );
 
     // Clock Generation
@@ -61,12 +63,12 @@ module tb_i2c_slave_config;
     endtask
 
     initial begin
-        $dumpfile("i2c_sim.vcd");
+        $dumpfile("tb/vcd_file/i2c_sim.vcd");
         $dumpvars(0, tb_i2c_slave_config);
 
         // Init
-        clk = 0; rst_n = 0; scl = 1; sda_in = 1;
-        #100 rst_n = 1; #100;
+        clk = 0; en = 1; scl = 1; sda_in = 1;
+        #100 en = 0; #100;
 
         $display("=== START SIMULATION I2C WRITE ===");
 
@@ -119,7 +121,56 @@ module tb_i2c_slave_config;
             $display("SUCCESS: timeout register successfully updated to 0xFF");
         else 
             $display("FAILED: Timeout salah. Diharapkan 0xFF, terbaca %h", timeout_reg);
-        $display("=== simulation complete ===");
+
+        $display("\n=== START SIMULATION I2C WRITE (CAPACITOR CTRL REG) ===");
+
+        // 1. START CONDITION
+        sda_in = 0; #50; scl = 0; 
+
+        // 2. send Address (0x50 << 1 | WriteBit 0 = 0xA0)
+        i2c_write_byte(8'hA0); 
+
+        // 3. send Register Address (0x02 untuk Capacitor Control)
+        i2c_write_byte(8'h02);
+
+        // 4. send Data Capacitor Control (Misal: 0x55)
+        i2c_write_byte(8'h55);
+
+        // 5. STOP CONDITION
+        scl = 0; sda_in = 0; #50;
+        scl = 1; #50;
+        sda_in = 1; #100;
+
+        #200;
+        // Cek hasil akhir di register capacitor control
+        if (capacitor_ctrl_reg == 8'h55) 
+            $display("SUCCESS: Capacitor Control register successfully updated to 0x55");
+        else 
+            $display("FAILED: Capacitor Control salah. Diharapkan 0x55, terbaca %h", capacitor_ctrl_reg);
+
+        $display("\n=== TEST MULTIPLE CAPACITOR VALUES ===");
+        
+        // Test with different capacitor control value (0xAA)
+        sda_in = 0; #50; scl = 0; 
+        i2c_write_byte(8'hA0); 
+        i2c_write_byte(8'h02);
+        i2c_write_byte(8'hAA);
+        scl = 0; sda_in = 0; #50;
+        scl = 1; #50;
+        sda_in = 1; #100;
+
+        #200;
+        if (capacitor_ctrl_reg == 8'hAA) 
+            $display("SUCCESS: Capacitor Control register successfully updated to 0xAA");
+        else 
+            $display("FAILED: Capacitor Control salah. Diharapkan 0xAA, terbaca %h", capacitor_ctrl_reg);
+
+        $display("\n=== VERIFY ALL REGISTERS ===");
+        $display("Threshold Register    : 0x%h (Expected: 0x0A)", threshold_reg);
+        $display("Timeout Register      : 0x%h (Expected: 0xFF)", timeout_reg);
+        $display("Capacitor Ctrl Register: 0x%h (Expected: 0xAA)", capacitor_ctrl_reg);
+        
+        $display("\n=== simulation complete ===");
         $finish;
     end
 endmodule

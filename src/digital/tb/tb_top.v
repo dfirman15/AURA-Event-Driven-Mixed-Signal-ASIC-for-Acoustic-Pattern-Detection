@@ -5,7 +5,7 @@ module tb_top;
     parameter SLAVE_ADDR = 7'h50;
 
     reg  clk;
-    reg  rst_n;
+    reg  en;
     reg  signal_in;
     
     // I2C Signals
@@ -22,7 +22,7 @@ module tb_top;
         .SLAVE_ADDR(SLAVE_ADDR)
     ) dut (
         .clk        (clk),
-        .rst_n      (rst_n),
+        .en         (en),
         .signal_in  (signal_in),
         .scl        (scl),
         .sda_in     (sda_in),
@@ -68,7 +68,7 @@ module tb_top;
     endtask
 
     // Task for generating pulse from outside (simulating analog comparator)
-    task send_external_pulse();
+    task send_external_pulse;
         begin
             // Duration of the pulse is arbitrary, as long as it exceeds 1 clock cycle (so it's read by d1 & d2)
             signal_in = 1'b1;
@@ -81,14 +81,14 @@ module tb_top;
 // main testbench sequence
     initial begin
         // Setup GTKWave
-        $dumpfile("tb_top.vcd");
+        $dumpfile("tb/vcd_file/tb_top.vcd");
         $dumpvars(0, tb_top);
 
         // 1. initialization
-        clk = 0; rst_n = 0; signal_in = 0; 
+        clk = 0; en = 1; signal_in = 0; 
         scl = 1; sda_in = 1;
         
-        #100 rst_n = 1; #100;
+        #100 en = 0; #100;
         $display("\n=== Start ===\n");
         // 2. FASE KONFIGURASI (Via I2C)
         // Reg 0x00 = Threshold. Kita set ke 3.

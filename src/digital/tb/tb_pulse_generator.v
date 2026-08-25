@@ -3,13 +3,13 @@
 module tb_pulse_generator;
 
     reg clk;
-    reg rst_n;
+    reg en;
     reg signal_in;
     wire pulse_out;
 
     pulse_generator u_pulse_gen (
         .clk(clk),
-        .rst_n(rst_n),
+        .en(en),
         .signal_in(signal_in),
         .pulse_out(pulse_out)
     );
@@ -25,9 +25,9 @@ module tb_pulse_generator;
 
         // intialization
         clk = 0;
-        rst_n = 0;
-        signal_in = 0;
-        #25 rst_n = 1;
+        en = 1;
+        signal_in = 1  ;
+        #25 en = 0;
         #15; 
 
         // scenario 1: normal transition
@@ -49,8 +49,8 @@ module tb_pulse_generator;
     end
 
     initial begin
-        $monitor("Time=%0t | rst_n=%b | signal_in=%b | pulse_out=%b", 
-        $time, rst_n, signal_in, pulse_out);
+        $monitor("Time=%0t | en=%b | signal_in=%b | pulse_out=%b", 
+        $time, en, signal_in, pulse_out);
     end
 
 endmodule

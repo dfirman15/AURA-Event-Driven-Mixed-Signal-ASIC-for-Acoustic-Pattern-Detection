@@ -17,3 +17,29 @@ project:
   discord: "Hawur"
   description: "PDK test data for LNA, BMR, and Envelope Detector"
   lvs_config: "lvs_config.json"
+
+  pins:
+  - name: gnd
+    io_type: ground
+  - name: vdd
+    io_type: power
+  - name: sda
+    io_type: bidirectional
+  - name: scl
+    io_type: input_schmitt
+  - name: en
+    io_type: input_cmos
+  - name: mic
+    io_type: analog
+    secondary_esd: true
+  - name: trigger
+    io_type: output
+  - name: verification_bpf
+    io_type: analog
+    secondary_esd: false
+  - name: verification_envelope
+    io_type: analog
+    secondary_esd: false
+  - name: comparator_threshold
+    io_type: analog
+    secondary_esd: true
