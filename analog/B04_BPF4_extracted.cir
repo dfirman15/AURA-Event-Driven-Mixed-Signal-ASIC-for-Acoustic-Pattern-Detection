@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 21/08/2026 04:55
+* Extracted by KLayout with GF180MCU LVS runset on : 24/08/2026 14:28
 
 .SUBCKT B04_BPF4 Cap0 Cap1 Cap2 VbiasN VDD05 VbiasP VDD Vout Vin GND
 X$2 \$729 \$719 \$63 VDD VDD05 \$51 \$730 \$735 GND B04_OTA

@@ -5,25 +5,25 @@ V {}
 S {}
 F {}
 E {}
-N 40 -170 40 -90 {lab=IB}
+N 40 -170 40 -90 {lab=#net1}
 N 10 -60 40 -60 {lab=GND}
 N 10 -60 10 -0 {lab=GND}
 N 10 -0 490 -0 {lab=GND}
 N 490 -30 490 0 {lab=GND}
 N 40 -30 40 -0 {lab=GND}
-N 80 -60 450 -60 {lab=IB}
-N 40 -110 110 -110 {lab=IB}
-N 110 -110 110 -60 {lab=IB}
+N 80 -60 450 -60 {lab=#net1}
+N 40 -110 110 -110 {lab=#net1}
+N 110 -110 110 -60 {lab=#net1}
 N 140 -120 140 -0 {lab=GND}
 N 120 -150 140 -150 {lab=GND}
 N 120 -150 120 0 {lab=GND}
-N 140 -270 140 -180 {lab=#net1}
-N 140 -210 230 -210 {lab=#net1}
-N 230 -210 230 -150 {lab=#net1}
-N 400 -240 400 -200 {lab=#net2}
-N 400 -200 650 -200 {lab=#net2}
-N 650 -240 650 -200 {lab=#net2}
-N 490 -200 490 -90 {lab=#net2}
+N 140 -270 140 -180 {lab=#net2}
+N 140 -210 230 -210 {lab=#net2}
+N 230 -210 230 -150 {lab=#net2}
+N 400 -240 400 -200 {lab=#net3}
+N 400 -200 650 -200 {lab=#net3}
+N 650 -240 650 -200 {lab=#net3}
+N 490 -200 490 -90 {lab=#net3}
 N 490 -60 540 -60 {lab=GND}
 N 540 -60 540 -0 {lab=GND}
 N 490 -0 540 0 {lab=GND}
@@ -32,34 +32,34 @@ N 440 -0 440 40 {lab=GND}
 N 930 -120 930 -90 {lab=GND}
 N 930 -150 980 -150 {lab=GND}
 N 980 -150 980 -90 {lab=GND}
-N 270 -150 890 -150 {lab=#net1}
-N 180 -150 270 -150 {lab=#net1}
+N 270 -150 890 -150 {lab=#net2}
+N 180 -150 270 -150 {lab=#net2}
 N 930 -90 930 -0 {lab=GND}
 N 540 -0 930 0 {lab=GND}
 N 930 -0 980 -0 {lab=GND}
 N 980 -90 980 -0 {lab=GND}
-N 140 -380 140 -270 {lab=#net1}
-N 180 -410 230 -410 {lab=#net3}
-N 200 -410 200 -350 {lab=#net3}
-N 200 -350 270 -350 {lab=#net3}
-N 270 -380 270 -350 {lab=#net3}
-N 270 -350 400 -350 {lab=#net3}
-N 400 -350 400 -300 {lab=#net3}
+N 140 -380 140 -270 {lab=#net2}
+N 180 -410 230 -410 {lab=#net4}
+N 200 -410 200 -350 {lab=#net4}
+N 200 -350 270 -350 {lab=#net4}
+N 270 -380 270 -350 {lab=#net4}
+N 270 -350 400 -350 {lab=#net4}
+N 400 -350 400 -300 {lab=#net4}
 N 930 -380 930 -180 {lab=Q_BAR}
-N 650 -350 650 -300 {lab=#net4}
-N 590 -350 650 -350 {lab=#net4}
-N 590 -380 590 -350 {lab=#net4}
-N 650 -350 790 -350 {lab=#net4}
-N 790 -380 790 -350 {lab=#net4}
-N 830 -410 890 -410 {lab=#net4}
-N 850 -410 850 -350 {lab=#net4}
-N 790 -350 850 -350 {lab=#net4}
-N 510 -410 540 -350 {lab=#net4}
-N 540 -350 590 -350 {lab=#net4}
-N 520 -350 550 -410 {lab=#net3}
-N 470 -380 470 -350 {lab=#net3}
-N 400 -350 470 -350 {lab=#net3}
-N 470 -350 520 -350 {lab=#net3}
+N 650 -350 650 -300 {lab=#net5}
+N 590 -350 650 -350 {lab=#net5}
+N 590 -380 590 -350 {lab=#net5}
+N 650 -350 790 -350 {lab=#net5}
+N 790 -380 790 -350 {lab=#net5}
+N 830 -410 890 -410 {lab=#net5}
+N 850 -410 850 -350 {lab=#net5}
+N 790 -350 850 -350 {lab=#net5}
+N 510 -410 540 -350 {lab=#net5}
+N 540 -350 590 -350 {lab=#net5}
+N 520 -350 550 -410 {lab=#net4}
+N 470 -380 470 -350 {lab=#net4}
+N 400 -350 470 -350 {lab=#net4}
+N 470 -350 520 -350 {lab=#net4}
 N 110 -410 140 -410 {lab=VDD}
 N 110 -440 110 -410 {lab=VDD}
 N 110 -440 970 -440 {lab=VDD}
@@ -79,6 +79,9 @@ N 690 -270 720 -270 {lab=INP}
 N 400 -270 650 -270 {lab=GND}
 N 540 -270 540 -60 {lab=GND}
 N 930 -300 1010 -300 {lab=Q_BAR}
+N 40 -230 40 -200 {lab=VDD}
+N 40 -440 40 -230 {lab=VDD}
+N 40 -440 120 -440 {lab=VDD}
 C {symbols/nfet_03v3.sym} 470 -60 0 0 {name=M1
 L=0.56u
 W=1u
@@ -252,5 +255,19 @@ C {iopin.sym} 530 -480 0 0 {name=p1 lab=VDD
 C {iopin.sym} 440 40 0 0 {name=p2 lab=GND}
 C {ipin.sym} 320 -270 0 0 {name=p3 lab=INN}
 C {ipin.sym} 720 -270 2 0 {name=p4 lab=INP}
-C {iopin.sym} 40 -170 0 0 {name=p5 lab=IB}
 C {opin.sym} 1000 -300 0 0 {name=p6 lab=Q_BAR}
+C {symbols/pfet_03v3.sym} 20 -200 2 1 {name=Mq6
+L=4u
+W=2u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_03v3
+spiceprefix=X
+}
+C {ipin.sym} 0 -200 0 0 {name=p5 lab=VbiasP}

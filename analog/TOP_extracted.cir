@@ -1,0 +1,1069 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 24/08/2026 12:29
+
+.SUBCKT TOP
+X$1 \$13 \$3 \$1 via_dev$12
+X$2 \$13 \$3 \$1 via_dev$12
+X$3 \$13 \$3 \$1 via_dev$12
+X$4 \$13 \$3 \$1 via_dev$12
+X$5 \$13 \$3 \$1 via_dev$12
+X$6 \$13 \$3 \$1 via_dev$12
+X$7 \$13 \$3 \$1 via_dev$12
+X$8 \$13 \$3 \$1 via_dev$12
+X$9 \$13 \$3 \$1 via_dev$12
+X$10 \$13 \$3 \$1 via_dev$12
+X$11 \$13 \$3 \$1 via_dev$12
+X$12 \$13 \$3 \$1 via_dev$12
+X$13 \$13 \$3 \$1 via_dev$12
+X$14 \$13 \$3 \$1 via_dev$12
+X$15 \$13 \$3 \$1 via_dev$12
+X$16 \$13 \$3 \$1 via_dev$12
+X$17 \$13 \$3 \$1 via_dev$12
+X$18 \$13 \$3 \$1 via_dev$12
+X$19 \$13 \$3 \$1 via_dev$12
+X$20 \$13 \$3 \$1 via_dev$12
+X$21 \$13 \$3 \$1 via_dev$12
+X$22 \$13 \$3 \$1 via_dev$12
+X$23 \$13 \$3 \$1 via_dev$12
+X$24 \$13 \$3 \$1 via_dev$12
+X$25 \$13 \$3 \$1 via_dev$12
+X$26 \$13 \$3 \$1 via_dev$12
+X$27 \$13 \$3 \$1 via_dev$12
+X$28 \$13 \$3 \$1 via_dev$12
+X$29 \$13 \$3 \$1 via_dev$12
+X$30 \$13 \$3 \$1 via_dev$12
+X$31 \$13 \$3 \$1 via_dev$12
+X$32 \$13 \$3 \$1 via_dev$12
+X$33 \$13 \$3 \$1 via_dev$12
+X$34 \$13 \$3 \$1 via_dev$12
+X$35 \$13 \$3 \$1 via_dev$12
+X$36 \$13 \$3 \$1 via_dev$12
+X$37 \$13 \$3 \$1 via_dev$12
+X$38 \$13 \$3 \$1 via_dev$12
+X$39 \$13 \$3 \$1 via_dev$12
+X$40 \$13 \$3 \$1 via_dev$12
+X$41 \$13 \$3 \$1 via_dev$12
+X$42 \$13 \$3 \$1 via_dev$12
+X$43 \$13 \$3 \$1 via_dev$12
+X$44 \$13 \$3 \$1 via_dev$12
+X$45 \$13 \$3 \$1 via_dev$12
+X$46 \$13 \$3 \$1 via_dev$12
+X$47 \$13 \$3 \$1 via_dev$12
+X$48 \$13 \$3 \$1 via_dev$12
+X$49 \$13 \$3 \$1 via_dev$12
+X$50 \$13 \$3 \$1 via_dev$12
+X$51 \$13 \$3 \$1 via_dev$12
+X$52 \$13 \$3 \$1 via_dev$12
+X$53 \$13 \$3 \$1 via_dev$12
+X$54 \$13 \$3 \$1 via_dev$12
+X$55 \$13 \$3 \$1 via_dev$12
+X$56 \$13 \$3 \$1 via_dev$12
+X$57 \$13 \$3 \$1 via_dev$12
+X$58 \$13 \$3 \$1 via_dev$12
+X$59 \$13 \$3 \$1 via_dev$12
+X$60 \$13 \$3 \$1 via_dev$12
+X$61 \$13 \$3 \$1 via_dev$12
+X$62 \$13 \$3 \$1 via_dev$12
+X$63 \$13 \$3 \$1 via_dev$12
+X$64 \$13 \$3 \$1 via_dev$12
+X$65 \$13 \$3 \$1 via_dev$12
+X$66 \$13 \$3 \$1 via_dev$12
+X$67 \$13 \$3 \$1 via_dev$12
+X$68 \$13 \$3 \$1 via_dev$12
+X$69 \$13 \$3 \$1 via_dev$12
+X$70 \$13 \$3 \$1 via_dev$12
+X$71 \$13 \$3 \$1 via_dev$12
+X$72 \$13 \$3 \$1 via_dev$12
+X$73 \$13 \$3 \$1 via_dev$12
+X$74 \$13 \$3 \$1 via_dev$12
+X$75 \$13 \$3 \$1 via_dev$12
+X$76 \$2 via_dev$11
+X$77 \$2 via_dev$11
+X$78 \$2 via_dev$11
+X$79 \$2 via_dev$11
+X$80 \$I410 \$2 \$2 via_dev$12
+X$81 \$I410 \$2 \$2 via_dev$12
+X$82 \$I410 \$2 \$2 via_dev$12
+X$83 \$2 \$I410 \$10 B04_coupling
+X$84 \$I410 \$2 \$2 via_dev$12
+X$85 \$2 via_dev$9
+X$86 \$2 via_dev$9
+X$87 \$2 \$3 \$6 SUB B04_LNAv2
+X$88 \$3 via_dev$11
+X$89 \$3 via_dev$11
+X$90 \$3 via_dev$11
+X$91 \$3 via_dev$11
+X$92 \$3 via_dev$11
+X$93 \$3 via_dev$11
+X$94 \$3 via_dev$11
+X$95 \$3 via_dev$11
+X$96 \$3 via_dev$11
+X$97 \$3 via_dev$11
+X$98 \$3 via_dev$11
+X$99 \$3 via_dev$11
+X$100 \$3 via_dev$11
+X$101 \$3 via_dev$11
+X$102 \$3 via_dev$11
+X$103 \$3 via_dev$11
+X$104 \$3 via_dev$11
+X$105 \$3 via_dev$11
+X$106 \$3 via_dev$11
+X$107 \$3 via_dev$11
+X$108 \$3 via_dev$11
+X$109 \$3 via_dev$11
+X$110 \$3 via_dev$11
+X$111 \$3 via_dev$11
+X$112 \$3 via_dev$11
+X$113 \$3 via_dev$11
+X$114 \$3 via_dev$11
+X$115 \$3 via_dev$11
+X$116 \$3 via_dev$11
+X$117 \$3 via_dev$11
+X$118 \$3 via_dev$11
+X$119 \$3 via_dev$11
+X$120 \$3 via_dev$11
+X$121 \$3 via_dev$11
+X$122 \$3 via_dev$11
+X$123 \$3 via_dev$11
+X$124 \$3 via_dev$11
+X$125 \$3 via_dev$11
+X$126 \$3 via_dev$11
+X$127 \$3 via_dev$11
+X$128 \$3 via_dev$11
+X$129 \$3 via_dev$11
+X$130 \$3 via_dev$11
+X$131 \$3 via_dev$11
+X$132 \$3 via_dev$11
+X$133 \$3 via_dev$11
+X$134 \$3 via_dev$11
+X$135 \$3 via_dev$11
+X$136 \$3 via_dev$11
+X$137 \$3 via_dev$11
+X$138 \$3 via_dev$11
+X$139 \$3 via_dev$11
+X$140 \$3 via_dev$11
+X$141 \$3 via_dev$11
+X$142 \$3 via_dev$11
+X$143 \$3 via_dev$11
+X$144 \$3 via_dev$11
+X$145 \$3 via_dev$11
+X$146 \$3 via_dev$11
+X$147 \$3 via_dev$11
+X$148 \$3 via_dev$11
+X$149 \$3 via_dev$11
+X$150 \$3 via_dev$11
+X$151 \$3 via_dev$11
+X$152 \$3 via_dev$11
+X$153 \$3 via_dev$11
+X$154 \$3 via_dev$11
+X$155 \$3 via_dev$11
+X$156 \$3 via_dev$11
+X$157 \$3 via_dev$11
+X$158 \$3 via_dev$11
+X$159 \$3 via_dev$11
+X$160 \$3 via_dev$11
+X$161 \$3 via_dev$11
+X$162 \$3 via_dev$11
+X$163 \$3 via_dev$9
+X$164 \$3 via_dev$9
+X$165 \$3 via_dev$9
+X$166 \$3 via_dev$9
+X$167 \$3 via_dev$9
+X$168 \$3 via_dev$9
+X$169 \$3 via_dev$9
+X$170 \$3 via_dev$9
+X$171 \$3 via_dev$9
+X$172 \$3 via_dev$9
+X$173 \$3 via_dev$9
+X$174 \$3 via_dev$9
+X$175 \$3 via_dev$9
+X$176 \$3 via_dev$9
+X$177 \$3 via_dev$9
+X$178 \$3 via_dev$9
+X$179 \$3 via_dev$9
+X$180 \$3 via_dev$9
+X$181 \$3 via_dev$9
+X$182 \$3 via_dev$9
+X$183 \$3 via_dev$9
+X$184 \$3 via_dev$9
+X$185 \$3 via_dev$9
+X$186 \$3 via_dev$9
+X$187 \$3 via_dev$9
+X$188 \$3 via_dev$9
+X$189 \$3 via_dev$9
+X$190 \$3 via_dev$9
+X$191 \$3 via_dev$9
+X$192 \$3 via_dev$9
+X$193 \$3 via_dev$9
+X$194 \$3 via_dev$9
+X$195 \$3 via_dev$9
+X$196 \$3 via_dev$9
+X$197 \$3 via_dev$9
+X$198 \$3 via_dev$9
+X$199 \$3 via_dev$9
+X$200 \$3 via_dev$9
+X$201 \$3 via_dev$9
+X$202 \$3 via_dev$9
+X$203 \$3 via_dev$9
+X$204 \$3 via_dev$9
+X$205 \$3 via_dev$9
+X$206 \$3 via_dev$9
+X$207 \$3 via_dev$9
+X$208 \$3 via_dev$9
+X$209 \$3 via_dev$9
+X$210 \$3 via_dev$9
+X$211 \$3 via_dev$9
+X$212 \$3 via_dev$9
+X$213 \$3 via_dev$9
+X$214 \$3 via_dev$9
+X$215 \$3 via_dev$9
+X$216 \$3 via_dev$9
+X$217 \$3 via_dev$9
+X$218 \$3 via_dev$9
+X$219 \$3 via_dev$9
+X$220 \$3 via_dev$9
+X$221 \$3 via_dev$9
+X$222 \$3 via_dev$9
+X$223 \$3 via_dev$9
+X$224 \$3 via_dev$9
+X$225 \$3 via_dev$9
+X$226 \$3 via_dev$9
+X$227 \$3 via_dev$9
+X$228 \$3 via_dev$9
+X$229 \$3 via_dev$9
+X$230 \$3 via_dev$9
+X$231 \$3 via_dev$9
+X$232 \$3 via_dev$9
+X$233 \$3 via_dev$9
+X$234 \$3 via_dev$9
+X$235 \$3 via_dev$9
+X$236 \$3 via_dev$9
+X$237 \$3 via_dev$9
+X$238 \$6 \$7 \$3 \$10 SUB B04_VDD05
+X$239 \$3 via_dev$14
+X$240 \$3 via_dev$14
+X$241 \$3 via_dev$14
+X$242 \$3 via_dev$14
+X$243 \$3 via_dev$14
+X$244 \$3 via_dev$14
+X$245 \$3 via_dev$14
+X$246 \$3 via_dev$14
+X$247 \$3 via_dev$14
+X$248 \$3 via_dev$14
+X$249 \$3 via_dev$14
+X$250 \$3 via_dev$14
+X$251 \$3 via_dev$14
+X$252 \$3 via_dev$14
+X$253 \$3 via_dev$14
+X$254 \$3 via_dev$14
+X$255 \$3 via_dev$14
+X$256 \$3 via_dev$14
+X$257 \$3 via_dev$14
+X$258 \$3 via_dev$14
+X$259 \$3 via_dev$14
+X$260 \$3 via_dev$14
+X$261 \$3 via_dev$14
+X$262 \$3 via_dev$14
+X$263 \$3 via_dev$14
+X$264 \$3 via_dev$14
+X$265 \$3 via_dev$14
+X$266 \$3 via_dev$14
+X$267 \$3 via_dev$14
+X$268 \$3 via_dev$14
+X$269 \$3 via_dev$14
+X$270 \$3 via_dev$14
+X$271 \$3 via_dev$14
+X$272 \$3 via_dev$14
+X$273 \$3 via_dev$14
+X$274 \$3 via_dev$14
+X$275 \$3 via_dev$14
+X$276 \$3 via_dev$14
+X$277 \$3 via_dev$14
+X$278 \$3 via_dev$14
+X$279 \$3 via_dev$14
+X$280 \$3 via_dev$14
+X$281 \$3 via_dev$14
+X$282 \$3 via_dev$14
+X$283 \$3 via_dev$14
+X$284 \$3 via_dev$14
+X$285 \$3 via_dev$14
+X$286 \$3 via_dev$14
+X$287 \$3 via_dev$14
+X$288 \$3 via_dev$14
+X$289 \$3 via_dev$14
+X$290 \$3 via_dev$14
+X$291 \$3 via_dev$14
+X$292 \$3 via_dev$14
+X$293 \$3 via_dev$14
+X$294 \$3 via_dev$14
+X$295 \$3 via_dev$14
+X$296 \$3 via_dev$14
+X$297 \$3 via_dev$14
+X$298 \$3 via_dev$14
+X$299 \$3 via_dev$14
+X$300 \$3 via_dev$14
+X$301 \$3 via_dev$14
+X$302 \$3 via_dev$14
+X$303 \$3 via_dev$14
+X$304 \$3 via_dev$14
+X$305 \$3 via_dev$14
+X$306 \$3 via_dev$14
+X$307 \$3 via_dev$14
+X$308 \$3 via_dev$14
+X$309 \$3 via_dev$14
+X$310 \$3 via_dev$14
+X$311 \$3 via_dev$14
+X$312 \$3 via_dev$14
+X$313 \$3 via_dev$14
+X$314 \$6 \$7 \$3 SUB B04_BMR
+X$315 \$6 via_dev$11
+X$316 \$6 via_dev$11
+X$317 \$6 via_dev$11
+X$318 \$6 via_dev$11
+X$319 \$27 \$6 \$6 via_dev$12
+X$320 \$27 \$6 \$6 via_dev$12
+X$321 \$27 \$6 \$6 via_dev$12
+X$322 \$27 \$6 \$6 via_dev$12
+X$323 \$6 via_dev$9
+X$324 \$6 via_dev$9
+X$325 \$6 via_dev$9
+X$326 \$6 via_dev$9
+X$327 \$6 via_dev$9
+X$328 \$6 via_dev$9
+X$329 \$6 via_dev$9
+X$330 \$6 via_dev$9
+X$331 \$7 via_dev$11
+X$332 \$7 via_dev$11
+X$333 \$7 via_dev$9
+X$334 \$7 via_dev$9
+.ENDS TOP
+
+.SUBCKT via_dev$14 \$1
+.ENDS via_dev$14
+
+.SUBCKT via_dev$12 \$1 \$2 \$3
+.ENDS via_dev$12
+
+.SUBCKT via_dev$11 \$1
+.ENDS via_dev$11
+
+.SUBCKT via_dev$9 \$1
+.ENDS via_dev$9
+
+.SUBCKT B04_coupling Vin \$17 VDD05
+X$1 Vout Vin cap_mim$2
+X$2 Vout Vin cap_mim$2
+X$3 Vout Vin cap_mim$2
+X$4 Vout Vin cap_mim$2
+X$5 Vout Vin cap_mim$2
+X$6 Vout Vin cap_mim$2
+X$7 Vout Vin cap_mim$2
+X$8 Vout Vin cap_mim$2
+X$9 Vout Vin cap_mim$2
+X$10 Vout Vin cap_mim$2
+X$11 Vout Vin cap_mim$2
+X$12 Vout Vin cap_mim$2
+X$13 Vout Vin cap_mim$2
+X$14 Vout Vin cap_mim$2
+X$15 Vout Vin cap_mim$2
+X$16 Vout Vin cap_mim$2
+X$17 Vout Vin cap_mim$2
+X$18 Vout Vin cap_mim$2
+X$19 Vout Vin cap_mim$2
+X$20 Vout Vin cap_mim$2
+X$21 Vout via_dev$8
+X$22 Vout via_dev$2
+X$23 VDD05 Vout Vout VDD05 pfet_03v3_U5KMRZ
+X$24 Vout VDD05 Vout VDD05 pfet_03v3_U5KMRZ
+X$25 Vout via_dev$2
+X$26 Vout via_dev$8
+C$1 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$2 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$3 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$4 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$5 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$6 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$7 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$8 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$9 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$10 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$11 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$12 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$13 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$14 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$15 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$16 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$17 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$18 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$19 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$20 Vout Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+.ENDS B04_coupling
+
+.SUBCKT B04_LNAv2 Vout VDD VbiasP GND
+X$1 \$8 Vin cap_mim$1
+X$2 \$8 Vin cap_mim$1
+X$3 \$8 Vin cap_mim$1
+X$4 \$8 Vin cap_mim$1
+X$5 \$8 Vin cap_mim$1
+X$6 \$8 Vin cap_mim$1
+X$7 \$8 Vin cap_mim$1
+X$8 \$8 Vin cap_mim$1
+X$9 \$8 Vin cap_mim$1
+X$10 \$8 Vin cap_mim$1
+X$11 \$8 Vin cap_mim$1
+X$12 \$8 Vin cap_mim$1
+X$13 \$8 Vin cap_mim$1
+X$14 \$8 Vin cap_mim$1
+X$15 \$8 Vin cap_mim$1
+X$16 \$8 Vin cap_mim$1
+X$17 \$8 Vin cap_mim$1
+X$18 \$8 Vin cap_mim$1
+X$19 \$8 Vin cap_mim$1
+X$20 \$8 Vin cap_mim$1
+X$21 Vout via_dev$3
+X$22 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout GND Vout GND
++ Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout
++ GND Vout GND Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND
++ Vout GND Vout GND Vout GND Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8
++ \$8 \$8 GND Vout GND Vout GND Vout GND Vout GND Vout GND \$8 \$8 \$8 \$8 \$8
++ \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout GND Vout GND Vout GND Vout GND \$8 \$8
++ \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout GND Vout GND Vout GND Vout
++ GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout GND Vout GND
++ Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND Vout GND Vout
++ GND Vout GND Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8 GND
++ Vout GND Vout GND Vout GND Vout GND Vout GND \$8 \$8 \$8 \$8 \$8 \$8 \$8 \$8
++ \$8 \$8 GND Vout GND Vout GND Vout GND Vout GND Vout GND GND nfet_03v3_P9RWNE
+X$23 \$8 Vout \$8 Vout pfet_03v3_RUBD7B
+X$24 Vout \$8 \$8 Vout pfet_03v3_RUBD7B
+X$25 VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP
++ Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD
++ VbiasP Vout VDD \$59 VDD pfet_03v3_Q6NYSF
+X$26 VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD
++ Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP
++ VDD Vout \$59 VDD pfet_03v3_Q6NYSF
+X$27 Vout via_dev$1
+X$28 Vout via_dev$1
+X$29 Vout via_dev$1
+X$30 Vout via_dev$1
+X$31 VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD
++ Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP VDD Vout VbiasP
++ VDD Vout \$59 VDD pfet_03v3_Q6NYSF
+X$32 VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP
++ Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD VbiasP Vout VDD
++ VbiasP Vout VDD \$59 VDD pfet_03v3_Q6NYSF
+X$33 Vout via_dev$3
+X$34 Vout \$8 cap_mim$1
+X$35 \$8 via_dev$1
+X$36 \$55 \$8 \$8 via_dev$7
+X$37 \$8 via_dev$1
+X$38 \$8 via_dev$1
+X$39 \$8 via_dev$1
+X$40 \$8 via_dev$1
+X$41 \$8 via_dev$1
+X$42 \$8 via_dev$1
+X$43 \$8 via_dev$1
+X$44 \$8 via_dev$3
+X$45 \$8 via_dev$3
+X$46 \$8 via_dev$3
+X$47 \$8 via_dev$3
+C$1 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$2 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$3 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$4 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$5 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$6 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$7 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$8 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$9 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$10 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$11 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$12 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$13 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$14 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$15 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$16 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$17 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$18 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$19 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+C$20 Vout \$8 2e-13 cap_mim_2f0fF A=100P P=40U
+C$21 \$8 Vin 2e-13 cap_mim_2f0fF A=100P P=40U
+.ENDS B04_LNAv2
+
+.SUBCKT B04_BMR VbiasP VbiasN VDD GND
+X$1 \$59 VbiasP VbiasP via_dev$6
+X$2 VbiasP via_dev$4
+X$3 \$65 VbiasN VbiasP GND GND nfet_03v3_V3BJRC
+X$4 VbiasN \$61 VbiasN VbiasP VDD GND B04_diff_amp
+X$5 VbiasP VbiasN VDD \$78 VDD pfet_03v3_J76TDP
+X$6 VbiasP VDD VbiasN \$78 VDD pfet_03v3_J76TDP
+X$7 VbiasP VDD \$61 \$78 VDD pfet_03v3_J76TDP
+X$8 VbiasP \$61 VDD \$78 VDD pfet_03v3_J76TDP
+X$9 VbiasP via_dev
+X$10 VbiasP via_dev
+X$11 VbiasP via_dev
+X$12 VbiasP via_dev$4
+X$13 \$59 VbiasP VbiasP via_dev$6
+X$14 VbiasN VbiasP cap_mim
+X$15 VbiasN VbiasP cap_mim
+X$16 VbiasN VbiasP cap_mim
+X$17 VbiasN VbiasP cap_mim
+X$18 VbiasN VbiasP cap_mim
+X$19 VbiasN VbiasP cap_mim
+X$20 VbiasN VbiasP cap_mim
+X$21 VbiasN VbiasP cap_mim
+X$22 VbiasN VbiasP cap_mim
+X$23 VbiasN VbiasP cap_mim
+X$24 VbiasN VbiasP cap_mim
+X$25 VbiasN VbiasP cap_mim
+X$26 VbiasN VbiasP cap_mim
+X$27 VbiasN VbiasP cap_mim
+X$28 VbiasN VbiasP cap_mim
+X$29 VbiasN VbiasP cap_mim
+X$30 VbiasN VbiasP cap_mim
+X$31 VbiasN VbiasP cap_mim
+X$32 VbiasN VbiasP cap_mim
+X$33 VbiasN VbiasP cap_mim
+X$34 VbiasN GND \$65 GND nfet_03v3_QHJDE5
+X$35 \$27 \$61 \$27 VbiasN VbiasN GND GND nfet_03v3_D2LTTM
+X$36 VbiasN via_dev
+X$37 VbiasN via_dev
+X$38 \$27 \$61 \$27 VbiasN VbiasN GND GND nfet_03v3_D2LTTM
+X$39 VbiasN GND VbiasN GND GND nfet_03v3_6ZW7H2
+X$40 VbiasN via_dev$4
+X$41 VbiasN via_dev$4
+X$42 \$27 \$39 \$39 \$38 \$38 \$37 \$37 \$36 \$36 \$35 \$35 \$34 \$34 \$33 \$33
++ \$31 \$31 \$30 \$30 GND \$79 \$79 \$80 \$80 \$81 \$81 \$82 \$82 \$83 \$83
++ \$84 \$84 \$85 \$85 \$86 \$86 \$87 \$87 \$88 \$88 GND ppolyf_u_1k_2Q22HA
+X$43 \$65 \$65 \$74 \$78 VDD pfet_03v3_LEPL4X
+X$44 VDD VDD VDD \$78 VDD pfet_03v3_J76TDP
+X$45 VDD VDD VDD \$78 VDD pfet_03v3_J76TDP
+X$46 \$73 \$73 VDD \$78 VDD pfet_03v3_LEPL4X
+X$47 \$74 \$73 \$74 \$78 VDD pfet_03v3_LEPL4X
+X$48 GND GND GND GND GND nfet_03v3_6ZW7H2
+X$49 GND GND GND GND GND nfet_03v3_6ZW7H2
+C$1 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$2 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$3 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$4 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$5 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$6 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$7 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$8 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$9 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$10 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$11 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$12 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$13 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$14 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$15 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$16 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$17 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$18 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$19 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+C$20 VbiasN VbiasP 2e-13 cap_mim_2f0fF A=100P P=40U
+.ENDS B04_BMR
+
+.SUBCKT B04_VDD05 VbiasP VbiasN VDD Vout GND
+X$1 \$17 VbiasN VDD \$16 \$31 \$15 VbiasP GND B04_OTA_bias_ratio_5
+X$2 GND \$5 \$5 \$6 \$6 \$7 \$7 \$8 \$8 \$9 \$9 \$10 \$10 \$11 \$11 \$12 \$12
++ \$13 \$13 \$14 \$14 GND GND \$20 \$27 \$27 \$30 \$30 \$29 \$29 \$26 \$26 \$21
++ \$18 \$28 \$28 \$24 \$24 \$25 \$25 \$23 \$23 GND GND GND \$20 \$33 \$33 \$34
++ \$34 \$35 \$35 \$36 \$36 \$18 \$21 \$37 \$37 \$38 \$38 \$39 \$39 \$40 \$40
++ VDD GND GND \$43 \$43 \$44 \$44 \$45 \$45 \$46 \$46 \$47 \$47 \$48 \$48 \$49
++ \$49 \$50 \$50 \$51 \$51 \$52 \$52 GND GND ppolyf_u_1k_7A6E7G
+X$3 \$31 \$15 Vout VDD Vout \$20 \$17 \$16 GND B04_OTA
+.ENDS B04_VDD05
+
+.SUBCKT pfet_03v3_U5KMRZ \$1 \$2 \$3 \$4
+M$1 \$4 \$2 \$3 \$1 pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS pfet_03v3_U5KMRZ
+
+.SUBCKT via_dev$2 \$1
+.ENDS via_dev$2
+
+.SUBCKT via_dev$8 \$1
+.ENDS via_dev$8
+
+.SUBCKT cap_mim$2 \$1 \$2
+.ENDS cap_mim$2
+
+.SUBCKT pfet_03v3_Q6NYSF \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12
++ \$13 \$14 \$15 \$16 \$17 \$18 \$19 \$20 \$21 \$22 \$23 \$24 \$25 \$26 \$27
++ \$28 \$29 \$30 \$31 \$32
+M$1 \$9 \$7 \$8 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$2 \$3 \$1 \$2 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$3 \$27 \$25 \$26 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$4 \$18 \$16 \$17 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$5 \$6 \$4 \$5 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$6 \$15 \$13 \$14 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$7 \$21 \$19 \$20 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$8 \$12 \$10 \$11 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$9 \$30 \$28 \$29 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$10 \$24 \$22 \$23 \$32 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS pfet_03v3_Q6NYSF
+
+.SUBCKT pfet_03v3_RUBD7B \$1 \$2 \$3 \$4
+M$1 \$4 \$2 \$3 \$1 pfet_03v3 L=20U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS pfet_03v3_RUBD7B
+
+.SUBCKT nfet_03v3_P9RWNE \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13
++ \$14 \$15 \$16 \$17 \$18 \$19 \$20 \$21 \$22 \$23 \$24 \$25 \$26 \$27 \$28
++ \$29 \$30 \$31 \$32 \$33 \$34 \$35 \$36 \$37 \$38 \$39 \$40 \$41 \$42 \$43
++ \$44 \$45 \$46 \$47 \$48 \$49 \$50 \$51 \$52 \$53 \$54 \$55 \$56 \$57 \$58
++ \$59 \$60 \$61 \$62 \$63 \$64 \$65 \$66 \$67 \$68 \$69 \$70 \$71 \$72 \$73
++ \$74 \$75 \$76 \$77 \$78 \$79 \$80 \$81 \$82 \$83 \$84 \$85 \$86 \$87 \$88
++ \$89 \$90 \$91 \$92 \$93 \$94 \$95 \$96 \$97 \$98 \$99 \$100 \$101 \$102
++ \$103 \$104 \$105 \$106 \$107 \$108 \$109 \$110 \$111 \$112 \$113 \$114 \$115
++ \$116 \$117 \$118 \$119 \$120 \$121 \$122 \$123 \$124 \$125 \$126 \$127 \$128
++ \$129 \$130 \$131 \$132 \$133 \$134 \$135 \$136 \$137 \$138 \$139 \$140 \$141
++ \$142 \$143 \$144 \$145 \$146 \$147 \$148 \$149 \$150 \$151 \$152 \$153 \$154
++ \$155 \$156 \$157 \$158 \$159 \$160 \$161 \$162 \$163 \$164 \$165 \$166 \$167
++ \$168 \$169 \$170 \$171 \$172 \$173 \$174 \$175 \$176 \$177 \$178 \$179 \$180
++ \$181 \$182 \$183 \$184 \$185 \$186 \$187 \$188 \$189 \$190 \$191 \$192 \$193
++ \$194 \$195 \$196 \$197 \$198 \$199 \$200 \$201 \$202 \$203 \$204 \$205 \$206
++ \$207 \$208 \$209 \$210 \$211 SUB
+M$1 \$13 \$2 \$12 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U PD=4.52U
+M$2 \$14 \$3 \$13 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$3 \$15 \$4 \$14 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$4 \$16 \$5 \$15 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$5 \$17 \$6 \$16 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$6 \$18 \$7 \$17 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$7 \$19 \$8 \$18 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$8 \$20 \$9 \$19 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$9 \$21 \$10 \$20 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$10 \$22 \$11 \$21 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U PD=8.88U
+M$11 \$34 \$23 \$33 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U PD=4.52U
+M$12 \$35 \$24 \$34 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$13 \$36 \$25 \$35 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$14 \$37 \$26 \$36 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$15 \$38 \$27 \$37 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$16 \$39 \$28 \$38 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$17 \$40 \$29 \$39 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$18 \$41 \$30 \$40 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$19 \$42 \$31 \$41 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$20 \$43 \$32 \$42 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U PD=8.88U
+M$21 \$55 \$44 \$54 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U PD=4.52U
+M$22 \$56 \$45 \$55 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$23 \$57 \$46 \$56 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$24 \$58 \$47 \$57 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$25 \$59 \$48 \$58 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$26 \$60 \$49 \$59 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$27 \$61 \$50 \$60 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$28 \$62 \$51 \$61 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$29 \$63 \$52 \$62 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$30 \$64 \$53 \$63 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U PD=8.88U
+M$31 \$76 \$65 \$75 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U PD=4.52U
+M$32 \$77 \$66 \$76 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$33 \$78 \$67 \$77 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$34 \$79 \$68 \$78 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$35 \$80 \$69 \$79 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$36 \$81 \$70 \$80 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$37 \$82 \$71 \$81 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$38 \$83 \$72 \$82 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$39 \$84 \$73 \$83 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$40 \$85 \$74 \$84 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U PD=8.88U
+M$41 \$97 \$86 \$96 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U PD=4.52U
+M$42 \$98 \$87 \$97 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$43 \$99 \$88 \$98 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$44 \$100 \$89 \$99 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U PD=4.52U
+M$45 \$101 \$90 \$100 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$46 \$102 \$91 \$101 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$47 \$103 \$92 \$102 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$48 \$104 \$93 \$103 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$49 \$105 \$94 \$104 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$50 \$106 \$95 \$105 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+M$51 \$118 \$107 \$117 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U
++ PD=4.52U
+M$52 \$119 \$108 \$118 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$53 \$120 \$109 \$119 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$54 \$121 \$110 \$120 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$55 \$122 \$111 \$121 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$56 \$123 \$112 \$122 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$57 \$124 \$113 \$123 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$58 \$125 \$114 \$124 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$59 \$126 \$115 \$125 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$60 \$127 \$116 \$126 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+M$61 \$139 \$128 \$138 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U
++ PD=4.52U
+M$62 \$140 \$129 \$139 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$63 \$141 \$130 \$140 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$64 \$142 \$131 \$141 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$65 \$143 \$132 \$142 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$66 \$144 \$133 \$143 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$67 \$145 \$134 \$144 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$68 \$146 \$135 \$145 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$69 \$147 \$136 \$146 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$70 \$148 \$137 \$147 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+M$71 \$160 \$149 \$159 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U
++ PD=4.52U
+M$72 \$161 \$150 \$160 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$73 \$162 \$151 \$161 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$74 \$163 \$152 \$162 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$75 \$164 \$153 \$163 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$76 \$165 \$154 \$164 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$77 \$166 \$155 \$165 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$78 \$167 \$156 \$166 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$79 \$168 \$157 \$167 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$80 \$169 \$158 \$168 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+M$81 \$181 \$170 \$180 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U
++ PD=4.52U
+M$82 \$182 \$171 \$181 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$83 \$183 \$172 \$182 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$84 \$184 \$173 \$183 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$85 \$185 \$174 \$184 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$86 \$186 \$175 \$185 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$87 \$187 \$176 \$186 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$88 \$188 \$177 \$187 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$89 \$189 \$178 \$188 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$90 \$190 \$179 \$189 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+M$91 \$202 \$191 \$201 SUB nfet_03v3 L=1U W=4U AS=1.76P AD=1.04P PS=8.88U
++ PD=4.52U
+M$92 \$203 \$192 \$202 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$93 \$204 \$193 \$203 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$94 \$205 \$194 \$204 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$95 \$206 \$195 \$205 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$96 \$207 \$196 \$206 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$97 \$208 \$197 \$207 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$98 \$209 \$198 \$208 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$99 \$210 \$199 \$209 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.04P PS=4.52U
++ PD=4.52U
+M$100 \$211 \$200 \$210 SUB nfet_03v3 L=1U W=4U AS=1.04P AD=1.76P PS=4.52U
++ PD=8.88U
+.ENDS nfet_03v3_P9RWNE
+
+.SUBCKT via_dev$3 \$1
+.ENDS via_dev$3
+
+.SUBCKT via_dev$1 \$1
+.ENDS via_dev$1
+
+.SUBCKT via_dev$7 \$1 \$2 \$3
+.ENDS via_dev$7
+
+.SUBCKT cap_mim$1 \$1 \$2
+.ENDS cap_mim$1
+
+.SUBCKT nfet_03v3_QHJDE5 \$2 \$3 \$4 SUB
+M$1 \$4 \$2 \$3 SUB nfet_03v3 L=1U W=20U AS=8.8P AD=8.8P PS=40.88U PD=40.88U
+.ENDS nfet_03v3_QHJDE5
+
+.SUBCKT ppolyf_u_1k_2Q22HA \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13
++ \$14 \$15 \$16 \$17 \$18 \$19 \$20 \$21 \$22 \$23 \$24 \$25 \$26 \$27 \$28
++ \$29 \$30 \$31 \$32 \$33 \$34 \$35 \$36 \$37 \$38 \$39 \$40 \$41 SUB
+R$1 \$21 \$41 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$2 \$20 \$40 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$3 \$18 \$38 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$4 \$19 \$39 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$5 \$17 \$37 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$6 \$15 \$35 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$7 \$14 \$34 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$8 \$12 \$32 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$9 \$11 \$31 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$10 \$2 \$22 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$11 \$13 \$33 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$12 \$6 \$26 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$13 \$8 \$28 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$14 \$5 \$25 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$15 \$10 \$30 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$16 \$4 \$24 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$17 \$3 \$23 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$18 \$9 \$29 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$19 \$16 \$36 SUB 20500 ppolyf_u_1k L=41U W=2U
+R$20 \$7 \$27 SUB 20500 ppolyf_u_1k L=41U W=2U
+.ENDS ppolyf_u_1k_2Q22HA
+
+.SUBCKT nfet_03v3_V3BJRC \$1 \$2 \$3 \$4 SUB
+M$1 \$3 \$1 \$2 SUB nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS nfet_03v3_V3BJRC
+
+.SUBCKT pfet_03v3_LEPL4X \$1 \$2 \$3 \$4 \$5
+M$1 \$3 \$1 \$2 \$5 pfet_03v3 L=40U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS pfet_03v3_LEPL4X
+
+.SUBCKT pfet_03v3_J76TDP \$1 \$2 \$3 \$4 \$5
+M$1 \$3 \$1 \$2 \$5 pfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS pfet_03v3_J76TDP
+
+.SUBCKT B04_diff_amp Vbias V+ V\x2d Vo VDD GND
+X$1 \$4 GND Vbias GND GND nfet_03v3_LPRCZE
+X$2 \$4 \$7 V+ GND GND nfet_03v3_LT7U5F
+X$3 \$7 \$4 V+ GND GND nfet_03v3_LT7U5F
+X$4 Vo \$4 V\x2d GND GND nfet_03v3_LT7U5F
+X$5 \$4 Vo V\x2d GND GND nfet_03v3_LT7U5F
+X$6 \$7 \$7 VDD \$12 VDD pfet_03v3_YNZBKP
+X$7 \$7 VDD \$7 \$12 VDD pfet_03v3_YNZBKP
+X$8 \$7 Vo VDD \$12 VDD pfet_03v3_YNZBKP
+X$9 \$7 VDD Vo \$12 VDD pfet_03v3_YNZBKP
+X$10 VDD VDD VDD \$12 VDD pfet_03v3_YNZBKP
+X$11 VDD VDD VDD \$12 VDD pfet_03v3_YNZBKP
+X$12 GND GND GND GND GND nfet_03v3_LT7U5F
+X$13 GND GND GND GND GND nfet_03v3_LT7U5F
+.ENDS B04_diff_amp
+
+.SUBCKT nfet_03v3_6ZW7H2 \$1 \$2 \$3 \$4 SUB
+M$1 \$2 \$3 \$1 SUB nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U PD=20.88U
+.ENDS nfet_03v3_6ZW7H2
+
+.SUBCKT nfet_03v3_D2LTTM \$1 \$2 \$3 \$4 \$5 \$6 SUB
+M$1 \$2 \$4 \$1 SUB nfet_03v3 L=4U W=10U AS=4.4P AD=2.6P PS=20.88U PD=10.52U
+M$2 \$3 \$5 \$2 SUB nfet_03v3 L=4U W=10U AS=2.6P AD=4.4P PS=10.52U PD=20.88U
+.ENDS nfet_03v3_D2LTTM
+
+.SUBCKT via_dev$4 \$1
+.ENDS via_dev$4
+
+.SUBCKT via_dev \$1
+.ENDS via_dev
+
+.SUBCKT via_dev$6 \$1 \$2 \$3
+.ENDS via_dev$6
+
+.SUBCKT cap_mim \$1 \$2
+.ENDS cap_mim
+
+.SUBCKT B04_OTA Vbias1 Vbias2 Vout VDD Vin\x2d Vin+ Vbias3 Vbias0 GND
+X$1 Vbias2 \$5 \$2 GND GND nfet_03v3_VM6BB4
+X$2 \$2 \$5 Vbias2 GND GND nfet_03v3_BN4D6P
+X$3 \$2 GND \$5 GND GND nfet_03v3_PPZGC5
+X$4 \$5 GND \$2 GND GND nfet_03v3_2M8GY8
+X$5 Vin+ Vin+ Vin+ Vin+ \$16 \$3 \$16 \$3 \$16 \$23 VDD pfet_03v3_VSAA3L
+X$6 GND \$3 Vbias1 GND GND nfet_03v3_PPZGC5
+X$7 GND \$3 \$5 GND GND nfet_03v3_PPZGC5
+X$8 Vbias2 \$11 \$3 GND GND nfet_03v3_2M8GY8
+X$9 Vbias2 \$3 \$11 GND GND nfet_03v3_2M8GY8
+X$10 Vbias1 \$3 GND GND GND nfet_03v3_2M8GY8
+X$11 \$5 \$3 GND GND GND nfet_03v3_2M8GY8
+X$12 Vin\x2d Vin\x2d Vin\x2d Vin\x2d \$16 \$4 \$16 \$4 \$16 \$23 VDD
++ pfet_03v3_VSAA3L
+X$13 \$4 GND \$9 GND GND nfet_03v3_PPZGC5
+X$14 \$4 GND Vbias1 GND GND nfet_03v3_PPZGC5
+X$15 \$9 GND \$4 GND GND nfet_03v3_2M8GY8
+X$16 Vbias1 GND \$4 GND GND nfet_03v3_2M8GY8
+X$17 Vbias2 Vout \$4 GND GND nfet_03v3_2M8GY8
+X$18 Vbias2 \$4 Vout GND GND nfet_03v3_2M8GY8
+X$19 \$16 \$5 \$16 \$5 \$16 Vin\x2d Vin\x2d Vin\x2d Vin\x2d \$23 VDD
++ pfet_03v3_P2RE22
+X$20 Vbias2 \$7 \$9 GND GND nfet_03v3_VM6BB4
+X$21 \$9 \$7 Vbias2 GND GND nfet_03v3_BN4D6P
+X$22 GND \$7 \$9 GND GND nfet_03v3_PPZGC5
+X$23 \$9 \$7 GND GND GND nfet_03v3_2M8GY8
+X$24 \$16 \$9 \$16 \$9 \$16 Vin+ Vin+ Vin+ Vin+ \$23 VDD pfet_03v3_P2RE22
+X$25 \$19 Vout Vbias3 \$23 VDD pfet_03v3_JKK7X9
+X$26 Vout \$19 Vbias3 \$23 VDD pfet_03v3_JKK7X9
+X$27 \$19 VDD \$11 \$23 VDD pfet_03v3_JKK7X9
+X$28 \$21 VDD \$11 \$23 VDD pfet_03v3_JKK7X9
+X$29 VDD \$19 \$11 \$23 VDD pfet_03v3_JKK7X9
+X$30 VDD \$21 \$11 \$23 VDD pfet_03v3_JKK7X9
+X$31 \$11 \$21 Vbias3 \$23 VDD pfet_03v3_JKK7X9
+X$32 \$21 \$11 Vbias3 \$23 VDD pfet_03v3_JKK7X9
+X$33 VDD VDD VDD \$23 VDD pfet_03v3_6KZZRE
+X$34 VDD VDD VDD \$23 VDD pfet_03v3_WLJEPM
+X$35 Vbias0 Vbias0 VDD \$16 VDD \$23 VDD pfet_03v3_MW6KH8
+X$36 VDD VDD VDD \$23 VDD pfet_03v3_WLJEPM
+X$37 VDD VDD VDD \$23 VDD pfet_03v3_6KZZRE
+X$38 VDD VDD VDD \$23 VDD pfet_03v3_JKK7X9
+X$39 VDD VDD VDD \$23 VDD pfet_03v3_JKK7X9
+X$40 VDD VDD VDD \$23 VDD pfet_03v3_JKK7X9
+X$41 VDD VDD VDD \$23 VDD pfet_03v3_JKK7X9
+X$42 GND GND GND GND GND nfet_03v3_2M8GY8
+X$43 GND GND GND GND GND nfet_03v3_PPZGC5
+X$44 GND GND GND GND GND nfet_03v3_BN4D6P
+X$45 GND GND GND GND GND nfet_03v3_VM6BB4
+X$46 GND GND GND GND GND nfet_03v3_VM6BB4
+X$47 GND GND GND GND GND nfet_03v3_BN4D6P
+X$48 GND GND GND GND GND nfet_03v3_PPZGC5
+X$49 GND GND GND GND GND nfet_03v3_2M8GY8
+X$50 GND GND GND GND GND nfet_03v3_2M8GY8
+X$51 GND GND GND GND GND nfet_03v3_2M8GY8
+.ENDS B04_OTA
+
+.SUBCKT B04_OTA_bias_ratio_5 Vbias3 VbiasN VDD Vbias0 Vbias1 Vbias2 VbiasP GND
+X$1 VDD Vbias3 \$15 Vbias0 pfet_03v3_AERJ7T
+X$2 VDD Vbias0 Vbias3 GND nfet_03v3_GPTQ69
+X$3 VbiasN GND Vbias3 GND nfet_03v3_FFLZC7
+X$4 VDD Vbias0 VDD \$15 pfet_03v3_AERJ7T
+X$5 VDD VbiasP VDD Vbias2 pfet_03v3_Z6KXZE
+X$6 VDD GND Vbias2 Vbias1 pfet_03v3_AERJ7T
+X$7 Vbias1 GND \$10 GND nfet_03v3_REC73X
+X$8 Vbias2 \$10 Vbias1 GND nfet_03v3_REC73X
+.ENDS B04_OTA_bias_ratio_5
+
+.SUBCKT ppolyf_u_1k_7A6E7G \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11 \$12 \$13
++ \$14 \$15 \$16 \$17 \$18 \$19 \$20 \$21 \$22 \$23 \$24 \$25 \$26 \$27 \$28
++ \$29 \$30 \$31 \$32 \$33 \$34 \$35 \$36 \$37 \$38 \$39 \$40 \$41 \$42 \$43
++ \$44 \$45 \$46 \$47 \$48 \$49 \$50 \$51 \$52 \$53 \$54 \$55 \$56 \$57 \$58
++ \$59 \$60 \$61 \$62 \$63 \$64 \$65 \$66 \$67 \$68 \$69 \$70 \$71 \$72 \$73
++ \$74 \$75 \$76 \$77 \$78 \$79 \$80 \$81 \$82 \$83 \$84 \$85 \$86 \$87 \$88
++ \$89 SUB
+R$1 \$2 \$24 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$2 \$3 \$25 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$3 \$4 \$26 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$4 \$5 \$27 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$5 \$6 \$28 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$6 \$7 \$29 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$7 \$8 \$30 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$8 \$9 \$31 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$9 \$10 \$32 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$10 \$11 \$33 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$11 \$12 \$34 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$12 \$13 \$35 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$13 \$14 \$36 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$14 \$15 \$37 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$15 \$16 \$38 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$16 \$17 \$39 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$17 \$18 \$40 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$18 \$19 \$41 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$19 \$20 \$42 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$20 \$21 \$43 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$21 \$22 \$44 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$22 \$23 \$45 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$23 \$46 \$68 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$24 \$47 \$69 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$25 \$48 \$70 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$26 \$49 \$71 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$27 \$50 \$72 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$28 \$51 \$73 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$29 \$52 \$74 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$30 \$53 \$75 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$31 \$54 \$76 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$32 \$55 \$77 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$33 \$56 \$78 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$34 \$57 \$79 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$35 \$58 \$80 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$36 \$59 \$81 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$37 \$60 \$82 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$38 \$61 \$83 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$39 \$62 \$84 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$40 \$63 \$85 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$41 \$64 \$86 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$42 \$65 \$87 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$43 \$66 \$88 SUB 15000 ppolyf_u_1k L=30U W=2U
+R$44 \$67 \$89 SUB 15000 ppolyf_u_1k L=30U W=2U
+.ENDS ppolyf_u_1k_7A6E7G
+
+.SUBCKT pfet_03v3_YNZBKP \$1 \$2 \$3 \$4 \$5
+M$1 \$3 \$1 \$2 \$5 pfet_03v3 L=4U W=6.5U AS=2.86P AD=2.86P PS=13.88U PD=13.88U
+.ENDS pfet_03v3_YNZBKP
+
+.SUBCKT nfet_03v3_LPRCZE \$1 \$2 \$3 \$4 SUB
+M$1 \$2 \$3 \$1 SUB nfet_03v3 L=4U W=2.2U AS=0.968P AD=0.968P PS=5.28U PD=5.28U
+.ENDS nfet_03v3_LPRCZE
+
+.SUBCKT nfet_03v3_LT7U5F \$1 \$2 \$3 \$4 SUB
+M$1 \$2 \$3 \$1 SUB nfet_03v3 L=4U W=0.55U AS=0.242P AD=0.242P PS=1.98U PD=1.98U
+.ENDS nfet_03v3_LT7U5F
+
+.SUBCKT pfet_03v3_MW6KH8 \$1 \$2 \$3 \$4 \$5 \$6 \$7
+M$1 \$4 \$1 \$3 \$7 pfet_03v3 L=4U W=2.5U AS=1.1P AD=0.65P PS=5.88U PD=3.02U
+M$2 \$5 \$2 \$4 \$7 pfet_03v3 L=4U W=2.5U AS=0.65P AD=1.1P PS=3.02U PD=5.88U
+.ENDS pfet_03v3_MW6KH8
+
+.SUBCKT pfet_03v3_JKK7X9 \$1 \$2 \$3 \$4 \$5
+M$1 \$2 \$3 \$1 \$5 pfet_03v3 L=4U W=2.5U AS=1.1P AD=1.1P PS=5.88U PD=5.88U
+.ENDS pfet_03v3_JKK7X9
+
+.SUBCKT pfet_03v3_P2RE22 \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11
+M$1 \$2 \$6 \$1 \$11 pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.13P PS=1.88U PD=1.02U
+M$2 \$3 \$7 \$2 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.13P PS=1.02U PD=1.02U
+M$3 \$4 \$8 \$3 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.13P PS=1.02U PD=1.02U
+M$4 \$5 \$9 \$4 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.22P PS=1.02U PD=1.88U
+.ENDS pfet_03v3_P2RE22
+
+.SUBCKT pfet_03v3_VSAA3L \$1 \$2 \$3 \$4 \$5 \$6 \$7 \$8 \$9 \$10 \$11
+M$1 \$6 \$1 \$5 \$11 pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.13P PS=1.88U PD=1.02U
+M$2 \$7 \$2 \$6 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.13P PS=1.02U PD=1.02U
+M$3 \$8 \$3 \$7 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.13P PS=1.02U PD=1.02U
+M$4 \$9 \$4 \$8 \$11 pfet_03v3 L=1U W=0.5U AS=0.13P AD=0.22P PS=1.02U PD=1.88U
+.ENDS pfet_03v3_VSAA3L
+
+.SUBCKT pfet_03v3_WLJEPM \$1 \$2 \$3 \$4 \$5
+M$1 \$2 \$3 \$1 \$5 pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS pfet_03v3_WLJEPM
+
+.SUBCKT pfet_03v3_6KZZRE \$1 \$2 \$3 \$4 \$5
+M$1 \$3 \$1 \$2 \$5 pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS pfet_03v3_6KZZRE
+
+.SUBCKT nfet_03v3_VM6BB4 \$1 \$2 \$3 \$4 SUB
+M$1 \$3 \$1 \$2 SUB nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS nfet_03v3_VM6BB4
+
+.SUBCKT nfet_03v3_BN4D6P \$1 \$2 \$3 \$4 SUB
+M$1 \$2 \$3 \$1 SUB nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS nfet_03v3_BN4D6P
+
+.SUBCKT nfet_03v3_PPZGC5 \$1 \$2 \$3 \$4 SUB
+M$1 \$2 \$3 \$1 SUB nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS nfet_03v3_PPZGC5
+
+.SUBCKT nfet_03v3_2M8GY8 \$1 \$2 \$3 \$4 SUB
+M$1 \$3 \$1 \$2 SUB nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+.ENDS nfet_03v3_2M8GY8
+
+.SUBCKT pfet_03v3_Z6KXZE \$1 \$2 \$3 \$4
+M$1 \$4 \$2 \$3 \$1 pfet_03v3 L=4U W=25U AS=11P AD=11P PS=50.88U PD=50.88U
+.ENDS pfet_03v3_Z6KXZE
+
+.SUBCKT nfet_03v3_FFLZC7 \$2 \$3 \$4 SUB
+M$1 \$4 \$2 \$3 SUB nfet_03v3 L=4U W=50U AS=22P AD=22P PS=100.88U PD=100.88U
+.ENDS nfet_03v3_FFLZC7
+
+.SUBCKT nfet_03v3_REC73X \$2 \$3 \$4 SUB
+M$1 \$4 \$2 \$3 SUB nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+.ENDS nfet_03v3_REC73X
+
+.SUBCKT nfet_03v3_GPTQ69 \$2 \$3 \$4 SUB
+M$1 \$4 \$2 \$3 SUB nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U PD=20.88U
+.ENDS nfet_03v3_GPTQ69
+
+.SUBCKT pfet_03v3_AERJ7T \$1 \$2 \$3 \$4
+M$1 \$4 \$2 \$3 \$1 pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U PD=10.88U
+.ENDS pfet_03v3_AERJ7T

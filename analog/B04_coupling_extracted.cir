@@ -1,0 +1,9 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 23/08/2026 07:12
+
+.SUBCKT B04_coupling Vin Vout VDD05
+C$1 Vout Vin 4e-12 cap_mim_2f0fF A=2000P P=800U
+M$21 VDD05 Vout Vout VDD05 pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
++ PD=1.88U
+M$22 VDD05 VDD05 Vout Vout pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
++ PD=1.88U
+.ENDS B04_coupling

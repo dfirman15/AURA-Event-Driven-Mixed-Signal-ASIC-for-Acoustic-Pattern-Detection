@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_coupling.sch
+.subckt B04_coupling Vin VDD05 Vout
+*.PININFO Vin:I VDD05:I Vout:O
+XC1 Vin Vout cap_mim_2f0fF c_width=10u c_length=10u m=20
+M3 VDD05 VDD05 Vout Vout pfet_03v3 L=4u W=0.5u nf=1
+M4 Vout Vout VDD05 VDD05 pfet_03v3 L=4u W=0.5u nf=1
+.ends

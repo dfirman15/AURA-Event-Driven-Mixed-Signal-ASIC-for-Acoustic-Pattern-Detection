@@ -1,8 +1,8 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 18/08/2026 17:52
+* Extracted by KLayout with GF180MCU LVS runset on : 24/08/2026 07:07
 
-.SUBCKT B04_VDD05 VbiasN VDD GND
-X$1 \$17 VbiasN VDD \$16 \$31 \$15 \$14 GND B04_OTA_bias_ratio_5
-X$3 \$31 \$15 \$41 VDD \$41 \$20 \$17 \$16 GND B04_OTA
+.SUBCKT B04_VDD05 VbiasP VbiasN VDD Vout GND
+X$1 \$17 VbiasN VDD \$16 \$31 \$15 VbiasP GND B04_OTA_bias_ratio_5
+X$3 \$31 \$15 Vout VDD Vout \$20 \$17 \$16 GND B04_OTA
 R$1 GND GND GND 3750 ppolyf_u_1k L=30U W=8U
 R$12 GND \$20 GND 300000 ppolyf_u_1k L=600U W=2U
 R$43 VDD \$20 GND 300000 ppolyf_u_1k L=600U W=2U
