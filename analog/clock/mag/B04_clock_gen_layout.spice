@@ -1,0 +1,80 @@
+* NGSPICE file created from B04_clock_gen.ext - technology: gf180mcuD
+
+.subckt cap_mim m4_n120_n120# m4_0_0#
+X0 m4_0_0# m4_n120_n120# cap_mim_2f0_m4m5_noshield c_width=10u c_length=20u
+.ends
+
+.subckt pfet_03v3_AVNSD5 a_100_n50# a_n100_n142# a_n188_n50# w_n350_n260#
+X0 a_100_n50# a_n100_n142# a_n188_n50# w_n350_n260# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=1u
+.ends
+
+.subckt pfet_03v3_54Z2EE a_100_n50# a_n100_n142# a_n188_n50# w_n350_n260#
+X0 a_100_n50# a_n100_n142# a_n188_n50# w_n350_n260# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=1u
+.ends
+
+.subckt nfet_03v3_REA3EN a_100_n50# a_n326_n236# a_n100_n142# a_n188_n50#
+X0 a_100_n50# a_n100_n142# a_n188_n50# a_n326_n236# nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=1u
+.ends
+
+.subckt pfet_03v3_GPEX9R a_n1088_n50# a_1000_n50# w_n1250_n260# a_n1000_n142#
+X0 a_1000_n50# a_n1000_n142# a_n1088_n50# w_n1250_n260# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=10u
+.ends
+
+.subckt nfet_03v3_5P2FD6 a_n2000_n142# a_n2088_n50# a_n2226_n236# a_2000_n50#
+X0 a_2000_n50# a_n2000_n142# a_n2088_n50# a_n2226_n236# nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=20u
+.ends
+
+.subckt pfet_03v3_C5NPLE a_n2788_n50# a_2700_n50# w_n2950_n260# a_n2700_n142#
+X0 a_2700_n50# a_n2700_n142# a_n2788_n50# w_n2950_n260# pfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=27u
+.ends
+
+.subckt pfet_03v3_9TRV9F a_n188_n100# a_n100_n192# a_100_n100# w_n350_n310#
+X0 a_100_n100# a_n100_n192# a_n188_n100# w_n350_n310# pfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+.ends
+
+.subckt nfet_03v3_Y6NWY5 a_n2788_n50# a_n2926_n236# a_2700_n50# a_n2700_n142#
+X0 a_2700_n50# a_n2700_n142# a_n2788_n50# a_n2926_n236# nfet_03v3 ad=0.22p pd=1.88u as=0.22p ps=1.88u w=0.5u l=27u
+.ends
+
+.subckt nfet_03v3_GNRYRW a_n188_n100# a_n100_n192# a_100_n100# a_n326_n286#
+X0 a_100_n100# a_n100_n192# a_n188_n100# a_n326_n286# nfet_03v3 ad=0.44p pd=2.88u as=0.44p ps=2.88u w=1u l=1u
+.ends
+
+.subckt B04_schmitt_trigger_backup VDD Vin Vout GND
+XXM1 m1_2940_n3770# m1_8480_n2920# VDD Vin pfet_03v3_C5NPLE
+XXM2 m1_2940_n3770# Vout VDD Vin pfet_03v3_C5NPLE
+XXM3 m1_2940_n3770# Vout GND VDD pfet_03v3_9TRV9F
+XXM4 m1_2950_n5450# GND Vout Vin nfet_03v3_Y6NWY5
+XXM5 m1_2950_n5450# GND GND Vin nfet_03v3_Y6NWY5
+XXM6 m1_2950_n5450# Vout VDD GND nfet_03v3_GNRYRW
+XXM7 VDD m1_8480_n2920# VDD GND pfet_03v3_C5NPLE
+XXM8 GND GND GND VDD nfet_03v3_Y6NWY5
+.ends
+
+.subckt B04_clock_gen Vout VDD En
+Xcap_mim_0 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+Xcap_mim_1 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM1 m1_8300_2022# B04_schmitt_trigger_backup_0/Vout VDD VDD pfet_03v3_AVNSD5
+Xcap_mim_2 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM2 m1_7840_1010# En m1_8300_2022# m1_8300_2022# pfet_03v3_54Z2EE
+Xcap_mim_3 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM3 VDD VDD B04_schmitt_trigger_backup_0/Vout m1_7840_1010# nfet_03v3_REA3EN
+Xcap_mim_5 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+Xcap_mim_4 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM4 VDD VDD En m1_7840_1010# nfet_03v3_REA3EN
+Xcap_mim_6 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM5 B04_schmitt_trigger_backup_0/Vin m1_9170_2032# VDD VDD pfet_03v3_GPEX9R
+Xcap_mim_7 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM6 VDD B04_schmitt_trigger_backup_0/Vin VDD m1_9170_2032# nfet_03v3_5P2FD6
+Xcap_mim_8 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM7 m1_9170_2032# m1_7840_1010# VDD VDD pfet_03v3_54Z2EE
+Xcap_mim_9 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XXM9 Vout m1_9170_2032# VDD VDD pfet_03v3_54Z2EE
+XXM8 VDD VDD m1_7840_1010# m1_9170_2032# nfet_03v3_REA3EN
+Xnfet_03v3_REA3EN_0 VDD VDD m1_9170_2032# Vout nfet_03v3_REA3EN
+Xcap_mim_11 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+Xcap_mim_10 B04_schmitt_trigger_backup_0/Vin VDD cap_mim
+XB04_schmitt_trigger_backup_0 VDD B04_schmitt_trigger_backup_0/Vin B04_schmitt_trigger_backup_0/Vout
++ VDD B04_schmitt_trigger_backup
+.ends
+

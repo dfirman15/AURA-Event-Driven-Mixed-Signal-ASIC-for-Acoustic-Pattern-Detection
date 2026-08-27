@@ -1,0 +1,743 @@
+timestamp 1787807591
+version 8.3
+tech gf180mcuD
+style ngspice()
+scale 1000 1 0.5
+resistclasses 1000000 3250000 6300 7000 6300 7000 7300 1000000 60000 185000 60000 185000 6300 7000 6300 7000 6800 7300 350000 310000 1000000 90 90 90 90 40
+use cap_mim cap_mim_8 0 -1 9708 1 0 -14218
+use cap_mim cap_mim_9 0 -1 4508 1 0 -14218
+use cap_mim cap_mim_10 0 -1 9708 1 0 -17058
+use cap_mim cap_mim_11 0 -1 4508 1 0 -17058
+use cap_mim cap_mim_4 0 -1 9708 1 0 -8538
+use cap_mim cap_mim_5 0 -1 4508 1 0 -8538
+use cap_mim cap_mim_6 0 -1 9708 1 0 -11378
+use cap_mim cap_mim_7 0 -1 4508 1 0 -11378
+use cap_mim cap_mim_0 0 -1 9708 1 0 -2858
+use cap_mim cap_mim_1 0 -1 4508 1 0 -2858
+use cap_mim cap_mim_2 0 -1 9708 1 0 -5698
+use cap_mim cap_mim_3 0 -1 4508 1 0 -5698
+use nfet_03v3_REA3EN XM8 0 1 9210 -1 0 1892
+use pfet_03v3_54Z2EE XM7 0 1 9220 -1 0 3012
+use nfet_03v3_REA3EN XM4 0 1 8790 -1 0 890
+use nfet_03v3_REA3EN XM3 0 1 7880 -1 0 870
+use pfet_03v3_54Z2EE XM2 0 1 8340 -1 0 1900
+use nfet_03v3_REA3EN nfet_03v3_REA3EN_0 0 1 11260 -1 0 1860
+use pfet_03v3_54Z2EE XM9 0 1 11270 -1 0 3130
+use nfet_03v3_5P2FD6 XM6 1 0 10270 0 1 4134
+use pfet_03v3_GPEX9R XM5 1 0 9270 0 1 4884
+use pfet_03v3_AVNSD5 XM1 0 1 8360 -1 0 3032
+use B04_schmitt_trigger_backup B04_schmitt_trigger_backup_0 1 0 -2260 0 1 6920
+port "GND" 7 990 -10 1190 190 m1
+port "Vout" 5 12870 2370 13070 2570 m1
+port "En" 9 12840 790 13020 990 m3
+port "VDD" 3 9630 5330 9640 5360 m1
+node "m2_n20_5150#" 0 250.948 -20 5150 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100800 1280 0 0 0 0 0 0
+node "GND" 0 278.969 990 -10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74000 1140 0 0 0 0 0 0 0 0
+node "Vout" 4 1180.2 12870 2370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48764 1364 275000 6100 0 0 0 0 0 0
+node "En" 8 2170.18 12840 790 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 1340 38700 1440 750000 13180 0 0 0 0
+node "m1_7850_2682#" 0 54.7705 7850 2682 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 420 0 0 0 0 0 0 0 0
+node "m1_6200_2730#" 1 866.956 6200 2730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 217600 4000 0 0 0 0 0 0 0 0
+node "m1_8300_2022#" 2 247.386 8300 2022 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19840 816 68800 1960 0 0 0 0 0 0
+node "m1_7840_1010#" 5 1195.88 7840 1010 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27400 1480 438500 8824 0 0 0 0 0 0
+node "m1_7750_820#" 4 1152.49 7750 820 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24024 1244 417900 7424 0 0 0 0 0 0
+node "m1_6880_n492#" 17 17110.1 6880 -492 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1903304 25088 8268 368 8268 368 8268 368 5091666 70090
+node "m1_8870_4314#" 1 274.076 8870 4314 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15800 720 68700 1320 0 0 0 0 0 0
+node "m1_9170_2032#" 14 3483.21 9170 2032 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54700 2420 1028580 23624 0 0 0 0 0 0
+node "m1_8150_4094#" 31 20240.6 8150 4094 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12800 640 266100 4080 55200 1280 12062592 124660 0 0
+node "VDD" 9 5920.18 9630 5330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1635620 19296 174500 4020 239300 4980 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Vout" "En" 5.25014
+cap "m1_9170_2032#" "m1_6880_n492#" 429.447
+cap "m1_7850_2682#" "m1_9170_2032#" 0.0514707
+cap "m1_7750_820#" "m1_6880_n492#" 27.5099
+cap "m1_7750_820#" "m1_7850_2682#" 30.9499
+cap "m1_6200_2730#" "m1_7850_2682#" -3443.52
+cap "m1_6880_n492#" "En" 255.77
+cap "m1_8150_4094#" "VDD" 293.69
+cap "m1_8870_4314#" "VDD" 125.335
+cap "m1_8870_4314#" "m1_8150_4094#" 4.1061
+cap "m1_6200_2730#" "m1_9170_2032#" 0.444926
+cap "m1_6200_2730#" "m1_7750_820#" 87.1842
+cap "m1_8300_2022#" "m1_6880_n492#" 4.16632
+cap "m1_9170_2032#" "En" 11.1826
+cap "m1_8300_2022#" "m1_7850_2682#" 0.386375
+cap "m1_7750_820#" "En" 51.9548
+cap "m1_7840_1010#" "m1_6880_n492#" 76.9391
+cap "m1_7840_1010#" "m1_7850_2682#" 0.468839
+cap "m1_8300_2022#" "m1_9170_2032#" 7.07107
+cap "m1_8300_2022#" "m1_7750_820#" 144.168
+cap "m1_8300_2022#" "m1_6200_2730#" 6.10054
+cap "m1_7840_1010#" "m1_9170_2032#" 125.048
+cap "VDD" "Vout" 16.4207
+cap "m1_8150_4094#" "Vout" 5.76621
+cap "m1_8300_2022#" "En" 18.1979
+cap "m1_7840_1010#" "m1_7750_820#" 193.803
+cap "m1_7840_1010#" "m1_6200_2730#" 0.302065
+cap "m1_7840_1010#" "En" 351.552
+cap "VDD" "m1_6880_n492#" 60.2785
+cap "m1_8150_4094#" "m1_6880_n492#" 459.87
+cap "m1_8150_4094#" "m1_7850_2682#" 3.34582
+cap "m1_7840_1010#" "m1_8300_2022#" 134.223
+cap "VDD" "m1_9170_2032#" 305.01
+cap "m1_8150_4094#" "m1_9170_2032#" 199.67
+cap "m1_8870_4314#" "m1_9170_2032#" 0.346193
+cap "m1_7750_820#" "VDD" 40.0248
+cap "m1_6200_2730#" "VDD" 22.1902
+cap "m1_7750_820#" "m1_8150_4094#" 134.276
+cap "m1_6200_2730#" "m1_8150_4094#" 76.9928
+cap "VDD" "En" 2.68087
+cap "m1_8150_4094#" "En" 137.515
+cap "Vout" "m1_6880_n492#" 7.7416
+cap "m1_8300_2022#" "VDD" 12.1361
+cap "m1_8300_2022#" "m1_8150_4094#" 35.8365
+cap "m1_7840_1010#" "VDD" 19.7158
+cap "m1_7840_1010#" "m1_8150_4094#" 81.7141
+cap "m1_9170_2032#" "Vout" 221.682
+cap "m1_7840_1010#" "m1_8870_4314#" 4.66095
+cap "cap_mim_11/m4_0_0#" "cap_mim_10/m4_n120_n120#" 1.70634
+cap "cap_mim_11/m4_0_0#" "cap_mim_11/m4_n120_n120#" 6.57051
+cap "cap_mim_11/m4_n120_n120#" "cap_mim_10/m4_n120_n120#" 53.9086
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_n120_n120#" 229.064
+cap "cap_mim_11/m4_0_0#" "cap_mim_11/m4_n120_n120#" 44.4454
+cap "cap_mim_10/m4_n120_n120#" "m1_8150_4094#" 192.781
+cap "m1_8150_4094#" "cap_mim_10/m4_0_0#" 38.0923
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_10/m4_0_0#" 38.0923
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_10/m4_0_0#" 5.86693
+cap "cap_mim_11/m4_0_0#" "cap_mim_11/m4_n120_n120#" -4.51283
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_0_0#" 4.69056
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_11/m4_0_0#" 0.601919
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_n120_n120#" 131.484
+cap "cap_mim_11/m4_0_0#" "cap_mim_11/m4_n120_n120#" 103.563
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_n120_n120#" 131.484
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_11/m4_0_0#" 0.601919
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_0_0#" 73.971
+cap "cap_mim_11/m4_n120_n120#" "cap_mim_11/m4_0_0#" 46.7984
+cap "cap_mim_10/m4_0_0#" "m1_8150_4094#" -0.124371
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_10/m4_0_0#" 45.0688
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_11/m4_0_0#" 5.74186
+cap "cap_mim_9/m4_0_0#" "cap_mim_11/m4_0_0#" 102.827
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_11/m4_n120_n120#" 93.7255
+cap "cap_mim_11/m4_n120_n120#" "cap_mim_9/m4_0_0#" 5.74186
+cap "cap_mim_11/m4_n120_n120#" "cap_mim_9/m4_n120_n120#" 150.477
+cap "cap_mim_11/m4_0_0#" "cap_mim_9/m4_n120_n120#" 10.6896
+cap "cap_mim_11/m4_0_0#" "cap_mim_11/m4_n120_n120#" 10.6896
+cap "cap_mim_9/m4_0_0#" "cap_mim_9/m4_n120_n120#" 165.807
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_9/m4_n120_n120#" 24.982
+cap "cap_mim_9/m4_0_0#" "cap_mim_10/m4_n120_n120#" 0.548736
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_9/m4_n120_n120#" 50.1519
+cap "cap_mim_9/m4_0_0#" "cap_mim_8/m4_n120_n120#" 1.556
+cap "cap_mim_9/m4_0_0#" "cap_mim_9/m4_n120_n120#" 14.7832
+cap "cap_mim_10/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 136.719
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_10/m4_n120_n120#" 24.982
+cap "cap_mim_11/m4_0_0#" "cap_mim_10/m4_n120_n120#" 8.79604
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 50.1519
+cap "cap_mim_11/m4_0_0#" "cap_mim_8/m4_n120_n120#" 8.79604
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_11/m4_0_0#" 16.1596
+cap "cap_mim_11/m4_0_0#" "cap_mim_9/m4_0_0#" 19.8133
+cap "cap_mim_8/m4_0_0#" "cap_mim_10/m4_n120_n120#" 99.0546
+cap "cap_mim_8/m4_0_0#" "cap_mim_8/m4_n120_n120#" 98.9593
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_10/m4_n120_n120#" 150.477
+cap "cap_mim_8/m4_0_0#" "m1_8150_4094#" -0.174429
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_8/m4_0_0#" 21.3793
+cap "cap_mim_8/m4_0_0#" "cap_mim_10/m4_0_0#" 6.56343
+cap "cap_mim_8/m4_0_0#" "cap_mim_8/m4_n120_n120#" 4.52557
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_10/m4_0_0#" 1.83323
+cap "cap_mim_7/m4_0_0#" "cap_mim_9/m4_n120_n120#" -3.88537
+cap "cap_mim_7/m4_0_0#" "cap_mim_10/m4_0_0#" 67.0017
+cap "cap_mim_7/m4_0_0#" "cap_mim_9/m4_n120_n120#" 59.1012
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 131.484
+cap "cap_mim_7/m4_0_0#" "cap_mim_8/m4_n120_n120#" 5.26185
+cap "cap_mim_10/m4_0_0#" "cap_mim_9/m4_n120_n120#" -0.305354
+cap "cap_mim_10/m4_0_0#" "cap_mim_9/m4_n120_n120#" 49.685
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_9/m4_n120_n120#" 131.484
+cap "cap_mim_10/m4_0_0#" "cap_mim_9/m4_0_0#" 67.0017
+cap "cap_mim_6/m4_0_0#" "m1_8150_4094#" -0.460311
+cap "cap_mim_8/m4_0_0#" "cap_mim_8/m4_n120_n120#" 50.4397
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_7/m4_0_0#" 5.74186
+cap "cap_mim_7/m4_0_0#" "cap_mim_9/m4_0_0#" 102.827
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_7/m4_n120_n120#" 93.7255
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_9/m4_0_0#" 5.74186
+cap "cap_mim_9/m4_0_0#" "cap_mim_7/m4_n120_n120#" 10.6896
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_9/m4_0_0#" 10.6896
+cap "cap_mim_9/m4_n120_n120#" "cap_mim_7/m4_n120_n120#" 150.477
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_7/m4_0_0#" 165.807
+cap "cap_mim_8/m4_0_0#" "cap_mim_7/m4_0_0#" 26.8007
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_7/m4_0_0#" 1.40567
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 28.7387
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_8/m4_0_0#" -0.174488
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_7/m4_0_0#" 14.946
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_6/m4_n120_n120#" 46.3952
+cap "cap_mim_8/m4_n120_n120#" "cap_mim_7/m4_0_0#" 0.699074
+cap "cap_mim_8/m4_0_0#" "cap_mim_8/m4_n120_n120#" 8.79604
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_8/m4_0_0#" 16.1596
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 136.719
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_6/m4_n120_n120#" 46.3952
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_8/m4_0_0#" 8.79604
+cap "cap_mim_8/m4_0_0#" "cap_mim_7/m4_0_0#" 17.899
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 28.7387
+cap "cap_mim_8/m4_0_0#" "cap_mim_9/m4_0_0#" 8.90165
+cap "cap_mim_6/m4_0_0#" "cap_mim_6/m4_n120_n120#" 99.1509
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_8/m4_n120_n120#" 150.477
+cap "cap_mim_6/m4_0_0#" "cap_mim_8/m4_n120_n120#" 99.1509
+cap "cap_mim_6/m4_0_0#" "m1_8150_4094#" -0.184124
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_6/m4_0_0#" 21.3793
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_6/m4_0_0#" 4.12373
+cap "cap_mim_6/m4_0_0#" "cap_mim_8/m4_0_0#" 6.56343
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_8/m4_0_0#" 2.23507
+cap "cap_mim_7/m4_0_0#" "cap_mim_7/m4_n120_n120#" -5.454
+cap "cap_mim_7/m4_0_0#" "cap_mim_6/m4_n120_n120#" 5.26185
+cap "cap_mim_7/m4_0_0#" "cap_mim_8/m4_0_0#" 67.0017
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_7/m4_n120_n120#" 131.484
+cap "cap_mim_8/m4_0_0#" "cap_mim_7/m4_n120_n120#" -0.305354
+cap "cap_mim_7/m4_0_0#" "cap_mim_7/m4_n120_n120#" 74.7819
+cap "cap_mim_8/m4_0_0#" "cap_mim_7/m4_n120_n120#" 53.434
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_7/m4_n120_n120#" 131.484
+cap "cap_mim_7/m4_0_0#" "cap_mim_8/m4_0_0#" 67.0017
+cap "cap_mim_6/m4_0_0#" "m1_8150_4094#" -0.460311
+cap "cap_mim_6/m4_0_0#" "cap_mim_6/m4_n120_n120#" 55.3222
+cap "cap_mim_7/m4_0_0#" "cap_mim_5/m4_n120_n120#" 5.74186
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 93.7255
+cap "cap_mim_7/m4_0_0#" "cap_mim_5/m4_0_0#" 102.827
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_5/m4_0_0#" 5.74186
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_7/m4_0_0#" 10.6896
+cap "cap_mim_7/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 150.477
+cap "cap_mim_7/m4_0_0#" "cap_mim_5/m4_n120_n120#" 10.6896
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_7/m4_0_0#" 165.807
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_7/m4_0_0#" 14.946
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 32.4954
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 42.6385
+cap "cap_mim_6/m4_0_0#" "cap_mim_5/m4_n120_n120#" -0.174488
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_7/m4_0_0#" 0.849413
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_7/m4_0_0#" 1.25533
+cap "cap_mim_6/m4_0_0#" "cap_mim_7/m4_0_0#" 26.8007
+cap "cap_mim_6/m4_0_0#" "cap_mim_5/m4_n120_n120#" 16.1596
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 42.6385
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_6/m4_0_0#" 8.79604
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_4/m4_n120_n120#" 136.719
+cap "cap_mim_6/m4_0_0#" "cap_mim_5/m4_0_0#" 15.9847
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 32.4954
+cap "cap_mim_7/m4_0_0#" "cap_mim_6/m4_0_0#" 10.816
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_6/m4_0_0#" 8.79604
+cap "cap_mim_6/m4_0_0#" "m1_8150_4094#" -0.184124
+cap "cap_mim_6/m4_0_0#" "cap_mim_4/m4_n120_n120#" 99.1509
+cap "cap_mim_6/m4_n120_n120#" "cap_mim_4/m4_n120_n120#" 150.477
+cap "cap_mim_6/m4_0_0#" "cap_mim_6/m4_n120_n120#" 99.1509
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_6/m4_0_0#" 21.3793
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_4/m4_0_0#" 3.72188
+cap "cap_mim_6/m4_0_0#" "cap_mim_4/m4_0_0#" 6.56343
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_6/m4_0_0#" 2.63691
+cap "cap_mim_3/m4_0_0#" "cap_mim_5/m4_n120_n120#" -2.58221
+cap "cap_mim_3/m4_0_0#" "cap_mim_5/m4_n120_n120#" 46.0742
+cap "cap_mim_3/m4_0_0#" "cap_mim_4/m4_n120_n120#" 5.26185
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_6/m4_0_0#" -0.305354
+cap "cap_mim_3/m4_0_0#" "cap_mim_6/m4_0_0#" 67.0017
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_4/m4_n120_n120#" 131.484
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_6/m4_0_0#" 46.5705
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_5/m4_n120_n120#" 131.484
+cap "cap_mim_5/m4_0_0#" "cap_mim_6/m4_0_0#" 67.0017
+cap "cap_mim_2/m4_0_0#" "m1_8150_4094#" -0.460311
+cap "cap_mim_4/m4_0_0#" "cap_mim_4/m4_n120_n120#" 46.7777
+cap "cap_mim_3/m4_0_0#" "cap_mim_5/m4_0_0#" 102.827
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_3/m4_n120_n120#" 93.7255
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_3/m4_0_0#" 5.74186
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_5/m4_0_0#" 5.74186
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_5/m4_0_0#" 10.6896
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_3/m4_n120_n120#" 150.477
+cap "cap_mim_5/m4_n120_n120#" "cap_mim_5/m4_0_0#" 10.6896
+cap "cap_mim_3/m4_0_0#" "cap_mim_3/m4_n120_n120#" 165.807
+cap "cap_mim_3/m4_0_0#" "cap_mim_4/m4_0_0#" 26.8007
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_3/m4_0_0#" 0.999752
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_4/m4_0_0#" -0.156251
+cap "cap_mim_3/m4_0_0#" "cap_mim_2/m4_n120_n120#" 1.10499
+cap "cap_mim_3/m4_0_0#" "cap_mim_3/m4_n120_n120#" 14.946
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_3/m4_n120_n120#" 36.2521
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_3/m4_n120_n120#" 38.8818
+cap "cap_mim_4/m4_0_0#" "cap_mim_2/m4_n120_n120#" 8.79604
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_4/m4_n120_n120#" 36.2521
+cap "cap_mim_4/m4_0_0#" "cap_mim_3/m4_0_0#" 14.0703
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 38.8818
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_4/m4_n120_n120#" 136.719
+cap "cap_mim_4/m4_0_0#" "cap_mim_3/m4_n120_n120#" 16.1596
+cap "cap_mim_4/m4_0_0#" "cap_mim_5/m4_0_0#" 12.7303
+cap "cap_mim_4/m4_0_0#" "cap_mim_4/m4_n120_n120#" 8.79604
+cap "cap_mim_2/m4_0_0#" "cap_mim_4/m4_n120_n120#" 99.1492
+cap "cap_mim_2/m4_0_0#" "m1_8150_4094#" -0.164601
+cap "cap_mim_4/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 150.477
+cap "cap_mim_2/m4_0_0#" "cap_mim_2/m4_n120_n120#" 99.2689
+cap "cap_mim_2/m4_0_0#" "cap_mim_2/m4_n120_n120#" 21.3793
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_4/m4_0_0#" 3.03875
+cap "cap_mim_4/m4_0_0#" "cap_mim_2/m4_0_0#" 6.56343
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_2/m4_0_0#" 3.32004
+cap "cap_mim_3/m4_0_0#" "cap_mim_3/m4_n120_n120#" -5.04375
+cap "cap_mim_3/m4_0_0#" "cap_mim_4/m4_0_0#" 67.0017
+cap "cap_mim_3/m4_0_0#" "cap_mim_3/m4_n120_n120#" 70.6808
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 131.484
+cap "cap_mim_3/m4_0_0#" "cap_mim_2/m4_n120_n120#" 5.26185
+cap "cap_mim_4/m4_0_0#" "cap_mim_3/m4_n120_n120#" -0.243682
+cap "cap_mim_4/m4_0_0#" "cap_mim_3/m4_n120_n120#" 52.4535
+cap "cap_mim_4/m4_0_0#" "cap_mim_3/m4_0_0#" 67.0017
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_3/m4_n120_n120#" 131.484
+cap "m1_8150_4094#" "cap_mim_2/m4_0_0#" -0.367342
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_2/m4_0_0#" 45.8012
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_3/m4_0_0#" 5.74186
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_1/m4_n120_n120#" 93.7255
+cap "cap_mim_1/m4_0_0#" "cap_mim_3/m4_0_0#" 102.827
+cap "cap_mim_1/m4_0_0#" "cap_mim_3/m4_n120_n120#" 5.74186
+cap "cap_mim_3/m4_0_0#" "cap_mim_1/m4_n120_n120#" 10.6896
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_3/m4_0_0#" 10.6896
+cap "cap_mim_3/m4_n120_n120#" "cap_mim_1/m4_n120_n120#" 150.477
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_3/m4_0_0#" 165.807
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_1/m4_n120_n120#" 40.0088
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_0/m4_n120_n120#" 35.1251
+cap "cap_mim_2/m4_0_0#" "cap_mim_3/m4_0_0#" 26.8007
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_3/m4_0_0#" 14.946
+cap "cap_mim_2/m4_n120_n120#" "cap_mim_3/m4_0_0#" 1.15009
+cap "cap_mim_3/m4_0_0#" "cap_mim_0/m4_n120_n120#" 0.95465
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_2/m4_0_0#" -0.139247
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 136.719
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 40.0088
+cap "cap_mim_2/m4_0_0#" "cap_mim_0/m4_n120_n120#" 8.79604
+cap "cap_mim_2/m4_0_0#" "cap_mim_1/m4_n120_n120#" 16.1596
+cap "cap_mim_2/m4_0_0#" "cap_mim_2/m4_n120_n120#" 8.79604
+cap "cap_mim_2/m4_0_0#" "cap_mim_3/m4_0_0#" 14.6446
+cap "cap_mim_2/m4_0_0#" "cap_mim_1/m4_0_0#" 12.156
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_0/m4_n120_n120#" 35.1251
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_2/m4_n120_n120#" 150.477
+cap "cap_mim_2/m4_0_0#" "m1_8150_4094#" -0.146937
+cap "cap_mim_2/m4_0_0#" "cap_mim_2/m4_n120_n120#" 98.4962
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_2/m4_0_0#" 98.4962
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_2/m4_0_0#" 21.3793
+cap "cap_mim_0/m4_0_0#" "cap_mim_2/m4_0_0#" 6.56343
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_2/m4_0_0#" 3.44059
+cap "cap_mim_0/m4_0_0#" "cap_mim_0/m4_n120_n120#" 2.9182
+cap "cap_mim_1/m4_0_0#" "cap_mim_1/m4_n120_n120#" -2.84767
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_1/m4_0_0#" 5.26185
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_0_0#" 67.0017
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_0/m4_n120_n120#" 131.484
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_n120_n120#" 0.24183
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_1/m4_0_0#" 48.7279
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/GND" 47.205
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_0/m4_n120_n120#" 131.484
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_0_0#" 67.0017
+cap "B04_schmitt_trigger_backup_0/GND" "m1_8150_4094#" -0.367342
+cap "cap_mim_0/m4_0_0#" "cap_mim_0/m4_n120_n120#" 46.5336
+cap "m1_6880_n492#" "cap_mim_0/m4_n120_n120#" -0.018705
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 1.92371
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/GND" 19.6608
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "cap_mim_1/m4_n120_n120#" 3.48571
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_n120_n120#" 17.7874
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 5.36198
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/GND" 25.3784
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 9.63358
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/GND" 36.5895
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" 2.28823
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" "cap_mim_1/m4_n120_n120#" 1.2974
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 6.38055
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_1/m4_0_0#" 66.2682
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_0_0#" 30.2226
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" "cap_mim_1/m4_0_0#" 2.42582
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" "cap_mim_1/m4_0_0#" 1.34541
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 10.429
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" 0.151332
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/GND" 19.5106
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_n120_n120#" 15.7242
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 5.33514
+cap "cap_mim_1/m4_0_0#" "cap_mim_1/m4_n120_n120#" 5.00748
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_1/m4_n120_n120#" 41.2096
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 1.83381
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_1/m4_0_0#" 27.2265
+cap "cap_mim_1/m4_0_0#" "cap_mim_0/m4_n120_n120#" 1.30043
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "cap_mim_0/m4_n120_n120#" 4.48464
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/GND" 9.98435
+cap "cap_mim_1/m4_n120_n120#" "cap_mim_0/m4_n120_n120#" 41.2096
+cap "cap_mim_0/m4_n120_n120#" "B04_schmitt_trigger_backup_0/GND" 26.5153
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/GND" 16.559
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "B04_schmitt_trigger_backup_0/GND" 1.97287
+cap "B04_schmitt_trigger_backup_0/GND" "m1_8150_4094#" -0.0907859
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/XM6/a_n100_n192#" 1.79689
+cap "cap_mim_0/m4_n120_n120#" "XM3/a_n100_n142#" 0.930017
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_0/m4_n120_n120#" 142.84
+cap "cap_mim_0/m4_n120_n120#" "XM4/a_n100_n142#" 0.665872
+cap "B04_schmitt_trigger_backup_0/GND" "cap_mim_0/m4_n120_n120#" 31.0471
+cap "cap_mim_0/m4_n120_n120#" "cap_mim_0/m4_0_0#" 3.47593
+cap "cap_mim_0/m4_n120_n120#" "XM4/a_n100_n142#" 0.0546904
+cap "cap_mim_0/m4_n120_n120#" "nfet_03v3_REA3EN_0/a_n326_n236#" 7.85608
+cap "cap_mim_0/m4_0_0#" "nfet_03v3_REA3EN_0/a_n326_n236#" 1.63792
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 0.551389
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 0.512475
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 0.477167
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/Vin" 0.00224889
+cap "B04_schmitt_trigger_backup_0/Vin" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 7.2596
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 0.227477
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/Vin" 0.00801927
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 1.73555
+cap "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" "cap_mim_1/m4_0_0#" 1.60201
+cap "cap_mim_1/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 1.5872
+cap "cap_mim_1/m4_0_0#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 1.54527
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "cap_mim_1/m4_0_0#" 0.474158
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "cap_mim_1/m4_n120_n120#" 0.770955
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "m1_8150_4094#" 0.324405
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/GND" 9.7153
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "B04_schmitt_trigger_backup_0/Vout" 0.457957
+cap "cap_mim_0/m4_n120_n120#" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 0.809502
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" "B04_schmitt_trigger_backup_0/Vout" 0.0904257
+cap "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" "B04_schmitt_trigger_backup_0/GND" 0.564502
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/XM6/a_100_n100#" 1.27719
+cap "B04_schmitt_trigger_backup_0/Vout" "XM1/a_100_n50#" 1.02153
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" 0.125829
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM6/a_100_n100#" 0.381198
+cap "B04_schmitt_trigger_backup_0/GND" "XM2/a_100_n50#" 86.2459
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM6/a_100_n100#" 70.6782
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_100_n50#" 2.4414
+cap "B04_schmitt_trigger_backup_0/GND" "m1_8150_4094#" 0.369702
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/GND" 134.68
+cap "B04_schmitt_trigger_backup_0/Vout" "m1_8150_4094#" 0.112734
+cap "XM2/a_n100_n142#" "XM2/a_100_n50#" 0.397962
+cap "B04_schmitt_trigger_backup_0/GND" "XM2/a_n100_n142#" -0.186783
+cap "B04_schmitt_trigger_backup_0/Vout" "cap_mim_0/m4_n120_n120#" 0.499473
+cap "XM1/w_n350_n260#" "XM2/a_100_n50#" 0.501404
+cap "XM1/w_n350_n260#" "B04_schmitt_trigger_backup_0/GND" 0.00516001
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_n100_n142#" 0.737716
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/XM6/a_100_n100#" 0.0130999
+cap "XM1/w_n350_n260#" "XM2/a_100_n50#" 0.164085
+cap "XM1/a_100_n50#" "XM2/a_100_n50#" 18.4831
+cap "B04_schmitt_trigger_backup_0/GND" "XM1/a_100_n50#" 6.91735
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM8/a_n2700_n142#" 0.33193
+cap "XM1/a_100_n50#" "XM2/a_100_n50#" 42.0501
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_100_n50#" 0.0156479
+cap "XM2/a_n100_n142#" "cap_mim_0/m4_n120_n120#" 0.444645
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/GND" 75.0332
+cap "XM2/a_n100_n142#" "XM7/w_n350_n260#" 2.04733
+cap "B04_schmitt_trigger_backup_0/XM6/a_100_n100#" "XM2/a_n100_n142#" 0.302771
+cap "XM7/w_n350_n260#" "B04_schmitt_trigger_backup_0/GND" 0.0668916
+cap "XM2/a_n100_n142#" "m1_8150_4094#" 0.0865017
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/GND" 0.671969
+cap "XM1/w_n350_n260#" "B04_schmitt_trigger_backup_0/GND" 0.0895156
+cap "XM2/a_n100_n142#" "XM2/a_100_n50#" 9.26955
+cap "B04_schmitt_trigger_backup_0/GND" "XM2/a_100_n50#" 78.943
+cap "XM2/a_n100_n142#" "nfet_03v3_REA3EN_0/a_n100_n142#" 0.314491
+cap "XM1/w_n350_n260#" "XM2/a_100_n50#" 0.903451
+cap "XM1/w_n350_n260#" "B04_schmitt_trigger_backup_0/GND" 0.215203
+cap "XM2/a_n100_n142#" "XM1/a_100_n50#" 1.93352
+cap "XM1/w_n350_n260#" "XM2/a_100_n50#" 0.22924
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/GND" 14.0075
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_n100_n142#" 1.38667
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/GND" -0.539898
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM2/a_n100_n142#" 1.15492
+cap "cap_mim_0/m4_n120_n120#" "XM2/a_n100_n142#" 0.045657
+cap "XM2/a_n100_n142#" "m1_8150_4094#" 0.549751
+cap "nfet_03v3_REA3EN_0/a_n100_n142#" "nfet_03v3_REA3EN_0/a_n326_n236#" -0.114237
+cap "XM2/a_100_n50#" "m1_8150_4094#" 0.0597066
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/w_n350_n260#" 0.0715855
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "m1_8150_4094#" 4.41571
+cap "XM9/a_100_n50#" "nfet_03v3_REA3EN_0/a_n326_n236#" -0.0578783
+cap "nfet_03v3_REA3EN_0/a_n100_n142#" "nfet_03v3_REA3EN_0/a_n326_n236#" -0.016795
+cap "En" "nfet_03v3_REA3EN_0/a_n326_n236#" 7.35704
+cap "m1_8150_4094#" "nfet_03v3_REA3EN_0/a_n326_n236#" -0.139047
+cap "En" "nfet_03v3_REA3EN_0/a_n100_n142#" 2.07218
+cap "En" "XM9/a_100_n50#" 0.190236
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2788_n50#" "B04_schmitt_trigger_backup_0/Vin" 11.7338
+cap "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" "B04_schmitt_trigger_backup_0/Vin" 224.449
+cap "B04_schmitt_trigger_backup_0/XM2/a_n2788_n50#" "B04_schmitt_trigger_backup_0/Vin" 11.9856
+cap "B04_schmitt_trigger_backup_0/Vin" "B04_schmitt_trigger_backup_0/GND" 31.7158
+cap "B04_schmitt_trigger_backup_0/Vin" "B04_schmitt_trigger_backup_0/XM5/a_n2788_n50#" 7.06626
+cap "B04_schmitt_trigger_backup_0/XM2/a_n2788_n50#" "B04_schmitt_trigger_backup_0/Vin" 8.60374
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/Vin" 88.7317
+cap "B04_schmitt_trigger_backup_0/Vin" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 43.3165
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" 104.621
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 20.5343
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/m1_2950_n5450#" 8.17584
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM5/a_n2926_n236#" 2.30853
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/m1_2940_n3770#" 10.1446
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" 3.07602
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" 7.45141
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" 1.96401
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 5.29055
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM4/a_n2926_n236#" 5.66405
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM5/a_n2926_n236#" 3.68483
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 12.8471
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM4/a_n2926_n236#" 21.2513
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM8/a_n2926_n236#" 7.79758
+cap "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" "m1_8150_4094#" 8.17584
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 38.672
+cap "B04_schmitt_trigger_backup_0/XM2/a_n2700_n142#" "m1_8150_4094#" 32.3902
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" 12.4914
+cap "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" "m1_8150_4094#" 10.1446
+cap "B04_schmitt_trigger_backup_0/GND" "m1_8150_4094#" 40.7063
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" "m1_8150_4094#" 17.3848
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM1/a_n2700_n142#" 15.0709
+cap "m1_8150_4094#" "B04_schmitt_trigger_backup_0/XM4/a_n2700_n142#" 39.7755
+cap "B04_schmitt_trigger_backup_0/XM2/a_n2700_n142#" "XM6/a_n2088_n50#" 16.8837
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" -0.941789
+cap "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" "XM6/a_n2088_n50#" 27.5384
+cap "B04_schmitt_trigger_backup_0/XM4/a_n2700_n142#" "XM6/a_n2088_n50#" 21.0182
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" "XM6/a_n2088_n50#" 9.18867
+cap "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" "XM6/a_n2088_n50#" 10.0768
+cap "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" "XM6/a_n2088_n50#" 0.952795
+cap "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" "XM6/a_n2088_n50#" 10.4744
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 22.9584
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" "B04_schmitt_trigger_backup_0/Vout" 0.0395612
+cap "B04_schmitt_trigger_backup_0/XM1/a_n2700_n142#" "XM6/a_n2088_n50#" 7.85831
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 0.334965
+cap "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" "B04_schmitt_trigger_backup_0/Vout" 0.0450395
+cap "B04_schmitt_trigger_backup_0/GND" "XM6/a_n2088_n50#" 37.6689
+cap "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" "XM6/a_n2088_n50#" 17.3252
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/Vout" 3.19186
+cap "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" "B04_schmitt_trigger_backup_0/Vout" 0.876456
+cap "B04_schmitt_trigger_backup_0/Vout" "XM6/a_n2088_n50#" 63.14
+cap "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" "XM6/a_n2088_n50#" 0.905276
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" 0.394223
+cap "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" "XM6/a_n2088_n50#" 0.878135
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_n100_n142#" 1.11753
+cap "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" "XM6/a_n2088_n50#" 0.0765332
+cap "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" "XM6/a_n2088_n50#" 2.71019
+cap "B04_schmitt_trigger_backup_0/Vout" "XM1/a_n188_n50#" 97.1373
+cap "XM1/a_100_n50#" "XM6/a_n2088_n50#" 7.94076
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_100_n50#" -0.0988889
+cap "XM7/a_100_n50#" "XM6/a_n2088_n50#" 0.126646
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" 1.19212
+cap "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" "XM6/a_n2088_n50#" 65.4064
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/GND" 6.42284
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/XM6/a_n188_n100#" 0.410787
+cap "B04_schmitt_trigger_backup_0/GND" "XM6/a_n2088_n50#" 48.0302
+cap "XM2/a_n100_n142#" "XM1/a_100_n50#" 15.7424
+cap "XM1/a_100_n50#" "XM1/a_n188_n50#" 20.3541
+cap "XM2/a_n100_n142#" "XM6/a_n2088_n50#" 0.279455
+cap "XM1/a_100_n50#" "XM2/a_100_n50#" 5.66422
+cap "XM1/a_n188_n50#" "XM6/a_n2088_n50#" 18.8317
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" 0.441444
+cap "XM6/a_n2088_n50#" "XM2/a_100_n50#" 0.592183
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/GND" -0.731372
+cap "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" "XM1/a_n188_n50#" 0.277361
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 0.0842763
+cap "B04_schmitt_trigger_backup_0/GND" "XM1/a_n188_n50#" 0.211982
+cap "B04_schmitt_trigger_backup_0/Vout" "XM1/a_100_n50#" 42.4528
+cap "B04_schmitt_trigger_backup_0/Vout" "XM7/a_100_n50#" -0.244338
+cap "XM2/a_n100_n142#" "XM1/a_n188_n50#" 2.42705
+cap "B04_schmitt_trigger_backup_0/Vout" "XM6/a_n2088_n50#" 48.9117
+cap "XM2/a_n100_n142#" "XM2/a_100_n50#" -1.0662
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" 188.125
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/GND" 21.7798
+cap "B04_schmitt_trigger_backup_0/GND" "B04_schmitt_trigger_backup_0/Vout" -0.00765777
+cap "XM6/a_n2088_n50#" "XM2/a_n100_n142#" 1.26066
+cap "XM9/a_n100_n142#" "XM2/a_n100_n142#" 0.0752212
+cap "B04_schmitt_trigger_backup_0/GND" "XM2/a_100_n50#" 87.6812
+cap "B04_schmitt_trigger_backup_0/GND" "XM1/a_100_n50#" 63.7122
+cap "B04_schmitt_trigger_backup_0/GND" "XM1/a_n188_n50#" 66.3884
+cap "XM6/a_n2088_n50#" "B04_schmitt_trigger_backup_0/Vout" 1.91136
+cap "XM9/a_n100_n142#" "B04_schmitt_trigger_backup_0/Vout" -0.176139
+cap "XM2/a_100_n50#" "XM6/a_n2088_n50#" 7.94449
+cap "XM1/a_100_n50#" "XM6/a_n2088_n50#" 9.95647
+cap "XM9/a_n100_n142#" "XM2/a_100_n50#" 15.7705
+cap "XM1/a_100_n50#" "XM9/a_n100_n142#" -7.04697
+cap "XM1/a_n188_n50#" "XM6/a_n2088_n50#" 58.3285
+cap "XM9/a_n100_n142#" "XM1/a_n188_n50#" 144.238
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/Vout" -0.852207
+cap "B04_schmitt_trigger_backup_0/GND" "XM6/a_n2088_n50#" 30.2944
+cap "XM2/a_100_n50#" "XM2/a_n100_n142#" 10.7957
+cap "B04_schmitt_trigger_backup_0/GND" "XM9/a_n100_n142#" 90.7539
+cap "XM1/a_100_n50#" "XM2/a_n100_n142#" 80.4168
+cap "B04_schmitt_trigger_backup_0/XM3/w_n350_n310#" "XM2/a_n100_n142#" 0.324876
+cap "XM1/a_n188_n50#" "XM2/a_n100_n142#" 9.7549
+cap "XM2/a_100_n50#" "B04_schmitt_trigger_backup_0/Vout" 1.497
+cap "XM9/a_n100_n142#" "XM6/a_n2088_n50#" 0.502608
+cap "XM1/a_100_n50#" "B04_schmitt_trigger_backup_0/Vout" 8.7078
+cap "B04_schmitt_trigger_backup_0/GND" "XM2/a_n100_n142#" 14.7708
+cap "XM1/a_n188_n50#" "B04_schmitt_trigger_backup_0/Vout" 21.5531
+cap "XM1/a_100_n50#" "XM2/a_100_n50#" 86.0088
+cap "XM2/a_100_n50#" "XM1/a_n188_n50#" 79.633
+cap "XM1/a_100_n50#" "XM1/a_n188_n50#" 144.057
+cap "XM2/a_100_n50#" "XM6/a_n2000_n142#" -6.32121
+cap "m1_8150_4094#" "XM9/a_100_n50#" 0.219165
+cap "XM6/a_2000_n50#" "m1_8150_4094#" 2.16281
+cap "XM9/a_n188_n50#" "XM6/a_n2000_n142#" 7.82712
+cap "XM1/a_100_n50#" "XM6/a_n2000_n142#" -1.35455
+cap "m1_8150_4094#" "XM2/a_100_n50#" 2.02726
+cap "m1_8150_4094#" "XM9/a_n188_n50#" 0.374524
+cap "XM6/a_2000_n50#" "XM9/a_100_n50#" 0.737706
+cap "XM6/a_n2000_n142#" "XM2/a_n100_n142#" -1.20646
+cap "XM6/a_2000_n50#" "XM2/a_100_n50#" 0.590555
+cap "XM6/a_2000_n50#" "XM9/a_n188_n50#" 13.7327
+cap "m1_8150_4094#" "XM6/a_n2000_n142#" 18.8079
+cap "XM9/a_100_n50#" "XM6/a_n2000_n142#" -2.06482
+cap "XM1/a_n188_n50#" "XM6/a_n2000_n142#" 31.2733
+cap "XM6/a_2000_n50#" "XM6/a_n2000_n142#" 28.829
+cap "XM9/a_n188_n50#" "XM6/a_2000_n50#" 7.62543
+cap "m1_8150_4094#" "nfet_03v3_REA3EN_0/a_n326_n236#" -0.356448
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_n188_n50#" 29.4554
+cap "En" "XM6/a_2000_n50#" 0.0931034
+cap "XM9/a_100_n50#" "XM6/a_2000_n50#" -7.75749
+cap "m1_8150_4094#" "XM9/a_100_n50#" -0.196575
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_100_n50#" 64.4172
+cap "XM9/a_n188_n50#" "XM9/a_100_n50#" 95.8353
+cap "m1_8150_4094#" "XM6/a_2000_n50#" 0.162827
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM6/a_2000_n50#" 45.0666
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_100_n50#" 0.138133
+cap "B04_schmitt_trigger_backup_0/VDD" "B04_schmitt_trigger_backup_0/Vin" 2.25803
+cap "B04_schmitt_trigger_backup_0/XM5/a_n2700_n142#" "m1_8150_4094#" 5.98526
+cap "B04_schmitt_trigger_backup_0/XM2/a_n2700_n142#" "m1_8150_4094#" 5.98526
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/VDD" 0.00390892
+cap "B04_schmitt_trigger_backup_0/XM1/a_n2700_n142#" "B04_schmitt_trigger_backup_0/VDD" 0.0464071
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM2/a_n2700_n142#" 3.45909
+cap "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" "B04_schmitt_trigger_backup_0/VDD" 0.481757
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 3.84328
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 1.30331
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 1.31603
+cap "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" -2.84217e-14
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM1/a_n2700_n142#" 0.121299
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" 1.22037
+cap "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" "B04_schmitt_trigger_backup_0/VDD" 1.92083
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 0.0771341
+cap "B04_schmitt_trigger_backup_0/VDD" "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" 2.77556e-17
+cap "B04_schmitt_trigger_backup_0/VDD" "XM5/a_n1088_n50#" 286.948
+cap "B04_schmitt_trigger_backup_0/VDD" "B04_schmitt_trigger_backup_0/Vout" 41.2676
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM2/w_n2950_n260#" 4.60205
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM1/w_n2950_n260#" 5.73358
+cap "B04_schmitt_trigger_backup_0/VDD" "XM1/a_100_n50#" 0.62311
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 10.059
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 0.150542
+cap "B04_schmitt_trigger_backup_0/VDD" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 3.37892
+cap "XM5/a_n1088_n50#" "XM2/a_100_n50#" 0.733159
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" 0.815383
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM2/a_n2700_n142#" 2.16472
+cap "B04_schmitt_trigger_backup_0/VDD" "XM2/a_n100_n142#" -0.404028
+cap "B04_schmitt_trigger_backup_0/VDD" "XM2/a_100_n50#" 0.0295869
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/XM1/a_n2700_n142#" 2.16472
+cap "B04_schmitt_trigger_backup_0/VDD" "XM7/a_100_n50#" 0.0219371
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/Vout" 22.8891
+cap "B04_schmitt_trigger_backup_0/Vout" "XM9/a_n100_n142#" 0.594281
+cap "B04_schmitt_trigger_backup_0/VDD" "B04_schmitt_trigger_backup_0/XM3/a_n188_n100#" 0.0411409
+cap "XM9/a_n100_n142#" "XM5/a_n1088_n50#" 0.056833
+cap "B04_schmitt_trigger_backup_0/Vout" "B04_schmitt_trigger_backup_0/VDD" 18.8604
+cap "B04_schmitt_trigger_backup_0/VDD" "XM5/a_n1088_n50#" 17.0892
+cap "B04_schmitt_trigger_backup_0/Vout" "XM2/a_100_n50#" -3.69468
+cap "B04_schmitt_trigger_backup_0/VDD" "XM9/a_n100_n142#" 142.206
+cap "XM9/a_n100_n142#" "XM2/a_100_n50#" 4.86479
+cap "B04_schmitt_trigger_backup_0/VDD" "XM2/a_100_n50#" 41.4031
+cap "XM2/a_n100_n142#" "B04_schmitt_trigger_backup_0/VDD" -0.0648726
+cap "B04_schmitt_trigger_backup_0/VDD" "XM1/a_100_n50#" -7.23139
+cap "B04_schmitt_trigger_backup_0/Vout" "XM5/a_n1088_n50#" 0.155722
+cap "m1_8150_4094#" "XM5/a_n1000_n142#" 3.64476
+cap "XM5/a_n1000_n142#" "XM2/a_100_n50#" -2.62136
+cap "XM5/a_1000_n50#" "XM5/a_n1000_n142#" 414.786
+cap "XM5/a_n1000_n142#" "XM9/a_100_n50#" -0.00231889
+cap "XM5/a_1000_n50#" "XM9/a_100_n50#" 0.406657
+cap "XM1/a_n188_n50#" "XM5/a_n1000_n142#" 24.9033
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_100_n50#" 1.49582
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_n188_n50#" 175.165
+cap "XM5/a_1000_n50#" "XM9/a_100_n50#" 27.1863
+cap "XM9/a_n188_n50#" "XM5/a_1000_n50#" 74.0172
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM5/a_1000_n50#" 500.57
+cap "XM9/a_n188_n50#" "XM9/a_100_n50#" -17.2353
+cap "nfet_03v3_REA3EN_0/a_n326_n236#" "XM9/a_100_n50#" 0.016893
+cap "m2_n20_5150#" "B04_schmitt_trigger_backup_0/XM7/a_n2700_n142#" 2.44805
+cap "B04_schmitt_trigger_backup_0/m2_2380_n1410#" "B04_schmitt_trigger_backup_0/VDD" -27.9007
+cap "m2_n20_5150#" "B04_schmitt_trigger_backup_0/m2_2380_n1410#" 64.7114
+cap "m2_n20_5150#" "B04_schmitt_trigger_backup_0/VDD" 232.842
+cap "B04_schmitt_trigger_backup_0/XM7/a_n2700_n142#" "B04_schmitt_trigger_backup_0/VDD" -0.101442
+cap "m2_n20_5150#" "B04_schmitt_trigger_backup_0/XM7/a_n2700_n142#" 0.604345
+cap "B04_schmitt_trigger_backup_0/XM7/w_n2950_n260#" "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" 2.84217e-14
+cap "B04_schmitt_trigger_backup_0/XM7/a_n2700_n142#" "B04_schmitt_trigger_backup_0/VDD" 0.0928143
+cap "B04_schmitt_trigger_backup_0/XM1/a_2700_n50#" "B04_schmitt_trigger_backup_0/VDD" 0.945931
+cap "XM5/a_n1088_n50#" "XM1/a_n100_n142#" 0.110736
+cap "XM5/a_n1088_n50#" "B04_schmitt_trigger_backup_0/VDD" 127.867
+cap "B04_schmitt_trigger_backup_0/VDD" "XM5/a_n1088_n50#" 2.84415
+cap "B04_schmitt_trigger_backup_0/VDD" "m1_9170_2032#" -0.557416
+cap "B04_schmitt_trigger_backup_0/VDD" "XM5/a_1000_n50#" 0.00647913
+cap "XM5/a_1000_n50#" "XM5/a_n1000_n142#" 140.274
+cap "XM9/a_n188_n50#" "XM5/a_n1000_n142#" 6.63276
+cap "XM9/a_n188_n50#" "XM6/a_n2226_n236#" 8.4409
+cap "XM9/a_n188_n50#" "XM5/a_1000_n50#" -0.223872
+cap "XM6/a_n2226_n236#" "XM5/a_1000_n50#" 19.5298
+merge "XM5/a_1000_n50#" "XM6/a_2000_n50#" -1009.01 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -19880 -1752 0 0 0 0 0 0 0 0
+merge "XM6/a_2000_n50#" "XM9/a_n100_n142#"
+merge "XM9/a_n100_n142#" "nfet_03v3_REA3EN_0/a_n100_n142#"
+merge "nfet_03v3_REA3EN_0/a_n100_n142#" "XM7/a_100_n50#"
+merge "XM7/a_100_n50#" "XM8/a_n188_n50#"
+merge "XM8/a_n188_n50#" "m1_9170_2032#"
+merge "XM5/w_n1250_n260#" "XM5/a_n1000_n142#" -22016.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -267184 -8562 0 0 0 0 0 0 -3525840 -52116
+merge "XM5/a_n1000_n142#" "XM5/VSUBS"
+merge "XM5/VSUBS" "B04_schmitt_trigger_backup_0/VDD"
+merge "B04_schmitt_trigger_backup_0/VDD" "XM9/a_n188_n50#"
+merge "XM9/a_n188_n50#" "XM9/w_n350_n260#"
+merge "XM9/w_n350_n260#" "XM6/a_n2000_n142#"
+merge "XM6/a_n2000_n142#" "m1_8870_4314#"
+merge "m1_8870_4314#" "XM7/w_n350_n260#"
+merge "XM7/w_n350_n260#" "XM1/w_n350_n260#"
+merge "XM1/w_n350_n260#" "XM7/a_n188_n50#"
+merge "XM7/a_n188_n50#" "XM1/a_n188_n50#"
+merge "XM1/a_n188_n50#" "VDD"
+merge "VDD" "XM6/a_n2226_n236#"
+merge "XM6/a_n2226_n236#" "XM9/VSUBS"
+merge "XM9/VSUBS" "XM7/VSUBS"
+merge "XM7/VSUBS" "XM1/VSUBS"
+merge "XM1/VSUBS" "nfet_03v3_REA3EN_0/a_n326_n236#"
+merge "nfet_03v3_REA3EN_0/a_n326_n236#" "nfet_03v3_REA3EN_0/a_100_n50#"
+merge "nfet_03v3_REA3EN_0/a_100_n50#" "XM4/a_n326_n236#"
+merge "XM4/a_n326_n236#" "XM4/a_100_n50#"
+merge "XM4/a_100_n50#" "XM8/a_n326_n236#"
+merge "XM8/a_n326_n236#" "XM8/a_100_n50#"
+merge "XM8/a_100_n50#" "XM2/VSUBS"
+merge "XM2/VSUBS" "XM3/a_n326_n236#"
+merge "XM3/a_n326_n236#" "B04_schmitt_trigger_backup_0/VSUBS"
+merge "B04_schmitt_trigger_backup_0/VSUBS" "cap_mim_0/VSUBS"
+merge "cap_mim_0/VSUBS" "cap_mim_1/VSUBS"
+merge "cap_mim_1/VSUBS" "cap_mim_2/VSUBS"
+merge "cap_mim_2/VSUBS" "cap_mim_3/VSUBS"
+merge "cap_mim_3/VSUBS" "cap_mim_4/VSUBS"
+merge "cap_mim_4/VSUBS" "cap_mim_5/VSUBS"
+merge "cap_mim_5/VSUBS" "cap_mim_6/VSUBS"
+merge "cap_mim_6/VSUBS" "cap_mim_7/VSUBS"
+merge "cap_mim_7/VSUBS" "cap_mim_8/VSUBS"
+merge "cap_mim_8/VSUBS" "cap_mim_9/VSUBS"
+merge "cap_mim_9/VSUBS" "cap_mim_10/VSUBS"
+merge "cap_mim_10/VSUBS" "cap_mim_11/VSUBS"
+merge "cap_mim_11/VSUBS" "VSUBS"
+merge "VSUBS" "XM3/a_100_n50#"
+merge "XM3/a_100_n50#" "B04_schmitt_trigger_backup_0/GND"
+merge "B04_schmitt_trigger_backup_0/GND" "GND"
+merge "GND" "cap_mim_0/m4_0_0#"
+merge "cap_mim_0/m4_0_0#" "cap_mim_1/m4_0_0#"
+merge "cap_mim_1/m4_0_0#" "cap_mim_2/m4_0_0#"
+merge "cap_mim_2/m4_0_0#" "cap_mim_3/m4_0_0#"
+merge "cap_mim_3/m4_0_0#" "cap_mim_4/m4_0_0#"
+merge "cap_mim_4/m4_0_0#" "cap_mim_5/m4_0_0#"
+merge "cap_mim_5/m4_0_0#" "cap_mim_6/m4_0_0#"
+merge "cap_mim_6/m4_0_0#" "cap_mim_7/m4_0_0#"
+merge "cap_mim_7/m4_0_0#" "cap_mim_8/m4_0_0#"
+merge "cap_mim_8/m4_0_0#" "cap_mim_9/m4_0_0#"
+merge "cap_mim_9/m4_0_0#" "cap_mim_10/m4_0_0#"
+merge "cap_mim_10/m4_0_0#" "cap_mim_11/m4_0_0#"
+merge "cap_mim_11/m4_0_0#" "m1_6880_n492#"
+merge "XM5/a_n1088_n50#" "XM6/a_n2088_n50#" -16914.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -480 -33200 -760 0 0 -2213056 -28924 0 0
+merge "XM6/a_n2088_n50#" "B04_schmitt_trigger_backup_0/Vin"
+merge "B04_schmitt_trigger_backup_0/Vin" "cap_mim_0/m4_n120_n120#"
+merge "cap_mim_0/m4_n120_n120#" "cap_mim_1/m4_n120_n120#"
+merge "cap_mim_1/m4_n120_n120#" "cap_mim_2/m4_n120_n120#"
+merge "cap_mim_2/m4_n120_n120#" "cap_mim_3/m4_n120_n120#"
+merge "cap_mim_3/m4_n120_n120#" "cap_mim_4/m4_n120_n120#"
+merge "cap_mim_4/m4_n120_n120#" "cap_mim_5/m4_n120_n120#"
+merge "cap_mim_5/m4_n120_n120#" "cap_mim_6/m4_n120_n120#"
+merge "cap_mim_6/m4_n120_n120#" "cap_mim_7/m4_n120_n120#"
+merge "cap_mim_7/m4_n120_n120#" "cap_mim_8/m4_n120_n120#"
+merge "cap_mim_8/m4_n120_n120#" "cap_mim_9/m4_n120_n120#"
+merge "cap_mim_9/m4_n120_n120#" "cap_mim_10/m4_n120_n120#"
+merge "cap_mim_10/m4_n120_n120#" "cap_mim_11/m4_n120_n120#"
+merge "cap_mim_11/m4_n120_n120#" "m1_8150_4094#"
+merge "XM7/a_n100_n142#" "XM8/a_n100_n142#" -478.972 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16270 -1198 0 0 0 0 0 0 0 0
+merge "XM8/a_n100_n142#" "XM4/a_n188_n50#"
+merge "XM4/a_n188_n50#" "XM2/a_100_n50#"
+merge "XM2/a_100_n50#" "XM3/a_n188_n50#"
+merge "XM3/a_n188_n50#" "m1_7840_1010#"
+merge "XM2/a_n100_n142#" "XM4/a_n100_n142#" -1054.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15130 -1108 0 0 -267400 -4190 0 0 0 0
+merge "XM4/a_n100_n142#" "En"
+merge "XM1/a_100_n50#" "XM2/a_n188_n50#" -305.319 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8320 -688 0 0 0 0 0 0 0 0
+merge "XM2/a_n188_n50#" "XM2/w_n350_n260#"
+merge "XM2/w_n350_n260#" "m1_8300_2022#"
+merge "B04_schmitt_trigger_backup_0/Vout" "m1_7850_2682#" -1570.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -156234 -5356 -16900 -520 0 0 0 0 0 0
+merge "m1_7850_2682#" "m1_6200_2730#"
+merge "m1_6200_2730#" "XM1/a_n100_n142#"
+merge "XM1/a_n100_n142#" "XM3/a_n100_n142#"
+merge "XM3/a_n100_n142#" "m1_7750_820#"
+merge "XM9/a_100_n50#" "nfet_03v3_REA3EN_0/a_n188_n50#" -139.511 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5264 -464 0 0 0 0 0 0 0 0
+merge "nfet_03v3_REA3EN_0/a_n188_n50#" "Vout"

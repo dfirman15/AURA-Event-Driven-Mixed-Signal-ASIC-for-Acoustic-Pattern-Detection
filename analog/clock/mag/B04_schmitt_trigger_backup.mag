@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1787652697
+timestamp 1787809696
 << metal1 >>
 rect 2240 -1250 2830 -1240
 rect 2240 -1500 9300 -1250
@@ -409,44 +409,44 @@ rect 8460 -6836 8499 -6784
 rect 8551 -6836 8570 -6784
 rect 8460 -6910 8570 -6836
 use pfet_03v3_C5NPLE  XM1
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5750 0 1 -2880
 box -2950 -260 2950 260
 use pfet_03v3_C5NPLE  XM2
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5750 0 1 -3730
 box -2950 -260 2950 260
 use pfet_03v3_9TRV9F  XM3
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 9430 0 1 -2930
 box -350 -310 350 310
 use nfet_03v3_Y6NWY5  XM4
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5760 0 1 -4650
 box -2950 -260 2950 260
 use nfet_03v3_Y6NWY5  XM5
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5760 0 1 -5410
 box -2950 -260 2950 260
 use nfet_03v3_GNRYRW  XM6
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 9230 0 1 -5530
 box -350 -310 350 310
 use pfet_03v3_C5NPLE  XM7
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5750 0 1 -1870
 box -2950 -260 2950 260
 use nfet_03v3_Y6NWY5  XM8
-timestamp 1787652697
+timestamp 1787809696
 transform 1 0 5750 0 1 -6160
 box -2950 -260 2950 260
 << labels >>
-flabel metal1 s 2530 -1410 2540 -1380 0 FreeSans 2000 0 0 0 VDD
+flabel metal1 s 2530 -1410 2540 -1380 0 FreeSans 3126 0 0 0 VDD
 port 3 nsew
-flabel metal1 s 2760 -4300 2860 -4100 0 FreeSans 2000 0 0 0 Vin
+flabel metal1 s 2760 -4300 2860 -4100 0 FreeSans 3126 0 0 0 Vin
 port 5 nsew
-flabel metal1 s 10080 -4280 10280 -4080 0 FreeSans 2000 0 0 0 Vout
+flabel metal1 s 10080 -4280 10280 -4080 0 FreeSans 3126 0 0 0 Vout
 port 7 nsew
-flabel metal1 s 2510 -6900 2710 -6700 0 FreeSans 2000 0 0 0 GND
+flabel metal1 s 2510 -6900 2710 -6700 0 FreeSans 3126 0 0 0 GND
 port 9 nsew
 << end >>
