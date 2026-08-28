@@ -1,0 +1,73 @@
+{
+  "project_size": {
+    "source_gds": "/Users/kanobailey/chipathon/2026/gds/B04/B04_TOP.gds",
+    "top_cell": "B04_TOP",
+    "layer": 0,
+    "datatype": 0,
+    "layout_dbu_microns": 0.001,
+    "rectangle_dbu": [
+      -319375,
+      -287975,
+      480625,
+      512025
+    ],
+    "width_microns": "800",
+    "height_microns": "800",
+    "top_cell_text": [
+      {
+        "text": "Vtrigger",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "scl",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "sda",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "VDD",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "Vthreshold",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "Vin",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "Venvelope",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "Vbpf",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "GND",
+        "layer": 81,
+        "datatype": 10
+      },
+      {
+        "text": "en",
+        "layer": 81,
+        "datatype": 10
+      }
+    ]
+  },
+  "participant_pin_count": 10,
+  "selected_variants": [
+    "A"
+  ]
+}

@@ -1,0 +1,4550 @@
+{
+  "creator": "Yosys 0.64 (git sha1 6d2c445ae, g++ 13.3.0-6ubuntu2~24.04.1 -fPIC -O3)",
+  "modules": {
+    "digital_top": {
+      "attributes": {
+        "hdlname": "digital_top",
+        "top": "00000000000000000000000000000001",
+        "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:1.1-67.10"
+      },
+      "parameter_default_values": {
+        "SLAVE_ADDR": "1010000"
+      },
+      "ports": {
+        "VDD": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "VSS": {
+          "direction": "inout",
+          "bits": [ 3 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "comp_out": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "en": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "scl": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "sda_in": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "sda_out": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "sda_oe": {
+          "direction": "output",
+          "bits": [ 10 ]
+        },
+        "trigger_out": {
+          "direction": "output",
+          "bits": [ 11 ]
+        },
+        "cap_ctrl": {
+          "direction": "output",
+          "bits": [ 12, 13, 14 ]
+        }
+      },
+      "cells": {
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:108$43": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:108.40-108.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1" ],
+            "Y": [ 19, 20, 21, 22 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:64$34": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:64.40-64.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1" ],
+            "Y": [ 23, 24, 25, 26 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:88$40": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:88.40-88.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1" ],
+            "Y": [ 27, 28, 29, 30 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27$16": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27.22-27.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 32 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28$18": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28.22-28.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 35 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$19": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.22-29.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 35 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$21": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.22-29.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 38 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$22": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.22-29.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 40 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$23": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.22-30.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 35 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$24": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.22-30.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 43 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$26": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.22-30.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 45 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109$44": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109.33-109.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 47 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$47": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 51 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$49": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.53-146.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$27": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 53 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$28": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.39-39.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 54 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$30": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.59-39.72"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 55 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65$35": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65.33-65.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 56 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$37": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000111",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000111",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.69"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57, 58, 59, 60, 61, 62, 63 ],
+            "B": [ "0", "0", "0", "0", "1", "0", "1" ],
+            "Y": [ 64 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$38": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.73-72.97"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89$41": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000100",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000100",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89.33-89.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "1", "1", "1", "0" ],
+            "Y": [ 67 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$48": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ 36 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$50": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68 ],
+            "B": [ 52 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$32": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.21-39.85"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 33 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$39": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.97"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 66 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$29": {
+          "hide_name": 1,
+          "type": "$logic_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 54 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$31": {
+          "hide_name": 1,
+          "type": "$logic_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.72"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73 ],
+            "B": [ 55 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27$15": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27.31-27.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28$17": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28.22-28.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$20": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.40-29.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$25": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.49-30.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$235": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00000101",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 74, 75, 76, 77, 78, 79, 80, 81 ],
+            "Q": [ 82, 83, 84, 85, 86, 87, 88, 89 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$238": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "10100000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 90, 91, 92, 93, 94, 95, 96, 97 ],
+            "Q": [ 98, 99, 100, 101, 102, 103, 104, 105 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$241": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 106, 107, 108 ],
+            "Q": [ 12, 13, 14 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$244": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:138.5-149.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 109, 110, 111, 112, 113, 114, 115, 116 ],
+            "Q": [ 65, 57, 58, 59, 60, 61, 62, 63 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$247": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:138.5-149.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 117, 118 ],
+            "Q": [ 119, 120 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$250": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 121 ],
+            "Q": [ 9 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$253": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 122 ],
+            "Q": [ 10 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$256": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 123, 124, 125 ],
+            "Q": [ 48, 49, 50 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$259": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 126, 127, 128, 129 ],
+            "Q": [ 15, 16, 17, 18 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$262": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 130 ],
+            "Q": [ 131 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$265": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:17.5-25.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 7 ],
+            "Q": [ 31 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$268": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:17.5-25.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 31 ],
+            "Q": [ 35 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$271": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:17.5-25.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 8 ],
+            "Q": [ 43 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procdff$274": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "1",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:17.5-25.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 43 ],
+            "Q": [ 40 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$100": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.33-95.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.29-102.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 10 ],
+            "Y": [ 132, 133, 134, 135 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$102": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.29-94.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.25-103.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 132, 133, 134, 135 ],
+            "S": [ 36 ],
+            "Y": [ 136, 137, 138, 139 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$104_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:91.24-91.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 140 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$105": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:87.29-87.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:87.25-90.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 27, 28, 29, 30 ],
+            "S": [ 71 ],
+            "Y": [ 141, 142, 143, 144 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$107_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:84.24-84.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 145 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$109": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.33-71.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.29-82.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 10 ],
+            "Y": [ 146, 147, 148, 149 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$111": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.29-70.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.25-83.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 146, 147, 148, 149 ],
+            "S": [ 36 ],
+            "Y": [ 150, 151, 152, 153 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$113_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:67.24-67.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 154 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$114": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:63.29-63.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:63.25-66.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 23, 24, 25, 26 ],
+            "S": [ 71 ],
+            "Y": [ 155, 156, 157, 158 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$116_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.29-61.29|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 159 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$118": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.22-56.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.18-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 160, 161, 162, 163 ],
+            "B": [ 15, 16, 17, 18 ],
+            "S": [ 46 ],
+            "Y": [ 164, 165, 166, 167 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$121": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.17-51.26|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.13-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 164, 165, 166, 167 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 41 ],
+            "Y": [ 126, 127, 128, 129 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$125": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.33-115.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.29-123.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "1" ],
+            "S": [ 10 ],
+            "Y": [ 168, 169, 170 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$127": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.29-114.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.25-124.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 168, 169, 170 ],
+            "S": [ 36 ],
+            "Y": [ 171, 172, 173 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$129": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000110",
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0" ],
+            "B": [ 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188 ],
+            "S": [ 189, 190, 191, 192, 193, 194 ],
+            "Y": [ 195, 196, 197 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$130_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 189 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$131": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109.33-109.48|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109.29-109.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "S": [ 47 ],
+            "Y": [ 198, 199, 200 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$133": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:107.29-107.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:107.25-110.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 198, 199, 200 ],
+            "S": [ 71 ],
+            "Y": [ 174, 175, 176 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$135_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:104.24-104.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 190 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$137": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.33-95.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.29-102.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "1" ],
+            "S": [ 10 ],
+            "Y": [ 201, 202, 203 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$139": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.29-94.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.25-103.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 201, 202, 203 ],
+            "S": [ 36 ],
+            "Y": [ 177, 178, 179 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$141_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:91.24-91.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 191 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$142": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89.33-89.48|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89.29-89.71"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "S": [ 67 ],
+            "Y": [ 204, 205, 206 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$144": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:87.29-87.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:87.25-90.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 204, 205, 206 ],
+            "S": [ 71 ],
+            "Y": [ 180, 181, 182 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$146_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:84.24-84.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "1", "0" ],
+            "Y": [ 192 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$149": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.97|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.33-77.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0" ],
+            "B": [ 48, 49, 50 ],
+            "S": [ 72 ],
+            "Y": [ 207, 208, 209 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$151": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.33-71.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.29-82.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 207, 208, 209 ],
+            "B": [ "1", "1", "0" ],
+            "S": [ 10 ],
+            "Y": [ 210, 211, 212 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$153": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.29-70.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.25-83.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 210, 211, 212 ],
+            "S": [ 36 ],
+            "Y": [ 183, 184, 185 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$155_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:67.24-67.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 193 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$156": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65.33-65.48|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65.29-65.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "0" ],
+            "S": [ 56 ],
+            "Y": [ 213, 214, 215 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$158": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:63.29-63.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:63.25-66.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ 213, 214, 215 ],
+            "S": [ 71 ],
+            "Y": [ 186, 187, 188 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$160_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.29-61.29|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "0" ],
+            "Y": [ 194 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$162": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.22-56.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.18-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 195, 196, 197 ],
+            "B": [ "0", "0", "0" ],
+            "S": [ 46 ],
+            "Y": [ 216, 217, 218 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$165": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.17-51.26|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.13-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 216, 217, 218 ],
+            "B": [ "1", "0", "0" ],
+            "S": [ 41 ],
+            "Y": [ 123, 124, 125 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$169": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.33-115.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.29-123.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ "0" ],
+            "S": [ 10 ],
+            "Y": [ 219 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$171": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.29-114.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.25-124.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 219 ],
+            "S": [ 36 ],
+            "Y": [ 220 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$173": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 220, 221, 222 ],
+            "S": [ 223, 224, 225 ],
+            "Y": [ 226 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$174_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 223 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$176": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.33-95.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.29-102.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ "0" ],
+            "S": [ 10 ],
+            "Y": [ 227 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$178": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.29-94.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.25-103.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 227 ],
+            "S": [ 36 ],
+            "Y": [ 221 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$180_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:91.24-91.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 224 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$183": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.97|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.33-77.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ "1" ],
+            "S": [ 72 ],
+            "Y": [ 228 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$185": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.33-71.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.29-82.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 228 ],
+            "B": [ "0" ],
+            "S": [ 10 ],
+            "Y": [ 229 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$187": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.29-70.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.25-83.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 229 ],
+            "S": [ 36 ],
+            "Y": [ 222 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$189_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:67.24-67.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 225 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$191": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.22-56.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.18-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 226 ],
+            "B": [ "0" ],
+            "S": [ 46 ],
+            "Y": [ 230 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$194": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.17-51.26|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.13-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 230 ],
+            "B": [ "0" ],
+            "S": [ 41 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$198": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.33-115.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.29-123.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 9 ],
+            "S": [ 10 ],
+            "Y": [ 231 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$200": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.29-114.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.25-124.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 231 ],
+            "S": [ 36 ],
+            "Y": [ 232 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$202": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000011",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 232, 233, 234 ],
+            "S": [ 235, 236, 237 ],
+            "Y": [ 238 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$203_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 235 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$205": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.33-95.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:95.29-102.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 9 ],
+            "S": [ 10 ],
+            "Y": [ 239 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$207": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.29-94.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:94.25-103.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 239 ],
+            "S": [ 36 ],
+            "Y": [ 233 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$209_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:91.24-91.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "0", "1" ],
+            "Y": [ 236 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$212": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.97|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.33-77.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ "0" ],
+            "S": [ 72 ],
+            "Y": [ 240 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$214": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.33-71.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:71.29-82.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 240 ],
+            "B": [ 9 ],
+            "S": [ 10 ],
+            "Y": [ 241 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$216": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.29-70.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:70.25-83.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 241 ],
+            "S": [ 36 ],
+            "Y": [ 234 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$218_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:67.24-67.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "0" ],
+            "Y": [ 237 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$220": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.22-56.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.18-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 238 ],
+            "B": [ 9 ],
+            "S": [ 46 ],
+            "Y": [ 242 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$223": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.17-51.26|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.13-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 242 ],
+            "B": [ 9 ],
+            "S": [ 41 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$55": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:169.55-169.55|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14 ],
+            "B": [ 65, 57, 58 ],
+            "S": [ 243 ],
+            "Y": [ 244, 245, 246 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$56_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:169.55-169.55|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119, 120 ],
+            "B": [ "0", "1" ],
+            "Y": [ 243 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$57": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000011"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.22-166.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.18-173.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12, 13, 14 ],
+            "B": [ 244, 245, 246 ],
+            "S": [ 131 ],
+            "Y": [ 106, 107, 108 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$60": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:168.55-168.55|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
+            "B": [ 65, 57, 58, 59, 60, 61, 62, 63 ],
+            "S": [ 247 ],
+            "Y": [ 248, 249, 250, 251, 252, 253, 254, 255 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$61_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:168.55-168.55|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119, 120 ],
+            "B": [ "1", "0" ],
+            "Y": [ 247 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$62": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.22-166.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.18-173.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
+            "B": [ 248, 249, 250, 251, 252, 253, 254, 255 ],
+            "S": [ 131 ],
+            "Y": [ 90, 91, 92, 93, 94, 95, 96, 97 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$66": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.28-167.28|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
+            "B": [ 65, 57, 58, 59, 60, 61, 62, 63 ],
+            "S": [ 256 ],
+            "Y": [ 257, 258, 259, 260, 261, 262, 263, 264 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$67_CMP0": {
+          "hide_name": 1,
+          "type": "$logic_not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.28-167.28|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:167.13-172.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119, 120 ],
+            "Y": [ 256 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$68": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.22-166.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:166.18-173.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
+            "B": [ 257, 258, 259, 260, 261, 262, 263, 264 ],
+            "S": [ 131 ],
+            "Y": [ 74, 75, 76, 77, 78, 79, 80, 81 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$70": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.67|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.13-147.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119, 120 ],
+            "B": [ 65, 57 ],
+            "S": [ 69 ],
+            "Y": [ 117, 118 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$72": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:143.17-143.25|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:143.13-144.73"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65, 57, 58, 59, 60, 61, 62, 63 ],
+            "B": [ 43, 65, 57, 58, 59, 60, 61, 62 ],
+            "S": [ 71 ],
+            "Y": [ 109, 110, 111, 112, 113, 114, 115, 116 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$76": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.33-115.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.29-123.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ "0" ],
+            "S": [ 10 ],
+            "Y": [ 265 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$78": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.29-114.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.25-124.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 265 ],
+            "S": [ 36 ],
+            "Y": [ 266 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$80": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 266 ],
+            "S": [ 267 ],
+            "Y": [ 268 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$81_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 267 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$83": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.22-56.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:56.18-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 268 ],
+            "B": [ "0" ],
+            "S": [ 46 ],
+            "Y": [ 269 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$86": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.17-51.26|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:51.13-129.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 269 ],
+            "B": [ "0" ],
+            "S": [ 41 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$90": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.33-115.47|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:115.29-123.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ "0", "0", "0", "0" ],
+            "S": [ 10 ],
+            "Y": [ 270, 271, 272, 273 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$92": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.29-114.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:114.25-124.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 270, 271, 272, 273 ],
+            "S": [ 36 ],
+            "Y": [ 274, 275, 276, 277 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$94": {
+          "hide_name": 1,
+          "type": "$pmux",
+          "parameters": {
+            "S_WIDTH": "00000000000000000000000000000110",
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 274, 275, 276, 277, 278, 279, 280, 281, 136, 137, 138, 139, 141, 142, 143, 144, 150, 151, 152, 153, 155, 156, 157, 158 ],
+            "S": [ 282, 283, 140, 145, 154, 159 ],
+            "Y": [ 160, 161, 162, 163 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$95_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:111.24-111.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "0", "1", "1" ],
+            "Y": [ 282 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$96": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000100"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:107.29-107.37|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:107.25-110.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18 ],
+            "B": [ 19, 20, 21, 22 ],
+            "S": [ 71 ],
+            "Y": [ 278, 279, 280, 281 ]
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$98_CMP0": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:104.24-104.24|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:61.17-128.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48, 49, 50 ],
+            "B": [ "1", "0", "1" ],
+            "Y": [ 283 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:28$7": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:28.34-28.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+            "B": [ "1" ],
+            "Y": [ 292, 293, 294, 295, 296, 297, 298, 299 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13$2": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13.24-13.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+            "B": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
+            "Y": [ 300 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13$4": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13.23-13.75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 300 ],
+            "B": [ 301 ],
+            "Y": [ 302 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24$6": {
+          "hide_name": 1,
+          "type": "$logic_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24.17-24.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 303 ],
+            "B": [ 302 ],
+            "Y": [ 304 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$ne$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13$3": {
+          "hide_name": 1,
+          "type": "$reduce_bool",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13.56-13.74"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
+            "Y": [ 301 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$procdff$280": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:19.5-31.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 305, 306, 307, 308, 309, 310, 311, 312 ],
+            "Q": [ 284, 285, 286, 287, 288, 289, 290, 291 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$procmux$228": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:27.22-27.30|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:27.18-29.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+            "B": [ 292, 293, 294, 295, 296, 297, 298, 299 ],
+            "S": [ 313 ],
+            "Y": [ 314, 315, 316, 317, 318, 319, 320, 321 ]
+          }
+        },
+        "$flatten\\u_main_cnt.$procmux$231": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24.17-24.42|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24.13-29.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 314, 315, 316, 317, 318, 319, 320, 321 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 304 ],
+            "Y": [ 305, 306, 307, 308, 309, 310, 311, 312 ]
+          }
+        },
+        "$flatten\\u_pulse_gen.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20$54": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20.24-20.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 322 ],
+            "B": [ 323 ],
+            "Y": [ 313 ]
+          }
+        },
+        "$flatten\\u_pulse_gen.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20$53": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20.36-20.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 324 ],
+            "Y": [ 323 ]
+          }
+        },
+        "$flatten\\u_pulse_gen.$procdff$283": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:10.5-18.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 5 ],
+            "Q": [ 322 ]
+          }
+        },
+        "$flatten\\u_pulse_gen.$procdff$286": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:10.5-18.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 322 ],
+            "Q": [ 324 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:23$13": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:23.32-23.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 325, 326, 327, 328, 329, 330, 331, 332 ],
+            "B": [ "1" ],
+            "Y": [ 333, 334, 335, 336, 337, 338, 339, 340 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$ge$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10$8": {
+          "hide_name": 1,
+          "type": "$ge",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10.24-10.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 325, 326, 327, 328, 329, 330, 331, 332 ],
+            "B": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
+            "Y": [ 341 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10$10": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10.23-10.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 341 ],
+            "B": [ 342 ],
+            "Y": [ 303 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18$12": {
+          "hide_name": 1,
+          "type": "$logic_or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18.17-18.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 313 ],
+            "B": [ 303 ],
+            "Y": [ 343 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$ne$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10$9": {
+          "hide_name": 1,
+          "type": "$reduce_bool",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10.56-10.76"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
+            "Y": [ 342 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$procdff$277": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:13.5-26.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 6 ],
+            "CLK": [ 4 ],
+            "D": [ 344, 345, 346, 347, 348, 349, 350, 351 ],
+            "Q": [ 325, 326, 327, 328, 329, 330, 331, 332 ]
+          }
+        },
+        "$flatten\\u_timeout_cnt.$procmux$226": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18.17-18.39|/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18.13-24.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 333, 334, 335, 336, 337, 338, 339, 340 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 343 ],
+            "Y": [ 344, 345, 346, 347, 348, 349, 350, 351 ]
+          }
+        },
+        "$ternary$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:65$1": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:65.26-65.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 302 ],
+            "B": [ 5 ],
+            "S": [ 6 ],
+            "Y": [ 11 ]
+          }
+        }
+      },
+      "netnames": {
+        "$flatten\\u_i2c_config.$0\\bit_cnt[3:0]": {
+          "hide_name": 1,
+          "bits": [ 126, 127, 128, 129 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\cap_ctrl_int[2:0]": {
+          "hide_name": 1,
+          "bits": [ 106, 107, 108 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\reg_addr[1:0]": {
+          "hide_name": 1,
+          "bits": [ 117, 118 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:138.5-149.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\sda_oe[0:0]": {
+          "hide_name": 1,
+          "bits": [ 122 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\sda_out[0:0]": {
+          "hide_name": 1,
+          "bits": [ 121 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\shift_reg_internal[7:0]": {
+          "hide_name": 1,
+          "bits": [ 109, 110, 111, 112, 113, 114, 115, 116 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:138.5-149.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\state[2:0]": {
+          "hide_name": 1,
+          "bits": [ 123, 124, 125 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\threshold_int[7:0]": {
+          "hide_name": 1,
+          "bits": [ 74, 75, 76, 77, 78, 79, 80, 81 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\timeout_int[7:0]": {
+          "hide_name": 1,
+          "bits": [ 90, 91, 92, 93, 94, 95, 96, 97 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:161.5-174.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$0\\write_en[0:0]": {
+          "hide_name": 1,
+          "bits": [ 130 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:41.5-131.8"
+          }
+        },
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:108$43_Y": {
+          "hide_name": 1,
+          "bits": [ 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:108.40-108.54"
+          }
+        },
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:64$34_Y": {
+          "hide_name": 1,
+          "bits": [ 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:64.40-64.54"
+          }
+        },
+        "$flatten\\u_i2c_config.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:88$40_Y": {
+          "hide_name": 1,
+          "bits": [ 27, 28, 29, 30 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:88.40-88.54"
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$19_Y": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.22-29.37"
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$21_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.22-29.47"
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$23_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.22-30.37"
+          }
+        },
+        "$flatten\\u_i2c_config.$and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$24_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.22-30.46"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109$44_Y": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:109.33-109.48"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$47_Y": {
+          "hide_name": 1,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.37"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$49_Y": {
+          "hide_name": 1,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.53-146.67"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$27_Y": {
+          "hide_name": 1,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.35"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$28_Y": {
+          "hide_name": 1,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.39-39.55"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$30_Y": {
+          "hide_name": 1,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.59-39.72"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65$35_Y": {
+          "hide_name": 1,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:65.33-65.48"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$37_Y": {
+          "hide_name": 1,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.69"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$38_Y": {
+          "hide_name": 1,
+          "bits": [ 66 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.73-72.97"
+          }
+        },
+        "$flatten\\u_i2c_config.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89$41_Y": {
+          "hide_name": 1,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:89.33-89.48"
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$48_Y": {
+          "hide_name": 1,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.49"
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146$50_Y": {
+          "hide_name": 1,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:146.17-146.67"
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_and$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72$39_Y": {
+          "hide_name": 1,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:72.37-72.97"
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$29_Y": {
+          "hide_name": 1,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.55"
+          }
+        },
+        "$flatten\\u_i2c_config.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39$31_Y": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.22-39.72"
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27$15_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27.31-27.38"
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28$17_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28.22-28.29"
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29$20_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.40-29.47"
+          }
+        },
+        "$flatten\\u_i2c_config.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30$25_Y": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.49-30.56"
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$100_Y": {
+          "hide_name": 1,
+          "bits": [ 132, 133, 134, 135 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$102_Y": {
+          "hide_name": 1,
+          "bits": [ 136, 137, 138, 139 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$104_CMP": {
+          "hide_name": 1,
+          "bits": [ 140 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$105_Y": {
+          "hide_name": 1,
+          "bits": [ 141, 142, 143, 144 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$107_CMP": {
+          "hide_name": 1,
+          "bits": [ 145 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$109_Y": {
+          "hide_name": 1,
+          "bits": [ 146, 147, 148, 149 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$111_Y": {
+          "hide_name": 1,
+          "bits": [ 150, 151, 152, 153 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$113_CMP": {
+          "hide_name": 1,
+          "bits": [ 154 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$114_Y": {
+          "hide_name": 1,
+          "bits": [ 155, 156, 157, 158 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$116_CMP": {
+          "hide_name": 1,
+          "bits": [ 159 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$118_Y": {
+          "hide_name": 1,
+          "bits": [ 164, 165, 166, 167 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$125_Y": {
+          "hide_name": 1,
+          "bits": [ 168, 169, 170 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$127_Y": {
+          "hide_name": 1,
+          "bits": [ 171, 172, 173 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$129_Y": {
+          "hide_name": 1,
+          "bits": [ 195, 196, 197 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$130_CMP": {
+          "hide_name": 1,
+          "bits": [ 189 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$131_Y": {
+          "hide_name": 1,
+          "bits": [ 198, 199, 200 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$133_Y": {
+          "hide_name": 1,
+          "bits": [ 174, 175, 176 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$135_CMP": {
+          "hide_name": 1,
+          "bits": [ 190 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$137_Y": {
+          "hide_name": 1,
+          "bits": [ 201, 202, 203 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$139_Y": {
+          "hide_name": 1,
+          "bits": [ 177, 178, 179 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$141_CMP": {
+          "hide_name": 1,
+          "bits": [ 191 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$142_Y": {
+          "hide_name": 1,
+          "bits": [ 204, 205, 206 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$144_Y": {
+          "hide_name": 1,
+          "bits": [ 180, 181, 182 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$146_CMP": {
+          "hide_name": 1,
+          "bits": [ 192 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$149_Y": {
+          "hide_name": 1,
+          "bits": [ 207, 208, 209 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$151_Y": {
+          "hide_name": 1,
+          "bits": [ 210, 211, 212 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$153_Y": {
+          "hide_name": 1,
+          "bits": [ 183, 184, 185 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$155_CMP": {
+          "hide_name": 1,
+          "bits": [ 193 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$156_Y": {
+          "hide_name": 1,
+          "bits": [ 213, 214, 215 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$158_Y": {
+          "hide_name": 1,
+          "bits": [ 186, 187, 188 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$160_CMP": {
+          "hide_name": 1,
+          "bits": [ 194 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$162_Y": {
+          "hide_name": 1,
+          "bits": [ 216, 217, 218 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$169_Y": {
+          "hide_name": 1,
+          "bits": [ 219 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$171_Y": {
+          "hide_name": 1,
+          "bits": [ 220 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$173_Y": {
+          "hide_name": 1,
+          "bits": [ 226 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$174_CMP": {
+          "hide_name": 1,
+          "bits": [ 223 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$176_Y": {
+          "hide_name": 1,
+          "bits": [ 227 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$178_Y": {
+          "hide_name": 1,
+          "bits": [ 221 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$180_CMP": {
+          "hide_name": 1,
+          "bits": [ 224 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$183_Y": {
+          "hide_name": 1,
+          "bits": [ 228 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$185_Y": {
+          "hide_name": 1,
+          "bits": [ 229 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$187_Y": {
+          "hide_name": 1,
+          "bits": [ 222 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$189_CMP": {
+          "hide_name": 1,
+          "bits": [ 225 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$191_Y": {
+          "hide_name": 1,
+          "bits": [ 230 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$198_Y": {
+          "hide_name": 1,
+          "bits": [ 231 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$200_Y": {
+          "hide_name": 1,
+          "bits": [ 232 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$202_Y": {
+          "hide_name": 1,
+          "bits": [ 238 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$203_CMP": {
+          "hide_name": 1,
+          "bits": [ 235 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$205_Y": {
+          "hide_name": 1,
+          "bits": [ 239 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$207_Y": {
+          "hide_name": 1,
+          "bits": [ 233 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$209_CMP": {
+          "hide_name": 1,
+          "bits": [ 236 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$212_Y": {
+          "hide_name": 1,
+          "bits": [ 240 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$214_Y": {
+          "hide_name": 1,
+          "bits": [ 241 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$216_Y": {
+          "hide_name": 1,
+          "bits": [ 234 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$218_CMP": {
+          "hide_name": 1,
+          "bits": [ 237 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$220_Y": {
+          "hide_name": 1,
+          "bits": [ 242 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$55_Y": {
+          "hide_name": 1,
+          "bits": [ 244, 245, 246 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$56_CMP": {
+          "hide_name": 1,
+          "bits": [ 243 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$60_Y": {
+          "hide_name": 1,
+          "bits": [ 248, 249, 250, 251, 252, 253, 254, 255 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$61_CMP": {
+          "hide_name": 1,
+          "bits": [ 247 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$66_Y": {
+          "hide_name": 1,
+          "bits": [ 257, 258, 259, 260, 261, 262, 263, 264 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$67_CMP": {
+          "hide_name": 1,
+          "bits": [ 256 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$76_Y": {
+          "hide_name": 1,
+          "bits": [ 265 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$78_Y": {
+          "hide_name": 1,
+          "bits": [ 266 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$80_Y": {
+          "hide_name": 1,
+          "bits": [ 268 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$81_CMP": {
+          "hide_name": 1,
+          "bits": [ 267 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$83_Y": {
+          "hide_name": 1,
+          "bits": [ 269 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$90_Y": {
+          "hide_name": 1,
+          "bits": [ 270, 271, 272, 273 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$92_Y": {
+          "hide_name": 1,
+          "bits": [ 274, 275, 276, 277 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$94_Y": {
+          "hide_name": 1,
+          "bits": [ 160, 161, 162, 163 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$95_CMP": {
+          "hide_name": 1,
+          "bits": [ 282 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$96_Y": {
+          "hide_name": 1,
+          "bits": [ 278, 279, 280, 281 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_i2c_config.$procmux$98_CMP": {
+          "hide_name": 1,
+          "bits": [ 283 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_main_cnt.$0\\current_count[7:0]": {
+          "hide_name": 1,
+          "bits": [ 305, 306, 307, 308, 309, 310, 311, 312 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:19.5-31.8"
+          }
+        },
+        "$flatten\\u_main_cnt.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:28$7_Y": {
+          "hide_name": 1,
+          "bits": [ 292, 293, 294, 295, 296, 297, 298, 299 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:28.34-28.54"
+          }
+        },
+        "$flatten\\u_main_cnt.$eq$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13$2_Y": {
+          "hide_name": 1,
+          "bits": [ 300 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13.24-13.50"
+          }
+        },
+        "$flatten\\u_main_cnt.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24$6_Y": {
+          "hide_name": 1,
+          "bits": [ 304 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:24.17-24.42"
+          }
+        },
+        "$flatten\\u_main_cnt.$ne$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13$3_Y": {
+          "hide_name": 1,
+          "bits": [ 301 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:13.56-13.74"
+          }
+        },
+        "$flatten\\u_main_cnt.$procmux$228_Y": {
+          "hide_name": 1,
+          "bits": [ 314, 315, 316, 317, 318, 319, 320, 321 ],
+          "attributes": {
+          }
+        },
+        "$flatten\\u_pulse_gen.$not$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20$53_Y": {
+          "hide_name": 1,
+          "bits": [ 323 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:20.36-20.46"
+          }
+        },
+        "$flatten\\u_timeout_cnt.$0\\timer_count[7:0]": {
+          "hide_name": 1,
+          "bits": [ 344, 345, 346, 347, 348, 349, 350, 351 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:13.5-26.8"
+          }
+        },
+        "$flatten\\u_timeout_cnt.$add$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:23$13_Y": {
+          "hide_name": 1,
+          "bits": [ 333, 334, 335, 336, 337, 338, 339, 340 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:23.32-23.50"
+          }
+        },
+        "$flatten\\u_timeout_cnt.$ge$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10$8_Y": {
+          "hide_name": 1,
+          "bits": [ 341 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10.24-10.50"
+          }
+        },
+        "$flatten\\u_timeout_cnt.$logic_or$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18$12_Y": {
+          "hide_name": 1,
+          "bits": [ 343 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:18.17-18.39"
+          }
+        },
+        "$flatten\\u_timeout_cnt.$ne$/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10$9_Y": {
+          "hide_name": 1,
+          "bits": [ 342 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:10.56-10.76"
+          }
+        },
+        "VDD": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:4.23-4.26"
+          }
+        },
+        "VSS": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:5.23-5.26"
+          }
+        },
+        "cap_ctrl": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:17.23-17.31"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:7.23-7.26"
+          }
+        },
+        "comp_out": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:8.23-8.31"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:9.23-9.25"
+          }
+        },
+        "pulse_w": {
+          "hide_name": 0,
+          "bits": [ 313 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:20.10-20.17"
+          }
+        },
+        "scl": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:10.23-10.26"
+          }
+        },
+        "sda_in": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:12.23-12.29"
+          }
+        },
+        "sda_oe": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:14.23-14.29"
+          }
+        },
+        "sda_out": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:13.23-13.30"
+          }
+        },
+        "threshold_w": {
+          "hide_name": 0,
+          "bits": [ 82, 83, 84, 85, 86, 87, 88, 89 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:22.16-22.27"
+          }
+        },
+        "timeout_rst_w": {
+          "hide_name": 0,
+          "bits": [ 303 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:21.10-21.23"
+          }
+        },
+        "timeout_val_w": {
+          "hide_name": 0,
+          "bits": [ 98, 99, 100, 101, 102, 103, 104, 105 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:23.16-23.29"
+          }
+        },
+        "trigger_internal": {
+          "hide_name": 0,
+          "bits": [ 302 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:24.16-24.32"
+          }
+        },
+        "trigger_out": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/digital_top.v:16.23-16.34"
+          }
+        },
+        "u_i2c_config.bit_cnt": {
+          "hide_name": 0,
+          "bits": [ 15, 16, 17, 18 ],
+          "attributes": {
+            "hdlname": "u_i2c_config bit_cnt",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:36.15-36.22"
+          }
+        },
+        "u_i2c_config.parallel_data": {
+          "hide_name": 0,
+          "bits": [ 65, 57, 58, 59, 60, 61, 62, 63 ],
+          "attributes": {
+            "hdlname": "u_i2c_config parallel_data",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:136.16-136.29"
+          }
+        },
+        "u_i2c_config.reg_addr": {
+          "hide_name": 0,
+          "bits": [ 119, 120 ],
+          "attributes": {
+            "hdlname": "u_i2c_config reg_addr",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:135.15-135.23"
+          }
+        },
+        "u_i2c_config.scl_d1": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "hdlname": "u_i2c_config scl_d1",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:16.9-16.15"
+          }
+        },
+        "u_i2c_config.scl_d2": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "hdlname": "u_i2c_config scl_d2",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:16.17-16.23"
+          }
+        },
+        "u_i2c_config.scl_fall": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "hdlname": "u_i2c_config scl_fall",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:28.10-28.18"
+          }
+        },
+        "u_i2c_config.scl_rise": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "hdlname": "u_i2c_config scl_rise",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:27.10-27.18"
+          }
+        },
+        "u_i2c_config.sda_d1": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "hdlname": "u_i2c_config sda_d1",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:16.25-16.31"
+          }
+        },
+        "u_i2c_config.sda_d2": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "hdlname": "u_i2c_config sda_d2",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:16.33-16.39"
+          }
+        },
+        "u_i2c_config.shift_en": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "hdlname": "u_i2c_config shift_en",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:39.10-39.18"
+          }
+        },
+        "u_i2c_config.start_det": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "hdlname": "u_i2c_config start_det",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:29.10-29.19"
+          }
+        },
+        "u_i2c_config.state": {
+          "hide_name": 0,
+          "bits": [ 48, 49, 50 ],
+          "attributes": {
+            "hdlname": "u_i2c_config state",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:35.15-35.20"
+          }
+        },
+        "u_i2c_config.stop_det": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "hdlname": "u_i2c_config stop_det",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:30.10-30.18"
+          }
+        },
+        "u_i2c_config.write_en": {
+          "hide_name": 0,
+          "bits": [ 131 ],
+          "attributes": {
+            "hdlname": "u_i2c_config write_en",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/i2c_slave_config.v:37.15-37.23"
+          }
+        },
+        "u_main_cnt.count_reg": {
+          "hide_name": 0,
+          "bits": [ 284, 285, 286, 287, 288, 289, 290, 291 ],
+          "attributes": {
+            "hdlname": "u_main_cnt count_reg",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/main_event_counter.v:8.23-8.32"
+          }
+        },
+        "u_pulse_gen.signal_d1": {
+          "hide_name": 0,
+          "bits": [ 322 ],
+          "attributes": {
+            "hdlname": "u_pulse_gen signal_d1",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:7.9-7.18"
+          }
+        },
+        "u_pulse_gen.signal_d2": {
+          "hide_name": 0,
+          "bits": [ 324 ],
+          "attributes": {
+            "hdlname": "u_pulse_gen signal_d2",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/pulse_generator.v:8.9-8.18"
+          }
+        },
+        "u_timeout_cnt.timer_count": {
+          "hide_name": 0,
+          "bits": [ 325, 326, 327, 328, 329, 330, 331, 332 ],
+          "attributes": {
+            "hdlname": "u_timeout_cnt timer_count",
+            "src": "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/src/digital/timeout_counter.v:9.15-9.26"
+          }
+        }
+      }
+    }
+  }
+}

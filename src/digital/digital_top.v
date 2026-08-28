@@ -6,14 +6,14 @@ module digital_top #(
 
     input  wire       clk,
     input  wire       comp_out,
-
     input  wire       en,
-
     input  wire       scl,
-    inout  wire        sda,
+
+    input  wire       sda_in,
+    output wire       sda_out,
+    output wire       sda_oe,
 
     output wire       trigger_out,
-
     output wire [2:0] cap_ctrl
 );
 
@@ -23,13 +23,6 @@ module digital_top #(
     wire [7:0] timeout_val_w;
     wire       trigger_internal;
 
-    // resolve tri-state sda
-    wire sda_in_w  = sda;
-    wire sda_out_w;
-    wire sda_oe_w;
-    assign sda = sda_oe_w ? sda_out_w : 1'bz;
-
-    // Pulse generator dari output comparator
     pulse_generator u_pulse_gen (
         .clk       (clk),
         .en        (en),
@@ -37,22 +30,20 @@ module digital_top #(
         .pulse_out (pulse_w)
     );
 
-    // I2C slave config
     i2c_slave_config #(
         .SLAVE_ADDR(SLAVE_ADDR)
     ) u_i2c_config (
         .clk           (clk),
         .en            (en),
         .scl           (scl),
-        .sda_in        (sda_in_w),
-        .sda_out       (sda_out_w),
-        .sda_oe        (sda_oe_w),
+        .sda_in        (sda_in),
+        .sda_out       (sda_out),
+        .sda_oe        (sda_oe),
         .threshold_reg (threshold_w),
         .timeout_reg   (timeout_val_w),
         .cap_ctrl_reg  (cap_ctrl)
     );
 
-    // Timeout counter
     timeout_counter u_timeout_cnt (
         .clk         (clk),
         .en          (en),
@@ -61,7 +52,6 @@ module digital_top #(
         .timeout_rst (timeout_rst_w)
     );
 
-    // Main event counter
     main_event_counter u_main_cnt (
         .clk         (clk),
         .en          (en),
@@ -69,10 +59,8 @@ module digital_top #(
         .timeout_rst (timeout_rst_w),
         .threshold   (threshold_w),
         .trigger_out (trigger_internal),
-        .count_reg   ()            //floating (debug only)
+        .count_reg   ()
     );
-
-    // Bypass logic
 
     assign trigger_out = en ? comp_out : trigger_internal;
 

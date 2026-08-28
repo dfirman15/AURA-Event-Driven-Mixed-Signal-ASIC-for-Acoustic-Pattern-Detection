@@ -1,0 +1,174 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO digital_top
+  CLASS BLOCK ;
+  FOREIGN digital_top ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 120.000 BY 250.000 ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 22.240 15.380 23.840 231.580 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT 6.720 31.530 113.120 33.130 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT 6.720 184.710 113.120 186.310 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 25.540 15.380 27.140 231.580 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT 6.720 34.830 113.120 36.430 ;
+    END
+    PORT
+      LAYER Metal5 ;
+        RECT 6.720 188.010 113.120 189.610 ;
+    END
+  END VSS
+  PIN cap_ctrl[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 44.800 0.000 45.360 0.560 ;
+    END
+  END cap_ctrl[0]
+  PIN cap_ctrl[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 73.920 0.000 74.480 0.560 ;
+    END
+  END cap_ctrl[1]
+  PIN cap_ctrl[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 103.040 0.000 103.600 0.560 ;
+    END
+  END cap_ctrl[2]
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 4.738000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 119.440 124.320 120.000 124.880 ;
+    END
+  END clk
+  PIN comp_out
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.396000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 15.680 0.000 16.240 0.560 ;
+    END
+  END comp_out
+  PIN en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.396000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 20.160 0.560 20.720 ;
+    END
+  END en
+  PIN scl
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.396000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 61.600 0.560 62.160 ;
+    END
+  END scl
+  PIN sda_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.396000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 103.040 0.560 103.600 ;
+    END
+  END sda_in
+  PIN sda_oe
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 185.920 0.560 186.480 ;
+    END
+  END sda_oe
+  PIN sda_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 144.480 0.560 145.040 ;
+    END
+  END sda_out
+  PIN trigger_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.897600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 227.360 0.560 227.920 ;
+    END
+  END trigger_out
+  OBS
+      LAYER Nwell ;
+        RECT 6.290 15.250 113.550 231.710 ;
+      LAYER Metal1 ;
+        RECT 6.720 15.380 113.120 231.580 ;
+      LAYER Metal2 ;
+        RECT 7.980 0.860 111.860 231.470 ;
+        RECT 7.980 0.560 15.380 0.860 ;
+        RECT 16.540 0.560 44.500 0.860 ;
+        RECT 45.660 0.560 73.620 0.860 ;
+        RECT 74.780 0.560 102.740 0.860 ;
+        RECT 103.900 0.560 111.860 0.860 ;
+      LAYER Metal3 ;
+        RECT 0.560 228.220 119.440 231.420 ;
+        RECT 0.860 227.060 119.440 228.220 ;
+        RECT 0.560 186.780 119.440 227.060 ;
+        RECT 0.860 185.620 119.440 186.780 ;
+        RECT 0.560 145.340 119.440 185.620 ;
+        RECT 0.860 144.180 119.440 145.340 ;
+        RECT 0.560 125.180 119.440 144.180 ;
+        RECT 0.560 124.020 119.140 125.180 ;
+        RECT 0.560 103.900 119.440 124.020 ;
+        RECT 0.860 102.740 119.440 103.900 ;
+        RECT 0.560 62.460 119.440 102.740 ;
+        RECT 0.860 61.300 119.440 62.460 ;
+        RECT 0.560 21.020 119.440 61.300 ;
+        RECT 0.860 19.860 119.440 21.020 ;
+        RECT 0.560 15.540 119.440 19.860 ;
+      LAYER Metal4 ;
+        RECT 30.940 66.730 81.620 151.670 ;
+  END
+END digital_top
+END LIBRARY
+

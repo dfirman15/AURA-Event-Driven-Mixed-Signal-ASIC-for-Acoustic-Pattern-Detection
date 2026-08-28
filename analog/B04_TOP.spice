@@ -1,25 +1,29 @@
 .include "/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice"
 .include "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/digital_top.spice"
-.subckt B04_TOP Vin Venvelope Vbpf VDD GND Vtrigger sda scl en Vthreshold
+.subckt B04_TOP Vin Venvelope Vbpf VDD GND Vtrigger sda_in sda_oe sda_out scl en Vthreshold
 XX_ANALOG VDD net_cap0 net_cap1 Vthreshold net_cap2 net_comp Vin GND Vbpf Venvelope B04_AFE_top
-XX_CLOCK VDD internal_clk GND B04_clock_gen
-XX_DIGITAL VDD GND net_cap0 net_cap1 net_cap2 internal_clk net_comp en scl sda Vtrigger digital_top
+XX_CLOCK VDD internal_clk en GND B04_clock_gen
+XX_DIGITAL VDD GND net_cap0 net_cap1 net_cap2 internal_clk net_comp en scl sda_in sda_oe sda_out Vtrigger digital_top
 .ends
 
 ** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_clock_gen.sch
-.subckt B04_clock_gen VDD Vout GND
-*.PININFO GND:B VDD:B Vout:O
-M1 net2 net3 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
-M2 net2 net3 GND GND nfet_03v3 L=1u W=0.5u nf=1
-M3 Vout net2 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
-M4 Vout net2 GND GND nfet_03v3 L=1u W=0.5u nf=1
-M5 net1 GND Vout VDD pfet_03v3 L=10u W=0.5u nf=1
-M6 Vout VDD net1 GND nfet_03v3 L=20u W=0.5u nf=1
+.subckt B04_clock_gen VDD Vout en GND
+*.PININFO GND:B VDD:B Vout:O en:I
+M1 net4 net3 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
+M5 net1 GND net2 VDD pfet_03v3 L=10u W=0.5u nf=1
+M6 net2 VDD net1 GND nfet_03v3 L=20u W=0.5u nf=1
 XC2 net1 GND cap_mim_2f0fF c_width=10u c_length=20u m=12
+M4 net5 net3 GND GND nfet_03v3 L=1u W=0.5u nf=1
+M2 net5 en net4 net4 pfet_03v3 L=1u W=0.5u nf=1
+M3 net5 en GND GND nfet_03v3 L=1u W=0.5u nf=1
+M7 net2 net5 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
+M8 net2 net5 GND GND nfet_03v3 L=1u W=0.5u nf=1
+M9 Vout net2 VDD VDD pfet_03v3 L=1u W=0.5u nf=1
+M10 Vout net2 GND GND nfet_03v3 L=1u W=0.5u nf=1
 x1 VDD net1 net3 GND B04_schmitt_trigger
 .ends
 
-* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym
+* expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym
 *+ # of pins=4
 ** sym_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sym
 ** sch_path: /foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/clock/sch/B04_schmitt_trigger.sch
@@ -34,6 +38,7 @@ M6 net3 Vout VDD GND nfet_03v3 L=1u W=1u nf=1
 M7 net2 GND VDD VDD pfet_03v3 L=27u W=0.5u nf=1
 M8 GND VDD GND GND nfet_03v3 L=27u W=0.5u nf=1
 .ends
+
 
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_AFE_top.sym # of pins=10
 .subckt B04_AFE_top VDD Cap0 Cap1 Vthreshold Cap2 Vout Vin GND Vbpf Venvelope
