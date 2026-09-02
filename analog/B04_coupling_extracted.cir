@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 23/08/2026 07:12
+* Extracted by KLayout with GF180MCU LVS runset on : 02/09/2026 11:57
 
 .SUBCKT B04_coupling Vin Vout VDD05
 C$1 Vout Vin 4e-12 cap_mim_2f0fF A=2000P P=800U
