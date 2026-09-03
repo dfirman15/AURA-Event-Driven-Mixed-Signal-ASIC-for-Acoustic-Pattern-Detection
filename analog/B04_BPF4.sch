@@ -311,6 +311,13 @@ N 2030 -1400 2030 -1300 {lab=cap2}
 N 1730 -1340 3170 -1400 {lab=cap0}
 N 1890 -1320 3330 -1380 {lab=cap1}
 N 2030 -1300 3470 -1360 {lab=cap2}
+N 1370 -880 1620 -880 {lab=GND}
+N 1620 -880 1650 -1090 {lab=GND}
+N 1770 -1210 1770 -1090 {lab=VDD}
+N 3960 -1210 3960 -1070 {lab=VDD}
+N 3840 -1070 3840 -940 {lab=GND}
+N 3540 -920 3840 -940 {lab=GND}
+N 3540 -920 3540 -860 {lab=GND}
 C {iopin.sym} 890 -1210 3 0 {name=p1 lab=VDD}
 C {iopin.sym} -600 140 1 0 {name=p2 lab=GND}
 C {ipin.sym} -20 -1030 0 0 {name=p3 lab=Vin}
@@ -665,3 +672,23 @@ C {ipin.sym} 1150 -1340 3 0 {name=p8 lab=cap0}
 C {ipin.sym} 1330 -1320 3 0 {name=p9 lab=cap1}
 C {ipin.sym} 1460 -1300 3 0 {name=p10 lab=cap2}
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_OTA_bias_ratio_5.sym} 4440 90 0 0 {name=x14}
+C {symbols/diode_nd2ps_03v3.sym} 1680 -1090 3 0 {name=D1
+model=diode_nd2ps_03v3
+r_w=1u
+r_l=1u
+m=5}
+C {symbols/diode_pd2nw_03v3.sym} 1740 -1090 3 0 {name=D2
+model=diode_pd2nw_03v3
+r_w=1u
+r_l=1u
+m=5}
+C {symbols/diode_nd2ps_03v3.sym} 3870 -1070 3 0 {name=D3
+model=diode_nd2ps_03v3
+r_w=1u
+r_l=1u
+m=5}
+C {symbols/diode_pd2nw_03v3.sym} 3930 -1070 3 0 {name=D4
+model=diode_pd2nw_03v3
+r_w=1u
+r_l=1u
+m=5}

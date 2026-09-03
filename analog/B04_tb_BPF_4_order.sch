@@ -46,7 +46,7 @@ N 300 -60 400 -60 {lab=#net5}
 N 100 -130 100 -110 {lab=#net6}
 N 100 -130 400 -130 {lab=#net6}
 N 400 -130 400 -80 {lab=#net6}
-C {vsource.sym} -200 30 0 0 {name=Vin value="DC 1.65 AC 1 SINE(1.65 1m 6k 0 0)" savecurrent=false}
+C {vsource.sym} -200 30 0 0 {name=Vin value="DC 1.65 AC 1 SINE(1.65 1m 2k 0 0)" savecurrent=false}
 C {vsource.sym} -270 30 0 0 {name=VDD value=3.3 savecurrent=false}
 C {gnd.sym} -70 90 0 0 {name=l1 lab=0}
 C {lab_pin.sym} 700 -60 2 0 {name=p1 sig_type=std_logic lab=Vout}
@@ -54,7 +54,8 @@ C {code_shown.sym} -520 -270 0 0 {name=include1 only_toplevel=false value=".incl
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ff
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice res_ff
 .lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice cap_mim
-.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_ff"}
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice mimcap_ff
+.lib /foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.tech/ngspice/sm141064.ngspice diode_ff"}
 C {code_shown.sym} 850 -100 0 0 {name=s1 only_toplevel=false value="
 .control
 set color0=white  ;
@@ -95,7 +96,7 @@ meas ac Gain_Minus_2000Hz find vdb(vout) at=$&f_low
 meas ac Gain_Plus_2000Hz find vdb(vout) at=$&f_high
 
 tran 1u 5m
-plot v(Vdd05)
+plot v(Vdd05) v(Vout)
 .endc
 
 "}
@@ -104,6 +105,6 @@ C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04
 C {AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_VDD05.sym} 140 190 0 0 {name=x3}
 C {lab_pin.sym} -100 -20 0 0 {name=p2 sig_type=std_logic lab=Vin}
 C {vsource.sym} 100 -80 0 0 {name=Vcap0 value=0 savecurrent=false}
-C {vsource.sym} 180 -80 0 0 {name=Vcap1 value=0 savecurrent=false}
-C {vsource.sym} 260 -80 0 0 {name=Vcap2 value=0 savecurrent=false}
+C {vsource.sym} 180 -80 0 0 {name=Vcap1 value=3.3 savecurrent=false}
+C {vsource.sym} 260 -80 0 0 {name=Vcap2 value=3.3 savecurrent=false}
 C {lab_pin.sym} 340 140 2 0 {name=p3 sig_type=std_logic lab=Vdd05}

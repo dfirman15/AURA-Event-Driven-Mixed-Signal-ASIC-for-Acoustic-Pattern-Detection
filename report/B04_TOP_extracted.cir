@@ -1,34 +1,34 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 02/09/2026 23:18
+* Extracted by KLayout with GF180MCU LVS runset on : 03/09/2026 16:29
 
-.SUBCKT B04_TOP VDD Vin Vbpf Venvelope Vthreshold Vtrigger en sda_out sda_oe
-+ sda_in scl GND
+.SUBCKT B04_TOP VDD Vin Vbpf Venvelope Vthreshold Vtrigger en sda_out sda_in
++ sda_oe scl GND
 X$2 \$11 \$7 VDD \$17 \$52 \$54 \$57 \$37 \$46 GND B04_AFE_top
 X$3 \$46 \$57 \$54 \$52 VDD en scl \$90 sda_in sda_out sda_oe Vtrigger GND
 + digital_top
 X$209 en \$90 VDD GND B04_clock_gen
-X$625 Vin \$17 VDD GND io_secondary_5p0
-X$626 Vbpf \$7 VDD GND io_secondary_5p0
-X$627 Venvelope \$11 VDD GND io_secondary_5p0
-X$628 Vthreshold \$37 VDD GND io_secondary_5p0
+X$625 Vin \$17 VDD GND secondary_esd
+X$626 Vbpf \$7 VDD GND secondary_esd
+X$627 Venvelope \$11 VDD GND secondary_esd
+X$628 Vthreshold \$37 VDD GND secondary_esd
 .ENDS B04_TOP
 
 .SUBCKT digital_top comp_out cap_ctrl[0] cap_ctrl[1] cap_ctrl[2] VDD en scl clk
 + sda_in sda_out sda_oe trigger_out VSS
-X$1 comp_out VDD VSS \$9 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$1 comp_out VDD VSS \$10 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
 X$2 \$48 VDD VSS cap_ctrl[0] VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
 X$3 \$40 VDD VSS cap_ctrl[1] VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$4 \$11 VDD VSS cap_ctrl[2] VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$5 VSS VDD \$6 \$66 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$6 VSS VDD \$6 \$155 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$7 VSS VDD \$6 \$78 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$8 VSS VDD \$6 \$152 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$9 \$27 VDD VSS \$6 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$10 \$6 VDD VSS \$10 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$11 \$38 VDD VSS \$7 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$12 \$7 VDD VSS \$12 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$13 \$7 VDD VSS \$84 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$14 \$7 VDD VSS \$258 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$15 \$7 VDD VSS \$135 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$4 \$12 VDD VSS cap_ctrl[2] VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$5 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$6 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$7 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$8 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$9 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$10 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$11 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$12 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$13 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$14 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$15 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$16 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$17 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$18 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
@@ -43,301 +43,301 @@ X$26 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$27 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$28 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
 X$29 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$30 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$31 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$32 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$33 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$34 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$35 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$36 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$37 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$38 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$39 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$40 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$41 \$546 VSS VDD \$564 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
-X$42 VSS VDD \$538 \$540 \$546 \$458 \$520 VDD VSS
+X$30 \$546 VSS VDD \$564 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+X$31 VSS VDD \$538 \$540 \$546 \$458 \$519 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai31_1
-X$43 \$570 VSS \$532 \$533 VDD \$538 VDD VSS gf180mcu_fd_sc_mcu7t5v0__or3_1
-X$44 VSS VDD \$493 \$452 \$344 \$365 \$397 VDD VSS
+X$32 \$570 VSS \$532 \$533 VDD \$538 VDD VSS gf180mcu_fd_sc_mcu7t5v0__or3_1
+X$33 VSS VDD \$493 \$452 \$344 \$365 \$397 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nand4_1
-X$45 VSS \$324 VDD \$365 \$345 \$383 \$328 \$267 VDD VSS
+X$34 VSS \$324 VDD \$365 \$345 \$383 \$328 \$267 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-X$46 VSS \$373 \$437 VDD \$381 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$47 VSS \$279 \$210 VDD \$287 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$48 VSS \$452 \$424 VDD \$446 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$49 VSS \$477 \$397 VDD \$469 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$50 VSS \$500 \$365 VDD \$501 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$51 VSS \$440 \$392 VDD \$448 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$52 VSS \$344 \$312 VDD \$345 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$53 VSS \$251 \$382 VDD \$411 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$54 VSS \$384 \$366 VDD \$385 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$55 VSS \$392 \$357 \$358 \$351 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$56 VSS \$234 \$194 \$224 \$255 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$57 VSS \$518 \$471 \$582 \$583 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$58 VSS \$430 \$357 \$392 \$429 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$59 VSS \$373 \$337 \$408 \$409 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$60 VSS \$474 \$537 \$486 \$418 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$61 VSS \$183 \$170 \$192 \$180 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$62 VSS \$361 \$337 \$359 \$378 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
-X$63 VDD \$321 \$362 \$339 \$338 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$64 VDD \$264 \$320 \$190 \$305 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$65 VDD \$191 \$192 \$190 \$193 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$66 VDD \$332 \$313 \$324 \$323 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$67 VDD \$205 \$224 \$240 \$249 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$68 VDD \$256 \$296 \$295 \$277 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$69 VDD \$481 \$489 \$482 \$462 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$70 VDD \$203 \$247 \$240 \$241 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$71 VDD \$166 \$167 \$174 \$175 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$72 VDD \$321 \$283 \$301 \$307 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$73 VDD \$545 \$511 \$481 \$543 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$74 VSS \$209 VDD \$210 \$175 \$173 \$172 VDD VSS
+X$35 VSS \$373 \$437 VDD \$381 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$36 VSS \$279 \$210 VDD \$287 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$37 VSS \$452 \$424 VDD \$446 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$38 VSS \$477 \$397 VDD \$469 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$39 VSS \$499 \$365 VDD \$500 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$40 VSS \$440 \$392 VDD \$448 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$41 VSS \$344 \$312 VDD \$345 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$42 VSS \$251 \$382 VDD \$411 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$43 VSS \$384 \$366 VDD \$385 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$44 VSS \$392 \$357 \$358 \$351 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$45 VSS \$234 \$193 \$224 \$255 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$46 VSS \$517 \$471 \$582 \$583 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$47 VSS \$430 \$357 \$392 \$429 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$48 VSS \$373 \$337 \$408 \$409 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$49 VSS \$474 \$537 \$486 \$418 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$50 VSS \$182 \$170 \$191 \$179 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$51 VSS \$361 \$337 \$359 \$378 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$52 VDD \$321 \$362 \$339 \$338 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$53 VDD \$264 \$320 \$189 \$305 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$54 VDD \$190 \$191 \$189 \$192 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$55 VDD \$332 \$313 \$324 \$323 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$56 VDD \$205 \$224 \$240 \$249 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$57 VDD \$256 \$296 \$295 \$277 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$58 VDD \$481 \$489 \$482 \$462 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$59 VDD \$203 \$247 \$240 \$241 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$60 VDD \$166 \$167 \$173 \$174 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$61 VDD \$321 \$283 \$301 \$307 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$62 VDD \$545 \$510 \$481 \$543 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$63 VSS \$209 VDD \$210 \$174 \$196 \$172 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-X$75 VSS \$454 VDD \$481 \$434 \$512 \$485 VDD VSS
+X$64 VSS \$454 VDD \$481 \$434 \$511 \$485 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-X$76 VSS \$145 VDD \$132 \$174 \$196 \$216 VDD VSS
+X$65 VSS \$145 VDD \$132 \$173 \$195 \$216 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-X$77 VSS \$295 VDD \$397 \$410 \$366 \$339 VDD VSS
+X$66 VSS \$295 VDD \$397 \$410 \$366 \$339 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-X$78 VSS \$105 \$50 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$79 VSS \$105 \$194 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$80 VSS \$105 \$325 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$81 VSS \$105 \$29 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$82 VSS \$105 \$357 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$83 VSS \$105 \$170 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$84 VSS \$105 \$186 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$85 VSS \$105 \$537 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$86 VSS \$105 \$496 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$87 VSS \$105 \$337 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$88 VSS \$105 \$471 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$89 VSS \$455 \$485 VDD \$435 VDD VSS gf180mcu_fd_sc_mcu7t5v0__or2_1
-X$90 VSS \$105 \$404 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$91 VSS \$105 \$82 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$92 VSS \$105 \$478 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$93 VSS \$105 \$243 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$94 VDD \$402 \$515 VSS \$485 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$95 VDD \$463 \$423 VSS \$457 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$96 VDD \$129 \$140 VSS \$141 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$97 VDD \$175 \$174 VSS \$161 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$98 VDD \$132 \$113 VSS \$142 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$99 VDD \$422 \$445 VSS \$431 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$100 VDD \$462 \$482 VSS \$318 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$101 VSS VDD \$237 \$36 \$304 \$246 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$102 VSS VDD \$493 \$477 \$344 \$365 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$103 VSS VDD \$586 \$553 \$573 \$569 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$104 VSS VDD \$237 \$239 \$238 \$231 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$105 VSS VDD \$142 \$217 \$216 \$210 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$106 VSS \$551 \$567 \$543 \$558 \$570 VDD VDD VSS
+X$67 VSS \$105 \$50 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$68 VSS \$105 \$193 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$69 VSS \$105 \$325 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$70 VSS \$105 \$29 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$71 VSS \$105 \$357 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$72 VSS \$105 \$170 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$73 VSS \$105 \$186 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$74 VSS \$105 \$537 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$75 VSS \$105 \$495 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$76 VSS \$105 \$337 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$77 VSS \$105 \$471 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$78 VSS \$455 \$485 VDD \$435 VDD VSS gf180mcu_fd_sc_mcu7t5v0__or2_1
+X$79 VSS \$105 \$404 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$80 VSS \$105 \$82 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$81 VSS \$105 \$478 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$82 VSS \$105 \$243 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$83 VDD \$402 \$514 VSS \$485 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$84 VDD \$463 \$423 VSS \$457 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$85 VDD \$129 \$140 VSS \$141 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$86 VDD \$174 \$173 VSS \$161 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$87 VDD \$132 \$113 VSS \$142 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$88 VDD \$422 \$445 VSS \$431 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$89 VDD \$462 \$482 VSS \$318 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$90 VSS VDD \$237 \$36 \$304 \$246 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$91 VSS VDD \$493 \$477 \$344 \$365 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$92 VSS VDD \$586 \$553 \$573 \$569 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$93 VSS VDD \$237 \$239 \$238 \$231 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$94 VSS VDD \$142 \$217 \$216 \$210 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$95 VSS \$551 \$567 \$543 \$558 \$570 VDD VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-X$107 VSS \$551 \$554 \$506 \$558 \$570 VDD VDD VSS
+X$96 VSS \$551 \$554 \$505 \$558 \$570 VDD VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-X$108 VSS VDD \$251 \$405 \$384 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$109 VSS VDD \$142 \$216 \$279 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$110 VSS VDD \$103 \$204 \$241 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$111 VSS VDD \$264 \$154 \$305 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$112 VSS VDD \$262 \$261 \$551 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$113 VSS VDD \$434 \$221 \$432 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$114 VSS VDD \$485 \$475 \$494 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$115 VSS VDD \$111 \$128 \$140 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$116 VDD \$100 \$141 \$148 \$161 \$149 VSS VDD VSS
+X$97 VSS VDD \$251 \$405 \$384 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$98 VSS VDD \$142 \$216 \$279 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$99 VSS VDD \$103 \$204 \$241 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$100 VSS VDD \$264 \$154 \$305 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$101 VSS VDD \$262 \$261 \$551 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$102 VSS VDD \$434 \$221 \$432 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$103 VSS VDD \$485 \$475 \$494 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$104 VSS VDD \$111 \$128 \$140 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$105 VDD \$100 \$141 \$148 \$161 \$149 VSS VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai211_1
-X$117 VSS VDD \$482 \$454 \$221 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$118 VSS VDD \$555 \$560 \$561 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$119 VSS VDD \$99 \$121 \$93 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$120 VSS VDD \$363 \$328 \$329 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$121 VSS VDD \$485 \$484 \$480 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$122 VSS VDD \$486 \$474 \$441 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$123 VSS VDD \$511 \$494 \$510 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$124 VSS VDD \$74 \$87 \$99 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$125 VSS VDD \$191 \$183 \$193 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$126 VSS VDD \$531 \$555 \$558 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$127 VSS VDD \$55 \$72 \$74 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$128 VSS VDD \$327 \$340 \$342 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$129 VSS VDD \$332 \$236 \$338 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$130 VSS VDD \$515 \$552 \$549 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$131 VSS VDD \$256 \$204 \$277 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$132 VSS VDD \$332 \$322 \$323 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$133 VSS VDD \$489 \$480 \$472 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$134 VSS VDD \$493 \$344 \$500 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$135 VSS VDD \$321 \$125 \$307 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$136 VSS VDD \$191 \$234 \$249 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$137 VSS VDD \$35 \$261 \$125 \$154 \$190 VDD VSS
+X$106 VSS VDD \$482 \$454 \$221 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$107 VSS VDD \$555 \$560 \$561 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$108 VSS VDD \$99 \$121 \$93 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$109 VSS VDD \$363 \$328 \$329 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$110 VSS VDD \$485 \$484 \$480 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$111 VSS VDD \$486 \$474 \$441 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$112 VSS VDD \$510 \$494 \$509 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$113 VSS VDD \$74 \$87 \$99 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$114 VSS VDD \$190 \$182 \$192 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$115 VSS VDD \$531 \$555 \$558 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$116 VSS VDD \$55 \$72 \$74 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$117 VSS VDD \$327 \$340 \$342 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$118 VSS VDD \$332 \$236 \$338 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$119 VSS VDD \$514 \$552 \$549 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$120 VSS VDD \$256 \$204 \$277 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$121 VSS VDD \$332 \$322 \$323 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$122 VSS VDD \$489 \$480 \$472 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$123 VSS VDD \$493 \$344 \$499 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$124 VSS VDD \$321 \$125 \$307 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$125 VSS VDD \$190 \$234 \$249 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$126 VSS VDD \$35 \$261 \$125 \$154 \$189 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$138 VSS VDD \$176 \$168 \$142 \$13 \$23 VDD VSS
+X$127 VSS VDD \$175 \$168 \$142 \$14 \$23 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$139 VSS VDD \$284 \$327 \$312 \$308 \$315 VDD VSS
+X$128 VSS VDD \$284 \$327 \$312 \$308 \$315 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$140 VSS VDD \$204 \$262 \$240 \$44 \$106 VDD VSS
+X$129 VSS VDD \$204 \$262 \$240 \$44 \$106 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$141 VSS VDD \$457 \$450 \$467 \$468 \$375 VDD VSS
+X$130 VSS VDD \$457 \$450 \$467 \$468 \$375 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$142 VSS VDD \$476 \$497 \$499 \$286 \$375 VDD VSS
+X$131 VSS VDD \$476 \$496 \$498 \$286 \$375 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$143 \$499 VSS VDD \$493 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
-X$144 VSS VDD \$374 \$334 \$329 \$354 \$343 VDD VSS
+X$132 \$498 VSS VDD \$493 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+X$133 VSS VDD \$374 \$334 \$329 \$354 \$343 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$145 VSS VDD \$101 \$112 \$113 \$13 \$23 VDD VSS
+X$134 VSS VDD \$101 \$112 \$113 \$14 \$23 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$146 VSS VDD \$171 \$158 \$183 \$184 \$234 VDD VSS
+X$135 VSS VDD \$171 \$158 \$182 \$183 \$234 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$147 VDD \$584 VSS \$435 \$578 \$593 \$561 VDD VSS
+X$136 VDD \$584 VSS \$435 \$578 \$593 \$561 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$148 VDD \$579 VSS \$435 \$506 \$571 \$561 VDD VSS
+X$137 VDD \$579 VSS \$435 \$505 \$571 \$561 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$149 VDD \$118 VSS \$71 \$126 \$110 \$120 VDD VSS
+X$138 VDD \$118 VSS \$71 \$126 \$110 \$120 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$150 VDD \$573 VSS \$580 \$564 \$587 \$552 VDD VSS
+X$139 VDD \$573 VSS \$580 \$564 \$587 \$552 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$151 VDD \$145 VSS \$132 \$173 \$185 \$172 VDD VSS
+X$140 VDD \$145 VSS \$132 \$196 \$184 \$172 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$152 VDD \$196 VSS \$216 \$209 \$166 \$210 VDD VSS
+X$141 VDD \$195 VSS \$216 \$209 \$166 \$210 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$153 VSS \$217 \$172 VDD \$235 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
-X$154 VDD \$91 VSS \$87 \$128 \$129 \$111 VDD VSS
+X$142 VSS \$217 \$172 VDD \$235 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xor2_1
+X$143 VDD \$91 VSS \$87 \$128 \$129 \$111 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$155 VDD \$564 VSS \$549 \$534 \$541 \$565 VDD VSS
+X$144 VDD \$564 VSS \$549 \$534 \$541 \$565 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$156 VSS \$580 \$598 \$573 \$587 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$157 VSS \$52 \$61 \$69 \$53 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$158 VSS \$580 \$581 \$573 \$569 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$159 VSS \$558 \$559 \$570 \$554 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$160 VSS \$256 \$266 \$240 \$257 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$161 VSS \$52 \$146 \$126 \$134 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$162 VSS \$191 \$156 \$145 \$179 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$163 VSS \$553 \$565 \$552 \$564 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$164 VSS \$117 \$108 \$118 \$116 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$165 VSS \$221 \$232 \$231 \$230 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$166 VSS \$221 \$281 \$304 \$298 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$167 VSS \$205 \$195 \$209 \$182 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$168 VSS \$342 \$343 \$383 \$267 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$169 VDD \$382 VSS \$361 \$354 \$410 \$339 \$366 VDD VSS
+X$145 VSS \$580 \$598 \$573 \$587 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$146 VSS \$52 \$61 \$69 \$53 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$147 VSS \$580 \$581 \$573 \$569 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$148 VSS \$558 \$559 \$570 \$554 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$149 VSS \$256 \$266 \$240 \$257 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$150 VSS \$52 \$146 \$126 \$134 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$151 VSS \$190 \$156 \$145 \$178 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$152 VSS \$553 \$565 \$552 \$564 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$153 VSS \$117 \$108 \$118 \$116 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$154 VSS \$221 \$232 \$231 \$230 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$155 VSS \$221 \$281 \$304 \$298 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$156 VSS \$205 \$194 \$209 \$181 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$157 VSS \$342 \$343 \$383 \$267 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$158 VDD \$382 VSS \$361 \$354 \$410 \$339 \$366 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai221_1
-X$170 VSS \$203 \$215 \$190 \$208 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
-X$171 \$29 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$172 \$478 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$173 \$170 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$174 \$404 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$175 \$537 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$176 \$186 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$177 \$325 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$178 \$82 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$179 \$496 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$180 \$194 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$181 \$471 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$182 \$243 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$183 \$59 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$184 VDD \$344 VSS \$517 \$499 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-X$185 VDD \$216 VSS \$278 \$142 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-X$186 VSS VDD \$455 \$559 \$577 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$187 VSS VDD \$581 \$565 \$574 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$188 VSS VDD \$553 \$524 \$515 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$189 VSS VDD \$564 \$568 \$580 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$190 VSS VDD \$567 \$589 \$582 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$191 VSS VDD \$185 \$166 \$149 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$192 VDD \$172 \$160 \$173 \$167 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
-X$193 VSS VDD \$221 \$236 \$230 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$194 VSS VDD \$448 \$441 \$455 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$195 VSS VDD \$256 \$267 \$257 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$196 VSS VDD \$462 \$454 \$506 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$197 VSS VDD \$467 \$380 \$476 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$198 VSS VDD \$423 \$463 \$467 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$199 VSS VDD \$514 \$474 \$402 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$200 VSS VDD \$585 \$580 \$594 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$201 VSS VDD \$520 \$586 \$585 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$202 VSS VDD \$191 \$154 \$179 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$203 VSS VDD \$117 \$35 \$116 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$204 VSS VDD \$205 \$204 \$182 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$205 VSS VDD \$486 \$532 \$555 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$206 VSS VDD \$203 \$204 \$208 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$207 VSS VDD \$121 \$111 \$113 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$208 VSS VDD \$52 \$106 \$53 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$209 VSS VDD \$221 \$44 \$298 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$210 VSS VDD \$458 \$531 \$552 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$211 VSS VDD \$117 \$125 \$134 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$212 VSS \$158 VDD \$98 \$159 \$148 \$160 VDD VSS
+X$159 VSS \$203 \$215 \$189 \$208 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$160 \$29 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$161 \$478 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$162 \$170 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$163 \$404 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$164 \$537 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$165 \$186 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$166 \$325 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$167 \$82 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$168 \$495 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$169 \$193 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$170 \$471 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$171 \$243 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$172 \$59 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$173 VDD \$344 VSS \$516 \$498 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X$174 VDD \$216 VSS \$278 \$142 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X$175 VSS VDD \$455 \$559 \$577 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$176 VSS VDD \$581 \$565 \$574 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$177 VSS VDD \$553 \$524 \$514 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$178 VSS VDD \$564 \$568 \$580 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$179 VSS VDD \$567 \$589 \$582 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$180 VSS VDD \$184 \$166 \$149 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$181 VDD \$172 \$160 \$196 \$167 VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai21_1
+X$182 VSS VDD \$221 \$236 \$230 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$183 VSS VDD \$448 \$441 \$455 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$184 VSS VDD \$256 \$267 \$257 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$185 VSS VDD \$462 \$454 \$505 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$186 VSS VDD \$467 \$380 \$476 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$187 VSS VDD \$423 \$463 \$467 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$188 VSS VDD \$513 \$474 \$402 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$189 VSS VDD \$585 \$580 \$594 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$190 VSS VDD \$519 \$586 \$585 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$191 VSS VDD \$190 \$154 \$178 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$192 VSS VDD \$117 \$35 \$116 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$193 VSS VDD \$205 \$204 \$181 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$194 VSS VDD \$486 \$532 \$555 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$195 VSS VDD \$203 \$204 \$208 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$196 VSS VDD \$121 \$111 \$113 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$197 VSS VDD \$52 \$106 \$53 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$198 VSS VDD \$221 \$44 \$298 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$199 VSS VDD \$458 \$531 \$552 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$200 VSS VDD \$117 \$125 \$134 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$201 VSS \$158 VDD \$98 \$159 \$148 \$160 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi22_1
-X$213 VSS VDD \$551 \$538 \$545 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$214 VSS VDD \$113 \$132 \$176 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$215 VSS VDD \$455 \$555 \$481 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
-X$216 VSS \$566 \$569 \$478 \$574 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$217 VSS \$449 \$475 \$496 \$442 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$218 VSS VDD \$533 \$475 \$514 \$484 \$512 VDD VSS
+X$202 VSS VDD \$551 \$538 \$545 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$203 VSS VDD \$113 \$132 \$175 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$204 VSS VDD \$455 \$555 \$481 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
+X$205 VSS \$566 \$569 \$478 \$574 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$206 VSS \$449 \$475 \$495 \$442 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$207 VSS VDD \$533 \$475 \$513 \$484 \$511 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai31_1
-X$219 VSS \$403 \$379 \$325 \$362 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$220 VSS \$22 \$40 \$29 \$30 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$221 VSS \$294 \$284 \$194 \$283 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$222 VSS \$21 \$70 \$29 \$61 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$223 VSS \$535 \$524 \$496 \$541 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$224 VSS \$439 \$454 \$357 \$432 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$225 VSS \$127 \$128 \$29 \$146 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$226 VSS \$456 \$437 \$325 \$450 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$227 VSS \$162 \$132 \$82 \$168 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$228 VSS \$75 \$71 \$82 \$63 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$229 VSS \$498 \$380 \$496 \$497 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$230 VSS \$114 \$120 \$82 \$112 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$231 VSS \$595 \$573 \$496 \$598 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$232 VSS \$139 \$184 \$194 \$195 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$233 VSS \$326 \$308 \$325 \$313 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$234 VSS \$310 \$237 \$186 \$318 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$235 VSS \$292 \$238 \$186 \$281 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$236 \$231 VDD \$304 \$237 VSS \$275 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and3_1
-X$237 VSS \$544 \$543 \$471 \$510 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$238 VSS \$219 \$172 \$243 \$225 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$239 VSS \$483 \$462 \$471 \$472 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$240 VSS \$214 \$246 \$186 \$232 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$241 VSS \$597 \$512 \$537 \$593 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$242 VSS \$470 \$397 \$478 \$461 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$243 VSS \$252 \$216 \$243 \$259 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$244 VSS \$78 \$97 \$59 \$89 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$245 \$50 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
-X$246 VSS \$503 \$365 \$478 \$502 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$247 VSS \$601 \$562 \$471 \$577 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$248 VSS \$66 \$48 \$59 \$47 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$249 VSS \$317 \$210 \$243 \$285 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$250 VSS \$202 \$204 \$170 \$215 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$251 VSS \$406 \$405 \$404 \$399 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$252 VSS \$377 \$282 \$357 \$393 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$253 VSS \$355 \$366 \$404 \$367 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$254 VSS \$420 \$419 \$404 \$422 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$255 VSS VDD \$445 \$423 \$422 \$405 \$366 VDD VSS
+X$208 VSS \$403 \$379 \$325 \$362 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$209 VSS \$22 \$40 \$29 \$30 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$210 VSS \$294 \$284 \$193 \$283 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$211 VSS \$21 \$70 \$29 \$61 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$212 VSS \$535 \$524 \$495 \$541 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$213 VSS \$439 \$454 \$357 \$432 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$214 VSS \$127 \$128 \$29 \$146 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$215 VSS \$456 \$437 \$325 \$450 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$216 VSS \$162 \$132 \$82 \$168 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$217 VSS \$75 \$71 \$82 \$63 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$218 VSS \$497 \$380 \$495 \$496 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$219 VSS \$114 \$120 \$82 \$112 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$220 VSS \$595 \$573 \$495 \$598 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$221 VSS \$139 \$183 \$193 \$194 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$222 VSS \$326 \$308 \$325 \$313 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$223 VSS \$310 \$237 \$186 \$318 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$224 VSS \$292 \$238 \$186 \$281 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$225 \$231 VDD \$304 \$237 VSS \$275 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and3_1
+X$226 VSS \$544 \$543 \$471 \$509 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$227 VSS \$219 \$172 \$243 \$225 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$228 VSS \$483 \$462 \$471 \$472 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$229 VSS \$214 \$246 \$186 \$232 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$230 VSS \$597 \$511 \$537 \$593 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$231 VSS \$470 \$397 \$478 \$461 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$232 VSS \$252 \$216 \$243 \$259 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$233 VSS \$78 \$97 \$59 \$89 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$234 \$50 VDD VSS VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+X$235 VSS \$502 \$365 \$478 \$501 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$236 VSS \$601 \$562 \$471 \$577 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$237 VSS \$66 \$48 \$59 \$47 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$238 VSS \$317 \$210 \$243 \$285 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$239 VSS \$202 \$204 \$170 \$215 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$240 VSS \$406 \$405 \$404 \$399 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$241 VSS \$377 \$282 \$357 \$393 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$242 VSS \$355 \$366 \$404 \$367 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$243 VSS \$420 \$419 \$404 \$422 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$244 VSS VDD \$445 \$423 \$422 \$405 \$366 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__nand4_1
-X$256 VSS \$425 \$424 \$404 \$426 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$257 VSS \$152 \$151 \$59 \$144 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$258 VSS \$592 \$586 \$537 \$594 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$259 VSS \$155 \$154 \$170 \$153 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$260 VSS \$263 \$322 \$337 \$320 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$261 VSS \$124 \$125 \$59 \$107 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$262 VSS \$293 \$312 \$337 \$306 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$263 VSS \$233 \$265 \$170 \$247 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$264 VSS \$444 \$422 \$325 \$9 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$265 VSS \$522 \$344 \$478 \$526 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$266 VSS \$39 \$68 \$50 \$67 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$267 VSS \$563 \$484 \$537 \$571 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$268 VSS \$41 \$72 \$29 \$58 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$269 VSS VDD \$55 \$121 \$72 \$71 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
-X$270 VSS \$54 \$91 \$50 \$108 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$271 VSS \$138 \$171 \$50 \$156 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$272 VSS \$42 \$55 \$82 \$24 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$273 VSS \$92 \$100 \$73 \$110 \$129 VDD VDD VSS
+X$245 VSS \$425 \$424 \$404 \$426 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$246 VSS \$152 \$151 \$59 \$144 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$247 VSS \$592 \$586 \$537 \$594 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$248 VSS \$155 \$154 \$170 \$153 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$249 VSS \$263 \$322 \$337 \$320 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$250 VSS \$124 \$125 \$59 \$107 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$251 VSS \$293 \$312 \$337 \$306 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$252 VSS \$233 \$265 \$170 \$247 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$253 VSS \$444 \$422 \$325 \$10 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$254 VSS \$521 \$344 \$478 \$526 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$255 VSS \$39 \$68 \$50 \$67 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$256 VSS \$563 \$484 \$537 \$571 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$257 VSS \$41 \$72 \$29 \$58 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$258 VSS VDD \$55 \$121 \$72 \$71 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand3_1
+X$259 VSS \$54 \$91 \$50 \$108 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$260 VSS \$138 \$171 \$50 \$156 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$261 VSS \$42 \$55 \$82 \$24 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$262 VSS \$92 \$100 \$73 \$110 \$129 VDD VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi211_1
-X$274 VDD \$111 \$121 VSS \$101 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
-X$275 VSS \$303 \$315 \$243 \$296 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$276 VSS \$268 \$267 \$194 \$266 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$277 VSS VDD \$89 \$106 \$103 \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$278 VSS \$105 \$59 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
-X$279 VSS VDD \$30 \$40 \$36 \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$280 VDD \$51 VSS \$55 \$69 \$92 \$72 VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai22_1
-X$281 VSS VDD \$68 \$98 \$70 \$91 \$128 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor4_1
-X$282 VSS VDD \$306 \$154 \$321 \$312 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$283 VSS VDD \$359 \$360 \$332 \$361 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$284 VSS VDD \$153 \$125 \$103 \$154 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$285 VSS VDD \$393 \$392 \$264 \$360 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$286 VSS VDD \$408 \$97 \$332 \$373 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$287 VSS VDD \$519 \$375 \$498 \$9 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$288 VSS VDD \$47 \$48 \$36 \$44 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$289 VSS VDD \$107 \$35 \$103 \$125 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$290 VSS VDD \$144 \$44 \$103 \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
-X$291 VSS \$20 \$11 \$50 \$37 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
-X$292 VSS \$117 \$67 \$51 \$28 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$263 VDD \$111 \$121 VSS \$101 VDD VSS gf180mcu_fd_sc_mcu7t5v0__and2_1
+X$264 VSS \$303 \$315 \$243 \$296 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$265 VSS \$268 \$267 \$193 \$266 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$266 VSS VDD \$89 \$106 \$103 \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$267 VSS \$105 \$59 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+X$268 VSS VDD \$30 \$40 \$36 \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$269 VDD \$51 VSS \$55 \$69 \$92 \$72 VDD VSS gf180mcu_fd_sc_mcu7t5v0__oai22_1
+X$270 VSS VDD \$68 \$98 \$70 \$91 \$128 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor4_1
+X$271 VSS VDD \$306 \$154 \$321 \$312 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$272 VSS VDD \$359 \$360 \$332 \$361 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$273 VSS VDD \$153 \$125 \$103 \$154 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$274 VSS VDD \$393 \$392 \$264 \$360 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$275 VSS VDD \$408 \$97 \$332 \$373 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$276 VSS VDD \$518 \$375 \$497 \$10 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$277 VSS VDD \$47 \$48 \$36 \$44 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$278 VSS VDD \$107 \$35 \$103 \$125 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$279 VSS VDD \$144 \$44 \$103 \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$280 VSS \$20 \$12 \$50 \$37 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+X$281 VSS \$117 \$67 \$51 \$28 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+X$282 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$283 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$284 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$285 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$286 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$287 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$288 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$289 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$290 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$291 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$292 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$293 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$294 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$295 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
@@ -354,127 +354,127 @@ X$305 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$306 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$307 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 X$308 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$309 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$310 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$311 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$312 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$313 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$314 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$315 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$316 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$317 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$318 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$319 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$320 VSS VDD \$423 \$499 \$508 \$463 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$321 VSS VDD \$278 \$259 \$251 \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$322 VSS VDD \$486 \$482 \$532 \$570 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$323 VSS VDD \$512 \$513 \$484 \$475 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$324 VSS VDD \$93 \$63 \$13 \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$325 VSS VDD \$517 \$526 \$468 \$375 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$326 VSS VDD \$287 \$285 \$251 \$286 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$327 VSS VDD \$56 \$58 \$13 \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$328 VSS VDD \$441 \$458 \$440 \$392 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$329 VSS VDD \$501 \$502 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$330 VSS VDD \$235 \$225 \$251 \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$331 VSS VDD \$385 \$367 \$286 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$332 VSS VDD \$514 \$520 \$531 \$474 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$333 VSS VDD \$361 \$340 \$379 \$373 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$334 VSS VDD \$411 \$399 \$286 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$335 VSS VDD \$446 \$426 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$336 VSS VDD \$469 \$461 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
-X$337 VSS VDD \$308 \$324 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$338 VSS VDD \$474 \$532 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$339 VSS VDD \$84 \$162 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$340 VSS VDD \$84 \$75 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$341 VSS VDD \$258 \$219 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$342 VSS VDD \$169 \$292 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$343 VSS VDD \$238 \$304 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$344 VSS VDD \$84 \$114 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$345 VSS VDD \$120 \$111 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$346 VSS VDD \$223 \$293 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$347 VSS VDD \$68 \$51 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$348 VSS VDD \$10 \$54 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$349 VSS VDD \$430 \$440 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$350 VSS VDD \$352 \$444 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$351 VSS VDD \$135 \$139 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$352 VSS VDD \$10 \$138 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$353 VSS VDD \$346 \$406 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$354 VSS VDD \$346 \$355 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$355 VSS VDD \$223 \$180 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$356 VSS VDD \$12 \$127 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$357 VSS VDD \$346 \$425 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$358 VSS VDD \$135 \$252 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$359 VSS VDD \$135 \$317 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$360 VSS VDD \$246 \$231 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$361 VSS VDD \$518 \$589 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$362 VSS VDD \$495 \$483 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$363 VSS VDD \$333 \$503 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$364 VSS VDD \$341 \$470 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$365 VSS VDD \$135 \$294 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$366 VSS VDD \$486 \$548 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$367 VSS VDD \$12 \$42 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$368 VSS VDD \$183 \$196 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$369 VSS VDD \$299 \$418 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$370 VSS VDD \$352 \$409 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$371 VSS VDD \$171 \$145 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$372 VSS VDD \$10 \$124 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$373 VSS VDD \$223 \$233 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$374 VSS VDD \$284 \$301 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$375 VSS VDD \$234 \$173 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$376 VSS VDD \$258 \$268 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$377 VSS VDD \$258 \$303 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$378 VSS VDD \$135 \$255 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$379 VSS VDD \$487 \$522 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$380 VSS VDD \$10 \$39 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$381 VSS VDD \$495 \$583 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$382 VSS VDD \$380 \$508 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$383 VSS VDD \$602 \$592 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$384 VSS VDD \$12 \$41 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$385 VSS VDD \$419 \$445 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$386 VSS VDD \$405 \$382 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$387 VSS VDD \$424 \$383 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$388 VSS VDD \$586 \$568 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$389 VSS VDD \$322 \$190 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$390 VSS VDD \$128 \$126 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$391 VSS VDD \$71 \$87 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$392 VSS VDD \$352 \$263 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$393 VSS VDD \$352 \$378 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$394 VSS VDD \$91 \$118 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$395 VSS VDD \$70 \$69 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$396 VSS VDD \$487 \$498 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$397 VSS VDD \$315 \$295 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$398 VSS VDD \$495 \$563 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$399 VSS VDD \$487 \$566 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$400 VSS VDD \$512 \$584 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$401 VSS VDD \$352 \$449 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$402 VSS VDD \$475 \$436 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$403 VSS VDD \$341 \$403 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$404 VSS VDD \$379 \$339 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$405 VSS VDD \$265 \$240 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$406 VSS VDD \$487 \$595 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$407 VSS VDD \$495 \$601 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$408 VSS VDD \$335 \$377 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$409 VSS VDD \$169 \$214 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$410 VSS VDD \$169 \$310 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$411 VSS VDD \$169 \$202 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$412 VSS VDD \$335 \$429 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$413 VSS VDD \$335 \$439 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$414 VSS VDD \$484 \$579 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$415 VSS VDD \$543 \$578 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$416 VSS VDD \$169 \$178 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$417 VSS VDD \$335 \$351 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$418 VSS VDD \$12 \$21 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$419 VSS VDD \$341 \$420 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$420 VSS VDD \$524 \$534 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$421 VSS VDD \$341 \$326 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$422 VSS VDD \$184 \$209 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$423 VSS VDD \$437 \$463 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$424 VSS VDD \$341 \$456 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$425 VSS VDD \$602 \$597 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$426 VSS VDD \$487 \$535 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$427 VSS VDD \$10 \$20 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$428 VSS VDD \$12 \$22 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
-X$429 VSS VDD \$495 \$544 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$309 VSS VDD \$423 \$498 \$507 \$463 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$310 VSS VDD \$278 \$259 \$251 \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$311 VSS VDD \$486 \$482 \$532 \$570 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$312 VSS VDD \$511 \$512 \$484 \$475 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$313 VSS VDD \$93 \$63 \$14 \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$314 VSS VDD \$516 \$526 \$468 \$375 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$315 VSS VDD \$287 \$285 \$251 \$286 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$316 VSS VDD \$56 \$58 \$14 \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$317 VSS VDD \$441 \$458 \$440 \$392 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$318 VSS VDD \$500 \$501 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$319 VSS VDD \$235 \$225 \$251 \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$320 VSS VDD \$385 \$367 \$286 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$321 VSS VDD \$513 \$519 \$531 \$474 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$322 VSS VDD \$361 \$340 \$379 \$373 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$323 VSS VDD \$411 \$399 \$286 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$324 VSS VDD \$446 \$426 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$325 VSS VDD \$469 \$461 \$468 \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$326 VSS VDD \$308 \$324 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$327 VSS VDD \$474 \$532 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$328 VSS VDD \$84 \$162 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$329 VSS VDD \$84 \$75 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$330 VSS VDD \$258 \$219 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$331 VSS VDD \$169 \$292 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$332 VSS VDD \$238 \$304 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$333 VSS VDD \$84 \$114 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$334 VSS VDD \$120 \$111 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$335 VSS VDD \$223 \$293 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$336 VSS VDD \$68 \$51 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$337 VSS VDD \$11 \$54 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$338 VSS VDD \$430 \$440 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$339 VSS VDD \$352 \$444 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$340 VSS VDD \$135 \$139 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$341 VSS VDD \$11 \$138 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$342 VSS VDD \$346 \$406 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$343 VSS VDD \$346 \$355 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$344 VSS VDD \$223 \$179 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$345 VSS VDD \$13 \$127 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$346 VSS VDD \$346 \$425 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$347 VSS VDD \$135 \$252 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$348 VSS VDD \$135 \$317 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$349 VSS VDD \$246 \$231 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$350 VSS VDD \$517 \$589 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$351 VSS VDD \$522 \$483 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$352 VSS VDD \$333 \$502 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$353 VSS VDD \$341 \$470 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$354 VSS VDD \$135 \$294 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$355 VSS VDD \$486 \$548 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$356 VSS VDD \$13 \$42 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$357 VSS VDD \$182 \$195 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$358 VSS VDD \$299 \$418 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$359 VSS VDD \$352 \$409 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$360 VSS VDD \$171 \$145 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$361 VSS VDD \$11 \$124 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$362 VSS VDD \$223 \$233 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$363 VSS VDD \$284 \$301 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$364 VSS VDD \$234 \$196 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$365 VSS VDD \$258 \$268 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$366 VSS VDD \$258 \$303 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$367 VSS VDD \$135 \$255 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$368 VSS VDD \$487 \$521 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$369 VSS VDD \$11 \$39 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$370 VSS VDD \$522 \$583 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$371 VSS VDD \$380 \$507 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$372 VSS VDD \$602 \$592 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$373 VSS VDD \$13 \$41 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$374 VSS VDD \$419 \$445 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$375 VSS VDD \$405 \$382 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$376 VSS VDD \$424 \$383 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$377 VSS VDD \$586 \$568 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$378 VSS VDD \$322 \$189 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$379 VSS VDD \$128 \$126 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$380 VSS VDD \$71 \$87 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$381 VSS VDD \$352 \$263 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$382 VSS VDD \$352 \$378 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$383 VSS VDD \$91 \$118 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$384 VSS VDD \$70 \$69 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$385 VSS VDD \$7 \$155 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$386 VSS VDD \$487 \$497 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$387 VSS VDD \$315 \$295 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$388 VSS VDD \$522 \$563 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$389 VSS VDD \$487 \$566 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$390 VSS VDD \$511 \$584 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$391 VSS VDD \$352 \$449 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$392 VSS VDD \$475 \$436 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$393 VSS VDD \$341 \$403 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$394 VSS VDD \$379 \$339 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$395 VSS VDD \$265 \$240 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$396 VSS VDD \$487 \$595 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$397 VSS VDD \$522 \$601 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$398 VSS VDD \$335 \$377 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$399 VSS VDD \$169 \$214 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$400 VSS VDD \$169 \$310 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$401 VSS VDD \$169 \$202 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$402 VSS VDD \$335 \$429 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$403 VSS VDD \$335 \$439 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$404 VSS VDD \$484 \$579 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$405 VSS VDD \$543 \$578 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$406 VSS VDD \$169 \$177 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$407 VSS VDD \$335 \$351 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$408 VSS VDD \$7 \$78 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$409 VSS VDD \$7 \$152 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$410 VSS VDD \$13 \$21 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$411 VSS VDD \$341 \$420 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$412 VSS VDD \$524 \$534 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$413 VSS VDD \$341 \$326 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$414 VSS VDD \$183 \$209 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$415 VSS VDD \$437 \$463 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$416 VSS VDD \$341 \$456 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$417 VSS VDD \$602 \$597 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$418 VSS VDD \$487 \$535 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$419 VSS VDD \$11 \$20 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$420 VSS VDD \$13 \$22 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$421 VSS VDD \$522 \$544 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+X$422 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$423 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$424 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$425 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$426 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$427 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$428 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
+X$429 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$430 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$431 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$432 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
@@ -488,78 +488,78 @@ X$439 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$440 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$441 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
 X$442 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$443 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$444 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$445 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$446 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$447 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$448 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$449 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$450 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$524 VDD \$72 VSS \$56 \$55 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
-X$532 VSS VDD \$441 \$440 \$392 \$442 \$435 \$436 VDD VSS
+X$516 VDD \$72 VSS \$56 \$55 VDD VSS gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+X$524 VSS VDD \$441 \$440 \$392 \$442 \$435 \$436 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai32_1
-X$551 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
-X$568 VSS \$301 VDD \$380 \$381 \$361 \$363 \$382 VDD VSS
+X$543 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
+X$560 VSS \$301 VDD \$380 \$381 \$361 \$363 \$382 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__aoi221_1
-X$596 \$206 VDD VSS \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$597 \$402 VDD VSS \$264 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$598 \$333 VDD VSS \$341 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$599 \$189 VDD VSS \$533 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$600 \$560 VDD VSS \$570 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$601 VDD \$474 \$548 \$513 \$531 VSS \$540 VDD VSS
+X$588 \$206 VDD VSS \$23 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$589 \$402 VDD VSS \$264 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$590 \$333 VDD VSS \$341 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$591 \$188 VDD VSS \$533 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$592 \$560 VDD VSS \$570 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$593 VDD \$474 \$548 \$512 \$531 VSS \$540 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__and4_1
-X$602 \$333 VDD VSS \$487 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$603 \$519 VDD VSS trigger_out VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$604 \$299 VDD VSS \$335 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$605 \$560 VDD VSS sda_oe VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$606 \$151 VDD VSS \$236 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$607 \$518 VDD VSS sda_out VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$608 \$79 VDD VSS \$336 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$609 \$562 VDD VSS \$560 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$610 \$239 VDD VSS \$90 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$611 \$151 VDD VSS \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$612 \$90 VDD VSS \$205 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$613 en VDD VSS \$26 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$614 \$206 VDD VSS \$286 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$615 \$282 VDD VSS \$44 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$616 VSS VDD \$72 \$69 \$73 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
-X$617 \$335 VDD VSS \$352 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$618 \$286 VDD VSS \$468 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$619 \$159 VDD VSS \$206 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$620 \$26 VDD VSS \$79 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$621 \$90 VDD VSS \$52 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$622 \$97 VDD VSS \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$623 \$90 VDD VSS \$117 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$624 \$38 VDD VSS \$27 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$625 \$90 VDD VSS \$191 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$626 \$431 VDD VSS \$13 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$627 \$282 VDD VSS \$360 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$628 \$321 VDD VSS \$332 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$629 \$256 VDD VSS \$321 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$630 VSS clk \$105 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
-X$631 \$264 VDD VSS \$103 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$632 \$334 VDD VSS \$375 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$633 \$264 VDD VSS \$203 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$634 \$27 VDD VSS \$169 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$635 \$27 VDD VSS \$223 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$636 \$336 VDD VSS \$333 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$637 VSS VDD \$301 \$380 \$374 \$365 \$324 \$397 \$295 VDD VSS
+X$594 \$333 VDD VSS \$487 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$595 \$518 VDD VSS trigger_out VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$596 \$299 VDD VSS \$335 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$597 \$560 VDD VSS sda_oe VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$598 \$151 VDD VSS \$236 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$599 \$517 VDD VSS sda_out VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$600 \$8 VDD VSS \$13 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$601 \$79 VDD VSS \$336 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$602 \$562 VDD VSS \$560 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$603 \$239 VDD VSS \$90 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$604 \$151 VDD VSS \$106 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$605 \$90 VDD VSS \$205 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$606 en VDD VSS \$26 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$607 \$206 VDD VSS \$286 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$608 \$8 VDD VSS \$84 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$609 \$282 VDD VSS \$44 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$610 \$38 VDD VSS \$8 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$611 VSS VDD \$72 \$69 \$73 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nand2_1
+X$612 \$335 VDD VSS \$352 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$613 \$286 VDD VSS \$468 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$614 \$159 VDD VSS \$206 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$615 \$26 VDD VSS \$79 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$616 \$90 VDD VSS \$52 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$617 \$97 VDD VSS \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$618 \$90 VDD VSS \$117 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$619 \$38 VDD VSS \$27 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$620 \$90 VDD VSS \$190 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$621 \$431 VDD VSS \$14 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$622 \$282 VDD VSS \$360 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$623 \$321 VDD VSS \$332 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$624 \$256 VDD VSS \$321 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$625 VSS clk \$105 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+X$626 \$264 VDD VSS \$103 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$627 \$334 VDD VSS \$375 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$628 \$264 VDD VSS \$203 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$629 \$27 VDD VSS \$169 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$630 \$8 VDD VSS \$258 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$631 \$27 VDD VSS \$223 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$632 \$336 VDD VSS \$333 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$633 VSS VDD \$301 \$380 \$374 \$365 \$324 \$397 \$295 VDD VSS
 + gf180mcu_fd_sc_mcu7t5v0__oai222_1
-X$638 \$333 VDD VSS \$346 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$639 \$375 VDD VSS \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$640 \$189 VDD VSS \$486 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$641 scl VDD VSS \$188 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$642 \$336 VDD VSS \$299 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$643 \$275 VDD VSS \$256 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$644 sda_in VDD VSS \$358 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$645 \$299 VDD VSS \$495 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$646 \$299 VDD VSS \$602 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$647 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
-X$648 \$79 VDD VSS \$38 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$649 \$206 VDD VSS \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$650 \$431 VDD VSS \$251 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
-X$651 VSS VDD \$13 \$24 \$23 \$55 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$634 \$333 VDD VSS \$346 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$635 \$27 VDD VSS \$7 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$636 \$375 VDD VSS \$386 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$637 \$188 VDD VSS \$486 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$638 scl VDD VSS \$187 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$639 \$336 VDD VSS \$299 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$640 \$275 VDD VSS \$256 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$641 sda_in VDD VSS \$358 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$642 \$8 VDD VSS \$135 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$643 \$299 VDD VSS \$522 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$644 \$299 VDD VSS \$602 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$645 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_64
+X$646 \$79 VDD VSS \$38 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$647 \$206 VDD VSS \$218 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$648 \$7 VDD VSS \$11 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$649 \$431 VDD VSS \$251 VDD VSS gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+X$650 VSS VDD \$14 \$24 \$23 \$55 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor3_1
+X$898 VSS VDD \$7 \$66 VDD VSS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
 X$899 VSS VDD \$117 \$44 \$28 VDD VSS gf180mcu_fd_sc_mcu7t5v0__nor2_1
 X$948 \$543 VSS \$454 \$462 VDD \$531 VDD VSS gf180mcu_fd_sc_mcu7t5v0__or3_1
 X$953 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
@@ -583,7 +583,7 @@ X$970 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$971 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$972 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$973 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
-X$974 VSS VDD \$37 \$11 \$36 \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
+X$974 VSS VDD \$37 \$12 \$36 \$35 VDD VSS gf180mcu_fd_sc_mcu7t5v0__mux2_2
 X$975 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$976 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$977 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
@@ -729,13 +729,13 @@ X$1116 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
 X$1117 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_8
 X$1119 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_4
 X$1123 VSS VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__fillcap_16
-X$1178 VSS \$189 \$186 \$188 \$178 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+X$1178 VSS \$188 \$186 \$187 \$177 VDD VDD VSS gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
 .ENDS digital_top
 
 .SUBCKT B04_clock_gen En Vout VDD GND
-C$1 \$3 GND 4.8e-12 cap_mim_2f0fF A=2400P P=720U
-M$13 \$36 VDD \$3 GND nfet_03v3 L=20U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
-M$14 \$36 GND \$3 VDD pfet_03v3 L=10U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+C$1 \$1 GND 4.8e-12 cap_mim_2f0fF A=2400P P=720U
+M$13 \$36 VDD \$1 GND nfet_03v3 L=20U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
+M$14 \$36 GND \$1 VDD pfet_03v3 L=10U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 M$15 \$34 \$31 VDD VDD pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 M$16 \$33 En \$34 \$34 pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 M$17 \$36 \$33 VDD VDD pfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
@@ -746,29 +746,29 @@ M$21 GND \$33 \$36 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 M$22 GND \$36 Vout GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
 M$23 VDD \$31 \$I211 GND nfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
 M$24 GND VDD GND GND nfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U PD=1.88U
-M$25 GND \$3 \$I211 GND nfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$25 GND \$1 \$I211 GND nfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$26 \$31 \$3 \$I211 GND nfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$26 \$31 \$1 \$I211 GND nfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
 M$27 GND \$31 \$I212 VDD pfet_03v3 L=1U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
-M$28 \$I213 \$3 \$I212 VDD pfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$28 \$I213 \$1 \$I212 VDD pfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
 M$29 \$I213 GND VDD VDD pfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$30 \$31 \$3 \$I212 VDD pfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$30 \$31 \$1 \$I212 VDD pfet_03v3 L=27U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
 .ENDS B04_clock_gen
 
-.SUBCKT io_secondary_5p0 ASIG5V to_gate VDD VSS
+.SUBCKT secondary_esd ASIG5V to_gate VDD VSS
 D$1 VSS to_gate diode_nd2ps_06v0 A=400P P=160U
 D$5 to_gate VDD diode_pd2nw_06v0 A=400P P=160U
 R$9 to_gate ASIG5V VDD 87.5 ppolyf_u L=10U W=40U
-.ENDS io_secondary_5p0
+.ENDS secondary_esd
 
 .SUBCKT B04_AFE_top Venvelope Vbpf VDD Vin Cap2 Cap1 Cap0 Vthreshold Vout GND
 X$101 \$9 \$17 VDD Venvelope \$15 Vbpf \$28 GND B04_buffer_out
 X$126 \$17 \$9 VDD GND B04_BMR
-X$127 Cap0 Cap1 Cap2 \$9 \$29 \$17 VDD \$28 \$78 GND B04_BPF4
+X$127 Cap0 Cap1 Cap2 VDD \$9 \$29 \$17 \$28 \$78 GND B04_BPF4
 X$139 \$17 \$9 VDD \$29 GND B04_VDD05
 X$159 \$15 \$9 VDD \$28 GND B04_envelope
 X$160 Vin \$26 VDD \$17 GND B04_LNAv2
@@ -1098,21 +1098,21 @@ M$6 ZN A1 VSS SUB nfet_05v0 L=0.6U W=0.465U AS=0.1209P AD=0.2046P PS=0.985U
 .ENDS gf180mcu_fd_sc_mcu7t5v0__nor3_1
 
 .SUBCKT gf180mcu_fd_sc_mcu7t5v0__fillcap_32 VSS VDD \$20 SUB
-M$1 VDD \$17 \$9 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$1 VDD \$15 \$7 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$2 VDD \$16 \$8 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$2 VDD \$14 \$6 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$3 VDD \$15 \$7 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$3 VDD \$12 \$4 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$4 VDD \$14 \$6 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$4 VDD \$16 \$8 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$5 VDD \$13 \$5 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$5 VDD \$10 \$2 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$6 VDD \$12 \$4 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$6 VDD \$13 \$5 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$7 VDD \$11 \$3 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$7 VDD \$17 \$9 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$8 VDD \$10 \$2 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$8 VDD \$11 \$3 \$20 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
 M$9 \$14 \$6 VSS SUB nfet_05v0 L=1U W=0.82U AS=0.3608P AD=0.3608P PS=2.52U
 + PD=2.52U
@@ -1132,38 +1132,38 @@ M$16 \$10 \$2 VSS SUB nfet_05v0 L=1U W=0.82U AS=0.3608P AD=0.3608P PS=2.52U
 + PD=2.52U
 .ENDS gf180mcu_fd_sc_mcu7t5v0__fillcap_32
 
-.SUBCKT gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VSS VDD \$37 SUB
-M$1 VDD \$24 \$8 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__fillcap_64 VSS VDD \$36 SUB
+M$1 VDD \$28 \$12 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$2 VDD \$23 \$7 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$2 VDD \$31 \$15 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$3 VDD \$22 \$6 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$3 VDD \$22 \$6 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$4 VDD \$29 \$13 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$4 VDD \$30 \$14 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$5 VDD \$28 \$12 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$5 VDD \$23 \$7 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$6 VDD \$25 \$9 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$6 VDD \$21 \$5 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$7 VDD \$32 \$16 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$7 VDD \$24 \$8 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$8 VDD \$33 \$17 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$8 VDD \$20 \$4 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$9 VDD \$31 \$15 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$9 VDD \$33 \$17 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$10 VDD \$18 \$2 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$10 VDD \$29 \$13 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$11 VDD \$19 \$3 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$11 VDD \$19 \$3 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$12 VDD \$26 \$10 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$12 VDD \$25 \$9 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$13 VDD \$27 \$11 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$13 VDD \$26 \$10 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$14 VDD \$20 \$4 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$14 VDD \$27 \$11 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$15 VDD \$21 \$5 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$15 VDD \$18 \$2 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
-M$16 VDD \$30 \$14 \$37 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
+M$16 VDD \$32 \$16 \$36 pfet_05v0 L=1U W=1.22U AS=0.5368P AD=0.5368P PS=3.32U
 + PD=3.32U
 M$17 \$29 \$13 VSS SUB nfet_05v0 L=1U W=0.82U AS=0.3608P AD=0.3608P PS=2.52U
 + PD=2.52U
@@ -1400,35 +1400,35 @@ M$2 ZN I VSS SUB nfet_05v0 L=0.6U W=0.48U AS=0.2112P AD=0.2112P PS=1.84U
 + PD=1.84U
 .ENDS gf180mcu_fd_sc_mcu7t5v0__clkinv_1
 
-.SUBCKT gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 VSS Q CLK D SETN VDD \$20 SUB
-M$1 VDD CLK \$3 \$20 pfet_05v0 L=0.5U W=0.865U AS=0.3806P AD=0.2249P PS=2.61U
-+ PD=1.385U
-M$2 \$4 \$3 VDD \$20 pfet_05v0 L=0.5U W=0.865U AS=0.2249P AD=0.3806P PS=1.385U
-+ PD=2.61U
-M$3 \$8 SETN VDD \$20 pfet_05v0 L=0.5U W=0.78U AS=0.3432P AD=0.2028P PS=2.44U
-+ PD=1.3U
-M$4 VDD \$9 \$8 \$20 pfet_05v0 L=0.5U W=0.78U AS=0.2028P AD=0.3276P PS=1.3U
-+ PD=1.62U
-M$5 \$9 \$2 VDD \$20 pfet_05v0 L=0.5U W=0.78U AS=0.3276P AD=0.3432P PS=1.62U
-+ PD=2.44U
-M$6 \$2 \$3 \$7 \$20 pfet_05v0 L=0.5U W=0.415U AS=0.27805P AD=0.1079P PS=2.17U
-+ PD=0.935U
-M$7 \$8 \$4 \$2 \$20 pfet_05v0 L=0.5U W=0.415U AS=0.1079P AD=0.1826P PS=0.935U
-+ PD=1.71U
-M$8 Q \$9 VDD \$20 pfet_05v0 L=0.5U W=1.215U AS=0.5346P AD=0.6561P PS=3.31U
-+ PD=3.51U
-M$9 \$5 D VDD \$20 pfet_05v0 L=0.5U W=0.505U AS=0.22725P AD=0.1313P PS=1.91U
+.SUBCKT gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 VSS Q CLK D SETN VDD \$21 SUB
+M$1 \$5 D VDD \$21 pfet_05v0 L=0.5U W=0.505U AS=0.22725P AD=0.1313P PS=1.91U
 + PD=1.025U
-M$10 \$6 \$4 \$5 \$20 pfet_05v0 L=0.5U W=0.505U AS=0.1313P AD=0.1931625P
+M$2 \$6 \$4 \$5 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.1313P AD=0.1931625P
 + PS=1.025U PD=1.27U
-M$11 \$19 \$3 \$6 \$20 pfet_05v0 L=0.5U W=0.505U AS=0.1931625P AD=0.101P
+M$3 \$19 \$3 \$6 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.1931625P AD=0.101P
 + PS=1.27U PD=0.905U
-M$12 VDD \$7 \$19 \$20 pfet_05v0 L=0.5U W=0.505U AS=0.101P AD=0.3975P PS=0.905U
+M$4 VDD \$7 \$19 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.101P AD=0.3975P PS=0.905U
 + PD=2.185U
-M$13 \$7 \$6 VDD \$20 pfet_05v0 L=0.5U W=0.585U AS=0.3975P AD=0.1521P PS=2.185U
+M$5 \$7 \$6 VDD \$21 pfet_05v0 L=0.5U W=0.585U AS=0.3975P AD=0.1521P PS=2.185U
 + PD=1.105U
-M$14 VDD SETN \$7 \$20 pfet_05v0 L=0.5U W=0.585U AS=0.1521P AD=0.4149P
-+ PS=1.105U PD=2.65U
+M$6 VDD SETN \$7 \$21 pfet_05v0 L=0.5U W=0.585U AS=0.1521P AD=0.4149P PS=1.105U
++ PD=2.65U
+M$7 \$8 SETN VDD \$21 pfet_05v0 L=0.5U W=0.78U AS=0.3432P AD=0.2028P PS=2.44U
++ PD=1.3U
+M$8 VDD \$9 \$8 \$21 pfet_05v0 L=0.5U W=0.78U AS=0.2028P AD=0.3276P PS=1.3U
++ PD=1.62U
+M$9 \$9 \$2 VDD \$21 pfet_05v0 L=0.5U W=0.78U AS=0.3276P AD=0.3432P PS=1.62U
++ PD=2.44U
+M$10 VDD CLK \$3 \$21 pfet_05v0 L=0.5U W=0.865U AS=0.3806P AD=0.2249P PS=2.61U
++ PD=1.385U
+M$11 \$4 \$3 VDD \$21 pfet_05v0 L=0.5U W=0.865U AS=0.2249P AD=0.3806P PS=1.385U
++ PD=2.61U
+M$12 Q \$9 VDD \$21 pfet_05v0 L=0.5U W=1.215U AS=0.5346P AD=0.6561P PS=3.31U
++ PD=3.51U
+M$13 \$2 \$3 \$7 \$21 pfet_05v0 L=0.5U W=0.415U AS=0.27805P AD=0.1079P PS=2.17U
++ PD=0.935U
+M$14 \$8 \$4 \$2 \$21 pfet_05v0 L=0.5U W=0.415U AS=0.1079P AD=0.1826P PS=0.935U
++ PD=1.71U
 M$15 \$16 SETN \$8 SUB nfet_05v0 L=0.6U W=0.405U AS=0.3123P AD=0.0486P PS=2.38U
 + PD=0.645U
 M$16 VSS \$9 \$16 SUB nfet_05v0 L=0.6U W=0.405U AS=0.0486P AD=0.14985P
@@ -1496,21 +1496,21 @@ M$4 VSS A1 ZN SUB nfet_05v0 L=0.6U W=0.565U AS=0.1469P AD=0.2486P PS=1.085U
 .ENDS gf180mcu_fd_sc_mcu7t5v0__nor2_1
 
 .SUBCKT gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 VSS RN Q CLK D VDD \$21 SUB
-M$1 \$10 \$9 VDD \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2222P AD=0.2424P PS=1.89U
-+ PD=1.465U
-M$2 \$11 \$4 \$10 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2424P AD=0.2537625P
-+ PS=1.465U PD=1.51U
-M$3 \$12 \$8 \$11 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2537625P AD=0.1313P
-+ PS=1.51U PD=1.025U
-M$4 \$12 \$13 VDD \$21 pfet_05v0 L=0.5U W=0.505U AS=0.29465P AD=0.1313P
-+ PS=1.74U PD=1.025U
-M$5 \$13 RN VDD \$21 pfet_05v0 L=0.5U W=1U AS=0.29465P AD=0.26P PS=1.74U
-+ PD=1.52U
-M$6 VDD \$11 \$13 \$21 pfet_05v0 L=0.5U W=1U AS=0.26P AD=0.44P PS=1.52U PD=2.88U
-M$7 VDD CLK \$4 \$21 pfet_05v0 L=0.5U W=0.865U AS=0.3806P AD=0.2249P PS=2.61U
+M$1 VDD CLK \$4 \$21 pfet_05v0 L=0.5U W=0.865U AS=0.3806P AD=0.2249P PS=2.61U
 + PD=1.385U
-M$8 \$8 \$4 VDD \$21 pfet_05v0 L=0.5U W=0.865U AS=0.2249P AD=0.3806P PS=1.385U
+M$2 \$8 \$4 VDD \$21 pfet_05v0 L=0.5U W=0.865U AS=0.2249P AD=0.3806P PS=1.385U
 + PD=2.61U
+M$3 \$10 \$9 VDD \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2222P AD=0.2424P PS=1.89U
++ PD=1.465U
+M$4 \$11 \$4 \$10 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2424P AD=0.2537625P
++ PS=1.465U PD=1.51U
+M$5 \$12 \$8 \$11 \$21 pfet_05v0 L=0.5U W=0.505U AS=0.2537625P AD=0.1313P
++ PS=1.51U PD=1.025U
+M$6 \$12 \$13 VDD \$21 pfet_05v0 L=0.5U W=0.505U AS=0.29465P AD=0.1313P
++ PS=1.74U PD=1.025U
+M$7 \$13 RN VDD \$21 pfet_05v0 L=0.5U W=1U AS=0.29465P AD=0.26P PS=1.74U
++ PD=1.52U
+M$8 VDD \$11 \$13 \$21 pfet_05v0 L=0.5U W=1U AS=0.26P AD=0.44P PS=1.52U PD=2.88U
 M$9 \$7 D VDD \$21 pfet_05v0 L=0.5U W=0.78U AS=0.3432P AD=0.2028P PS=2.44U
 + PD=1.3U
 M$10 \$9 \$8 \$7 \$21 pfet_05v0 L=0.5U W=0.78U AS=0.2028P AD=0.2028P PS=1.3U
@@ -1612,82 +1612,88 @@ M$13 \$3 \$3 GND GND nfet_03v3 L=0.56U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
 .ENDS B04_comparator
 
 .SUBCKT B04_envelope Vout VbiasN VDD Vin GND
-C$1 GND Vout 2e-11 cap_mim_2f0fF A=10000P P=4000U
-M$101 Vout Vin VDD GND nfet_03v3 L=1U W=2U AS=0.88P AD=0.88P PS=4.88U PD=4.88U
-M$102 \$206 VbiasN Vout GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+D$1 Vout VDD diode_pd2nw_03v3 A=5P P=20U
+C$6 GND Vout 2e-11 cap_mim_2f0fF A=10000P P=4000U
+M$106 Vout Vin VDD GND nfet_03v3 L=1U W=2U AS=0.88P AD=0.88P PS=4.88U PD=4.88U
+M$107 \$207 VbiasN Vout GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$103 \$191 VbiasN \$192 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$108 \$191 VbiasN \$192 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$104 GND VbiasN \$192 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$109 GND VbiasN \$192 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$105 \$191 VbiasN \$207 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$110 \$191 VbiasN \$206 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$106 \$206 VbiasN \$207 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$111 \$207 VbiasN \$206 GND nfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
+D$112 GND Vout diode_nd2ps_03v3 A=5P P=20U
 .ENDS B04_envelope
 
-.SUBCKT B04_BPF4 Cap0 Cap1 Cap2 VbiasN VDD05 VbiasP VDD Vout Vin GND
-X$137 \$774 \$763 Vout VDD \$765 \$51 \$764 \$773 GND B04_OTA
-X$138 \$755 \$745 \$63 VDD VDD05 \$51 \$756 \$761 GND B04_OTA
-X$139 \$753 \$744 \$51 VDD \$51 VDD05 \$754 \$760 GND B04_OTA
-X$140 \$757 \$746 \$51 VDD \$63 VDD05 \$758 \$762 GND B04_OTA
-X$141 \$751 \$743 \$51 VDD VDD05 \$821 \$752 \$759 GND B04_OTA
-X$372 \$752 VbiasN VDD \$751 \$759 \$743 VbiasP GND B04_OTA_bias_ratio_025
-X$373 \$756 VbiasN VDD \$755 \$761 \$745 VbiasP GND B04_OTA_bias_ratio_04
-X$374 \$758 VbiasN VDD \$757 \$762 \$746 VbiasP GND B04_OTA_bias_ratio_04
-X$375 \$754 VbiasN VDD \$753 \$760 \$744 VbiasP GND B04_OTA_bias_ratio_025
-X$376 \$764 VbiasN VDD \$773 \$774 \$763 VbiasP GND B04_OTA_bias_ratio_5
-X$401 \$753 \$744 \$821 VDD \$821 VDD05 \$754 \$760 GND B04_OTA
-X$402 \$757 \$746 \$821 VDD \$852 VDD05 \$758 \$762 GND B04_OTA
-X$403 \$751 \$743 \$821 VDD VDD05 Vin \$752 \$759 GND B04_OTA
-X$404 \$755 \$745 \$852 VDD VDD05 \$821 \$756 \$761 GND B04_OTA
-C$1 GND GND 3.84e-11 cap_mim_2f0fF A=19200P P=7680U
-C$30 \$52 \$51 8e-12 cap_mim_2f0fF A=4000P P=1600U
-C$34 \$64 \$63 2e-12 cap_mim_2f0fF A=1000P P=400U
-C$59 \$95 \$63 4e-12 cap_mim_2f0fF A=2000P P=800U
-C$106 GND \$63 1e-11 cap_mim_2f0fF A=5000P P=2000U
-C$128 GND \$51 1e-11 cap_mim_2f0fF A=5000P P=2000U
-C$226 \$437 \$63 8e-12 cap_mim_2f0fF A=4000P P=1600U
-C$248 \$472 \$51 4e-12 cap_mim_2f0fF A=2000P P=800U
-C$297 \$573 \$51 2e-12 cap_mim_2f0fF A=1000P P=400U
-C$328 \$765 VDD05 4e-12 cap_mim_2f0fF A=2000P P=800U
-C$335 \$765 Vout 2e-13 cap_mim_2f0fF A=100P P=40U
-C$388 \$864 \$821 2e-12 cap_mim_2f0fF A=1000P P=400U
-C$390 \$874 \$852 8e-12 cap_mim_2f0fF A=4000P P=1600U
-C$413 \$865 \$821 4e-12 cap_mim_2f0fF A=2000P P=800U
-C$461 GND \$821 1e-11 cap_mim_2f0fF A=5000P P=2000U
-C$484 GND \$852 1e-11 cap_mim_2f0fF A=5000P P=2000U
-C$589 \$866 \$821 8e-12 cap_mim_2f0fF A=4000P P=1600U
-C$608 \$873 \$852 4e-12 cap_mim_2f0fF A=2000P P=800U
-C$654 \$871 \$852 2e-12 cap_mim_2f0fF A=1000P P=400U
-M$694 Vout Vout \$765 \$765 pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+.SUBCKT B04_BPF4 Cap0 Cap1 Cap2 VDD VbiasN VDD05 VbiasP Vout Vin GND
+X$137 \$779 \$768 Vout VDD \$770 \$51 \$769 \$778 GND B04_OTA
+X$138 \$760 \$750 \$63 VDD VDD05 \$51 \$761 \$766 GND B04_OTA
+X$139 \$758 \$749 \$51 VDD \$51 VDD05 \$759 \$765 GND B04_OTA
+X$140 \$762 \$752 \$51 VDD \$63 VDD05 \$763 \$767 GND B04_OTA
+X$141 \$756 \$748 \$51 VDD VDD05 \$826 \$757 \$764 GND B04_OTA
+X$412 \$757 VbiasN VDD \$756 \$764 \$748 VbiasP GND B04_OTA_bias_ratio_025
+X$413 \$761 VbiasN VDD \$760 \$766 \$750 VbiasP GND B04_OTA_bias_ratio_04
+X$414 \$759 VbiasN VDD \$758 \$765 \$749 VbiasP GND B04_OTA_bias_ratio_025
+X$415 \$763 VbiasN VDD \$762 \$767 \$752 VbiasP GND B04_OTA_bias_ratio_04
+X$428 \$769 VbiasN VDD \$778 \$779 \$768 VbiasP GND B04_OTA_bias_ratio_5
+X$429 \$756 \$748 \$826 VDD VDD05 Vin \$757 \$764 GND B04_OTA
+X$430 \$758 \$749 \$826 VDD \$826 VDD05 \$759 \$765 GND B04_OTA
+X$431 \$762 \$752 \$826 VDD \$857 VDD05 \$763 \$767 GND B04_OTA
+X$432 \$760 \$750 \$857 VDD VDD05 \$826 \$761 \$766 GND B04_OTA
+D$1 \$63 VDD diode_pd2nw_03v3 A=5P P=20U
+D$6 \$857 VDD diode_pd2nw_03v3 A=5P P=20U
+C$11 GND GND 3.84e-11 cap_mim_2f0fF A=19200P P=7680U
+C$40 \$52 \$51 8e-12 cap_mim_2f0fF A=4000P P=1600U
+C$44 \$64 \$63 2e-12 cap_mim_2f0fF A=1000P P=400U
+C$69 \$95 \$63 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$116 GND \$63 1e-11 cap_mim_2f0fF A=5000P P=2000U
+C$138 GND \$51 1e-11 cap_mim_2f0fF A=5000P P=2000U
+C$236 \$437 \$63 8e-12 cap_mim_2f0fF A=4000P P=1600U
+C$258 \$472 \$51 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$307 \$573 \$51 2e-12 cap_mim_2f0fF A=1000P P=400U
+C$338 \$770 VDD05 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$345 \$770 Vout 2e-13 cap_mim_2f0fF A=100P P=40U
+C$398 \$869 \$826 2e-12 cap_mim_2f0fF A=1000P P=400U
+C$400 \$879 \$857 8e-12 cap_mim_2f0fF A=4000P P=1600U
+C$423 \$870 \$826 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$471 GND \$826 1e-11 cap_mim_2f0fF A=5000P P=2000U
+C$494 GND \$857 1e-11 cap_mim_2f0fF A=5000P P=2000U
+C$599 \$871 \$826 8e-12 cap_mim_2f0fF A=4000P P=1600U
+C$618 \$878 \$857 4e-12 cap_mim_2f0fF A=2000P P=800U
+C$664 \$876 \$857 2e-12 cap_mim_2f0fF A=1000P P=400U
+M$704 Vout Vout \$770 \$770 pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$695 Vout \$765 \$765 Vout pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$705 Vout \$770 \$770 Vout pfet_03v3 L=4U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$696 GND Cap2 \$52 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$706 GND Cap2 \$52 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$697 GND Cap0 \$64 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$707 GND Cap0 \$64 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$698 GND Cap1 \$95 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$708 GND Cap1 \$95 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$699 GND Cap2 \$437 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$709 GND Cap2 \$437 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$700 GND Cap1 \$472 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$710 GND Cap1 \$472 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$701 GND Cap0 \$573 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$711 GND Cap0 \$573 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$702 GND Cap0 \$871 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$712 GND Cap0 \$869 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$703 GND Cap0 \$864 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$713 GND Cap0 \$876 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$704 GND Cap1 \$873 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$714 GND Cap1 \$870 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$705 GND Cap1 \$865 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$715 GND Cap1 \$878 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$706 GND Cap2 \$874 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$716 GND Cap2 \$871 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
-M$707 GND Cap2 \$866 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
+M$717 GND Cap2 \$879 GND nfet_03v3 L=1U W=0.5U AS=0.22P AD=0.22P PS=1.88U
 + PD=1.88U
+D$718 GND \$63 diode_nd2ps_03v3 A=5P P=20U
+D$723 GND \$857 diode_nd2ps_03v3 A=5P P=20U
 .ENDS B04_BPF4
 
 .SUBCKT B04_coupling Vin Vout VDD05
@@ -1763,9 +1769,9 @@ M$1 Vbias2 VbiasP VDD VDD pfet_03v3 L=4U W=1.25U AS=0.55P AD=0.55P PS=3.38U
 + PD=3.38U
 M$2 Vbias3 VbiasN GND GND nfet_03v3 L=4U W=2.5U AS=1.1P AD=1.1P PS=5.88U
 + PD=5.88U
-M$3 Vbias1 Vbias2 \$10 GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U
+M$3 Vbias1 Vbias2 \$9 GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-M$4 \$10 Vbias1 GND GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$4 \$9 Vbias1 GND GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
 M$5 Vbias3 VDD Vbias0 GND nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U
 + PD=20.88U
 M$6 Vbias0 Vbias3 \$14 VDD pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U
@@ -1819,9 +1825,9 @@ M$58 \$4 Vbias2 Vout GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=3.76U PD=3.76U
 M$1 Vbias2 VbiasP VDD VDD pfet_03v3 L=4U W=25U AS=11P AD=11P PS=50.88U PD=50.88U
 M$2 Vbias3 VbiasN GND GND nfet_03v3 L=4U W=50U AS=22P AD=22P PS=100.88U
 + PD=100.88U
-M$3 Vbias1 Vbias2 \$10 GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U
+M$3 \$10 Vbias1 GND GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
+M$4 Vbias1 Vbias2 \$10 GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U
 + PD=2.88U
-M$4 \$10 Vbias1 GND GND nfet_03v3 L=4U W=1U AS=0.44P AD=0.44P PS=2.88U PD=2.88U
 M$5 Vbias3 VDD Vbias0 GND nfet_03v3 L=4U W=10U AS=4.4P AD=4.4P PS=20.88U
 + PD=20.88U
 M$6 Vbias0 Vbias3 \$15 VDD pfet_03v3 L=4U W=5U AS=2.2P AD=2.2P PS=10.88U

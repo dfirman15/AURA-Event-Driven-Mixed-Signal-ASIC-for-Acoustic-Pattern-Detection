@@ -1,16 +1,16 @@
 .include "/foss/pdks/ciel/gf180mcu/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice"
 .include "/foss/designs/AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/digital_top.spice"
 .subckt B04_TOP Vin Venvelope Vbpf VDD GND Vtrigger sda_in sda_oe sda_out scl en Vthreshold
-XXESD_VIN       VDD Vin_int        Vin        GND io_secondary_5p0
-XXESD_VTH       VDD Vthreshold_int Vthreshold GND io_secondary_5p0
-XXESD_VBPF      VDD Vbpf_int       Vbpf       GND io_secondary_5p0
-XXESD_VENVELOPE VDD Venvelope_int  Venvelope  GND io_secondary_5p0
+XXESD_VIN       VDD Vin_int        Vin        GND secondary_esd
+XXESD_VTH       VDD Vthreshold_int Vthreshold GND secondary_esd
+XXESD_VBPF      VDD Vbpf_int       Vbpf       GND secondary_esd
+XXESD_VENVELOPE VDD Venvelope_int  Venvelope  GND secondary_esd
 XX_ANALOG VDD net_cap0 net_cap1 Vthreshold_int net_cap2 net_comp Vin_int GND Vbpf_int Venvelope_int B04_AFE_top
 XX_CLOCK VDD internal_clk en GND B04_clock_gen
 XX_DIGITAL VDD GND net_cap0 net_cap1 net_cap2 internal_clk net_comp en scl sda_in sda_oe sda_out Vtrigger digital_top
 .ends
 
-.subckt io_secondary_5p0 VDD to_gate ASIG5V VSS
+.subckt secondary_esd VDD to_gate ASIG5V VSS
 *.PININFO VSS:B VDD:B to_gate:B ASIG5V:B
 D1 to_gate VDD diode_pd2nw_06v0 area='10u * 10u ' pj='2*10u + 2*10u ' m=4
 XR1 to_gate ASIG5V VDD ppolyf_u r_width=40u r_length=10u m=1
@@ -173,6 +173,10 @@ XC23 net18 net36 cap_mim_2f0fF c_width=10u c_length=10u m=20
 M14 net37 cap2 GND GND nfet_03v3 L=1u W=0.5u nf=1
 XC24 net18 net37 cap_mim_2f0fF c_width=10u c_length=10u m=40
 x14 VDD VbiasP net21 net23 net24 net22 VbiasN GND B04_OTA_bias_ratio_5
+D1 GND net20 diode_nd2ps_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
+D2 net20 VDD diode_pd2nw_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
+D3 GND net18 diode_nd2ps_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
+D4 net18 VDD diode_pd2nw_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
 .ends
 
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_envelope.sym # of pins=5
@@ -185,6 +189,8 @@ M3 net1 VbiasN GND GND nfet_03v3 L=4u W=0.5u nf=1
 M4 net3 VbiasN net2 GND nfet_03v3 L=4u W=0.5u nf=1
 M5 net4 VbiasN net3 GND nfet_03v3 L=4u W=0.5u nf=1
 M6 Vout VbiasN net4 GND nfet_03v3 L=4u W=0.5u nf=1
+D1 GND Vout diode_nd2ps_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
+D2 Vout VDD diode_pd2nw_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
 .ends
 
 * expanding   symbol:  AURA-Event-Driven-Mixed-Signal-ASIC-for-Acoustic-Pattern-Detection/analog/B04_comparator.sym # of pins=6

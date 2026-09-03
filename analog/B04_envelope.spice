@@ -8,4 +8,6 @@ M3 net1 VbiasN GND GND nfet_03v3 L=4u W=0.5u nf=1
 M4 net3 VbiasN net2 GND nfet_03v3 L=4u W=0.5u nf=1
 M5 net4 VbiasN net3 GND nfet_03v3 L=4u W=0.5u nf=1
 M6 Vout VbiasN net4 GND nfet_03v3 L=4u W=0.5u nf=1
+D1 GND Vout diode_nd2ps_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
+D2 Vout VDD diode_pd2nw_03v3 area='1u * 1u ' pj='2*1u + 2*1u ' m=5
 .ends

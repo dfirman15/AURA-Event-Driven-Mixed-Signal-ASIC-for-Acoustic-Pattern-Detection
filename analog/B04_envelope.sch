@@ -48,6 +48,10 @@ N 700 -380 730 -380 {lab=GND}
 N 730 -380 730 -320 {lab=GND}
 N 700 -440 730 -440 {lab=GND}
 N 730 -440 730 -380 {lab=GND}
+N 870 -320 870 -200 {lab=Vout}
+N 930 -600 930 -320 {lab=VDD}
+N 400 -600 930 -600 {lab=VDD}
+N 810 -320 810 -130 {lab=GND}
 C {symbols/nfet_03v3.sym} 380 -230 0 0 {name=M1
 L=1u
 W=2u
@@ -143,3 +147,13 @@ sa=0 sb=0 sd=0
 model=nfet_03v3
 spiceprefix=X
 }
+C {symbols/diode_nd2ps_03v3.sym} 840 -320 3 0 {name=D1
+model=diode_nd2ps_03v3
+r_w=1u
+r_l=1u
+m=5}
+C {symbols/diode_pd2nw_03v3.sym} 900 -320 3 0 {name=D2
+model=diode_pd2nw_03v3
+r_w=1u
+r_l=1u
+m=5}

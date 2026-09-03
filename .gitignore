@@ -9,3 +9,4 @@ img/
 src/digital/runs/RUN_*/*
 !src/digital/runs/RUN_*/final
 !src/digital/runs/RUN_*/final/**
+analog/backups
