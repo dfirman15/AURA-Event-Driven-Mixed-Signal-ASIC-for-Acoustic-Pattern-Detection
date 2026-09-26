@@ -17,6 +17,10 @@ project:
   discord: "Hawur"
   description: "Low Power Mixed Signal Frequency Detection"
   lvs_config: "lvs_config.json"
+  gf_def_ready: true
+  ws_def_ready: true
+  drc_ready: false
+  lvs_ready: false
 
 pins:
   - name: GND
@@ -25,16 +29,12 @@ pins:
     io_type: power
   - name: Vin
     io_type: analog
-    secondary_esd: true
   - name: Vbpf
     io_type: analog
-    secondary_esd: true
   - name: Venvelope
     io_type: analog
-    secondary_esd: true
   - name: Vthreshold
     io_type: analog
-    secondary_esd: true
   - name: Vtrigger
     io_type: bidirectional
   - name: sda
