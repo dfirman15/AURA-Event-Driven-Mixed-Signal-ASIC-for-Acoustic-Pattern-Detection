@@ -21,6 +21,7 @@ project:
   ws_def_ready: true
   drc_ready: true
   lvs_ready: false
+  export_control: "export/Export_Control_GF_Rev82.pdf"
 
 pins:
   - name: GND
