@@ -1,4 +1,4 @@
-* Extracted by KLayout with GF180MCU LVS runset on : 06/09/2026 15:06
+* Extracted by KLayout with GF180MCU LVS runset on : 07/11/2026 14:35
 
 .SUBCKT B04_TOP VDD Vin Vbpf Venvelope Vthreshold Vtrigger en sda_out sda_oe
 + sda_in scl GND
