@@ -20,7 +20,7 @@ project:
   gf_def_ready: true
   ws_def_ready: true
   drc_ready: true
-  lvs_ready: false
+  lvs_ready: true
   export_control: "export/Export_Control_GF_Rev82.pdf"
 
 pins:
